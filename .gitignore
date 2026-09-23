@@ -15,3 +15,7 @@ id_rsa*
 
 # OS files
 .DS_Store
+
+# Local agent tooling and design docs (never part of this public repo)
+.superpowers/
+docs/superpowers/
