@@ -1,0 +1,51 @@
+name: validate
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    env:
+      AUTHOR_ASSOCIATION: ${{ github.event.pull_request.author_association }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      # Participant code never runs in CI, so the unit tests only run for organizer PRs.
+      - name: Validator unit tests
+        if: contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.pull_request.author_association)
+        run: python3 -m unittest discover -s scripts -v
+
+      - name: Check submission
+        run: |
+          # Use the validator from main, so a pull request can't weaken the checks it is judged by.
+          # The checkout is GitHub's merge commit, so HEAD^1 is main.
+          git show HEAD^1:scripts/validate_submission.py > "$RUNNER_TEMP/validate_submission.py"
+          git -c core.quotePath=false diff --no-renames --name-only HEAD^1 HEAD > "$RUNNER_TEMP/changed.txt"
+          echo "Changed files:"
+          cat "$RUNNER_TEMP/changed.txt"
+          flag=""
+          case "$AUTHOR_ASSOCIATION" in
+            OWNER|MEMBER|COLLABORATOR) flag="--organizer" ;;
+          esac
+          status=0
+          # A nested git repo (gitlink) is committed as an empty folder, so the validator would see no files.
+          while IFS=$'\t' read -r meta path; do
+            case "$meta" in
+              160000*) echo "ERROR: $path is a nested git repository, so none of its files were committed. Delete $path/.git, then run: git rm --cached \"$path\" && git add \"$path\""; status=1 ;;
+            esac
+          done < <(git -c core.quotePath=false ls-files -s -- submissions)
+          python3 "$RUNNER_TEMP/validate_submission.py" --root . --changed-files "$RUNNER_TEMP/changed.txt" $flag || status=1
+          exit $status
+
+      - name: Scan for secrets
+        if: ${{ !cancelled() }}
+        uses: trufflesecurity/trufflehog@v3.97.6
+        with:
+          extra_args: --results=verified,unknown

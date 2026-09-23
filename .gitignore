@@ -1,0 +1,17 @@
+# Dependencies, virtualenvs and caches
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+
+# OS files
+.DS_Store
