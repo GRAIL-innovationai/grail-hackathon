@@ -30,6 +30,7 @@ recording, labeled as such; it does not prove a live run. Full script and fallba
 | Chloe McCormick | @ChloeMcCormickTR |
 | Dana Mahmoud | @DanaMMh |
 | Vera | @Equinox-pdf |
+| Fatou Jeng | - |
 
 ## Summary
 Offscript's SideQuest turns the time, budget, transport and location a person has into a checked outing plan. A Gemini-powered agent calls real tools, including OpenStreetMap places near the user's device location, Open-Meteo forecasts and route estimates, while deterministic code, not the model, builds schedules and validates them as pass, fail or unknown against hard constraints: time window, the return trip, opening hours, per-person budget and accessibility. Missing facts stay "unknown" instead of being assumed, so every plan is labeled checked or provisional. The web app requires location and tracks progress during the quest in the browser, and a clearly labeled replay mode runs without any API keys. Group planning, multi-day trips and live replanning are designed but not built yet.
