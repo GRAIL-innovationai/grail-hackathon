@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "literature": {
+      "command": "/absolute/path/to/cross-pollinate/.venv/bin/python",
+      "args": ["/absolute/path/to/cross-pollinate/mcp_server.py"]
+    }
+  }
+}

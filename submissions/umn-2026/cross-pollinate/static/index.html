@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Cross–Pollinate · Research without silos</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<header><a class="brand" href="/" aria-label="Cross–Pollinate home"><span class="flower">✳</span> Cross–Pollinate</a><div class="header-right"><span>RESEARCH WITHOUT SILOS</span><span id="backend" class="chip">Connecting…</span></div></header>
+<main>
+<section class="hero"><div><p class="eyebrow">A METHOD IN ONE FIELD. A POSSIBILITY IN ANOTHER.</p><h1>Your next idea might<br>live in another field.</h1><p class="intro">Find the shared structure. Borrow the right method.<br>Design a small experiment that can prove you wrong.</p></div><div class="constellation" aria-hidden="true"><span class="orbit one"></span><span class="orbit two"></span><span class="orbit three"></span><span class="seed">✳</span><span class="node n1">ENGINEERING</span><span class="node n2">BIOSTATISTICS</span><span class="node n3">ECOLOGY</span><span class="node n4">SIGNAL PROCESSING</span></div></section>
+<div class="workspace">
+<aside class="input-panel"><div class="section-title"><span class="step">01</span><h2>Start with your problem</h2></div>
+<label class="example-label" for="example">Try a research question</label><select id="example"><option value="membrane">Membrane fouling · Chemical engineering</option><option value="assay">Expensive assays · Experimental biology</option><option value="biostat">Missing follow-up · Biostatistics</option><option value="custom">Your own question</option></select>
+<form id="research-form"><label for="problem">Research problem</label><textarea id="problem" rows="5" required minlength="15" maxlength="6000"></textarea>
+<label for="field">Current field</label><input id="field" required minlength="2" maxlength="300">
+<label for="data">Available data <span class="optional">optional</span></label><textarea id="data" rows="3" maxlength="4000"></textarea>
+<label for="constraints">Constraints <span class="optional">optional</span></label><textarea id="constraints" rows="3" maxlength="4000" placeholder="Time, equipment, sample size, budget…"></textarea>
+<button id="run-button" class="primary" type="submit">Find methods to borrow <span>↗</span></button><button id="cancel-button" class="secondary" type="button" hidden>Cancel this run</button>
+<p class="form-note">Live literature search • Usually a few minutes<br>Your question is sent to the selected model; search terms go to public literature services.</p></form>
+<div class="process"><p class="eyebrow">THE RESEARCH LOOP</p><ol><li>Abstract the problem</li><li>Search analogous fields</li><li>Read and challenge the evidence</li><li>Design a falsifiable pilot</li></ol></div></aside>
+<section class="results-panel"><div class="section-title"><span class="step">02</span><h2 id="result-heading">Discover the connection</h2></div>
+<div id="empty" class="empty"><div class="empty-mark">↗</div><h3>Specific methods.<br>Testable transfers.</h3><p>A research map with explicit concept mappings, required measurements, collaborator expertise, and a validation plan.</p><div class="mini-grid"><span>Structural fit</span><span>Retrieved sources</span><span>Honest limitations</span></div></div>
+<section id="activity" class="activity" hidden><div class="activity-top"><strong id="activity-title">Research in progress</strong><span id="elapsed"></span></div><ol id="events" aria-live="polite"></ol></section>
+<div id="error" class="error" role="alert" hidden></div>
+<div id="report" hidden></div>
+<section id="revision-panel" class="revision" hidden><p class="eyebrow">CHANGE A CONSTRAINT. TEST THE REASONING.</p><h3>What changed?</h3><label for="revision">New information or constraint</label><textarea id="revision" rows="3" placeholder="For example: none of our failure labels are trustworthy."></textarea><button id="revise-button" class="primary">Revisit the recommendations ↗</button></section>
+</section></div>
+<footer>Cross–Pollinate <span>Evidence guides the transfer. Your experiment tests it.</span></footer>
+</main><script src="/static/app.js"></script></body></html>
