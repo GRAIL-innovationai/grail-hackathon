@@ -1,0 +1,7 @@
+# Rasterized page images. Large, and the source PDFs may be unpublished.
+work/
+
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
