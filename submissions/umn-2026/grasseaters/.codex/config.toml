@@ -1,0 +1,3 @@
+[mcp_servers.video-analyzer]
+command = "npx"
+args = ["--yes", "--package=node@22", "--package=mcp-video-analyzer@0.10.1", "--", "mcp-video-analyzer"]
