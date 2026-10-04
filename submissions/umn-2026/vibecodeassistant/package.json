@@ -1,0 +1,39 @@
+{
+  "name": "ghostqa",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "node scripts/smoke.mjs",
+    "check:provider": "node scripts/check-provider.mjs",
+    "test:website": "node scripts/website-smoke.mjs",
+    "backend:demo": "node backend/src/index.js",
+    "compliance:build": "tsc -p modules/compliance/tsconfig.json",
+    "compliance:demo": "npm run compliance:build && node modules/compliance/dist/example.js",
+    "test:runtime": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/runtime-test.ts",
+    "runtime": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/runtime.ts",
+    "frontend:dev": "npm --prefix modules/frontend run dev"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "openai": "^6.0.0",
+    "playwright": "^1.55.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.9.0"
+  },
+  "overrides": {
+    "postcss": "^8.5.23"
+  }
+}
