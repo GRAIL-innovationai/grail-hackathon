@@ -27,7 +27,7 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python scripts/check_output.py out/slides/deck.html
 ```
 
-`normalize_pdf.py` writes page images under `work/`. An agent following `SKILL.md` then writes `deck.html` and `review.md`. A finished example is in `out/Unit2Day2-BigOPractice-010/`.
+`normalize_pdf.py` writes page images under `work/`. An agent following `SKILL.md` then writes `deck.html` and `review.md`.
 
 Lecture video, from the repository root. Needs Python 3 and npm. The first run downloads the video analyzer.
 
