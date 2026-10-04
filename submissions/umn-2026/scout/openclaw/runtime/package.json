@@ -1,0 +1,8 @@
+{
+  "name": "research-matchmaker-openclaw-runtime",
+  "private": true,
+  "description": "Isolated, pinned OpenClaw runtime for Research Matchmaker",
+  "dependencies": {
+    "openclaw": "2026.9.8"
+  }
+}

@@ -1,0 +1,30 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { createSession } from '../shared/types';
+import { profileContext } from '../shared/workspace-context';
+import { ResearchTurn } from '../server/research-agent';
+import { directionCard } from './helpers/direction';
+
+test('CV-based directions require current background quotes and persist the evidence', () => {
+  const state=createSession(); state.profile.experience='Built a sparse next-place recommendation baseline in Python. I have not conducted user studies.';
+  const request={state,mode:'openclaw' as const,action:'recommend' as const,message:'Read my CV and suggest research questions.'};
+  const turn=new ResearchTurn(request);
+  const option=directionCard('Evaluate recommendations with limited history');
+  let result=turn.execute('save_directions',{mode:'replace',options:[option]}) as any;
+  assert.equal(result.ok,false); assert.match(result.error,/CV/); assert.equal(turn.state.directions.length,0);
+  result=turn.execute('save_directions',{mode:'replace',options:[{...option,backgroundEvidence:['Published three user studies.']}]}) as any;
+  assert.equal(result.ok,false); assert.match(result.error,/current confirmed profile/);
+  const quote='Built a sparse next-place recommendation baseline in Python.';
+  result=turn.execute('save_directions',{mode:'replace',options:[{...option,backgroundEvidence:[quote]}]}) as any;
+  assert.equal(result.ok,true);
+  const saved=turn.finish({reply:'The questions extend your baseline experience.',suggestions:[],needsInput:false}).state;
+  const restored=new ResearchTurn({...request,state:saved});
+  assert.deepEqual(restored.state.directions[0].basis?.quotes,[quote]);
+  assert.equal(restored.state.directions[0].basis?.context,profileContext(restored.state));
+  restored.state.selectedDirectionId=restored.state.directions[0].id;
+  assert.equal(restored.state.directions[0].basis?.context,profileContext(restored.state));
+  restored.state.profile.experience='I only read about recommender systems.';
+  assert.notEqual(restored.state.directions[0].basis?.context,profileContext(restored.state));
+  result=restored.execute('save_directions',{mode:'replace',options:[{...option,backgroundEvidence:[quote]}]}) as any;
+  assert.equal(result.ok,false);
+});

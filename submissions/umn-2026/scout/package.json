@@ -1,0 +1,40 @@
+{
+  "name": "research-matchmaker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "agent": "node --import tsx scripts/research-agent.ts",
+    "dev": "concurrently -k -n api,web \"node --import tsx --watch server/index.ts\" \"vite --host 127.0.0.1\"",
+    "build": "tsc --noEmit && vite build",
+    "start": "node --import tsx server/index.ts",
+    "test": "node --import tsx --test tests/*.test.ts tests/*.test.mjs",
+    "test:e2e": "playwright test",
+    "test:openclaw": "node --import tsx --test tests/integration/openclaw-gateway.test.mjs",
+    "openclaw:setup": "node scripts/openclaw.mjs setup",
+    "openclaw:login": "node scripts/openclaw.mjs login",
+    "openclaw:start": "node scripts/openclaw.mjs start",
+    "openclaw": "node scripts/openclaw.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "lucide-react": "^0.468.0",
+    "pdfjs-dist": "^6.4.299",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.1.0",
+    "concurrently": "^9.2.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.0"
+  }
+}

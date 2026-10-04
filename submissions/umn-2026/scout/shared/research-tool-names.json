@@ -1,0 +1,16 @@
+[
+  "search_faculty_web",
+  "read_faculty_page",
+  "save_web_faculty",
+  "get_student_context",
+  "update_student_profile",
+  "search_research_directions",
+  "save_directions",
+  "get_learning_resources",
+  "save_plan",
+  "update_task_progress",
+  "find_faculty",
+  "inspect_professor",
+  "save_email_draft",
+  "complete_research_step"
+]
