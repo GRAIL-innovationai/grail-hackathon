@@ -7,6 +7,7 @@ Projects built at GRAIL hackathons. Each team submits its full source code as a 
 | Event | Folder |
 |---|---|
 | UMN 2026 | [submissions/umn-2026](submissions/umn-2026/) |
+| Montana State 2026 | [submissions/montana-state-2026](submissions/montana-state-2026/) |
 
 ## How to submit
 
