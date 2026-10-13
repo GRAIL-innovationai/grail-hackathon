@@ -1,0 +1,220 @@
+[
+  {
+    "when": [],
+    "response": {
+      "outcome": "no_response",
+      "quality": {
+        "relevance": 0,
+        "specificity": 0,
+        "concise": 1,
+        "clear_ask": 0
+      },
+      "reply": "",
+      "critique": "Nothing here tells me who you are or what you want."
+    }
+  },
+  {
+    "when": [
+      "Your role: CEO",
+      "passionate new grad"
+    ],
+    "response": {
+      "outcome": "no_response",
+      "quality": {
+        "relevance": 0,
+        "specificity": 0,
+        "concise": 1,
+        "clear_ask": 1
+      },
+      "reply": "",
+      "critique": "Reads like a template: 'passionate', '10x', a list of tools. Tell me one thing you actually built and what it did for users."
+    }
+  },
+  {
+    "when": [
+      "Your role: Recruiter",
+      "passionate new grad"
+    ],
+    "response": {
+      "outcome": "connection_accepted",
+      "quality": {
+        "relevance": 1,
+        "specificity": 0,
+        "concise": 1,
+        "clear_ask": 1
+      },
+      "reply": "Thanks for connecting! Open roles are on our careers page.",
+      "critique": "No role named and nothing I can match to a requirement. Say which role and point to one requirement you meet."
+    }
+  },
+  {
+    "when": [
+      "Your role: Engineer",
+      "passionate new grad"
+    ],
+    "response": {
+      "outcome": "no_response",
+      "quality": {
+        "relevance": 0,
+        "specificity": 0,
+        "concise": 1,
+        "clear_ask": 0
+      },
+      "reply": "",
+      "critique": "Pure pitch: buzzwords and a '10x' I can't check. Tell me what you built and a number you measured."
+    }
+  },
+  {
+    "when": [
+      "Your role: CEO",
+      "I'm a new grad who built"
+    ],
+    "response": {
+      "outcome": "connection_accepted",
+      "quality": {
+        "relevance": 1,
+        "specificity": 2,
+        "concise": 2,
+        "clear_ask": 0
+      },
+      "reply": "Nice latency win. What are you looking for?",
+      "critique": "Concrete, but I can't tell why you're writing to us or what you want. Tie it to what we need and ask for something specific."
+    }
+  },
+  {
+    "when": [
+      "Your role: Recruiter",
+      "I'm a new grad who built"
+    ],
+    "response": {
+      "outcome": "generic_reply",
+      "quality": {
+        "relevance": 2,
+        "specificity": 2,
+        "concise": 2,
+        "clear_ask": 0
+      },
+      "reply": "Thanks for reaching out. Which role are you interested in?",
+      "critique": "Good specifics, but you never say which role or how this maps to its requirements, and there's no ask."
+    }
+  },
+  {
+    "when": [
+      "Your role: Engineer",
+      "I'm a new grad who built"
+    ],
+    "response": {
+      "outcome": "connection_accepted",
+      "quality": {
+        "relevance": 1,
+        "specificity": 2,
+        "concise": 2,
+        "clear_ask": 0
+      },
+      "reply": "Cool project. How did you get the latency down?",
+      "critique": "Real number, good. Connect it to what my team works on and ask me something concrete."
+    }
+  },
+  {
+    "when": [
+      "Your role: CEO",
+      "Would love to connect"
+    ],
+    "response": {
+      "outcome": "generic_reply",
+      "quality": {
+        "relevance": 2,
+        "specificity": 2,
+        "concise": 1,
+        "clear_ask": 1
+      },
+      "reply": "Appreciate the specifics. We're heads-down this month, but keep in touch.",
+      "critique": "Relevant and specific. The ending is vague: ask for something small and concrete."
+    }
+  },
+  {
+    "when": [
+      "Your role: Recruiter",
+      "Would love to connect"
+    ],
+    "response": {
+      "outcome": "meaningful_conversation",
+      "quality": {
+        "relevance": 3,
+        "specificity": 2,
+        "concise": 1,
+        "clear_ask": 1
+      },
+      "reply": "This maps well to the role. When do you graduate, and are you open to a screen?",
+      "critique": "Clear fit to the requirements. Close with a direct ask so I know the next step."
+    }
+  },
+  {
+    "when": [
+      "Your role: Engineer",
+      "Would love to connect"
+    ],
+    "response": {
+      "outcome": "meaningful_conversation",
+      "quality": {
+        "relevance": 2,
+        "specificity": 3,
+        "concise": 1,
+        "clear_ask": 1
+      },
+      "reply": "The Airflow retry setup sounds familiar. What did you alert on?",
+      "critique": "Good detail. A bit long; end with a specific question instead of 'would love to connect'."
+    }
+  },
+  {
+    "when": [
+      "Your role: CEO",
+      "Open to a short call"
+    ],
+    "response": {
+      "outcome": "meaningful_conversation",
+      "quality": {
+        "relevance": 3,
+        "specificity": 3,
+        "concise": 2,
+        "clear_ask": 2
+      },
+      "reply": "Yes. Grab time on my calendar Thursday and bring the latency story.",
+      "critique": "Clear, specific, easy to say yes to."
+    }
+  },
+  {
+    "when": [
+      "Your role: Recruiter",
+      "Open to a short call"
+    ],
+    "response": {
+      "outcome": "interview_or_referral",
+      "quality": {
+        "relevance": 3,
+        "specificity": 2,
+        "concise": 2,
+        "clear_ask": 2
+      },
+      "reply": "This lines up with the role. I'll send a screening invite today.",
+      "critique": "Easy to match to the requirements; nothing to fix."
+    }
+  },
+  {
+    "when": [
+      "Your role: Engineer",
+      "Open to a short call"
+    ],
+    "response": {
+      "outcome": "meaningful_conversation",
+      "quality": {
+        "relevance": 2,
+        "specificity": 3,
+        "concise": 2,
+        "clear_ask": 2
+      },
+      "reply": "Happy to chat. Bring the numbers on the lookup service.",
+      "critique": "Specific and short. Could name the part of our stack you'd want to work on."
+    }
+  }
+]

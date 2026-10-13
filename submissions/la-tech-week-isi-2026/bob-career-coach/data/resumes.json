@@ -1,0 +1,347 @@
+[
+  {
+    "id": "c00",
+    "lines": [
+      {
+        "id": "R1",
+        "text": "Ava Chen"
+      },
+      {
+        "id": "R2",
+        "text": "B.S. in Computer Science, Northbridge University"
+      },
+      {
+        "id": "R3",
+        "text": "Research focus: cluster computing, computer vision, reinforcement learning"
+      },
+      {
+        "id": "R4",
+        "text": "\u2022 Experience with cluster computing"
+      },
+      {
+        "id": "R5",
+        "text": "\u2022 Experience with computer vision"
+      },
+      {
+        "id": "R6",
+        "text": "\u2022 Experience with reinforcement learning"
+      },
+      {
+        "id": "R7",
+        "text": "\u2022 Experience with natural language processing"
+      }
+    ]
+  },
+  {
+    "id": "c01",
+    "lines": [
+      {
+        "id": "R1",
+        "text": "Jordan Okonkwo"
+      },
+      {
+        "id": "R2",
+        "text": "M.S. in Computer Science, Bay Area Research Lab"
+      },
+      {
+        "id": "R3",
+        "text": "Research focus: genomic data analysis, PyTorch, neural recording analysis"
+      },
+      {
+        "id": "R4",
+        "text": "\u2022 Experience with genomic data analysis"
+      },
+      {
+        "id": "R5",
+        "text": "\u2022 Experience with PyTorch"
+      },
+      {
+        "id": "R6",
+        "text": "\u2022 Experience with neural recording analysis"
+      },
+      {
+        "id": "R7",
+        "text": "\u2022 Experience with computer vision"
+      },
+      {
+        "id": "R8",
+        "text": "\u2022 Experience with mentored undergraduates"
+      }
+    ]
+  },
+  {
+    "id": "c02",
+    "lines": [
+      {
+        "id": "R1",
+        "text": "Priya Patel"
+      },
+      {
+        "id": "R2",
+        "text": "Ph.D. in Computer Science, Lakeview Institute of Technology"
+      },
+      {
+        "id": "R3",
+        "text": "Research focus: statistical modeling, reinforcement learning, computer vision"
+      },
+      {
+        "id": "R4",
+        "text": "\u2022 Experience with statistical modeling"
+      },
+      {
+        "id": "R5",
+        "text": "\u2022 Experience with reinforcement learning"
+      },
+      {
+        "id": "R6",
+        "text": "\u2022 Experience with computer vision"
+      },
+      {
+        "id": "R7",
+        "text": "\u2022 Experience with peer-reviewed publications"
+      },
+      {
+        "id": "R8",
+        "text": "\u2022 Experience with PyTorch"
+      },
+      {
+        "id": "R9",
+        "text": "\u2022 Experience with algorithmic fairness"
+      }
+    ]
+  },
+  {
+    "id": "c03",
+    "lines": [
+      {
+        "id": "R1",
+        "text": "Marcus Nguyen"
+      },
+      {
+        "id": "R2",
+        "text": "B.S. in Computer Science, Midwest Medical School"
+      },
+      {
+        "id": "R3",
+        "text": "Research focus: genomic data analysis, statistical modeling, reinforcement learning"
+      },
+      {
+        "id": "R4",
+        "text": "\u2022 Experience with genomic data analysis"
+      },
+      {
+        "id": "R5",
+        "text": "\u2022 Experience with statistical modeling"
+      },
+      {
+        "id": "R6",
+        "text": "\u2022 Experience with reinforcement learning"
+      },
+      {
+        "id": "R7",
+        "text": "\u2022 Experience with TensorFlow"
+      },
+      {
+        "id": "R8",
+        "text": "\u2022 Experience with peer-reviewed publications"
+      },
+      {
+        "id": "R9",
+        "text": "\u2022 Experience with natural language processing"
+      },
+      {
+        "id": "R10",
+        "text": "\u2022 Experience with cluster computing"
+      }
+    ]
+  },
+  {
+    "id": "c04",
+    "lines": [
+      {
+        "id": "R1",
+        "text": "Elena Garcia"
+      },
+      {
+        "id": "R2",
+        "text": "M.S. in Computer Science, Northbridge University"
+      },
+      {
+        "id": "R3",
+        "text": "Research focus: genomic data analysis, cluster computing, mentored undergraduates"
+      },
+      {
+        "id": "R4",
+        "text": "\u2022 Experience with genomic data analysis"
+      },
+      {
+        "id": "R5",
+        "text": "\u2022 Experience with cluster computing"
+      },
+      {
+        "id": "R6",
+        "text": "\u2022 Experience with mentored undergraduates"
+      },
+      {
+        "id": "R7",
+        "text": "\u2022 Experience with statistical modeling"
+      }
+    ]
+  },
+  {
+    "id": "c05",
+    "lines": [
+      {
+        "id": "R1",
+        "text": "Sam Kim"
+      },
+      {
+        "id": "R2",
+        "text": "Ph.D. in Computer Science, Northbridge University"
+      },
+      {
+        "id": "R3",
+        "text": "Research focus: TensorFlow, reinforcement learning, natural language processing"
+      },
+      {
+        "id": "R4",
+        "text": "\u2022 Experience with TensorFlow"
+      },
+      {
+        "id": "R5",
+        "text": "\u2022 Experience with reinforcement learning"
+      },
+      {
+        "id": "R6",
+        "text": "\u2022 Experience with natural language processing"
+      },
+      {
+        "id": "R7",
+        "text": "\u2022 Experience with cluster computing"
+      },
+      {
+        "id": "R8",
+        "text": "\u2022 Experience with PyTorch"
+      }
+    ]
+  },
+  {
+    "id": "c06",
+    "lines": [
+      {
+        "id": "R1",
+        "text": "Noah Rossi"
+      },
+      {
+        "id": "R2",
+        "text": "B.S. in Computer Science, Midwest Medical School"
+      },
+      {
+        "id": "R3",
+        "text": "Research focus: peer-reviewed publications, genomic data analysis, statistical modeling"
+      },
+      {
+        "id": "R4",
+        "text": "\u2022 Experience with peer-reviewed publications"
+      },
+      {
+        "id": "R5",
+        "text": "\u2022 Experience with genomic data analysis"
+      },
+      {
+        "id": "R6",
+        "text": "\u2022 Experience with statistical modeling"
+      },
+      {
+        "id": "R7",
+        "text": "\u2022 Experience with algorithmic fairness"
+      },
+      {
+        "id": "R8",
+        "text": "\u2022 Experience with cluster computing"
+      },
+      {
+        "id": "R9",
+        "text": "\u2022 Experience with reinforcement learning"
+      }
+    ]
+  },
+  {
+    "id": "c07",
+    "lines": [
+      {
+        "id": "R1",
+        "text": "Mei Ali"
+      },
+      {
+        "id": "R2",
+        "text": "M.S. in Computer Science, Bay Area Research Lab"
+      },
+      {
+        "id": "R3",
+        "text": "Research focus: TensorFlow, genomic data analysis, peer-reviewed publications"
+      },
+      {
+        "id": "R4",
+        "text": "\u2022 Experience with TensorFlow"
+      },
+      {
+        "id": "R5",
+        "text": "\u2022 Experience with genomic data analysis"
+      },
+      {
+        "id": "R6",
+        "text": "\u2022 Experience with peer-reviewed publications"
+      },
+      {
+        "id": "R7",
+        "text": "\u2022 Experience with computer vision"
+      },
+      {
+        "id": "R8",
+        "text": "\u2022 Experience with reinforcement learning"
+      },
+      {
+        "id": "R9",
+        "text": "\u2022 Experience with PyTorch"
+      },
+      {
+        "id": "R10",
+        "text": "\u2022 Experience with statistical modeling"
+      }
+    ]
+  },
+  {
+    "id": "c08",
+    "lines": [
+      {
+        "id": "R1",
+        "text": "Diego Fischer"
+      },
+      {
+        "id": "R2",
+        "text": "Ph.D. in Computer Science, Cedar Hill College"
+      },
+      {
+        "id": "R3",
+        "text": "Research focus: PyTorch, mentored undergraduates, cluster computing"
+      },
+      {
+        "id": "R4",
+        "text": "\u2022 Experience with PyTorch"
+      },
+      {
+        "id": "R5",
+        "text": "\u2022 Experience with mentored undergraduates"
+      },
+      {
+        "id": "R6",
+        "text": "\u2022 Experience with cluster computing"
+      },
+      {
+        "id": "R7",
+        "text": "\u2022 Experience with computer vision"
+      }
+    ]
+  }
+]

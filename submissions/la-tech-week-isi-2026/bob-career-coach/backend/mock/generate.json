@@ -1,0 +1,46 @@
+[
+  {
+    "when": [],
+    "response": {
+      "text": "Hello, I am a passionate new grad with strong skills in Kafka and Kubernetes and a proven track record of 10x impact. I would love to connect and learn about opportunities at your company. Please let me know if you are hiring.",
+      "citations": []
+    }
+  },
+  {
+    "when": [
+      "Open with one concrete project"
+    ],
+    "response": {
+      "text": "Hi — I'm a new grad who built research in computer vision and reinforcement learning. I'd love to hear how your team ships.",
+      "citations": [
+        "R2"
+      ]
+    }
+  },
+  {
+    "when": [
+      "Name the specific requirement"
+    ],
+    "response": {
+      "text": "Hi — your role asks for visual recognition. I built research in computer vision and reinforcement learning. Would love to connect.",
+      "citations": [
+        "R3",
+        "R5",
+        "R6"
+      ]
+    }
+  },
+  {
+    "when": [
+      "End with a single low-effort ask"
+    ],
+    "response": {
+      "text": "Hi — your role asks for visual recognition. I built research in computer vision and reinforcement learning. Open to a short call about the work?",
+      "citations": [
+        "R3",
+        "R5",
+        "R6"
+      ]
+    }
+  }
+]

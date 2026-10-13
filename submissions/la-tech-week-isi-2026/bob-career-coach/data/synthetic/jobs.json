@@ -1,0 +1,2500 @@
+[
+  {
+    "job_id": "j000",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p00",
+    "skills": [
+      "cv",
+      "teaching",
+      "writing"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: visual recognition; mentoring students; scientific writing.",
+    "skill_phrases": {
+      "cv": "visual recognition",
+      "teaching": "mentoring students",
+      "writing": "scientific writing"
+    }
+  },
+  {
+    "job_id": "j001",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p03",
+    "skills": [
+      "pytorch",
+      "teaching",
+      "cv",
+      "hpc"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: deep learning frameworks such as PyTorch; mentoring students; visual recognition; large-scale training. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "teaching": "mentoring students",
+      "cv": "visual recognition",
+      "hpc": "large-scale training"
+    }
+  },
+  {
+    "job_id": "j002",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p04",
+    "skills": [
+      "genomics",
+      "cv",
+      "neuro",
+      "rl",
+      "pytorch"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: high-throughput sequencing; visual recognition; neural data analysis; sequential decision making; deep learning frameworks such as PyTorch.",
+    "skill_phrases": {
+      "genomics": "high-throughput sequencing",
+      "cv": "visual recognition",
+      "neuro": "neural data analysis",
+      "rl": "sequential decision making",
+      "pytorch": "deep learning frameworks such as PyTorch"
+    }
+  },
+  {
+    "job_id": "j003",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p07",
+    "skills": [
+      "nlp",
+      "genomics",
+      "stats"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: computational linguistics; high-throughput sequencing; probabilistic modeling.",
+    "skill_phrases": {
+      "nlp": "computational linguistics",
+      "genomics": "high-throughput sequencing",
+      "stats": "probabilistic modeling"
+    }
+  },
+  {
+    "job_id": "j004",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "Pittsburgh, PA",
+    "company_id": "co06",
+    "contact_id": "p12",
+    "skills": [
+      "rl",
+      "nlp",
+      "cv",
+      "stats"
+    ],
+    "min_degree": "bs",
+    "requires_phd": false,
+    "institution": "Lumen Bioworks",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: Pittsburgh, PA. Master's degree or higher required. We value experience with: sequential decision making; computational linguistics; visual recognition; probabilistic modeling. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "rl": "sequential decision making",
+      "nlp": "computational linguistics",
+      "cv": "visual recognition",
+      "stats": "probabilistic modeling"
+    }
+  },
+  {
+    "job_id": "j005",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p01",
+    "skills": [
+      "tensorflow",
+      "fairness",
+      "genomics",
+      "hpc",
+      "stats"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: experience with TensorFlow or JAX; fairness in ML; high-throughput sequencing; large-scale training; probabilistic modeling.",
+    "skill_phrases": {
+      "tensorflow": "experience with TensorFlow or JAX",
+      "fairness": "fairness in ML",
+      "genomics": "high-throughput sequencing",
+      "hpc": "large-scale training",
+      "stats": "probabilistic modeling"
+    }
+  },
+  {
+    "job_id": "j006",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p02",
+    "skills": [
+      "stats",
+      "writing",
+      "rl"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: probabilistic modeling; scientific writing; sequential decision making. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "stats": "probabilistic modeling",
+      "writing": "scientific writing",
+      "rl": "sequential decision making"
+    }
+  },
+  {
+    "job_id": "j007",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p05",
+    "skills": [
+      "pytorch",
+      "neuro",
+      "teaching",
+      "tensorflow"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. PhD required. We value experience with: deep learning frameworks such as PyTorch; neural data analysis; mentoring students; experience with TensorFlow or JAX.",
+    "skill_phrases": {
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "neuro": "neural data analysis",
+      "teaching": "mentoring students",
+      "tensorflow": "experience with TensorFlow or JAX"
+    }
+  },
+  {
+    "job_id": "j008",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p06",
+    "skills": [
+      "genomics",
+      "tensorflow",
+      "teaching",
+      "rl",
+      "stats"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: high-throughput sequencing; experience with TensorFlow or JAX; mentoring students; sequential decision making; probabilistic modeling.",
+    "skill_phrases": {
+      "genomics": "high-throughput sequencing",
+      "tensorflow": "experience with TensorFlow or JAX",
+      "teaching": "mentoring students",
+      "rl": "sequential decision making",
+      "stats": "probabilistic modeling"
+    }
+  },
+  {
+    "job_id": "j009",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "New York, NY",
+    "company_id": "co05",
+    "contact_id": "p11",
+    "skills": [
+      "writing",
+      "cv",
+      "tensorflow"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Harbor Machine Learning",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: New York, NY. Master's degree or higher required. We value experience with: scientific writing; visual recognition; experience with TensorFlow or JAX. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "writing": "scientific writing",
+      "cv": "visual recognition",
+      "tensorflow": "experience with TensorFlow or JAX"
+    }
+  },
+  {
+    "job_id": "j010",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p00",
+    "skills": [
+      "pytorch",
+      "hpc",
+      "cv",
+      "rl"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: deep learning frameworks such as PyTorch; large-scale training; visual recognition; sequential decision making.",
+    "skill_phrases": {
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "hpc": "large-scale training",
+      "cv": "visual recognition",
+      "rl": "sequential decision making"
+    }
+  },
+  {
+    "job_id": "j011",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p03",
+    "skills": [
+      "tensorflow",
+      "cv",
+      "fairness",
+      "genomics",
+      "rl"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: experience with TensorFlow or JAX; visual recognition; fairness in ML; high-throughput sequencing; sequential decision making. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "tensorflow": "experience with TensorFlow or JAX",
+      "cv": "visual recognition",
+      "fairness": "fairness in ML",
+      "genomics": "high-throughput sequencing",
+      "rl": "sequential decision making"
+    }
+  },
+  {
+    "job_id": "j012",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p04",
+    "skills": [
+      "neuro",
+      "hpc",
+      "stats"
+    ],
+    "min_degree": "bs",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: neural data analysis; large-scale training; probabilistic modeling.",
+    "skill_phrases": {
+      "neuro": "neural data analysis",
+      "hpc": "large-scale training",
+      "stats": "probabilistic modeling"
+    }
+  },
+  {
+    "job_id": "j013",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p07",
+    "skills": [
+      "nlp",
+      "stats",
+      "hpc",
+      "cv"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: computational linguistics; probabilistic modeling; large-scale training; visual recognition.",
+    "skill_phrases": {
+      "nlp": "computational linguistics",
+      "stats": "probabilistic modeling",
+      "hpc": "large-scale training",
+      "cv": "visual recognition"
+    }
+  },
+  {
+    "job_id": "j014",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "Madison, WI",
+    "company_id": "co07",
+    "contact_id": "p14",
+    "skills": [
+      "hpc",
+      "rl",
+      "tensorflow",
+      "nlp",
+      "cv"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northwind Robotics",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: Madison, WI. PhD required. We value experience with: large-scale training; sequential decision making; experience with TensorFlow or JAX; computational linguistics; visual recognition. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "hpc": "large-scale training",
+      "rl": "sequential decision making",
+      "tensorflow": "experience with TensorFlow or JAX",
+      "nlp": "computational linguistics",
+      "cv": "visual recognition"
+    }
+  },
+  {
+    "job_id": "j015",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p01",
+    "skills": [
+      "nlp",
+      "neuro",
+      "genomics"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: computational linguistics; neural data analysis; high-throughput sequencing.",
+    "skill_phrases": {
+      "nlp": "computational linguistics",
+      "neuro": "neural data analysis",
+      "genomics": "high-throughput sequencing"
+    }
+  },
+  {
+    "job_id": "j016",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p02",
+    "skills": [
+      "rl",
+      "hpc",
+      "teaching",
+      "cv"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: sequential decision making; large-scale training; mentoring students; visual recognition. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "rl": "sequential decision making",
+      "hpc": "large-scale training",
+      "teaching": "mentoring students",
+      "cv": "visual recognition"
+    }
+  },
+  {
+    "job_id": "j017",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p05",
+    "skills": [
+      "hpc",
+      "stats",
+      "pytorch",
+      "cv",
+      "writing"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: large-scale training; probabilistic modeling; deep learning frameworks such as PyTorch; visual recognition; scientific writing.",
+    "skill_phrases": {
+      "hpc": "large-scale training",
+      "stats": "probabilistic modeling",
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "cv": "visual recognition",
+      "writing": "scientific writing"
+    }
+  },
+  {
+    "job_id": "j018",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p06",
+    "skills": [
+      "stats",
+      "genomics",
+      "rl"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: probabilistic modeling; high-throughput sequencing; sequential decision making.",
+    "skill_phrases": {
+      "stats": "probabilistic modeling",
+      "genomics": "high-throughput sequencing",
+      "rl": "sequential decision making"
+    }
+  },
+  {
+    "job_id": "j019",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "Pittsburgh, PA",
+    "company_id": "co06",
+    "contact_id": "p13",
+    "skills": [
+      "tensorflow",
+      "cv",
+      "writing",
+      "stats"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Lumen Bioworks",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: Pittsburgh, PA. Master's degree or higher required. We value experience with: experience with TensorFlow or JAX; visual recognition; scientific writing; probabilistic modeling. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "tensorflow": "experience with TensorFlow or JAX",
+      "cv": "visual recognition",
+      "writing": "scientific writing",
+      "stats": "probabilistic modeling"
+    }
+  },
+  {
+    "job_id": "j020",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p00",
+    "skills": [
+      "cv",
+      "hpc",
+      "neuro",
+      "genomics",
+      "writing"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: visual recognition; large-scale training; neural data analysis; high-throughput sequencing; scientific writing.",
+    "skill_phrases": {
+      "cv": "visual recognition",
+      "hpc": "large-scale training",
+      "neuro": "neural data analysis",
+      "genomics": "high-throughput sequencing",
+      "writing": "scientific writing"
+    }
+  },
+  {
+    "job_id": "j021",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p03",
+    "skills": [
+      "nlp",
+      "rl",
+      "fairness"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: computational linguistics; sequential decision making; fairness in ML. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "nlp": "computational linguistics",
+      "rl": "sequential decision making",
+      "fairness": "fairness in ML"
+    }
+  },
+  {
+    "job_id": "j022",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p04",
+    "skills": [
+      "cv",
+      "teaching",
+      "hpc",
+      "rl"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: visual recognition; mentoring students; large-scale training; sequential decision making.",
+    "skill_phrases": {
+      "cv": "visual recognition",
+      "teaching": "mentoring students",
+      "hpc": "large-scale training",
+      "rl": "sequential decision making"
+    }
+  },
+  {
+    "job_id": "j023",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p07",
+    "skills": [
+      "fairness",
+      "writing",
+      "genomics",
+      "hpc",
+      "stats"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: fairness in ML; scientific writing; high-throughput sequencing; large-scale training; probabilistic modeling.",
+    "skill_phrases": {
+      "fairness": "fairness in ML",
+      "writing": "scientific writing",
+      "genomics": "high-throughput sequencing",
+      "hpc": "large-scale training",
+      "stats": "probabilistic modeling"
+    }
+  },
+  {
+    "job_id": "j024",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "New York, NY",
+    "company_id": "co05",
+    "contact_id": "p10",
+    "skills": [
+      "cv",
+      "nlp",
+      "teaching"
+    ],
+    "min_degree": "bs",
+    "requires_phd": false,
+    "institution": "Harbor Machine Learning",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: New York, NY. Master's degree or higher required. We value experience with: visual recognition; computational linguistics; mentoring students. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "cv": "visual recognition",
+      "nlp": "computational linguistics",
+      "teaching": "mentoring students"
+    }
+  },
+  {
+    "job_id": "j025",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p01",
+    "skills": [
+      "neuro",
+      "tensorflow",
+      "pytorch",
+      "hpc"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: neural data analysis; experience with TensorFlow or JAX; deep learning frameworks such as PyTorch; large-scale training.",
+    "skill_phrases": {
+      "neuro": "neural data analysis",
+      "tensorflow": "experience with TensorFlow or JAX",
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "hpc": "large-scale training"
+    }
+  },
+  {
+    "job_id": "j026",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p02",
+    "skills": [
+      "nlp",
+      "hpc",
+      "fairness",
+      "genomics",
+      "tensorflow"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: computational linguistics; large-scale training; fairness in ML; high-throughput sequencing; experience with TensorFlow or JAX. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "nlp": "computational linguistics",
+      "hpc": "large-scale training",
+      "fairness": "fairness in ML",
+      "genomics": "high-throughput sequencing",
+      "tensorflow": "experience with TensorFlow or JAX"
+    }
+  },
+  {
+    "job_id": "j027",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p05",
+    "skills": [
+      "genomics",
+      "fairness",
+      "writing"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: high-throughput sequencing; fairness in ML; scientific writing.",
+    "skill_phrases": {
+      "genomics": "high-throughput sequencing",
+      "fairness": "fairness in ML",
+      "writing": "scientific writing"
+    }
+  },
+  {
+    "job_id": "j028",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p06",
+    "skills": [
+      "neuro",
+      "teaching",
+      "rl",
+      "hpc"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: neural data analysis; mentoring students; sequential decision making; large-scale training.",
+    "skill_phrases": {
+      "neuro": "neural data analysis",
+      "teaching": "mentoring students",
+      "rl": "sequential decision making",
+      "hpc": "large-scale training"
+    }
+  },
+  {
+    "job_id": "j029",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "Madison, WI",
+    "company_id": "co07",
+    "contact_id": "p15",
+    "skills": [
+      "pytorch",
+      "hpc",
+      "tensorflow",
+      "teaching",
+      "rl"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Northwind Robotics",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: Madison, WI. Master's degree or higher required. We value experience with: deep learning frameworks such as PyTorch; large-scale training; experience with TensorFlow or JAX; mentoring students; sequential decision making. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "hpc": "large-scale training",
+      "tensorflow": "experience with TensorFlow or JAX",
+      "teaching": "mentoring students",
+      "rl": "sequential decision making"
+    }
+  },
+  {
+    "job_id": "j030",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p00",
+    "skills": [
+      "hpc",
+      "stats",
+      "tensorflow"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: large-scale training; probabilistic modeling; experience with TensorFlow or JAX.",
+    "skill_phrases": {
+      "hpc": "large-scale training",
+      "stats": "probabilistic modeling",
+      "tensorflow": "experience with TensorFlow or JAX"
+    }
+  },
+  {
+    "job_id": "j031",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p03",
+    "skills": [
+      "rl",
+      "genomics",
+      "nlp",
+      "neuro"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: sequential decision making; high-throughput sequencing; computational linguistics; neural data analysis. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "rl": "sequential decision making",
+      "genomics": "high-throughput sequencing",
+      "nlp": "computational linguistics",
+      "neuro": "neural data analysis"
+    }
+  },
+  {
+    "job_id": "j032",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p04",
+    "skills": [
+      "pytorch",
+      "rl",
+      "teaching",
+      "nlp",
+      "tensorflow"
+    ],
+    "min_degree": "bs",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: deep learning frameworks such as PyTorch; sequential decision making; mentoring students; computational linguistics; experience with TensorFlow or JAX.",
+    "skill_phrases": {
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "rl": "sequential decision making",
+      "teaching": "mentoring students",
+      "nlp": "computational linguistics",
+      "tensorflow": "experience with TensorFlow or JAX"
+    }
+  },
+  {
+    "job_id": "j033",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p07",
+    "skills": [
+      "hpc",
+      "rl",
+      "teaching"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: large-scale training; sequential decision making; mentoring students.",
+    "skill_phrases": {
+      "hpc": "large-scale training",
+      "rl": "sequential decision making",
+      "teaching": "mentoring students"
+    }
+  },
+  {
+    "job_id": "j034",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "Pittsburgh, PA",
+    "company_id": "co06",
+    "contact_id": "p12",
+    "skills": [
+      "writing",
+      "cv",
+      "nlp",
+      "stats"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Lumen Bioworks",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: Pittsburgh, PA. Master's degree or higher required. We value experience with: scientific writing; visual recognition; computational linguistics; probabilistic modeling. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "writing": "scientific writing",
+      "cv": "visual recognition",
+      "nlp": "computational linguistics",
+      "stats": "probabilistic modeling"
+    }
+  },
+  {
+    "job_id": "j035",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p01",
+    "skills": [
+      "nlp",
+      "teaching",
+      "hpc",
+      "pytorch",
+      "stats"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: computational linguistics; mentoring students; large-scale training; deep learning frameworks such as PyTorch; probabilistic modeling.",
+    "skill_phrases": {
+      "nlp": "computational linguistics",
+      "teaching": "mentoring students",
+      "hpc": "large-scale training",
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "stats": "probabilistic modeling"
+    }
+  },
+  {
+    "job_id": "j036",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p02",
+    "skills": [
+      "neuro",
+      "pytorch",
+      "tensorflow"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: neural data analysis; deep learning frameworks such as PyTorch; experience with TensorFlow or JAX. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "neuro": "neural data analysis",
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "tensorflow": "experience with TensorFlow or JAX"
+    }
+  },
+  {
+    "job_id": "j037",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p05",
+    "skills": [
+      "stats",
+      "rl",
+      "cv",
+      "pytorch"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: probabilistic modeling; sequential decision making; visual recognition; deep learning frameworks such as PyTorch.",
+    "skill_phrases": {
+      "stats": "probabilistic modeling",
+      "rl": "sequential decision making",
+      "cv": "visual recognition",
+      "pytorch": "deep learning frameworks such as PyTorch"
+    }
+  },
+  {
+    "job_id": "j038",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p06",
+    "skills": [
+      "cv",
+      "writing",
+      "tensorflow",
+      "hpc",
+      "neuro"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: visual recognition; scientific writing; experience with TensorFlow or JAX; large-scale training; neural data analysis.",
+    "skill_phrases": {
+      "cv": "visual recognition",
+      "writing": "scientific writing",
+      "tensorflow": "experience with TensorFlow or JAX",
+      "hpc": "large-scale training",
+      "neuro": "neural data analysis"
+    }
+  },
+  {
+    "job_id": "j039",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "New York, NY",
+    "company_id": "co05",
+    "contact_id": "p11",
+    "skills": [
+      "tensorflow",
+      "teaching",
+      "nlp"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Harbor Machine Learning",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: New York, NY. Master's degree or higher required. We value experience with: experience with TensorFlow or JAX; mentoring students; computational linguistics. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "tensorflow": "experience with TensorFlow or JAX",
+      "teaching": "mentoring students",
+      "nlp": "computational linguistics"
+    }
+  },
+  {
+    "job_id": "j040",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p00",
+    "skills": [
+      "nlp",
+      "hpc",
+      "neuro",
+      "teaching"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: computational linguistics; large-scale training; neural data analysis; mentoring students.",
+    "skill_phrases": {
+      "nlp": "computational linguistics",
+      "hpc": "large-scale training",
+      "neuro": "neural data analysis",
+      "teaching": "mentoring students"
+    }
+  },
+  {
+    "job_id": "j041",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p03",
+    "skills": [
+      "nlp",
+      "rl",
+      "teaching",
+      "genomics",
+      "cv"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: computational linguistics; sequential decision making; mentoring students; high-throughput sequencing; visual recognition. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "nlp": "computational linguistics",
+      "rl": "sequential decision making",
+      "teaching": "mentoring students",
+      "genomics": "high-throughput sequencing",
+      "cv": "visual recognition"
+    }
+  },
+  {
+    "job_id": "j042",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p04",
+    "skills": [
+      "teaching",
+      "cv",
+      "rl"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. PhD required. We value experience with: mentoring students; visual recognition; sequential decision making.",
+    "skill_phrases": {
+      "teaching": "mentoring students",
+      "cv": "visual recognition",
+      "rl": "sequential decision making"
+    }
+  },
+  {
+    "job_id": "j043",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p07",
+    "skills": [
+      "genomics",
+      "hpc",
+      "stats",
+      "neuro"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: high-throughput sequencing; large-scale training; probabilistic modeling; neural data analysis.",
+    "skill_phrases": {
+      "genomics": "high-throughput sequencing",
+      "hpc": "large-scale training",
+      "stats": "probabilistic modeling",
+      "neuro": "neural data analysis"
+    }
+  },
+  {
+    "job_id": "j044",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "Madison, WI",
+    "company_id": "co07",
+    "contact_id": "p14",
+    "skills": [
+      "teaching",
+      "neuro",
+      "tensorflow",
+      "cv",
+      "fairness"
+    ],
+    "min_degree": "bs",
+    "requires_phd": false,
+    "institution": "Northwind Robotics",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: Madison, WI. Master's degree or higher required. We value experience with: mentoring students; neural data analysis; experience with TensorFlow or JAX; visual recognition; fairness in ML. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "teaching": "mentoring students",
+      "neuro": "neural data analysis",
+      "tensorflow": "experience with TensorFlow or JAX",
+      "cv": "visual recognition",
+      "fairness": "fairness in ML"
+    }
+  },
+  {
+    "job_id": "j045",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p01",
+    "skills": [
+      "tensorflow",
+      "stats",
+      "pytorch"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: experience with TensorFlow or JAX; probabilistic modeling; deep learning frameworks such as PyTorch.",
+    "skill_phrases": {
+      "tensorflow": "experience with TensorFlow or JAX",
+      "stats": "probabilistic modeling",
+      "pytorch": "deep learning frameworks such as PyTorch"
+    }
+  },
+  {
+    "job_id": "j046",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p02",
+    "skills": [
+      "writing",
+      "teaching",
+      "cv",
+      "fairness"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: scientific writing; mentoring students; visual recognition; fairness in ML. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "writing": "scientific writing",
+      "teaching": "mentoring students",
+      "cv": "visual recognition",
+      "fairness": "fairness in ML"
+    }
+  },
+  {
+    "job_id": "j047",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p05",
+    "skills": [
+      "pytorch",
+      "tensorflow",
+      "fairness",
+      "cv",
+      "hpc"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: deep learning frameworks such as PyTorch; experience with TensorFlow or JAX; fairness in ML; visual recognition; large-scale training.",
+    "skill_phrases": {
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "tensorflow": "experience with TensorFlow or JAX",
+      "fairness": "fairness in ML",
+      "cv": "visual recognition",
+      "hpc": "large-scale training"
+    }
+  },
+  {
+    "job_id": "j048",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p06",
+    "skills": [
+      "pytorch",
+      "stats",
+      "tensorflow"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: deep learning frameworks such as PyTorch; probabilistic modeling; experience with TensorFlow or JAX.",
+    "skill_phrases": {
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "stats": "probabilistic modeling",
+      "tensorflow": "experience with TensorFlow or JAX"
+    }
+  },
+  {
+    "job_id": "j049",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "Pittsburgh, PA",
+    "company_id": "co06",
+    "contact_id": "p13",
+    "skills": [
+      "teaching",
+      "cv",
+      "rl",
+      "neuro"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lumen Bioworks",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: Pittsburgh, PA. PhD required. We value experience with: mentoring students; visual recognition; sequential decision making; neural data analysis. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "teaching": "mentoring students",
+      "cv": "visual recognition",
+      "rl": "sequential decision making",
+      "neuro": "neural data analysis"
+    }
+  },
+  {
+    "job_id": "j050",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p00",
+    "skills": [
+      "cv",
+      "teaching",
+      "nlp",
+      "neuro",
+      "fairness"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: visual recognition; mentoring students; computational linguistics; neural data analysis; fairness in ML.",
+    "skill_phrases": {
+      "cv": "visual recognition",
+      "teaching": "mentoring students",
+      "nlp": "computational linguistics",
+      "neuro": "neural data analysis",
+      "fairness": "fairness in ML"
+    }
+  },
+  {
+    "job_id": "j051",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p03",
+    "skills": [
+      "neuro",
+      "genomics",
+      "cv"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: neural data analysis; high-throughput sequencing; visual recognition. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "neuro": "neural data analysis",
+      "genomics": "high-throughput sequencing",
+      "cv": "visual recognition"
+    }
+  },
+  {
+    "job_id": "j052",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p04",
+    "skills": [
+      "tensorflow",
+      "fairness",
+      "genomics",
+      "stats"
+    ],
+    "min_degree": "bs",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: experience with TensorFlow or JAX; fairness in ML; high-throughput sequencing; probabilistic modeling.",
+    "skill_phrases": {
+      "tensorflow": "experience with TensorFlow or JAX",
+      "fairness": "fairness in ML",
+      "genomics": "high-throughput sequencing",
+      "stats": "probabilistic modeling"
+    }
+  },
+  {
+    "job_id": "j053",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p07",
+    "skills": [
+      "genomics",
+      "fairness",
+      "neuro",
+      "pytorch",
+      "tensorflow"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: high-throughput sequencing; fairness in ML; neural data analysis; deep learning frameworks such as PyTorch; experience with TensorFlow or JAX.",
+    "skill_phrases": {
+      "genomics": "high-throughput sequencing",
+      "fairness": "fairness in ML",
+      "neuro": "neural data analysis",
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "tensorflow": "experience with TensorFlow or JAX"
+    }
+  },
+  {
+    "job_id": "j054",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "New York, NY",
+    "company_id": "co05",
+    "contact_id": "p10",
+    "skills": [
+      "pytorch",
+      "genomics",
+      "stats"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Harbor Machine Learning",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: New York, NY. Master's degree or higher required. We value experience with: deep learning frameworks such as PyTorch; high-throughput sequencing; probabilistic modeling. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "genomics": "high-throughput sequencing",
+      "stats": "probabilistic modeling"
+    }
+  },
+  {
+    "job_id": "j055",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p01",
+    "skills": [
+      "tensorflow",
+      "cv",
+      "hpc",
+      "writing"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: experience with TensorFlow or JAX; visual recognition; large-scale training; scientific writing.",
+    "skill_phrases": {
+      "tensorflow": "experience with TensorFlow or JAX",
+      "cv": "visual recognition",
+      "hpc": "large-scale training",
+      "writing": "scientific writing"
+    }
+  },
+  {
+    "job_id": "j056",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p02",
+    "skills": [
+      "teaching",
+      "neuro",
+      "nlp",
+      "genomics",
+      "writing"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: mentoring students; neural data analysis; computational linguistics; high-throughput sequencing; scientific writing. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "teaching": "mentoring students",
+      "neuro": "neural data analysis",
+      "nlp": "computational linguistics",
+      "genomics": "high-throughput sequencing",
+      "writing": "scientific writing"
+    }
+  },
+  {
+    "job_id": "j057",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p05",
+    "skills": [
+      "rl",
+      "neuro",
+      "cv"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: sequential decision making; neural data analysis; visual recognition.",
+    "skill_phrases": {
+      "rl": "sequential decision making",
+      "neuro": "neural data analysis",
+      "cv": "visual recognition"
+    }
+  },
+  {
+    "job_id": "j058",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p06",
+    "skills": [
+      "tensorflow",
+      "neuro",
+      "teaching",
+      "fairness"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: experience with TensorFlow or JAX; neural data analysis; mentoring students; fairness in ML.",
+    "skill_phrases": {
+      "tensorflow": "experience with TensorFlow or JAX",
+      "neuro": "neural data analysis",
+      "teaching": "mentoring students",
+      "fairness": "fairness in ML"
+    }
+  },
+  {
+    "job_id": "j059",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "Madison, WI",
+    "company_id": "co07",
+    "contact_id": "p15",
+    "skills": [
+      "pytorch",
+      "hpc",
+      "teaching",
+      "fairness",
+      "tensorflow"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Northwind Robotics",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: Madison, WI. Master's degree or higher required. We value experience with: deep learning frameworks such as PyTorch; large-scale training; mentoring students; fairness in ML; experience with TensorFlow or JAX. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "hpc": "large-scale training",
+      "teaching": "mentoring students",
+      "fairness": "fairness in ML",
+      "tensorflow": "experience with TensorFlow or JAX"
+    }
+  },
+  {
+    "job_id": "j060",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p00",
+    "skills": [
+      "cv",
+      "nlp",
+      "genomics"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: visual recognition; computational linguistics; high-throughput sequencing.",
+    "skill_phrases": {
+      "cv": "visual recognition",
+      "nlp": "computational linguistics",
+      "genomics": "high-throughput sequencing"
+    }
+  },
+  {
+    "job_id": "j061",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p03",
+    "skills": [
+      "neuro",
+      "fairness",
+      "cv",
+      "genomics"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: neural data analysis; fairness in ML; visual recognition; high-throughput sequencing. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "neuro": "neural data analysis",
+      "fairness": "fairness in ML",
+      "cv": "visual recognition",
+      "genomics": "high-throughput sequencing"
+    }
+  },
+  {
+    "job_id": "j062",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p04",
+    "skills": [
+      "pytorch",
+      "nlp",
+      "genomics",
+      "fairness",
+      "writing"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: deep learning frameworks such as PyTorch; computational linguistics; high-throughput sequencing; fairness in ML; scientific writing.",
+    "skill_phrases": {
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "nlp": "computational linguistics",
+      "genomics": "high-throughput sequencing",
+      "fairness": "fairness in ML",
+      "writing": "scientific writing"
+    }
+  },
+  {
+    "job_id": "j063",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p07",
+    "skills": [
+      "rl",
+      "neuro",
+      "fairness"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: sequential decision making; neural data analysis; fairness in ML.",
+    "skill_phrases": {
+      "rl": "sequential decision making",
+      "neuro": "neural data analysis",
+      "fairness": "fairness in ML"
+    }
+  },
+  {
+    "job_id": "j064",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "Pittsburgh, PA",
+    "company_id": "co06",
+    "contact_id": "p12",
+    "skills": [
+      "genomics",
+      "teaching",
+      "neuro",
+      "nlp"
+    ],
+    "min_degree": "bs",
+    "requires_phd": false,
+    "institution": "Lumen Bioworks",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: Pittsburgh, PA. Master's degree or higher required. We value experience with: high-throughput sequencing; mentoring students; neural data analysis; computational linguistics. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "genomics": "high-throughput sequencing",
+      "teaching": "mentoring students",
+      "neuro": "neural data analysis",
+      "nlp": "computational linguistics"
+    }
+  },
+  {
+    "job_id": "j065",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p01",
+    "skills": [
+      "cv",
+      "rl",
+      "fairness",
+      "pytorch",
+      "teaching"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: visual recognition; sequential decision making; fairness in ML; deep learning frameworks such as PyTorch; mentoring students.",
+    "skill_phrases": {
+      "cv": "visual recognition",
+      "rl": "sequential decision making",
+      "fairness": "fairness in ML",
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "teaching": "mentoring students"
+    }
+  },
+  {
+    "job_id": "j066",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p02",
+    "skills": [
+      "fairness",
+      "stats",
+      "pytorch"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: fairness in ML; probabilistic modeling; deep learning frameworks such as PyTorch. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "fairness": "fairness in ML",
+      "stats": "probabilistic modeling",
+      "pytorch": "deep learning frameworks such as PyTorch"
+    }
+  },
+  {
+    "job_id": "j067",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p05",
+    "skills": [
+      "pytorch",
+      "writing",
+      "neuro",
+      "teaching"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: deep learning frameworks such as PyTorch; scientific writing; neural data analysis; mentoring students.",
+    "skill_phrases": {
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "writing": "scientific writing",
+      "neuro": "neural data analysis",
+      "teaching": "mentoring students"
+    }
+  },
+  {
+    "job_id": "j068",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p06",
+    "skills": [
+      "teaching",
+      "nlp",
+      "pytorch",
+      "fairness",
+      "tensorflow"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: mentoring students; computational linguistics; deep learning frameworks such as PyTorch; fairness in ML; experience with TensorFlow or JAX.",
+    "skill_phrases": {
+      "teaching": "mentoring students",
+      "nlp": "computational linguistics",
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "fairness": "fairness in ML",
+      "tensorflow": "experience with TensorFlow or JAX"
+    }
+  },
+  {
+    "job_id": "j069",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "New York, NY",
+    "company_id": "co05",
+    "contact_id": "p11",
+    "skills": [
+      "nlp",
+      "tensorflow",
+      "writing"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Harbor Machine Learning",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: New York, NY. Master's degree or higher required. We value experience with: computational linguistics; experience with TensorFlow or JAX; scientific writing. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "nlp": "computational linguistics",
+      "tensorflow": "experience with TensorFlow or JAX",
+      "writing": "scientific writing"
+    }
+  },
+  {
+    "job_id": "j070",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p00",
+    "skills": [
+      "tensorflow",
+      "hpc",
+      "cv",
+      "genomics"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: experience with TensorFlow or JAX; large-scale training; visual recognition; high-throughput sequencing.",
+    "skill_phrases": {
+      "tensorflow": "experience with TensorFlow or JAX",
+      "hpc": "large-scale training",
+      "cv": "visual recognition",
+      "genomics": "high-throughput sequencing"
+    }
+  },
+  {
+    "job_id": "j071",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p03",
+    "skills": [
+      "tensorflow",
+      "writing",
+      "cv",
+      "pytorch",
+      "fairness"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: experience with TensorFlow or JAX; scientific writing; visual recognition; deep learning frameworks such as PyTorch; fairness in ML. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "tensorflow": "experience with TensorFlow or JAX",
+      "writing": "scientific writing",
+      "cv": "visual recognition",
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "fairness": "fairness in ML"
+    }
+  },
+  {
+    "job_id": "j072",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p04",
+    "skills": [
+      "genomics",
+      "hpc",
+      "writing"
+    ],
+    "min_degree": "bs",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: high-throughput sequencing; large-scale training; scientific writing.",
+    "skill_phrases": {
+      "genomics": "high-throughput sequencing",
+      "hpc": "large-scale training",
+      "writing": "scientific writing"
+    }
+  },
+  {
+    "job_id": "j073",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p07",
+    "skills": [
+      "writing",
+      "teaching",
+      "stats",
+      "rl"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: scientific writing; mentoring students; probabilistic modeling; sequential decision making.",
+    "skill_phrases": {
+      "writing": "scientific writing",
+      "teaching": "mentoring students",
+      "stats": "probabilistic modeling",
+      "rl": "sequential decision making"
+    }
+  },
+  {
+    "job_id": "j074",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "Madison, WI",
+    "company_id": "co07",
+    "contact_id": "p14",
+    "skills": [
+      "cv",
+      "hpc",
+      "stats",
+      "fairness",
+      "rl"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Northwind Robotics",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: Madison, WI. Master's degree or higher required. We value experience with: visual recognition; large-scale training; probabilistic modeling; fairness in ML; sequential decision making. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "cv": "visual recognition",
+      "hpc": "large-scale training",
+      "stats": "probabilistic modeling",
+      "fairness": "fairness in ML",
+      "rl": "sequential decision making"
+    }
+  },
+  {
+    "job_id": "j075",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p01",
+    "skills": [
+      "genomics",
+      "nlp",
+      "rl"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: high-throughput sequencing; computational linguistics; sequential decision making.",
+    "skill_phrases": {
+      "genomics": "high-throughput sequencing",
+      "nlp": "computational linguistics",
+      "rl": "sequential decision making"
+    }
+  },
+  {
+    "job_id": "j076",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p02",
+    "skills": [
+      "neuro",
+      "stats",
+      "tensorflow",
+      "pytorch"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: neural data analysis; probabilistic modeling; experience with TensorFlow or JAX; deep learning frameworks such as PyTorch. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "neuro": "neural data analysis",
+      "stats": "probabilistic modeling",
+      "tensorflow": "experience with TensorFlow or JAX",
+      "pytorch": "deep learning frameworks such as PyTorch"
+    }
+  },
+  {
+    "job_id": "j077",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p05",
+    "skills": [
+      "neuro",
+      "writing",
+      "hpc",
+      "tensorflow",
+      "teaching"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. PhD required. We value experience with: neural data analysis; scientific writing; large-scale training; experience with TensorFlow or JAX; mentoring students.",
+    "skill_phrases": {
+      "neuro": "neural data analysis",
+      "writing": "scientific writing",
+      "hpc": "large-scale training",
+      "tensorflow": "experience with TensorFlow or JAX",
+      "teaching": "mentoring students"
+    }
+  },
+  {
+    "job_id": "j078",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p06",
+    "skills": [
+      "teaching",
+      "cv",
+      "fairness"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: mentoring students; visual recognition; fairness in ML.",
+    "skill_phrases": {
+      "teaching": "mentoring students",
+      "cv": "visual recognition",
+      "fairness": "fairness in ML"
+    }
+  },
+  {
+    "job_id": "j079",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "Pittsburgh, PA",
+    "company_id": "co06",
+    "contact_id": "p13",
+    "skills": [
+      "rl",
+      "nlp",
+      "stats",
+      "tensorflow"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Lumen Bioworks",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: Pittsburgh, PA. Master's degree or higher required. We value experience with: sequential decision making; computational linguistics; probabilistic modeling; experience with TensorFlow or JAX. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "rl": "sequential decision making",
+      "nlp": "computational linguistics",
+      "stats": "probabilistic modeling",
+      "tensorflow": "experience with TensorFlow or JAX"
+    }
+  },
+  {
+    "job_id": "j080",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p00",
+    "skills": [
+      "cv",
+      "stats",
+      "rl",
+      "nlp",
+      "neuro"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: visual recognition; probabilistic modeling; sequential decision making; computational linguistics; neural data analysis.",
+    "skill_phrases": {
+      "cv": "visual recognition",
+      "stats": "probabilistic modeling",
+      "rl": "sequential decision making",
+      "nlp": "computational linguistics",
+      "neuro": "neural data analysis"
+    }
+  },
+  {
+    "job_id": "j081",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p03",
+    "skills": [
+      "teaching",
+      "rl",
+      "writing"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: mentoring students; sequential decision making; scientific writing. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "teaching": "mentoring students",
+      "rl": "sequential decision making",
+      "writing": "scientific writing"
+    }
+  },
+  {
+    "job_id": "j082",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p04",
+    "skills": [
+      "hpc",
+      "teaching",
+      "pytorch",
+      "fairness"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: large-scale training; mentoring students; deep learning frameworks such as PyTorch; fairness in ML.",
+    "skill_phrases": {
+      "hpc": "large-scale training",
+      "teaching": "mentoring students",
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "fairness": "fairness in ML"
+    }
+  },
+  {
+    "job_id": "j083",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p07",
+    "skills": [
+      "rl",
+      "hpc",
+      "tensorflow",
+      "nlp",
+      "fairness"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: sequential decision making; large-scale training; experience with TensorFlow or JAX; computational linguistics; fairness in ML.",
+    "skill_phrases": {
+      "rl": "sequential decision making",
+      "hpc": "large-scale training",
+      "tensorflow": "experience with TensorFlow or JAX",
+      "nlp": "computational linguistics",
+      "fairness": "fairness in ML"
+    }
+  },
+  {
+    "job_id": "j084",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "New York, NY",
+    "company_id": "co05",
+    "contact_id": "p10",
+    "skills": [
+      "tensorflow",
+      "fairness",
+      "teaching"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Harbor Machine Learning",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: New York, NY. PhD required. We value experience with: experience with TensorFlow or JAX; fairness in ML; mentoring students. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "tensorflow": "experience with TensorFlow or JAX",
+      "fairness": "fairness in ML",
+      "teaching": "mentoring students"
+    }
+  },
+  {
+    "job_id": "j085",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p01",
+    "skills": [
+      "nlp",
+      "rl",
+      "hpc",
+      "cv"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: computational linguistics; sequential decision making; large-scale training; visual recognition.",
+    "skill_phrases": {
+      "nlp": "computational linguistics",
+      "rl": "sequential decision making",
+      "hpc": "large-scale training",
+      "cv": "visual recognition"
+    }
+  },
+  {
+    "job_id": "j086",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p02",
+    "skills": [
+      "fairness",
+      "stats",
+      "cv",
+      "rl",
+      "neuro"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: fairness in ML; probabilistic modeling; visual recognition; sequential decision making; neural data analysis. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "fairness": "fairness in ML",
+      "stats": "probabilistic modeling",
+      "cv": "visual recognition",
+      "rl": "sequential decision making",
+      "neuro": "neural data analysis"
+    }
+  },
+  {
+    "job_id": "j087",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p05",
+    "skills": [
+      "rl",
+      "pytorch",
+      "tensorflow"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: sequential decision making; deep learning frameworks such as PyTorch; experience with TensorFlow or JAX.",
+    "skill_phrases": {
+      "rl": "sequential decision making",
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "tensorflow": "experience with TensorFlow or JAX"
+    }
+  },
+  {
+    "job_id": "j088",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p06",
+    "skills": [
+      "hpc",
+      "genomics",
+      "rl",
+      "pytorch"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: large-scale training; high-throughput sequencing; sequential decision making; deep learning frameworks such as PyTorch.",
+    "skill_phrases": {
+      "hpc": "large-scale training",
+      "genomics": "high-throughput sequencing",
+      "rl": "sequential decision making",
+      "pytorch": "deep learning frameworks such as PyTorch"
+    }
+  },
+  {
+    "job_id": "j089",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "Madison, WI",
+    "company_id": "co07",
+    "contact_id": "p15",
+    "skills": [
+      "pytorch",
+      "stats",
+      "nlp",
+      "rl",
+      "writing"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Northwind Robotics",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: Madison, WI. Master's degree or higher required. We value experience with: deep learning frameworks such as PyTorch; probabilistic modeling; computational linguistics; sequential decision making; scientific writing. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "stats": "probabilistic modeling",
+      "nlp": "computational linguistics",
+      "rl": "sequential decision making",
+      "writing": "scientific writing"
+    }
+  },
+  {
+    "job_id": "j090",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p00",
+    "skills": [
+      "fairness",
+      "neuro",
+      "teaching"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: fairness in ML; neural data analysis; mentoring students.",
+    "skill_phrases": {
+      "fairness": "fairness in ML",
+      "neuro": "neural data analysis",
+      "teaching": "mentoring students"
+    }
+  },
+  {
+    "job_id": "j091",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p03",
+    "skills": [
+      "fairness",
+      "genomics",
+      "teaching",
+      "pytorch"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: fairness in ML; high-throughput sequencing; mentoring students; deep learning frameworks such as PyTorch. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "fairness": "fairness in ML",
+      "genomics": "high-throughput sequencing",
+      "teaching": "mentoring students",
+      "pytorch": "deep learning frameworks such as PyTorch"
+    }
+  },
+  {
+    "job_id": "j092",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p04",
+    "skills": [
+      "tensorflow",
+      "fairness",
+      "nlp",
+      "teaching",
+      "pytorch"
+    ],
+    "min_degree": "bs",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: experience with TensorFlow or JAX; fairness in ML; computational linguistics; mentoring students; deep learning frameworks such as PyTorch.",
+    "skill_phrases": {
+      "tensorflow": "experience with TensorFlow or JAX",
+      "fairness": "fairness in ML",
+      "nlp": "computational linguistics",
+      "teaching": "mentoring students",
+      "pytorch": "deep learning frameworks such as PyTorch"
+    }
+  },
+  {
+    "job_id": "j093",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p07",
+    "skills": [
+      "stats",
+      "writing",
+      "teaching"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: probabilistic modeling; scientific writing; mentoring students.",
+    "skill_phrases": {
+      "stats": "probabilistic modeling",
+      "writing": "scientific writing",
+      "teaching": "mentoring students"
+    }
+  },
+  {
+    "job_id": "j094",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "Pittsburgh, PA",
+    "company_id": "co06",
+    "contact_id": "p12",
+    "skills": [
+      "nlp",
+      "genomics",
+      "fairness",
+      "pytorch"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Lumen Bioworks",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: Pittsburgh, PA. Master's degree or higher required. We value experience with: computational linguistics; high-throughput sequencing; fairness in ML; deep learning frameworks such as PyTorch. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "nlp": "computational linguistics",
+      "genomics": "high-throughput sequencing",
+      "fairness": "fairness in ML",
+      "pytorch": "deep learning frameworks such as PyTorch"
+    }
+  },
+  {
+    "job_id": "j095",
+    "title": "Postdoctoral Fellow in computational neuroscience",
+    "role_type": "postdoc",
+    "field": "neurosci",
+    "location": "Boston, MA",
+    "company_id": "co00",
+    "contact_id": "p01",
+    "skills": [
+      "rl",
+      "stats",
+      "pytorch",
+      "hpc",
+      "cv"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Northbridge University",
+    "description": "Northbridge University seeks a colleague for a postdoc role in computational neuroscience. Location: Boston, MA. PhD required. We value experience with: sequential decision making; probabilistic modeling; deep learning frameworks such as PyTorch; large-scale training; visual recognition.",
+    "skill_phrases": {
+      "rl": "sequential decision making",
+      "stats": "probabilistic modeling",
+      "pytorch": "deep learning frameworks such as PyTorch",
+      "hpc": "large-scale training",
+      "cv": "visual recognition"
+    }
+  },
+  {
+    "job_id": "j096",
+    "title": "Assistant Professor of computational neuroscience",
+    "role_type": "assistant_professor",
+    "field": "neurosci",
+    "location": "San Francisco, CA",
+    "company_id": "co01",
+    "contact_id": "p02",
+    "skills": [
+      "hpc",
+      "cv",
+      "tensorflow"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Lakeview Institute of Technology",
+    "description": "Lakeview Institute of Technology seeks a colleague for a assistant professor role in computational neuroscience. Location: San Francisco, CA. PhD required. We value experience with: large-scale training; visual recognition; experience with TensorFlow or JAX. Teaching and mentoring are part of the position.",
+    "skill_phrases": {
+      "hpc": "large-scale training",
+      "cv": "visual recognition",
+      "tensorflow": "experience with TensorFlow or JAX"
+    }
+  },
+  {
+    "job_id": "j097",
+    "title": "Lecturer in robotics",
+    "role_type": "lecturer",
+    "field": "robotics",
+    "location": "Seattle, WA",
+    "company_id": "co02",
+    "contact_id": "p05",
+    "skills": [
+      "stats",
+      "teaching",
+      "genomics",
+      "nlp"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Cedar Hill College",
+    "description": "Cedar Hill College seeks a colleague for a lecturer role in robotics. Location: Seattle, WA. Master's degree or higher required. We value experience with: probabilistic modeling; mentoring students; high-throughput sequencing; computational linguistics.",
+    "skill_phrases": {
+      "stats": "probabilistic modeling",
+      "teaching": "mentoring students",
+      "genomics": "high-throughput sequencing",
+      "nlp": "computational linguistics"
+    }
+  },
+  {
+    "job_id": "j098",
+    "title": "Research Scientist \u2014 computational neuroscience",
+    "role_type": "research_scientist",
+    "field": "neurosci",
+    "location": "Austin, TX",
+    "company_id": "co03",
+    "contact_id": "p06",
+    "skills": [
+      "cv",
+      "nlp",
+      "hpc",
+      "genomics",
+      "pytorch"
+    ],
+    "min_degree": "phd",
+    "requires_phd": true,
+    "institution": "Midwest Medical School",
+    "description": "Midwest Medical School seeks a colleague for a research scientist role in computational neuroscience. Location: Austin, TX. PhD required. We value experience with: visual recognition; computational linguistics; large-scale training; high-throughput sequencing; deep learning frameworks such as PyTorch.",
+    "skill_phrases": {
+      "cv": "visual recognition",
+      "nlp": "computational linguistics",
+      "hpc": "large-scale training",
+      "genomics": "high-throughput sequencing",
+      "pytorch": "deep learning frameworks such as PyTorch"
+    }
+  },
+  {
+    "job_id": "j099",
+    "title": "Research Scientist, Robotics",
+    "role_type": "industry_research",
+    "field": "robotics",
+    "location": "New York, NY",
+    "company_id": "co05",
+    "contact_id": "p11",
+    "skills": [
+      "nlp",
+      "stats",
+      "genomics"
+    ],
+    "min_degree": "ms",
+    "requires_phd": false,
+    "institution": "Harbor Machine Learning",
+    "description": "a leading technology company seeks a colleague for a industry research role in robotics. Location: New York, NY. Master's degree or higher required. We value experience with: computational linguistics; probabilistic modeling; high-throughput sequencing. This is an industry research role with product impact.",
+    "skill_phrases": {
+      "nlp": "computational linguistics",
+      "stats": "probabilistic modeling",
+      "genomics": "high-throughput sequencing"
+    }
+  }
+]

@@ -1,0 +1,20 @@
+Alex Rivera
+alex.rivera@example.invalid
+
+Education
+Westhaven University | B.S. Computer Science | Expected May 2027
+
+Technical Skills
+Languages: Python, TypeScript, SQL
+Tools: React, FastAPI, PostgreSQL, Git, Docker
+
+Experience
+Student Software Developer | Westhaven Campus Lab | June 2025 - August 2025
+Built a FastAPI scheduling endpoint and added 35 automated tests.
+Documented API behavior for a team of four student developers.
+
+Projects
+Campus Events Dashboard | TypeScript, React, PostgreSQL
+Built a React dashboard used by 120 students to discover campus events.
+Resume Search Prototype | Python, SQL
+Implemented SQL filtering and tested search relevance with a synthetic dataset.

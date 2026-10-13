@@ -1,0 +1,29 @@
+{
+  "_fixture": "TEMPORARY FIXTURE - synthetic candidate profiles standing in for parsed resumes (Agent C/A). All people, schools, employers and numbers are fictional. Replace via --profiles.",
+  "profiles": [
+    {"id": "cand-01", "name": "Maya Chen", "school": "Westbrook University", "major": "computer science", "year": "senior",
+     "skills": ["Python", "SQL", "Docker", "REST APIs", "testing", "Git"],
+     "experience": [{"title": "Software Engineering Intern", "org": "Aldercrest Software", "bullets": ["Built API endpoints in Python and cut query latency by 35%", "Wrote integration tests for the billing service"]}],
+     "projects": [{"name": "CampusRides", "description": "Carpool app built with Flask and PostgreSQL that reached 400 beta users"}]},
+    {"id": "cand-02", "name": "Jordan Alvarez", "school": "Lakeshore State University", "major": "statistics", "year": "senior",
+     "skills": ["SQL", "Python", "Tableau", "statistics", "Excel", "R", "communication"],
+     "experience": [{"title": "Data Intern", "org": "Harborview Nonprofit", "bullets": ["Automated weekly reports and saved the team 5 hours a week", "Presented findings to the board"]}],
+     "projects": [{"name": "City Bike Demand Dashboard", "description": "Tableau dashboard forecasting bike-share demand using SQL and Python"}]},
+    {"id": "cand-03", "name": "Priya Nair", "school": "Eastgate Institute of Technology", "major": "computer science", "year": "junior",
+     "skills": ["Python", "PyTorch", "machine learning", "data pipelines", "SQL", "statistics"],
+     "experience": [{"title": "Undergraduate Research Assistant", "org": "Eastgate Vision Lab", "bullets": ["Built data pipelines for image datasets", "Documented experiments for reproducibility"]}],
+     "projects": [{"name": "Skin Lesion Classifier", "description": "PyTorch image classifier that reached 87% accuracy on a public dataset"}]},
+    {"id": "cand-04", "name": "Sam Okafor", "school": "Pinewood College", "major": "human-computer interaction", "year": "senior",
+     "skills": ["Figma", "user research", "prototyping", "accessibility", "HTML", "CSS"],
+     "experience": [{"title": "UX Intern", "org": "Pinecrest Library", "bullets": ["Ran usability sessions with 12 participants", "Improved screen-reader labels across the catalog app"]}],
+     "projects": [{"name": "BusBuddy Redesign", "description": "Accessible transit app redesign prototyped in Figma and tested with riders"}]},
+    {"id": "cand-05", "name": "Lena Fischer", "school": "Ridgeway Polytechnic", "major": "mechanical engineering", "year": "senior",
+     "skills": ["C++", "ROS", "Python", "control systems", "MATLAB", "CAD"],
+     "experience": [{"title": "Robotics Club Software Lead", "org": "Ridgeway Robotics Club", "bullets": ["Led a team of 6 building a competition rover", "Tuned PID controllers in simulation before hardware tests"]}],
+     "projects": [{"name": "Line-Following Rover", "description": "ROS-based rover with C++ motor control"}, {"name": "Robotic Arm PID Tuning", "description": "Tuned a 3-joint arm in MATLAB and ROS simulation"}]},
+    {"id": "cand-06", "name": "Marcus Reid", "school": "Crestview University", "major": "finance and business analytics", "year": "senior",
+     "skills": ["Excel", "financial modeling", "SQL", "valuation", "Google Analytics", "A/B testing", "presentations", "copywriting", "market research"],
+     "experience": [{"title": "Marketing Intern", "org": "Cedar & Co", "bullets": ["Ran an A/B email test that lifted open rate by 12%", "Wrote customer-facing launch copy"]}],
+     "projects": [{"name": "Student Fund Valuation Memo", "description": "Valuation memo and Excel financial model for a small-cap stock pick"}]}
+  ]
+}

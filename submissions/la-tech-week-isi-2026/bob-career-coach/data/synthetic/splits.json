@@ -1,0 +1,30 @@
+{
+  "splits": {
+    "train": [
+      "c00",
+      "c01",
+      "c02"
+    ],
+    "val": [
+      "c03",
+      "c04",
+      "c05"
+    ],
+    "test": [
+      "c06",
+      "c07",
+      "c08"
+    ]
+  },
+  "meta": {
+    "seed": 42,
+    "num_companies": 8,
+    "num_contacts": 16,
+    "num_jobs": 100,
+    "num_candidates": 9,
+    "jobs_per_candidate": 2,
+    "train": 3,
+    "val": 3,
+    "test": 3
+  }
+}

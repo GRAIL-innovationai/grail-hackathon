@@ -1,0 +1,734 @@
+{
+  "id": "e0a72b8b597f",
+  "candidate_id": "c00",
+  "job_id": "j085",
+  "train_persona_ids": [
+    "p02",
+    "p03",
+    "p04",
+    "p06",
+    "p07",
+    "p08",
+    "p09",
+    "p10",
+    "p11",
+    "p12",
+    "p13",
+    "p14",
+    "p15"
+  ],
+  "test_persona_ids": [
+    "p00",
+    "p01",
+    "p05"
+  ],
+  "iterations": [
+    {
+      "n": 1,
+      "prompt": "# Outreach generator v0\n\nWrite a professional networking message for this candidate.\n\nHard rules:\n- Under 300 characters (LinkedIn connection-note limit).\n- Cite only the candidate's resume lines. Never claim a skill, tool, number, or employer that is not in them.\n- Output JSON only: {\"text\": \"<message>\", \"citations\": [\"R1\", ...]}\n",
+      "message": {
+        "text": "Hi Quinn, I'm reaching out about Ava, a Northbridge CS grad with research in reinforcement learning, computer vision, and cluster computing. Her background in sequential decision-making and visual systems could be valuable for your team. Open to a quick chat?",
+        "chars": 259,
+        "job_id": "j085",
+        "persona_id": "p01",
+        "citations": [
+          "R1",
+          "R2",
+          "R3",
+          "R6",
+          "R5",
+          "R4"
+        ]
+      },
+      "lint": {
+        "passed": false,
+        "offending": [
+          "CS"
+        ]
+      },
+      "evals": [
+        {
+          "persona_id": "p02",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 0,
+            "specificity": 0,
+            "concise": 1,
+            "clear_ask": 0
+          },
+          "quality_score": 0.1,
+          "reply": "",
+          "critique": "This is exactly the kind of third-party recruiter intro I ignore—no technical details, no specific papers or methods, just buzzwords. If Ava is genuinely interested, she should reach out directly with concrete research she's done (datasets, architectures, metrics) and why our computational neuroscience work specifically interests her."
+        },
+        {
+          "persona_id": "p03",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "This is a third-party recruiter message with zero technical depth—no specific papers, metrics, or projects mentioned. I need direct outreach from the candidate with concrete details about what they've built and how it relates to our neuroscience work, not buzzword bingo from an intermediary."
+        },
+        {
+          "persona_id": "p04",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "This is a third-party recruiter pitch with zero technical detail—no specific projects, metrics, or papers. I need to hear directly from the candidate about what they've actually built and why they're interested in *this* computational neuroscience role specifically, not generic buzzwords through a middleman."
+        },
+        {
+          "persona_id": "p06",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 1,
+            "concise": 2,
+            "clear_ask": 0
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "This appears to be a third-party referral without explaining who's actually reaching out or why I should care. Wrong name (I'm Parker, not Quinn), wrong field (CS instead of neuroscience), and no connection to our specific computational neuroscience work. If referring someone, explain your relationship to them and to me, and demonstrate you understand what we actually do."
+        },
+        {
+          "persona_id": "p07",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 1,
+            "concise": 2,
+            "clear_ask": 0
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "This is clearly a third-party referral (not from the candidate themselves), which is a major red flag. For a postdoc position in computational neuroscience at a medical school, I need to hear directly from the candidate about their neuroscience background, research interests in neural systems, and why they want to transition from CS to our biomedical research environment—RL and computer vision alone don't demonstrate fit for our neuroscience work."
+        },
+        {
+          "persona_id": "p08",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "This reads like a recruiter or referral pitch, not from the candidate themselves. I need direct applications from candidates who can speak to their own work, explain why they're specifically interested in *computational neuroscience* (not just CS/ML buzzwords), and confirm their location/work authorization status for the Bay Area role."
+        },
+        {
+          "persona_id": "p09",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 0,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.3,
+          "reply": "",
+          "critique": "This is a classic third-party recruiter intro with zero technical substance. If Ava is interested, she should reach out directly with specifics: what RL algorithms, which visual neuroscience papers inspired her work, concrete metrics from her research—anything showing she's read our lab's papers and has genuine technical alignment."
+        },
+        {
+          "persona_id": "p10",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 0,
+            "specificity": 0,
+            "concise": 1,
+            "clear_ask": 1
+          },
+          "quality_score": 0.2,
+          "reply": "",
+          "critique": "This is exactly the kind of third-party recruiter intro I ignore—no technical depth, wrong role (we're hiring a postdoc, not placing a new grad), generic buzzwords like 'reinforcement learning' without any actual project details or metrics. If Ava is interested, she should reach out directly with specifics about her work—what methods, what benchmarks, what she's trying to solve—not have someone pitch her resume."
+        },
+        {
+          "persona_id": "p11",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 0,
+            "specificity": 1,
+            "concise": 2,
+            "clear_ask": 0
+          },
+          "quality_score": 0.3,
+          "reply": "",
+          "critique": "This is exactly what I avoid—a third-party recruiter pitch with no technical depth, wrong role match (postdoc vs. engineer position), and no clear value proposition. If Ava is interested, she should reach out directly with specific projects, metrics, and why Harbor's work aligns with her research goals."
+        },
+        {
+          "persona_id": "p12",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "This is clearly a third-party recruiter pitch with zero technical depth. I need to see actual project work, specific metrics, papers, or code—not generic buzzwords like 'sequential decision-making.' If Ava is genuinely interested, she should reach out directly with concrete examples of her research contributions."
+        },
+        {
+          "persona_id": "p13",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 1,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.5,
+          "reply": "",
+          "critique": "This reads like a recruiter pitch, not a personal outreach. I'm Blake, not Quinn, and this is about computational neuroscience, not a general tech role. If Ava is interested, she should message me directly explaining why our specific research problems excite her and what unique perspective she brings to neuroscience modeling."
+        },
+        {
+          "persona_id": "p14",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 1,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.5,
+          "reply": "",
+          "critique": "This reads like a recruiter pitch or referral for someone else (Ava), not a personal connection. If you're Ava, introduce yourself directly. If you're referring someone, explain your relationship to both me and the candidate, and why specifically Northwind Robotics—our actual robotics work, not generic 'visual systems.'"
+        },
+        {
+          "persona_id": "p15",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 0,
+            "specificity": 1,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "This appears to be a third-party referral for the wrong role (CS background for a computational neuroscience postdoc), sent to the wrong person (I'm Jules, not Quinn), at the wrong company (Northwind, not Northbridge). If Ava is genuinely interested, she should apply directly through our system with her location, work authorization, and why her specific research aligns with our robotics needs."
+        }
+      ],
+      "score": 0.0
+    },
+    {
+      "n": 2,
+      "prompt": "# Outreach generator v1\n\nYou are writing AS the candidate themselves, in first person, directly to the hiring manager. This is a personal introduction from the candidate, NOT a third-party referral or recruiter pitch.\n\nHard rules:\n- Under 300 characters (LinkedIn connection-note limit)\n- Write in first person (\"I\", \"my\") as the candidate\n- Cite only the candidate's resume lines. Never claim a skill, tool, technology, number, metric, paper title, dataset name, architecture name, employer, or project detail that is not explicitly in their resume\n- Include at least one concrete technical detail from their resume (specific method, tool, metric, dataset, or quantifiable result)\n- If the recipient's name is provided, use it correctly. If their company/lab name is provided, use it correctly\n- Never use generic phrases like \"background in X\" or \"experience with Y\"—cite actual projects, numbers, or technologies from the resume\n- The message must make clear this is the candidate writing directly, not someone referring them\n- Output JSON only: {\"text\": \"<message>\", \"citations\": [\"R1\", ...]}\n\nCheckable quality criteria:\n1. Does the message use first-person pronouns?\n2. Does it include at least one specific technical detail (not just a field name)?\n3. Are all technical claims directly traceable to a resume line?\n4. Would a recipient understand this is from the candidate themselves?\n- Never mention CS: not in the candidate's resume lines.",
+      "message": {
+        "text": "Hi Quinn, I'm Ava, focusing on reinforcement learning and computer vision at Northbridge. I'd love to connect about the computational neuroscience postdoc—my work in sequential decision making and visual recognition aligns well with the role.",
+        "chars": 242,
+        "job_id": "j085",
+        "persona_id": "p01",
+        "citations": [
+          "R1",
+          "R3",
+          "R6",
+          "R5"
+        ]
+      },
+      "lint": {
+        "passed": true,
+        "offending": []
+      },
+      "evals": [
+        {
+          "persona_id": "p02",
+          "outcome": "generic_reply",
+          "outcome_reward": 0.4,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "Hi Ava, thanks for reaching out. Could you share more about specific methods you've used and what metrics you've achieved in your RL or vision work?",
+          "critique": "This reads like a templated outreach with buzzwords (RL, CV, 'sequential decision making') but zero technical depth—no specific algorithms, datasets, papers, or results. Tell me about a concrete project: what architecture, what benchmark, what you actually built and measured."
+        },
+        {
+          "persona_id": "p03",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 1,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.5,
+          "reply": "",
+          "critique": "Wrong person entirely—I'm an engineer at Lakeview Institute of Technology, not a neuroscience hiring manager. Also, 'aligns well' is too vague; I'd need to see specific metrics, papers, or technical depth showing how RL/CV actually applies to computational neuroscience work, not just buzzword overlap."
+        },
+        {
+          "persona_id": "p04",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 1,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.5,
+          "reply": "",
+          "critique": "Wrong person entirely—I'm Rowan, an engineer, not Quinn, and I don't handle postdoc roles. Also, you mentioned RL and vision but gave zero specifics: no metrics, no actual project details, no technical depth. Research me before messaging or you're just spamming."
+        },
+        {
+          "persona_id": "p06",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 1,
+            "concise": 2,
+            "clear_ask": 0
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "You got my name wrong (I'm Parker, not Quinn), which shows you didn't personalize this. More importantly, as CEO I don't handle postdoc hiring—you should be reaching out to the lab PI or department head, and your message doesn't explain why computational neuroscience when your background is RL/computer vision."
+        },
+        {
+          "persona_id": "p07",
+          "outcome": "generic_reply",
+          "outcome_reward": 0.4,
+          "quality": {
+            "relevance": 2,
+            "specificity": 1,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.6,
+          "reply": "Hi Ava, thanks for reaching out. Can you clarify your location and work authorization status for Illinois?",
+          "critique": "The message mentions relevant technical areas but lacks specifics about computational neuroscience experience or examples of your work. Most critically, you didn't mention your location or work authorization—essential for us since we need someone who can start locally without visa delays."
+        },
+        {
+          "persona_id": "p08",
+          "outcome": "meaningful_conversation",
+          "outcome_reward": 0.7,
+          "quality": {
+            "relevance": 3,
+            "specificity": 2,
+            "concise": 2,
+            "clear_ask": 2
+          },
+          "quality_score": 0.9,
+          "reply": "Hi Ava, thanks for reaching out—your RL and vision background sounds relevant. Are you in the Bay Area or authorized to work in the US?",
+          "critique": "Strong message overall. To make it even better, proactively mention your location and work authorization status upfront, since those are often deal-breakers for postdoc positions."
+        },
+        {
+          "persona_id": "p09",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "This is too generic—'reinforcement learning and computer vision' could describe thousands of people. I need specifics: what sequential decision-making framework did you use, what visual recognition problem, what metrics, and how does any of this connect to computational neuroscience? Show me you've read actual papers from our lab and explain the technical bridge between your work and ours."
+        },
+        {
+          "persona_id": "p10",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "This reads like a template—'reinforcement learning and computer vision' could apply to thousands of people. I'd respond if you mentioned a specific paper from our group you found interesting, or described a concrete method you developed (what algorithm? what benchmark? what metric improved?). Also, I'm Hayden, not Quinn—double-check who you're messaging."
+        },
+        {
+          "persona_id": "p11",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 1,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.5,
+          "reply": "",
+          "critique": "This message has multiple problems: you're messaging the wrong person (I'm Sawyer, an engineer at Harbor ML, not Quinn), about the wrong role (I don't work on postdoc hiring in computational neuroscience), and you provide zero specifics about actual projects, metrics, or technical depth that would interest me. Do basic research on who you're contacting and what they actually do before reaching out."
+        },
+        {
+          "persona_id": "p12",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 1,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.5,
+          "reply": "",
+          "critique": "This message has several problems: (1) You're messaging Cameron, not Quinn—wrong person entirely. (2) I'm an Engineer at Lumen Bioworks, not involved in postdoc hiring. (3) Even if correctly addressed, 'aligns well' is vague—what specific metrics, papers, or technical challenges have you tackled? What project or problem at Lumen are you actually interested in? Do basic research before reaching out."
+        },
+        {
+          "persona_id": "p13",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 0
+          },
+          "quality_score": 0.3,
+          "reply": "",
+          "critique": "Wrong person—I'm Blake, the CEO, not Quinn. Also, you mention RL and computer vision but don't explain why those matter for *our* computational neuroscience work or what specific problem you'd help solve. Show you understand what we actually do."
+        },
+        {
+          "persona_id": "p14",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 1,
+            "concise": 2,
+            "clear_ask": 0
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "You got my name wrong (I'm Drew, not Quinn), which shows you didn't personalize this. More importantly, as CEO of a robotics company, I don't handle postdoc hiring—you should be reaching out to the research lead or lab director, and your message doesn't explain why you're contacting me specifically or what you want me to do."
+        },
+        {
+          "persona_id": "p15",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 1,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.5,
+          "reply": "",
+          "critique": "You've got the wrong person—I'm Jules, a recruiter at Northwind Robotics, not Quinn at whatever lab you're targeting. Also, this feels like a mass message with the wrong name pasted in. If you're reaching out about our roles, mention Northwind specifically, state your location/work authorization, and actually apply through our system first."
+        }
+      ],
+      "score": 0.3
+    },
+    {
+      "n": 3,
+      "prompt": "# Outreach generator v2\n\nYou are writing AS the candidate themselves, in first person, directly to the hiring manager. This is a personal introduction from the candidate, NOT a third-party referral or recruiter pitch.\n\nHard rules:\n- Under 300 characters (LinkedIn connection-note limit)\n- Write in first person (\"I\", \"my\") as the candidate\n- Cite only the candidate's resume lines. Never claim a skill, tool, technology, number, metric, paper title, dataset name, architecture name, employer, or project detail that is not explicitly in their resume\n- Include at least one concrete technical detail from their resume (specific method, tool, metric, dataset, or quantifiable result)\n- If the recipient's name is provided, use it correctly. If their company/lab name is provided, use it correctly\n- Never use generic phrases like \"background in X\" or \"experience with Y\"—cite actual projects, numbers, or technologies from the resume\n- The message must make clear this is the candidate writing directly, not someone referring them\n- Output JSON only: {\"text\": \"<message>\", \"citations\": [\"R1\", ...]}\n- Never mention \"CS\" or \"computer science\": not in the candidate's resume lines\n\nCheckable quality criteria:\n1. Does the message use the recipient's actual name (if provided)? No message should contain a name not provided in the input.\n2. Does it include at least one specific quantifiable detail: an exact metric, number, dataset name, architecture name, algorithm name, or paper title from the resume?\n3. Are all technical claims directly traceable to a resume line with no abstraction to field names?\n4. Would a recipient understand this is from the candidate themselves?\n5. Does the message avoid all abstract phrases like \"sequential decision making,\" \"visual recognition,\" \"aligns well,\" or other field-level descriptions? Every technical term must be a concrete proper noun (dataset/architecture/method name) or number from the resume.\n6. If multiple concrete technical details are available from the resume, prefer including a specific number/metric over just naming a method.\n7. Does the message reference a specific aspect of the recipient's work, lab, or company (if that information is provided)? Generic role mentions like \"the postdoc\" without connecting to specific research problems should be avoided.\n8. If location or work authorization information is in the candidate's resume, include it when messaging about positions.\n- Never mention CS: not in the candidate's resume lines.",
+      "message": {
+        "text": "Hi Quinn, I'm Ava, a researcher with cluster computing and reinforcement learning experience. I'm interested in the postdoc at Northbridge—would love to connect and learn more about the computational work you're doing there.",
+        "chars": 224,
+        "job_id": "j085",
+        "persona_id": "p01",
+        "citations": [
+          "R1",
+          "R4",
+          "R6"
+        ]
+      },
+      "lint": {
+        "passed": true,
+        "offending": []
+      },
+      "evals": [
+        {
+          "persona_id": "p02",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "This is too generic—'cluster computing and RL experience' tells me nothing about what you've actually built or measured. Mention a specific paper, method, or result from our lab that connects to your work, and explain what technical problem you'd want to tackle here."
+        },
+        {
+          "persona_id": "p03",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "Wrong person, wrong institution—I'm Skyler at Lakeview Institute, not Quinn at Northbridge. Do basic research before reaching out. Also, 'cluster computing and RL' is too vague—mention a specific paper, framework, or metric you've worked with that relates to our computational neuroscience work."
+        },
+        {
+          "persona_id": "p04",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "Wrong person, wrong institution, wrong role. This shows zero research—I'm Rowan at Cedar Hill College hiring an engineer, not Quinn at Northbridge hiring a postdoc. Even if you got my name right, 'cluster computing and RL' tells me nothing about your actual work or why you'd fit our team culture. Show me a specific project, a metric, or what you'd bring to Cedar Hill's engineering challenges."
+        },
+        {
+          "persona_id": "p06",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "You called me Quinn and mentioned Northbridge when I'm Parker at Midwest Medical School. Do basic research before reaching out—wrong name and wrong institution are automatic deletions. Also, 'computational work' is too vague; reference specific research from our lab."
+        },
+        {
+          "persona_id": "p07",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "You called me Quinn and mentioned Northbridge—I'm Reese at Midwest Medical School. Also, you didn't mention if you're authorized to work here or where you're located, which matters for our postdoc positions. Show me you actually researched our specific computational neuroscience work and what makes you a fit for it."
+        },
+        {
+          "persona_id": "p08",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "You called me Quinn and mentioned Northbridge when I'm Finley at Bay Area Research Lab—this looks copy-pasted. Also, I need to know your location and work authorization status since those are deal-breakers for postdoc roles."
+        },
+        {
+          "persona_id": "p09",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "This is too generic—'cluster computing and RL' could mean anything. What specific computational neuroscience problem are you excited about? Mention a paper from our lab or a concrete method you want to explore, and explain why our postdoc specifically fits your research direction."
+        },
+        {
+          "persona_id": "p10",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "This message has several issues: (1) You're calling me Quinn when I'm Hayden, (2) You mention Northbridge when I work at Harbor Machine Learning, (3) 'cluster computing and RL experience' is extremely vague—what specific methods, what benchmarks, what papers? (4) There's no indication you've read anything about our actual research. I'd respond if you mentioned a specific paper of ours, described a concrete project with metrics, or showed you understand what computational neuroscience work we actually do."
+        },
+        {
+          "persona_id": "p11",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 0,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.3,
+          "reply": "",
+          "critique": "You messaged the wrong person—I'm Sawyer at Harbor Machine Learning, not Quinn at Northbridge. Research who you're actually contacting and mention specific technical work relevant to their actual role before reaching out."
+        },
+        {
+          "persona_id": "p12",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "Wrong person (I'm Cameron at Lumen Bioworks, not Quinn at Northbridge), wrong company, and zero mention of why you're reaching out to me specifically or what you've actually built. Show me a concrete project with metrics—e.g., 'reduced training time 40% on X dataset'—and explain how your work connects to our team's problems."
+        },
+        {
+          "persona_id": "p13",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "You got my name wrong (I'm Blake, not Quinn), confused my company (Lumen Bioworks, not Northbridge), and gave only generic technical keywords without showing any understanding of our specific work or vision. Do basic research on who you're messaging and what we actually do before reaching out."
+        },
+        {
+          "persona_id": "p14",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "You got my name wrong (I'm Drew, not Quinn), mentioned the wrong company (Northbridge vs Northwind Robotics), and showed zero knowledge of what we actually do. Do basic research before reaching out—mention specific projects or papers that relate to your experience."
+        },
+        {
+          "persona_id": "p15",
+          "outcome": "no_response",
+          "outcome_reward": 0.0,
+          "quality": {
+            "relevance": 1,
+            "specificity": 0,
+            "concise": 2,
+            "clear_ask": 1
+          },
+          "quality_score": 0.4,
+          "reply": "",
+          "critique": "Wrong company name (Northbridge vs Northwind Robotics), wrong role (I'm a recruiter, not a researcher), and no mention of location or work authorization which are critical for me. Also, this reads generic—what specific computational neuroscience work are you referring to?"
+        }
+      ],
+      "score": 0.196
+    }
+  ],
+  "best_n": 2,
+  "baseline_test": [
+    {
+      "persona_id": "p00",
+      "outcome": "no_response",
+      "outcome_reward": 0.0,
+      "quality": {
+        "relevance": 1,
+        "specificity": 1,
+        "concise": 2,
+        "clear_ask": 1
+      },
+      "quality_score": 0.5,
+      "reply": "",
+      "critique": "This appears to be a third-party referral for someone named Ava, but I'm Riley Brooks the recruiter, not Quinn. The sender needs to clarify who they are, why they're messaging on Ava's behalf, confirm Ava's location/work authorization, and actually apply through proper channels rather than asking for informal chats that bypass our process."
+    },
+    {
+      "persona_id": "p01",
+      "outcome": "no_response",
+      "outcome_reward": 0.0,
+      "quality": {
+        "relevance": 1,
+        "specificity": 0,
+        "concise": 2,
+        "clear_ask": 1
+      },
+      "quality_score": 0.4,
+      "reply": "",
+      "critique": "This is clearly a third-party recruiter pitch with zero technical substance—no specific papers, methods, or metrics mentioned. If Ava is interested, she should reach out directly with concrete details about what computational neuroscience problems she's worked on and why our specific research direction interests her."
+    },
+    {
+      "persona_id": "p05",
+      "outcome": "no_response",
+      "outcome_reward": 0.0,
+      "quality": {
+        "relevance": 1,
+        "specificity": 1,
+        "concise": 2,
+        "clear_ask": 1
+      },
+      "quality_score": 0.5,
+      "reply": "",
+      "critique": "This is clearly a third-party referral for someone else, which feels transactional and inappropriate for a cold LinkedIn message. If Ava is interested, she should reach out directly with specific interest in our computational neuroscience work—not have someone pitch her like a sales lead."
+    }
+  ],
+  "optimized_test": [
+    {
+      "persona_id": "p00",
+      "outcome": "meaningful_conversation",
+      "outcome_reward": 0.7,
+      "quality": {
+        "relevance": 3,
+        "specificity": 3,
+        "concise": 2,
+        "clear_ask": 2
+      },
+      "quality_score": 1.0,
+      "reply": "Hi Ava! Your RL and computer vision background sounds relevant—would love to hear more about your sequential decision making work and how you see it connecting to our computational neuroscience focus.",
+      "critique": "This is actually a strong message—concise, relevant skills mentioned, and you're already at Northbridge which answers my location concern. If anything, briefly mentioning one concrete project example would make it even stronger."
+    },
+    {
+      "persona_id": "p01",
+      "outcome": "no_response",
+      "outcome_reward": 0.0,
+      "quality": {
+        "relevance": 1,
+        "specificity": 0,
+        "concise": 2,
+        "clear_ask": 1
+      },
+      "quality_score": 0.4,
+      "reply": "",
+      "critique": "This reads like buzzword bingo without substance. Tell me about a specific method you've implemented (which RL algorithm? what computational model?), a concrete metric you improved, or cite a paper from our lab that connects to your work. 'Aligns well' means nothing—show me the technical overlap."
+    },
+    {
+      "persona_id": "p05",
+      "outcome": "no_response",
+      "outcome_reward": 0.0,
+      "quality": {
+        "relevance": 1,
+        "specificity": 1,
+        "concise": 2,
+        "clear_ask": 0
+      },
+      "quality_score": 0.4,
+      "reply": "",
+      "critique": "You called me Quinn when my name is Avery—that's an immediate deletion. Also, you mentioned RL and computer vision but the role is in computational neuroscience; explain how your work actually connects to neuroscience research, don't just claim alignment."
+    }
+  ]
+}
