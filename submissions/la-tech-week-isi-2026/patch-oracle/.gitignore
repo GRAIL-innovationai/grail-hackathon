@@ -1,0 +1,9 @@
+*.pdf
+.env
+__pycache__/
+.venv/
+.playwright-cli/
+.DS_Store
+runs/events.jsonl
+runs/live/
+ui/node_modules/

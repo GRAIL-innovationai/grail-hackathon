@@ -1,0 +1,152 @@
+{
+ "1": [
+  "[antimage_mana_break] Mana Burned as Damage increased from 60% to 65%"
+ ],
+ "3": [
+  "Base Armor decreased by 1"
+ ],
+ "9": [
+  "[mirana_celestial_quiver] Base Charge Restore Time increased from 6s to 7s",
+  "[mirana_arrow] Maximum Stun decreased from 2.6/3.4/4.2/5s to 2.3/3.2/4.1/5s"
+ ],
+ "11": [
+  "[talent] Level 15 Talent Presence Armor Reduction decreased from +2 to +1.5",
+  "[nevermore_necromastery] Damage per soul changed from 1.35 + 0.15 damage per level to 1 + 0.8 damage per 6 levels ",
+  "[nevermore_shadowraze1] Bonus Damage Per Soul decreased from 3 to 2"
+ ],
+ "25": [
+  "Base Intelligence decreased from 30 to 28",
+  "Damage at level 1 decreased from 51-59 to 49-57",
+  "[lina_fiery_soul] Attack Speed Bonus decreased from 8/16/24/32 to 7/14/21/28",
+  "[lina_fiery_soul] Duration decreased from 18s to 16s"
+ ],
+ "28": [
+  "Base Health Regen decreased by 0.25",
+  "[slardar_slithereen_crush] Damage decreased from 75/150/225/300 to 60/140/220/300"
+ ],
+ "33": [
+  "[talent] Level 20 Talent Eidolon Damage decreased from +40 to +30",
+  "[enigma_demonic_conversion] Eidolon Attack Range decreased from 425/450/475/500 to 380/420/460/500",
+  "[enigma_black_hole] Aghanim's Scepter pull speed decreased from 175 to 150"
+ ],
+ "36": [
+  "[necrolyte_sadist] Hero Kill Multiplier decreased from 6 to 4",
+  "[necrolyte_ghost_shroud] Restoration Amplification decreased from 55/65/75/85% to 45/55/65/75%"
+ ],
+ "37": [
+  "Base Attack Speed increased from 90 to 95"
+ ],
+ "51": [
+  "[rattletrap_power_cogs] Mana Cost increased from 75 to 90",
+  "[rattletrap_power_cogs] Knockback Duration decreased from 0.8s to 0.7s"
+ ],
+ "54": [
+  "[talent] Level 10 Talent Movement Speed decreased from +20 to +15",
+  "[life_stealer_rage] Cooldown increased from 20/19/18/17s to 21/20/19/18s",
+  "[life_stealer_infest] Aghanim's Scepter Enemy Duration decreased from 5s to 4s"
+ ],
+ "59": [
+  "Base Strength decreased from 23 to 22",
+  "Damage at level 1 decreased from 44-49 to 43-48",
+  "Strength gain increased from 3.3 to 3.4"
+ ],
+ "61": [
+  "[broodmother_insatiable_hunger] Mana Cost decreased from 80 to 70"
+ ],
+ "62": [
+  "[talent] Level 10 Talent Shuriken Toss Slow decreased from +0.6s to +0.35s",
+  "[talent] Level 20 Talent Track Grants Shared Vision replaced with +190 Shuriken Toss Damage",
+  "[talent] Level 25 Talent +250 Shuriken Toss Damage replaced with Track Grants Shared Vision",
+  "[bounty_hunter_track] Self bonus gold decreased from 130/225/320 to 80/160/240",
+  "[bounty_hunter_track] Allies bonus gold decreased from 50/90/130 to 40/80/120"
+ ],
+ "65": [
+  "Intelligence gain increased from 2.9 to 3.2",
+  "Damage gain per level increased from 3.5 to 3.6"
+ ],
+ "66": [
+  "Strength gain increased from 2.0 to 2.2",
+  "[chen_zealot] Zealot respawn time changed from 60s to 60s - 1s per hero level"
+ ],
+ "67": [
+  "[spectre_desolate] Damage decreased from 23 + 2 per level to 23.5 + 1.5 per level "
+ ],
+ "70": [
+  "[ursa_maul] Health As Damage increased from 1.25% to 1.75%"
+ ],
+ "74": [
+  "[invoker_cold_snap] Cooldown increased from 18s to 19s",
+  "[invoker_ghost_walk] Aghanim's Shard no longer applies damage to non-Hero units"
+ ],
+ "80": [
+  "[lone_druid_entangle] Stack Duration decreased from 10s to 7/8/9/10s"
+ ],
+ "83": [
+  "Base Intelligence decreased from 20 to 17",
+  "[talent] Level 10 Talent +3 Living Armor Heal per Second replaced with +3s Living Armor Duration",
+  "[treant_natures_guise] Invisibility linger when leaving trees decreased from 2s to 1s",
+  "[treant_leech_seed] Now costs 35 mana",
+  "[treant_leech_seed] Damage to Healing rescaled from 20% to 10/15/20/25%",
+  "[treant_living_armor] Minimum damage block decreased from 20 to 10"
+ ],
+ "85": [
+  "Base Health Regen decreased by 0.25",
+  "[undying_decay] Mana Cost increased from 100 to 110"
+ ],
+ "87": [
+  "Base Intelligence increased from 20 to 21",
+  "Damage at level 1 increased from 47-51 to 48-52"
+ ],
+ "90": [
+  "Base Attack Speed decreased from 100 to 90",
+  "[keeper_of_the_light_chakra_magic] Cooldown Reduction decreased from 3/4/5/6s to 2.5/3.5/4.5/5.5s",
+  "[keeper_of_the_light_spirit_form] Illuminate Heal decreased from 70% to 60%",
+  "[keeper_of_the_light_spirit_form] Illuminate Heal with Aghanim's Shard unchanged at 100%"
+ ],
+ "91": [
+  "[talent] Level 15 Talent Spirits Damage decreased from +50% to +40%"
+ ],
+ "96": [
+  "Base Damage decreased by 2",
+  "Damage at level 1 decreased from 64-66 to 62-64",
+  "Base Movement Speed decreased from 300 to 295",
+  "[centaur_mount] Cast Range decreased from 250 to 200"
+ ],
+ "106": [
+  "Base Agility decreased from 22 to 21",
+  "Damage at level 1 decreased from 52-56 to 51-55"
+ ],
+ "107": [
+  "Base Attack Speed decreased from 100 to 95",
+  "[talent] Level 20 Talent +25% Magnetize Damage & Duration replaced with +35 Magnetize Damage Per Second",
+  "[talent] Level 20 Talent +175% Rolling Boulder Damage from Strength replaced with +200 Geomagnetic Grip Remnant Damage",
+  "[talent] Level 25 Talent +250 Geomagnetic Grip Remnant Damage replaced with +250% Rolling Boulder Damage from Strength",
+  "[earth_spirit_stone_caller] Charges changed from (7 + 1 per 4 levels) to (7 + 1 per 5 levels)",
+  "[earth_spirit_stone_caller] Max charges decreased from 14 at level 28 to 13 at level 30"
+ ],
+ "108": [
+  "[abyssal_underlord_pit_of_malice] No longer upgraded with Aghanim's Scepter",
+  "[abyssal_underlord_dark_portal] Aghanim's Scepter Cooldown decreased from 100/95/90s to 90/85/80s"
+ ],
+ "112": [
+  "[winter_wyvern_arctic_burn] Cooldown increased from 26/24/22/20s to 29/26/23/20s",
+  "[winter_wyvern_cold_embrace] Max HP Heal per second decreased from 2.25/3/3.75/4.5% to 1.5/2.5/3.5/4.5%"
+ ],
+ "123": [
+  "Base Strength decreased from 17 to 16"
+ ],
+ "129": [
+  "Base Armor increased by 1"
+ ],
+ "136": [
+  "[marci_companion_run] Ally bonus movement speed rescaled from 15/20/25/30% to 25%"
+ ],
+ "145": [
+  "Base Damage decreased by 1",
+  "Damage at level 1 decreased from 50-56 to 49-55",
+  "[talent] Level 20 Talent Kazurai Katana Damage Per Second decreased from +4% to +3.5%"
+ ],
+ "155": [
+  "[largo_song_good_vibrations] Heal rescaled from 34/56/78 to 30/55/80"
+ ]
+}
