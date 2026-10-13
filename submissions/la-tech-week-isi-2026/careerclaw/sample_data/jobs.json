@@ -1,0 +1,27 @@
+[
+  {
+    "title": "ML Engineering Intern",
+    "employer": "Synthetic Example Company",
+    "text": "Required: Python and machine learning model development.\nRequired: Experience with PyTorch.\nRequired: Evaluate ML models with metrics.\nPreferred: Docker deployment and AWS.\nPreferred: Computer vision."
+  },
+  {
+    "title": "Data Science Intern",
+    "employer": "Synthetic Example Company",
+    "text": "Required: Python for data analysis.\nRequired: SQL querying.\nRequired: Statistics.\nPreferred: Build dashboards."
+  },
+  {
+    "title": "ML Infrastructure Intern",
+    "employer": "Synthetic Example Company",
+    "text": "Required: Docker and Kubernetes.\nRequired: AWS cloud deployment.\nRequired: Python API development."
+  },
+  {
+    "title": "AI Research Intern",
+    "employer": "Synthetic Example Company",
+    "text": "Required: PyTorch research and experimental evaluation.\nPreferred: NLP and large language models.\nPreferred: Git collaboration."
+  },
+  {
+    "title": "Software Engineering Intern",
+    "employer": "Synthetic Example Company",
+    "text": "Required: Python.\nRequired: API development.\nRequired: Git teamwork.\nPreferred: JavaScript and React."
+  }
+]
