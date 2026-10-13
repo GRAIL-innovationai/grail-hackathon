@@ -1,0 +1,336 @@
+{
+ "model": "anthropic/claude-haiku-5.5",
+ "reflect_model": "anthropic/claude-sonnet-5.5",
+ "train_patches": [
+  "7.38"
+ ],
+ "val_patches": [
+  "7.39"
+ ],
+ "test_patches": [
+  "7.40",
+  "7.41"
+ ],
+ "history": [
+  {
+   "version": 0,
+   "train": {
+    "macro_f1": 0.313,
+    "accuracy": 0.317,
+    "n": 126,
+    "confusion": {
+     "up->up": 19,
+     "up->down": 7,
+     "up->flat": 23,
+     "down->up": 18,
+     "down->down": 11,
+     "down->flat": 28,
+     "flat->up": 5,
+     "flat->down": 5,
+     "flat->flat": 10
+    }
+   },
+   "val": {
+    "macro_f1": 0.461,
+    "accuracy": 0.5,
+    "n": 110,
+    "confusion": {
+     "up->up": 29,
+     "up->down": 6,
+     "up->flat": 19,
+     "down->up": 6,
+     "down->down": 21,
+     "down->flat": 17,
+     "flat->up": 6,
+     "flat->down": 1,
+     "flat->flat": 5
+    }
+   },
+   "accepted": true
+  },
+  {
+   "version": 1,
+   "train": {
+    "macro_f1": 0.377,
+    "accuracy": 0.46,
+    "n": 126,
+    "confusion": {
+     "up->up": 22,
+     "up->down": 19,
+     "up->flat": 8,
+     "down->up": 22,
+     "down->down": 34,
+     "down->flat": 1,
+     "flat->up": 10,
+     "flat->down": 8,
+     "flat->flat": 2
+    }
+   },
+   "val": {
+    "macro_f1": 0.502,
+    "accuracy": 0.591,
+    "n": 110,
+    "confusion": {
+     "up->up": 34,
+     "up->down": 13,
+     "up->flat": 7,
+     "down->up": 7,
+     "down->down": 28,
+     "down->flat": 9,
+     "flat->up": 9,
+     "flat->down": 0,
+     "flat->flat": 3
+    }
+   },
+   "accepted": true
+  },
+  {
+   "version": 2,
+   "train": {
+    "macro_f1": 0.471,
+    "accuracy": 0.492,
+    "n": 126,
+    "confusion": {
+     "up->up": 22,
+     "up->down": 17,
+     "up->flat": 10,
+     "down->up": 19,
+     "down->down": 31,
+     "down->flat": 7,
+     "flat->up": 5,
+     "flat->down": 6,
+     "flat->flat": 9
+    }
+   },
+   "val": {
+    "macro_f1": 0.527,
+    "accuracy": 0.591,
+    "n": 110,
+    "confusion": {
+     "up->up": 33,
+     "up->down": 12,
+     "up->flat": 9,
+     "down->up": 7,
+     "down->down": 27,
+     "down->flat": 10,
+     "flat->up": 6,
+     "flat->down": 1,
+     "flat->flat": 5
+    }
+   },
+   "accepted": true
+  },
+  {
+   "version": 3,
+   "train": {
+    "macro_f1": 0.378,
+    "accuracy": 0.429,
+    "n": 126,
+    "confusion": {
+     "up->up": 15,
+     "up->down": 22,
+     "up->flat": 12,
+     "down->up": 16,
+     "down->down": 34,
+     "down->flat": 7,
+     "flat->up": 4,
+     "flat->down": 11,
+     "flat->flat": 5
+    }
+   },
+   "val": {
+    "macro_f1": 0.537,
+    "accuracy": 0.591,
+    "n": 110,
+    "confusion": {
+     "up->up": 31,
+     "up->down": 11,
+     "up->flat": 12,
+     "down->up": 6,
+     "down->down": 28,
+     "down->flat": 10,
+     "flat->up": 5,
+     "flat->down": 1,
+     "flat->flat": 6
+    }
+   },
+   "accepted": true
+  },
+  {
+   "version": 4,
+   "train": {
+    "macro_f1": 0.364,
+    "accuracy": 0.381,
+    "n": 126,
+    "confusion": {
+     "up->up": 24,
+     "up->down": 10,
+     "up->flat": 15,
+     "down->up": 27,
+     "down->down": 16,
+     "down->flat": 14,
+     "flat->up": 9,
+     "flat->down": 3,
+     "flat->flat": 8
+    }
+   },
+   "val": {
+    "macro_f1": 0.471,
+    "accuracy": 0.518,
+    "n": 110,
+    "confusion": {
+     "up->up": 32,
+     "up->down": 6,
+     "up->flat": 16,
+     "down->up": 6,
+     "down->down": 20,
+     "down->flat": 18,
+     "flat->up": 6,
+     "flat->down": 1,
+     "flat->flat": 5
+    }
+   },
+   "accepted": false
+  },
+  {
+   "version": 5,
+   "train": {
+    "macro_f1": 0.411,
+    "accuracy": 0.532,
+    "n": 126,
+    "confusion": {
+     "up->up": 24,
+     "up->down": 23,
+     "up->flat": 2,
+     "down->up": 10,
+     "down->down": 42,
+     "down->flat": 5,
+     "flat->up": 7,
+     "flat->down": 12,
+     "flat->flat": 1
+    }
+   },
+   "val": {
+    "macro_f1": 0.516,
+    "accuracy": 0.609,
+    "n": 110,
+    "confusion": {
+     "up->up": 35,
+     "up->down": 12,
+     "up->flat": 7,
+     "down->up": 8,
+     "down->down": 29,
+     "down->flat": 7,
+     "flat->up": 8,
+     "flat->down": 1,
+     "flat->flat": 3
+    }
+   },
+   "accepted": false
+  },
+  {
+   "version": 6,
+   "train": {
+    "macro_f1": 0.432,
+    "accuracy": 0.5,
+    "n": 126,
+    "confusion": {
+     "up->up": 33,
+     "up->down": 15,
+     "up->flat": 1,
+     "down->up": 29,
+     "down->down": 27,
+     "down->flat": 1,
+     "flat->up": 12,
+     "flat->down": 5,
+     "flat->flat": 3
+    }
+   },
+   "val": {
+    "macro_f1": 0.487,
+    "accuracy": 0.627,
+    "n": 110,
+    "confusion": {
+     "up->up": 39,
+     "up->down": 11,
+     "up->flat": 4,
+     "down->up": 12,
+     "down->down": 29,
+     "down->flat": 3,
+     "flat->up": 10,
+     "flat->down": 1,
+     "flat->flat": 1
+    }
+   },
+   "accepted": false
+  }
+ ],
+ "best_version": 3,
+ "test": {
+  "majority_baseline": {
+   "macro_f1": 0.197,
+   "accuracy": 0.42,
+   "n": 243,
+   "confusion": {
+    "up->up": 0,
+    "up->down": 98,
+    "up->flat": 0,
+    "down->up": 0,
+    "down->down": 102,
+    "down->flat": 0,
+    "flat->up": 0,
+    "flat->down": 43,
+    "flat->flat": 0
+   }
+  },
+  "popularity_baseline": {
+   "macro_f1": 0.361,
+   "accuracy": 0.494,
+   "n": 243,
+   "confusion": {
+    "up->up": 56,
+    "up->down": 42,
+    "up->flat": 0,
+    "down->up": 38,
+    "down->down": 64,
+    "down->flat": 0,
+    "flat->up": 30,
+    "flat->down": 13,
+    "flat->flat": 0
+   }
+  },
+  "seed_v0": {
+   "macro_f1": 0.295,
+   "accuracy": 0.325,
+   "n": 243,
+   "confusion": {
+    "up->up": 52,
+    "up->down": 12,
+    "up->flat": 34,
+    "down->up": 38,
+    "down->down": 15,
+    "down->flat": 49,
+    "flat->up": 26,
+    "flat->down": 5,
+    "flat->flat": 12
+   }
+  },
+  "best_v3": {
+   "macro_f1": 0.395,
+   "accuracy": 0.477,
+   "n": 243,
+   "confusion": {
+    "up->up": 65,
+    "up->down": 26,
+    "up->flat": 7,
+    "down->up": 39,
+    "down->down": 47,
+    "down->flat": 16,
+    "flat->up": 28,
+    "flat->down": 11,
+    "flat->flat": 4
+   }
+  }
+ },
+ "spent_usd": 0.3937
+}

@@ -1,0 +1,63 @@
+{
+ "model": "google/gemma-4-31b-it",
+ "patches": [
+  "7.40",
+  "7.41"
+ ],
+ "memory_patches": [
+  "7.38",
+  "7.39"
+ ],
+ "k": 4,
+ "memory_off": {
+  "macro_f1": 0.433,
+  "accuracy": 0.51,
+  "n": 243,
+  "confusion": {
+   "up->up": 68,
+   "up->down": 24,
+   "up->flat": 6,
+   "down->up": 38,
+   "down->down": 50,
+   "down->flat": 14,
+   "flat->up": 26,
+   "flat->down": 11,
+   "flat->flat": 6
+  }
+ },
+ "memory_on": {
+  "macro_f1": 0.427,
+  "accuracy": 0.519,
+  "n": 243,
+  "confusion": {
+   "up->up": 67,
+   "up->down": 26,
+   "up->flat": 5,
+   "down->up": 36,
+   "down->down": 55,
+   "down->flat": 11,
+   "flat->up": 29,
+   "flat->down": 10,
+   "flat->flat": 4
+  }
+ },
+ "p_memory_helps": 0.36,
+ "p_beats_popularity": 0.981,
+ "popularity_baseline": {
+  "macro_f1": 0.361,
+  "accuracy": 0.494,
+  "n": 243,
+  "confusion": {
+   "up->up": 56,
+   "up->down": 42,
+   "up->flat": 0,
+   "down->up": 38,
+   "down->down": 64,
+   "down->flat": 0,
+   "flat->up": 30,
+   "flat->down": 13,
+   "flat->flat": 0
+  }
+ },
+ "spent_usd": 0.0432
+}

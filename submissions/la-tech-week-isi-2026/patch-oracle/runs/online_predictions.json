@@ -1,0 +1,607 @@
+[
+ {
+  "patch": "7.41f",
+  "id": "1",
+  "hero": "Anti-Mage",
+  "notes": [
+   "[antimage_mana_break] Mana Burned as Damage increased from 60% to 65%"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png?",
+  "pick_before": 0.6,
+  "win_before": 40.0,
+  "more_popular_than": 3,
+  "pick_after": 7.6,
+  "label": "up",
+  "pred": "up",
+  "why": "Mana Break damage buff to a core ability for a low-pick hero"
+ },
+ {
+  "patch": "7.41f",
+  "id": "3",
+  "hero": "Bane",
+  "notes": [
+   "Base Armor decreased by 1"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/bane.png?",
+  "pick_before": 16.9,
+  "win_before": 45.0,
+  "more_popular_than": 87,
+  "pick_after": 13.3,
+  "label": "flat",
+  "pred": "down",
+  "why": "Minor armor trim on a very popular hero; trims tend to lower picks"
+ },
+ {
+  "patch": "7.41f",
+  "id": "9",
+  "hero": "Mirana",
+  "notes": [
+   "[mirana_celestial_quiver] Base Charge Restore Time increased from 6s to 7s",
+   "[mirana_arrow] Maximum Stun decreased from 2.6/3.4/4.2/5s to 2.3/3.2/4.1/5s"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/mirana.png?",
+  "pick_before": 33.1,
+  "win_before": 53.2,
+  "more_popular_than": 98,
+  "pick_after": 25.5,
+  "label": "down",
+  "pred": "down",
+  "why": "Quiver restore time and Arrow max stun both nerfed on a top-popular hero"
+ },
+ {
+  "patch": "7.41f",
+  "id": "11",
+  "hero": "Shadow Fiend",
+  "notes": [
+   "[talent] Level 15 Talent Presence Armor Reduction decreased from +2 to +1.5",
+   "[nevermore_necromastery] Damage per soul changed from 1.35 + 0.15 damage per level to 1 + 0.8 damage per 6 levels ",
+   "[nevermore_shadowraze1] Bonus Damage Per Soul decreased from 3 to 2"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/nevermore.png?",
+  "pick_before": 26.3,
+  "win_before": 44.7,
+  "more_popular_than": 95,
+  "pick_after": 3.6,
+  "label": "down",
+  "pred": "down",
+  "why": "Shadow Raze soul bonus cut and Necromastery damage reduced"
+ },
+ {
+  "patch": "7.41f",
+  "id": "25",
+  "hero": "Lina",
+  "notes": [
+   "Base Intelligence decreased from 30 to 28",
+   "Damage at level 1 decreased from 51-59 to 49-57",
+   "[lina_fiery_soul] Attack Speed Bonus decreased from 8/16/24/32 to 7/14/21/28",
+   "[lina_fiery_soul] Duration decreased from 18s to 16s"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lina.png?",
+  "pick_before": 23.8,
+  "win_before": 50.9,
+  "more_popular_than": 92,
+  "pick_after": 10.8,
+  "label": "down",
+  "pred": "down",
+  "why": "Level 1 damage, Intelligence, and Fiery Soul all nerfed"
+ },
+ {
+  "patch": "7.41f",
+  "id": "28",
+  "hero": "Slardar",
+  "notes": [
+   "Base Health Regen decreased by 0.25",
+   "[slardar_slithereen_crush] Damage decreased from 75/150/225/300 to 60/140/220/300"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/slardar.png?",
+  "pick_before": 12.4,
+  "win_before": 37.8,
+  "more_popular_than": 74,
+  "pick_after": 5.4,
+  "label": "down",
+  "pred": "down",
+  "why": "Slithereen Crush damage cut at early levels plus regen nerf"
+ },
+ {
+  "patch": "7.41f",
+  "id": "33",
+  "hero": "Enigma",
+  "notes": [
+   "[talent] Level 20 Talent Eidolon Damage decreased from +40 to +30",
+   "[enigma_demonic_conversion] Eidolon Attack Range decreased from 425/450/475/500 to 380/420/460/500",
+   "[enigma_black_hole] Aghanim's Scepter pull speed decreased from 175 to 150"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/enigma.png?",
+  "pick_before": 8.0,
+  "win_before": 63.4,
+  "more_popular_than": 66,
+  "pick_after": 10.2,
+  "label": "flat",
+  "pred": "down",
+  "why": "Eidolon damage, range, and Scepter pull speed all reduced"
+ },
+ {
+  "patch": "7.41f",
+  "id": "36",
+  "hero": "Necrophos",
+  "notes": [
+   "[necrolyte_sadist] Hero Kill Multiplier decreased from 6 to 4",
+   "[necrolyte_ghost_shroud] Restoration Amplification decreased from 55/65/75/85% to 45/55/65/75%"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/necrolyte.png?",
+  "pick_before": 13.1,
+  "win_before": 47.0,
+  "more_popular_than": 76,
+  "pick_after": 15.3,
+  "label": "flat",
+  "pred": "down",
+  "why": "Sadist multiplier and Ghost Shroud restoration both reduced"
+ },
+ {
+  "patch": "7.41f",
+  "id": "37",
+  "hero": "Warlock",
+  "notes": [
+   "Base Attack Speed increased from 90 to 95"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/warlock.png?",
+  "pick_before": 0.8,
+  "win_before": 28.6,
+  "more_popular_than": 9,
+  "pick_after": 4.4,
+  "label": "up",
+  "pred": "flat",
+  "why": "Small attack speed bump on a near-unpicked hero"
+ },
+ {
+  "patch": "7.41f",
+  "id": "51",
+  "hero": "Clockwerk",
+  "notes": [
+   "[rattletrap_power_cogs] Mana Cost increased from 75 to 90",
+   "[rattletrap_power_cogs] Knockback Duration decreased from 0.8s to 0.7s"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/rattletrap.png?",
+  "pick_before": 21.4,
+  "win_before": 54.5,
+  "more_popular_than": 91,
+  "pick_after": 12.0,
+  "label": "down",
+  "pred": "down",
+  "why": "Power Cogs mana cost raised and knockback duration shortened"
+ },
+ {
+  "patch": "7.41f",
+  "id": "54",
+  "hero": "Lifestealer",
+  "notes": [
+   "[talent] Level 10 Talent Movement Speed decreased from +20 to +15",
+   "[life_stealer_rage] Cooldown increased from 20/19/18/17s to 21/20/19/18s",
+   "[life_stealer_infest] Aghanim's Scepter Enemy Duration decreased from 5s to 4s"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/life_stealer.png?",
+  "pick_before": 15.2,
+  "win_before": 47.1,
+  "more_popular_than": 83,
+  "pick_after": 12.2,
+  "label": "flat",
+  "pred": "down",
+  "why": "Rage cooldown increased and talent movement speed reduced"
+ },
+ {
+  "patch": "7.41f",
+  "id": "59",
+  "hero": "Huskar",
+  "notes": [
+   "Base Strength decreased from 23 to 22",
+   "Damage at level 1 decreased from 44-49 to 43-48",
+   "Strength gain increased from 3.3 to 3.4"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/huskar.png?",
+  "pick_before": 2.2,
+  "win_before": 40.0,
+  "more_popular_than": 27,
+  "pick_after": 2.6,
+  "label": "flat",
+  "pred": "flat",
+  "why": "Small base stat shifts offset; low-pick hero, no clear core change"
+ },
+ {
+  "patch": "7.41f",
+  "id": "61",
+  "hero": "Broodmother",
+  "notes": [
+   "[broodmother_insatiable_hunger] Mana Cost decreased from 80 to 70"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/broodmother.png?",
+  "pick_before": 1.1,
+  "win_before": 50.0,
+  "more_popular_than": 13,
+  "pick_after": 1.0,
+  "label": "flat",
+  "pred": "up",
+  "why": "Insatiable Hunger mana cost cut, a mild core buff"
+ },
+ {
+  "patch": "7.41f",
+  "id": "62",
+  "hero": "Bounty Hunter",
+  "notes": [
+   "[talent] Level 10 Talent Shuriken Toss Slow decreased from +0.6s to +0.35s",
+   "[talent] Level 20 Talent Track Grants Shared Vision replaced with +190 Shuriken Toss Damage",
+   "[talent] Level 25 Talent +250 Shuriken Toss Damage replaced with Track Grants Shared Vision",
+   "[bounty_hunter_track] Self bonus gold decreased from 130/225/320 to 80/160/240",
+   "[bounty_hunter_track] Allies bonus gold decreased from 50/90/130 to 40/80/120"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/bounty_hunter.png?",
+  "pick_before": 6.1,
+  "win_before": 72.2,
+  "more_popular_than": 57,
+  "pick_after": 7.2,
+  "label": "flat",
+  "pred": "down",
+  "why": "Track bonus gold cut substantially; talent swaps add noise"
+ },
+ {
+  "patch": "7.41f",
+  "id": "65",
+  "hero": "Batrider",
+  "notes": [
+   "Intelligence gain increased from 2.9 to 3.2",
+   "Damage gain per level increased from 3.5 to 3.6"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/batrider.png?",
+  "pick_before": 3.9,
+  "win_before": 31.4,
+  "more_popular_than": 43,
+  "pick_after": 3.0,
+  "label": "flat",
+  "pred": "flat",
+  "why": "Attribute gain bumps only; low-pick hero, no ability changes"
+ },
+ {
+  "patch": "7.41f",
+  "id": "66",
+  "hero": "Chen",
+  "notes": [
+   "Strength gain increased from 2.0 to 2.2",
+   "[chen_zealot] Zealot respawn time changed from 60s to 60s - 1s per hero level"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/chen.png?",
+  "pick_before": 0.1,
+  "win_before": 0.0,
+  "more_popular_than": 0,
+  "pick_after": 0.0,
+  "label": "flat",
+  "pred": "flat",
+  "why": "Stat and respawn tweaks on an essentially unpicked hero"
+ },
+ {
+  "patch": "7.41f",
+  "id": "67",
+  "hero": "Spectre",
+  "notes": [
+   "[spectre_desolate] Damage decreased from 23 + 2 per level to 23.5 + 1.5 per level "
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/spectre.png?",
+  "pick_before": 5.2,
+  "win_before": 43.5,
+  "more_popular_than": 50,
+  "pick_after": 1.6,
+  "label": "down",
+  "pred": "down",
+  "why": "Desolate per-level damage cut, large late-game loss"
+ },
+ {
+  "patch": "7.41f",
+  "id": "70",
+  "hero": "Ursa",
+  "notes": [
+   "[ursa_maul] Health As Damage increased from 1.25% to 1.75%"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ursa.png?",
+  "pick_before": 4.3,
+  "win_before": 36.8,
+  "more_popular_than": 44,
+  "pick_after": 9.0,
+  "label": "up",
+  "pred": "up",
+  "why": "Maul health-as-damage raised, a clear core ability buff"
+ },
+ {
+  "patch": "7.41f",
+  "id": "74",
+  "hero": "Invoker",
+  "notes": [
+   "[invoker_cold_snap] Cooldown increased from 18s to 19s",
+   "[invoker_ghost_walk] Aghanim's Shard no longer applies damage to non-Hero units"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/invoker.png?",
+  "pick_before": 14.1,
+  "win_before": 49.2,
+  "more_popular_than": 80,
+  "pick_after": 9.8,
+  "label": "down",
+  "pred": "down",
+  "why": "Cold Snap cooldown raised; Shard change removes damage, popular hero"
+ },
+ {
+  "patch": "7.41f",
+  "id": "80",
+  "hero": "Lone Druid",
+  "notes": [
+   "[lone_druid_entangle] Stack Duration decreased from 10s to 7/8/9/10s"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lone_druid.png?",
+  "pick_before": 9.9,
+  "win_before": 48.9,
+  "more_popular_than": 69,
+  "pick_after": 12.5,
+  "label": "flat",
+  "pred": "down",
+  "why": "Entangle stack duration cut, a core nerf on a mid-popular hero"
+ },
+ {
+  "patch": "7.41f",
+  "id": "83",
+  "hero": "Treant Protector",
+  "notes": [
+   "Base Intelligence decreased from 20 to 17",
+   "[talent] Level 10 Talent +3 Living Armor Heal per Second replaced with +3s Living Armor Duration",
+   "[treant_natures_guise] Invisibility linger when leaving trees decreased from 2s to 1s",
+   "[treant_leech_seed] Now costs 35 mana",
+   "[treant_leech_seed] Damage to Healing rescaled from 20% to 10/15/20/25%",
+   "[treant_living_armor] Minimum damage block decreased from 20 to 10"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/treant.png?",
+  "pick_before": 4.9,
+  "win_before": 77.3,
+  "more_popular_than": 48,
+  "pick_after": 0.4,
+  "label": "down",
+  "pred": "down",
+  "why": "Major nerfs: Int cut, Leech Seed mana cost, weaker Living Armor and invis"
+ },
+ {
+  "patch": "7.41f",
+  "id": "85",
+  "hero": "Undying",
+  "notes": [
+   "Base Health Regen decreased by 0.25",
+   "[undying_decay] Mana Cost increased from 100 to 110"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/undying.png?",
+  "pick_before": 23.9,
+  "win_before": 45.1,
+  "more_popular_than": 94,
+  "pick_after": 10.4,
+  "label": "down",
+  "pred": "down",
+  "why": "Popular hero gets regen cut and higher Decay mana cost"
+ },
+ {
+  "patch": "7.41f",
+  "id": "87",
+  "hero": "Disruptor",
+  "notes": [
+   "Base Intelligence increased from 20 to 21",
+   "Damage at level 1 increased from 47-51 to 48-52"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/disruptor.png?",
+  "pick_before": 7.0,
+  "win_before": 40.3,
+  "more_popular_than": 62,
+  "pick_after": 6.6,
+  "label": "flat",
+  "pred": "up",
+  "why": "Small base Int and level-1 damage buffs on a low-mid pick"
+ },
+ {
+  "patch": "7.41f",
+  "id": "90",
+  "hero": "Keeper of the Light",
+  "notes": [
+   "Base Attack Speed decreased from 100 to 90",
+   "[keeper_of_the_light_chakra_magic] Cooldown Reduction decreased from 3/4/5/6s to 2.5/3.5/4.5/5.5s",
+   "[keeper_of_the_light_spirit_form] Illuminate Heal decreased from 70% to 60%",
+   "[keeper_of_the_light_spirit_form] Illuminate Heal with Aghanim's Shard unchanged at 100%"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/keeper_of_the_light.png?",
+  "pick_before": 14.6,
+  "win_before": 57.7,
+  "more_popular_than": 82,
+  "pick_after": 8.4,
+  "label": "down",
+  "pred": "down",
+  "why": "Base attack speed cut plus Chakra and Illuminate nerfs"
+ },
+ {
+  "patch": "7.41f",
+  "id": "91",
+  "hero": "Io",
+  "notes": [
+   "[talent] Level 15 Talent Spirits Damage decreased from +50% to +40%"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/wisp.png?",
+  "pick_before": 5.5,
+  "win_before": 49.0,
+  "more_popular_than": 51,
+  "pick_after": 4.6,
+  "label": "flat",
+  "pred": "flat",
+  "why": "Only a talent number tweak on a mid-low pick"
+ },
+ {
+  "patch": "7.41f",
+  "id": "96",
+  "hero": "Centaur Warrunner",
+  "notes": [
+   "Base Damage decreased by 2",
+   "Damage at level 1 decreased from 64-66 to 62-64",
+   "Base Movement Speed decreased from 300 to 295",
+   "[centaur_mount] Cast Range decreased from 250 to 200"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/centaur.png?",
+  "pick_before": 26.8,
+  "win_before": 52.7,
+  "more_popular_than": 97,
+  "pick_after": 12.9,
+  "label": "down",
+  "pred": "down",
+  "why": "Popular hero loses base damage, level-1 damage, speed and mount range"
+ },
+ {
+  "patch": "7.41f",
+  "id": "106",
+  "hero": "Ember Spirit",
+  "notes": [
+   "Base Agility decreased from 22 to 21",
+   "Damage at level 1 decreased from 52-56 to 51-55"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ember_spirit.png?",
+  "pick_before": 26.3,
+  "win_before": 57.4,
+  "more_popular_than": 95,
+  "pick_after": 26.5,
+  "label": "flat",
+  "pred": "down",
+  "why": "Agility cut and lower level-1 damage on a very popular hero"
+ },
+ {
+  "patch": "7.41f",
+  "id": "107",
+  "hero": "Earth Spirit",
+  "notes": [
+   "Base Attack Speed decreased from 100 to 95",
+   "[talent] Level 20 Talent +25% Magnetize Damage & Duration replaced with +35 Magnetize Damage Per Second",
+   "[talent] Level 20 Talent +175% Rolling Boulder Damage from Strength replaced with +200 Geomagnetic Grip Remnant Damage",
+   "[talent] Level 25 Talent +250 Geomagnetic Grip Remnant Damage replaced with +250% Rolling Boulder Damage from Strength",
+   "[earth_spirit_stone_caller] Charges changed from (7 + 1 per 4 levels) to (7 + 1 per 5 levels)",
+   "[earth_spirit_stone_caller] Max charges decreased from 14 at level 28 to 13 at level 30"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/earth_spirit.png?",
+  "pick_before": 23.8,
+  "win_before": 57.1,
+  "more_popular_than": 92,
+  "pick_after": 21.7,
+  "label": "flat",
+  "pred": "down",
+  "why": "Attack speed cut, talent reshuffle, and fewer Stone Caller charges"
+ },
+ {
+  "patch": "7.41f",
+  "id": "108",
+  "hero": "Underlord",
+  "notes": [
+   "[abyssal_underlord_pit_of_malice] No longer upgraded with Aghanim's Scepter",
+   "[abyssal_underlord_dark_portal] Aghanim's Scepter Cooldown decreased from 100/95/90s to 90/85/80s"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/abyssal_underlord.png?",
+  "pick_before": 20.1,
+  "win_before": 40.2,
+  "more_popular_than": 91,
+  "pick_after": 5.6,
+  "label": "down",
+  "pred": "down",
+  "why": "Pit of Malice loses Scepter upgrade; Scepter-only cooldown cut doesn't offset"
+ },
+ {
+  "patch": "7.41f",
+  "id": "112",
+  "hero": "Winter Wyvern",
+  "notes": [
+   "[winter_wyvern_arctic_burn] Cooldown increased from 26/24/22/20s to 29/26/23/20s",
+   "[winter_wyvern_cold_embrace] Max HP Heal per second decreased from 2.25/3/3.75/4.5% to 1.5/2.5/3.5/4.5%"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/winter_wyvern.png?",
+  "pick_before": 25.1,
+  "win_before": 54.5,
+  "more_popular_than": 94,
+  "pick_after": 31.7,
+  "label": "up",
+  "pred": "down",
+  "why": "Arctic Burn cooldown up and Cold Embrace healing nerfed"
+ },
+ {
+  "patch": "7.41f",
+  "id": "123",
+  "hero": "Hoodwink",
+  "notes": [
+   "Base Strength decreased from 17 to 16"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/hoodwink.png?",
+  "pick_before": 39.5,
+  "win_before": 45.7,
+  "more_popular_than": 99,
+  "pick_after": 38.4,
+  "label": "flat",
+  "pred": "down",
+  "why": "Strength cut on a very popular hero, trims tend to drop picks"
+ },
+ {
+  "patch": "7.41f",
+  "id": "129",
+  "hero": "Mars",
+  "notes": [
+   "Base Armor increased by 1"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/mars.png?",
+  "pick_before": 4.4,
+  "win_before": 51.3,
+  "more_popular_than": 46,
+  "pick_after": 2.0,
+  "label": "down",
+  "pred": "flat",
+  "why": "Only a +1 base armor change on a low-mid pick"
+ },
+ {
+  "patch": "7.41f",
+  "id": "136",
+  "hero": "Marci",
+  "notes": [
+   "[marci_companion_run] Ally bonus movement speed rescaled from 15/20/25/30% to 25%"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/marci.png?",
+  "pick_before": 2.5,
+  "win_before": 22.7,
+  "more_popular_than": 31,
+  "pick_after": 1.4,
+  "label": "flat",
+  "pred": "flat",
+  "why": "Ally speed rescale helps early, hurts late; mixed on low pick"
+ },
+ {
+  "patch": "7.41f",
+  "id": "145",
+  "hero": "Kez",
+  "notes": [
+   "Base Damage decreased by 1",
+   "Damage at level 1 decreased from 50-56 to 49-55",
+   "[talent] Level 20 Talent Kazurai Katana Damage Per Second decreased from +4% to +3.5%"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/kez.png?",
+  "pick_before": 13.0,
+  "win_before": 57.8,
+  "more_popular_than": 76,
+  "pick_after": 11.8,
+  "label": "flat",
+  "pred": "down",
+  "why": "Base and level-1 damage cut plus Katana DPS nerf"
+ },
+ {
+  "patch": "7.41f",
+  "id": "155",
+  "hero": "Largo",
+  "notes": [
+   "[largo_song_good_vibrations] Heal rescaled from 34/56/78 to 30/55/80"
+  ],
+  "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/largo.png?",
+  "pick_before": 16.4,
+  "win_before": 55.5,
+  "more_popular_than": 84,
+  "pick_after": 13.1,
+  "label": "flat",
+  "pred": "down",
+  "why": "Popular hero's Song heal rescaled with mixed, net-trimmed effect"
+ }
+]
