@@ -1,0 +1,2 @@
+# Only PDF extraction needs a third-party dependency. Text/matching/generation use stdlib.
+pypdf>=6.0,<7

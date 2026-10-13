@@ -1,0 +1,286 @@
+[
+  {
+    "id": "p00",
+    "role": "Recruiter",
+    "name": "Riley Brooks",
+    "company": "Northbridge University",
+    "priorities": [
+      "clear skills",
+      "location fit",
+      "concise background"
+    ],
+    "pet_peeves": [
+      "copy-pasted templates",
+      "missing location or work authorization",
+      "buzzwords without examples",
+      "overly long cover letters"
+    ],
+    "split": "test"
+  },
+  {
+    "id": "p01",
+    "role": "Engineer",
+    "name": "Quinn Iyer",
+    "company": "Northbridge University",
+    "priorities": [
+      "technical depth",
+      "specific methods",
+      "research taste"
+    ],
+    "pet_peeves": [
+      "vague 'passion for AI'",
+      "no specific project or metric",
+      "third-party recruiter intros with no technical detail"
+    ],
+    "split": "test"
+  },
+  {
+    "id": "p02",
+    "role": "Engineer",
+    "name": "Harper Santos",
+    "company": "Lakeview Institute of Technology",
+    "priorities": [
+      "technical depth",
+      "specific methods",
+      "research taste"
+    ],
+    "pet_peeves": [
+      "vague 'passion for AI'",
+      "no specific project or metric",
+      "third-party recruiter intros with no technical detail"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "p03",
+    "role": "Engineer",
+    "name": "Skyler Nakamura",
+    "company": "Lakeview Institute of Technology",
+    "priorities": [
+      "team fit",
+      "delivery",
+      "mentoring"
+    ],
+    "pet_peeves": [
+      "vague 'passion for AI'",
+      "no specific project or metric",
+      "third-party recruiter intros with no technical detail",
+      "casual slang or emoji"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "p04",
+    "role": "Engineer",
+    "name": "Rowan Berg",
+    "company": "Cedar Hill College",
+    "priorities": [
+      "team fit",
+      "delivery",
+      "mentoring"
+    ],
+    "pet_peeves": [
+      "vague 'passion for AI'",
+      "no specific project or metric",
+      "third-party recruiter intros with no technical detail",
+      "casual slang or emoji"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "p05",
+    "role": "CEO",
+    "name": "Avery Okeke",
+    "company": "Cedar Hill College",
+    "priorities": [
+      "field vision",
+      "seniority",
+      "institutional fit"
+    ],
+    "pet_peeves": [
+      "generic flattery",
+      "asking 'are you hiring?'",
+      "long messages with no point",
+      "overly long cover letters"
+    ],
+    "split": "test"
+  },
+  {
+    "id": "p06",
+    "role": "CEO",
+    "name": "Parker Laurent",
+    "company": "Midwest Medical School",
+    "priorities": [
+      "field vision",
+      "seniority",
+      "institutional fit"
+    ],
+    "pet_peeves": [
+      "generic flattery",
+      "asking 'are you hiring?'",
+      "long messages with no point",
+      "overly long cover letters"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "p07",
+    "role": "Recruiter",
+    "name": "Reese Shah",
+    "company": "Midwest Medical School",
+    "priorities": [
+      "clear skills",
+      "location fit",
+      "concise background"
+    ],
+    "pet_peeves": [
+      "copy-pasted templates",
+      "missing location or work authorization",
+      "buzzwords without examples",
+      "overly long cover letters"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "p08",
+    "role": "Recruiter",
+    "name": "Finley Walsh",
+    "company": "Bay Area Research Lab",
+    "priorities": [
+      "clear skills",
+      "location fit",
+      "concise background"
+    ],
+    "pet_peeves": [
+      "copy-pasted templates",
+      "missing location or work authorization",
+      "buzzwords without examples",
+      "overly long cover letters"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "p09",
+    "role": "Engineer",
+    "name": "Emerson Cho",
+    "company": "Bay Area Research Lab",
+    "priorities": [
+      "technical depth",
+      "specific methods",
+      "research taste"
+    ],
+    "pet_peeves": [
+      "vague 'passion for AI'",
+      "no specific project or metric",
+      "third-party recruiter intros with no technical detail"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "p10",
+    "role": "Engineer",
+    "name": "Hayden Adler",
+    "company": "Harbor Machine Learning",
+    "priorities": [
+      "technical depth",
+      "specific methods",
+      "research taste"
+    ],
+    "pet_peeves": [
+      "vague 'passion for AI'",
+      "no specific project or metric",
+      "third-party recruiter intros with no technical detail"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "p11",
+    "role": "Engineer",
+    "name": "Sawyer Mensah",
+    "company": "Harbor Machine Learning",
+    "priorities": [
+      "team fit",
+      "delivery",
+      "mentoring"
+    ],
+    "pet_peeves": [
+      "vague 'passion for AI'",
+      "no specific project or metric",
+      "third-party recruiter intros with no technical detail",
+      "casual slang or emoji"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "p12",
+    "role": "Engineer",
+    "name": "Cameron Petrov",
+    "company": "Lumen Bioworks",
+    "priorities": [
+      "team fit",
+      "delivery",
+      "mentoring"
+    ],
+    "pet_peeves": [
+      "vague 'passion for AI'",
+      "no specific project or metric",
+      "third-party recruiter intros with no technical detail",
+      "casual slang or emoji"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "p13",
+    "role": "CEO",
+    "name": "Blake Singh",
+    "company": "Lumen Bioworks",
+    "priorities": [
+      "field vision",
+      "seniority",
+      "institutional fit"
+    ],
+    "pet_peeves": [
+      "generic flattery",
+      "asking 'are you hiring?'",
+      "long messages with no point",
+      "overly long cover letters"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "p14",
+    "role": "CEO",
+    "name": "Drew Moreau",
+    "company": "Northwind Robotics",
+    "priorities": [
+      "field vision",
+      "seniority",
+      "institutional fit"
+    ],
+    "pet_peeves": [
+      "generic flattery",
+      "asking 'are you hiring?'",
+      "long messages with no point",
+      "overly long cover letters"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "p15",
+    "role": "Recruiter",
+    "name": "Jules Kaplan",
+    "company": "Northwind Robotics",
+    "priorities": [
+      "clear skills",
+      "location fit",
+      "concise background"
+    ],
+    "pet_peeves": [
+      "copy-pasted templates",
+      "missing location or work authorization",
+      "buzzwords without examples",
+      "overly long cover letters"
+    ],
+    "split": "train"
+  }
+]

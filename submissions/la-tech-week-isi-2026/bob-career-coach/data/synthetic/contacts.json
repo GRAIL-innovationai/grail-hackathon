@@ -1,0 +1,452 @@
+[
+  {
+    "contact_id": "p00",
+    "name": "Riley Brooks",
+    "company_id": "co00",
+    "persona_role": "recruiter",
+    "seniority": "senior",
+    "priorities": [
+      "clear skills",
+      "location fit",
+      "concise background"
+    ],
+    "communication_preference": "brief",
+    "response_likelihood": 0.58,
+    "outcome_weights": {
+      "nonresponse": 0.42,
+      "passive_acceptance": 0.26,
+      "conversation": 0.2,
+      "strong_interest": 0.12
+    },
+    "job_ids": [
+      "j000",
+      "j010",
+      "j020",
+      "j030",
+      "j040",
+      "j050",
+      "j060",
+      "j070",
+      "j080",
+      "j090"
+    ]
+  },
+  {
+    "contact_id": "p01",
+    "name": "Quinn Iyer",
+    "company_id": "co00",
+    "persona_role": "engineer",
+    "seniority": "mid",
+    "priorities": [
+      "technical depth",
+      "specific methods",
+      "research taste"
+    ],
+    "communication_preference": "detailed",
+    "response_likelihood": 0.42,
+    "outcome_weights": {
+      "nonresponse": 0.58,
+      "passive_acceptance": 0.19,
+      "conversation": 0.15,
+      "strong_interest": 0.08
+    },
+    "job_ids": [
+      "j005",
+      "j015",
+      "j025",
+      "j035",
+      "j045",
+      "j055",
+      "j065",
+      "j075",
+      "j085",
+      "j095"
+    ]
+  },
+  {
+    "contact_id": "p02",
+    "name": "Harper Santos",
+    "company_id": "co01",
+    "persona_role": "engineer",
+    "seniority": "senior",
+    "priorities": [
+      "technical depth",
+      "specific methods",
+      "research taste"
+    ],
+    "communication_preference": "detailed",
+    "response_likelihood": 0.34,
+    "outcome_weights": {
+      "nonresponse": 0.66,
+      "passive_acceptance": 0.15,
+      "conversation": 0.12,
+      "strong_interest": 0.07
+    },
+    "job_ids": [
+      "j006",
+      "j016",
+      "j026",
+      "j036",
+      "j046",
+      "j056",
+      "j066",
+      "j076",
+      "j086",
+      "j096"
+    ]
+  },
+  {
+    "contact_id": "p03",
+    "name": "Skyler Nakamura",
+    "company_id": "co01",
+    "persona_role": "hiring_manager",
+    "seniority": "mid",
+    "priorities": [
+      "team fit",
+      "delivery",
+      "mentoring"
+    ],
+    "communication_preference": "formal",
+    "response_likelihood": 0.52,
+    "outcome_weights": {
+      "nonresponse": 0.48,
+      "passive_acceptance": 0.23,
+      "conversation": 0.18,
+      "strong_interest": 0.11
+    },
+    "job_ids": [
+      "j001",
+      "j011",
+      "j021",
+      "j031",
+      "j041",
+      "j051",
+      "j061",
+      "j071",
+      "j081",
+      "j091"
+    ]
+  },
+  {
+    "contact_id": "p04",
+    "name": "Rowan Berg",
+    "company_id": "co02",
+    "persona_role": "hiring_manager",
+    "seniority": "senior",
+    "priorities": [
+      "team fit",
+      "delivery",
+      "mentoring"
+    ],
+    "communication_preference": "formal",
+    "response_likelihood": 0.44,
+    "outcome_weights": {
+      "nonresponse": 0.56,
+      "passive_acceptance": 0.2,
+      "conversation": 0.15,
+      "strong_interest": 0.09
+    },
+    "job_ids": [
+      "j002",
+      "j012",
+      "j022",
+      "j032",
+      "j042",
+      "j052",
+      "j062",
+      "j072",
+      "j082",
+      "j092"
+    ]
+  },
+  {
+    "contact_id": "p05",
+    "name": "Avery Okeke",
+    "company_id": "co02",
+    "persona_role": "executive",
+    "seniority": "executive",
+    "priorities": [
+      "field vision",
+      "seniority",
+      "institutional fit"
+    ],
+    "communication_preference": "brief",
+    "response_likelihood": 0.26,
+    "outcome_weights": {
+      "nonresponse": 0.74,
+      "passive_acceptance": 0.12,
+      "conversation": 0.09,
+      "strong_interest": 0.05
+    },
+    "job_ids": [
+      "j007",
+      "j017",
+      "j027",
+      "j037",
+      "j047",
+      "j057",
+      "j067",
+      "j077",
+      "j087",
+      "j097"
+    ]
+  },
+  {
+    "contact_id": "p06",
+    "name": "Parker Laurent",
+    "company_id": "co03",
+    "persona_role": "executive",
+    "seniority": "executive",
+    "priorities": [
+      "field vision",
+      "seniority",
+      "institutional fit"
+    ],
+    "communication_preference": "brief",
+    "response_likelihood": 0.18,
+    "outcome_weights": {
+      "nonresponse": 0.82,
+      "passive_acceptance": 0.08,
+      "conversation": 0.06,
+      "strong_interest": 0.04
+    },
+    "job_ids": [
+      "j008",
+      "j018",
+      "j028",
+      "j038",
+      "j048",
+      "j058",
+      "j068",
+      "j078",
+      "j088",
+      "j098"
+    ]
+  },
+  {
+    "contact_id": "p07",
+    "name": "Reese Shah",
+    "company_id": "co03",
+    "persona_role": "recruiter",
+    "seniority": "mid",
+    "priorities": [
+      "clear skills",
+      "location fit",
+      "concise background"
+    ],
+    "communication_preference": "brief",
+    "response_likelihood": 0.66,
+    "outcome_weights": {
+      "nonresponse": 0.34,
+      "passive_acceptance": 0.3,
+      "conversation": 0.23,
+      "strong_interest": 0.13
+    },
+    "job_ids": [
+      "j003",
+      "j013",
+      "j023",
+      "j033",
+      "j043",
+      "j053",
+      "j063",
+      "j073",
+      "j083",
+      "j093"
+    ]
+  },
+  {
+    "contact_id": "p08",
+    "name": "Finley Walsh",
+    "company_id": "co04",
+    "persona_role": "recruiter",
+    "seniority": "senior",
+    "priorities": [
+      "clear skills",
+      "location fit",
+      "concise background"
+    ],
+    "communication_preference": "brief",
+    "response_likelihood": 0.58,
+    "outcome_weights": {
+      "nonresponse": 0.42,
+      "passive_acceptance": 0.26,
+      "conversation": 0.2,
+      "strong_interest": 0.12
+    },
+    "job_ids": []
+  },
+  {
+    "contact_id": "p09",
+    "name": "Emerson Cho",
+    "company_id": "co04",
+    "persona_role": "engineer",
+    "seniority": "mid",
+    "priorities": [
+      "technical depth",
+      "specific methods",
+      "research taste"
+    ],
+    "communication_preference": "detailed",
+    "response_likelihood": 0.42,
+    "outcome_weights": {
+      "nonresponse": 0.58,
+      "passive_acceptance": 0.19,
+      "conversation": 0.15,
+      "strong_interest": 0.08
+    },
+    "job_ids": []
+  },
+  {
+    "contact_id": "p10",
+    "name": "Hayden Adler",
+    "company_id": "co05",
+    "persona_role": "engineer",
+    "seniority": "senior",
+    "priorities": [
+      "technical depth",
+      "specific methods",
+      "research taste"
+    ],
+    "communication_preference": "detailed",
+    "response_likelihood": 0.34,
+    "outcome_weights": {
+      "nonresponse": 0.66,
+      "passive_acceptance": 0.15,
+      "conversation": 0.12,
+      "strong_interest": 0.07
+    },
+    "job_ids": [
+      "j024",
+      "j054",
+      "j084"
+    ]
+  },
+  {
+    "contact_id": "p11",
+    "name": "Sawyer Mensah",
+    "company_id": "co05",
+    "persona_role": "hiring_manager",
+    "seniority": "mid",
+    "priorities": [
+      "team fit",
+      "delivery",
+      "mentoring"
+    ],
+    "communication_preference": "formal",
+    "response_likelihood": 0.52,
+    "outcome_weights": {
+      "nonresponse": 0.48,
+      "passive_acceptance": 0.23,
+      "conversation": 0.18,
+      "strong_interest": 0.11
+    },
+    "job_ids": [
+      "j009",
+      "j039",
+      "j069",
+      "j099"
+    ]
+  },
+  {
+    "contact_id": "p12",
+    "name": "Cameron Petrov",
+    "company_id": "co06",
+    "persona_role": "hiring_manager",
+    "seniority": "senior",
+    "priorities": [
+      "team fit",
+      "delivery",
+      "mentoring"
+    ],
+    "communication_preference": "formal",
+    "response_likelihood": 0.44,
+    "outcome_weights": {
+      "nonresponse": 0.56,
+      "passive_acceptance": 0.2,
+      "conversation": 0.15,
+      "strong_interest": 0.09
+    },
+    "job_ids": [
+      "j004",
+      "j034",
+      "j064",
+      "j094"
+    ]
+  },
+  {
+    "contact_id": "p13",
+    "name": "Blake Singh",
+    "company_id": "co06",
+    "persona_role": "executive",
+    "seniority": "executive",
+    "priorities": [
+      "field vision",
+      "seniority",
+      "institutional fit"
+    ],
+    "communication_preference": "brief",
+    "response_likelihood": 0.26,
+    "outcome_weights": {
+      "nonresponse": 0.74,
+      "passive_acceptance": 0.12,
+      "conversation": 0.09,
+      "strong_interest": 0.05
+    },
+    "job_ids": [
+      "j019",
+      "j049",
+      "j079"
+    ]
+  },
+  {
+    "contact_id": "p14",
+    "name": "Drew Moreau",
+    "company_id": "co07",
+    "persona_role": "executive",
+    "seniority": "executive",
+    "priorities": [
+      "field vision",
+      "seniority",
+      "institutional fit"
+    ],
+    "communication_preference": "brief",
+    "response_likelihood": 0.18,
+    "outcome_weights": {
+      "nonresponse": 0.82,
+      "passive_acceptance": 0.08,
+      "conversation": 0.06,
+      "strong_interest": 0.04
+    },
+    "job_ids": [
+      "j014",
+      "j044",
+      "j074"
+    ]
+  },
+  {
+    "contact_id": "p15",
+    "name": "Jules Kaplan",
+    "company_id": "co07",
+    "persona_role": "recruiter",
+    "seniority": "mid",
+    "priorities": [
+      "clear skills",
+      "location fit",
+      "concise background"
+    ],
+    "communication_preference": "brief",
+    "response_likelihood": 0.66,
+    "outcome_weights": {
+      "nonresponse": 0.34,
+      "passive_acceptance": 0.3,
+      "conversation": 0.23,
+      "strong_interest": 0.13
+    },
+    "job_ids": [
+      "j029",
+      "j059",
+      "j089"
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "when": [],
+    "response": "# Outreach generator\n\nWrite a short LinkedIn connection note from this new-grad candidate to the recipient.\n\nHard rules:\n- Under 300 characters (LinkedIn connection-note limit).\n- Cite only the candidate's resume lines. Never claim a skill, tool, number, or employer that is not in them.\n- Output JSON only: {\"text\": \"<message>\", \"citations\": [\"R1\", ...]}\n\nStyle rules:\n- Open with one concrete project from the candidate's lines, with its real numbers. No adjectives like 'passionate'.\n"
+  },
+  {
+    "when": [
+      "Open with one concrete project"
+    ],
+    "response": "# Outreach generator\n\nWrite a short LinkedIn connection note from this new-grad candidate to the recipient.\n\nHard rules:\n- Under 300 characters (LinkedIn connection-note limit).\n- Cite only the candidate's resume lines. Never claim a skill, tool, number, or employer that is not in them.\n- Output JSON only: {\"text\": \"<message>\", \"citations\": [\"R1\", ...]}\n\nStyle rules:\n- Open with one concrete project from the candidate's lines, with its real numbers. No adjectives like 'passionate'.\n- Name the specific requirement from the job that the project maps to, in the recipient's words.\n"
+  },
+  {
+    "when": [
+      "Name the specific requirement"
+    ],
+    "response": "# Outreach generator\n\nWrite a short LinkedIn connection note from this new-grad candidate to the recipient.\n\nHard rules:\n- Under 300 characters (LinkedIn connection-note limit).\n- Cite only the candidate's resume lines. Never claim a skill, tool, number, or employer that is not in them.\n- Output JSON only: {\"text\": \"<message>\", \"citations\": [\"R1\", ...]}\n\nStyle rules:\n- Open with one concrete project from the candidate's lines, with its real numbers. No adjectives like 'passionate'.\n- Name the specific requirement from the job that the project maps to, in the recipient's words.\n- End with a single low-effort ask (a short call about the work), never 'let me know if you are hiring'.\n"
+  },
+  {
+    "when": [
+      "End with a single low-effort ask"
+    ],
+    "response": "# Outreach generator\n\nWrite a short LinkedIn connection note from this new-grad candidate to the recipient.\n\nHard rules:\n- Under 300 characters (LinkedIn connection-note limit).\n- Cite only the candidate's resume lines. Never claim a skill, tool, number, or employer that is not in them.\n- Output JSON only: {\"text\": \"<message>\", \"citations\": [\"R1\", ...]}\n\nStyle rules:\n- Open with one concrete project from the candidate's lines, with its real numbers. No adjectives like 'passionate'.\n- Name the specific requirement from the job that the project maps to, in the recipient's words.\n- End with a single low-effort ask (a short call about the work), never 'let me know if you are hiring'.\n- Cut every word that does not carry a fact or the ask.\n"
+  }
+]

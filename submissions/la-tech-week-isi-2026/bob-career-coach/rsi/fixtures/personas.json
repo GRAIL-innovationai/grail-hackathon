@@ -1,0 +1,29 @@
+{
+  "_fixture": "TEMPORARY FIXTURE - stands in for Agent B's hiring personas. All people and companies are fictional. Field names follow the contract in rsi/README.md; replace with Agent B's output via --personas.",
+  "personas": [
+    {"id": "hc-01", "name": "Dana Whitfield", "title": "Engineering Manager", "company": "Brightforge Systems", "job_id": "job-01", "tone": "direct",
+     "cares_about": ["reliability", "testing", "ownership"], "pet_peeves": ["generic praise", "long messages"],
+     "preferred_max_words": 70, "base_response_rate": 0.22, "bio": "Runs a small backend team; skims messages between incident reviews."},
+    {"id": "hc-02", "name": "Rohan Mehta", "title": "Analytics Director", "company": "Lumen Harbor Analytics", "job_id": "job-02", "tone": "formal",
+     "cares_about": ["dashboards", "stakeholders", "clarity"], "pet_peeves": ["buzzwords", "vague claims"],
+     "preferred_max_words": 110, "base_response_rate": 0.35, "bio": "Values analysts who explain findings to non-technical audiences."},
+    {"id": "hc-03", "name": "Elena Vasquez", "title": "Head of ML Research", "company": "Kestrel Health Tech", "job_id": "job-03", "tone": "formal",
+     "cares_about": ["clinical data", "reproducibility", "evaluation"], "pet_peeves": ["overclaiming results"],
+     "preferred_max_words": 120, "base_response_rate": 0.30, "bio": "Former academic; reads carefully and distrusts inflated claims."},
+    {"id": "hc-04", "name": "Theo Larkin", "title": "Design Lead", "company": "Orchid Ridge Studio", "job_id": "job-04", "tone": "casual",
+     "cares_about": ["accessibility", "user research", "community"], "pet_peeves": ["templated outreach"],
+     "preferred_max_words": 90, "base_response_rate": 0.45, "bio": "Friendly and portfolio-driven; responds to genuine, specific notes."},
+    {"id": "hc-05", "name": "Priya Raman", "title": "Robotics Team Lead", "company": "Tidewater Robotics", "job_id": "job-05", "tone": "direct",
+     "cares_about": ["control systems", "simulation", "hands-on builds"], "pet_peeves": ["fluff", "no concrete projects"],
+     "preferred_max_words": 75, "base_response_rate": 0.18, "bio": "Hires builders; wants to see something the candidate actually made."},
+    {"id": "hc-06", "name": "Graham Ellis", "title": "Investment Associate", "company": "Fernhill Capital", "job_id": "job-06", "tone": "formal",
+     "cares_about": ["valuation", "attention to detail", "modeling"], "pet_peeves": ["typos", "vague claims"],
+     "preferred_max_words": 100, "base_response_rate": 0.25, "bio": "Detail-oriented; replies to concise, precise notes."},
+    {"id": "hc-07", "name": "Noor Haddad", "title": "Growth Marketing Manager", "company": "Copperleaf Commerce", "job_id": "job-07", "tone": "casual",
+     "cares_about": ["experiments", "campaign results", "storytelling"], "pet_peeves": ["buzzwords"],
+     "preferred_max_words": 95, "base_response_rate": 0.40, "bio": "Loves experiment write-ups with real numbers."},
+    {"id": "hc-08", "name": "Callum Pryor", "title": "Director of Product Marketing", "company": "Quillpoint Media", "job_id": "job-08", "tone": "direct",
+     "cares_about": ["launch messaging", "customer insight", "writing"], "pet_peeves": ["generic enthusiasm"],
+     "preferred_max_words": 80, "base_response_rate": 0.20, "bio": "Busy; wants evidence the candidate can write and learn from customers."}
+  ]
+}

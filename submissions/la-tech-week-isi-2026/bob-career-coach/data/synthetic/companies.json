@@ -1,0 +1,58 @@
+[
+  {
+    "company_id": "co00",
+    "name": "Northbridge University",
+    "kind": "university",
+    "location": "Boston, MA",
+    "focus": "ml"
+  },
+  {
+    "company_id": "co01",
+    "name": "Lakeview Institute of Technology",
+    "kind": "university",
+    "location": "San Francisco, CA",
+    "focus": "compbio"
+  },
+  {
+    "company_id": "co02",
+    "name": "Cedar Hill College",
+    "kind": "university",
+    "location": "Seattle, WA",
+    "focus": "neurosci"
+  },
+  {
+    "company_id": "co03",
+    "name": "Midwest Medical School",
+    "kind": "university",
+    "location": "Austin, TX",
+    "focus": "hci"
+  },
+  {
+    "company_id": "co04",
+    "name": "Bay Area Research Lab",
+    "kind": "lab",
+    "location": "Chicago, IL",
+    "focus": "robotics"
+  },
+  {
+    "company_id": "co05",
+    "name": "Harbor Machine Learning",
+    "kind": "industry",
+    "location": "New York, NY",
+    "focus": "ml"
+  },
+  {
+    "company_id": "co06",
+    "name": "Lumen Bioworks",
+    "kind": "industry",
+    "location": "Pittsburgh, PA",
+    "focus": "compbio"
+  },
+  {
+    "company_id": "co07",
+    "name": "Northwind Robotics",
+    "kind": "industry",
+    "location": "Madison, WI",
+    "focus": "neurosci"
+  }
+]

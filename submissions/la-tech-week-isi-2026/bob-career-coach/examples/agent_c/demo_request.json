@@ -1,0 +1,56 @@
+{
+  "fixture_notice": "TEMPORARY AGENT C FIXTURE. All people, companies, schools, jobs, and achievements are fictional. Replace this data with Agent B's dataset at integration. This is not held-out evaluation data.",
+  "operation": "coach",
+  "target_role": "software engineer intern using Python and React",
+  "limit": 3,
+  "jobs": [
+    {
+      "id": "c-fixture-software-intern",
+      "title": "Software Engineer Intern",
+      "company": "Fable Systems",
+      "description": "Build Python APIs and React interfaces for internal scheduling tools.",
+      "required_skills": ["Python", "React", "SQL"],
+      "preferred_skills": ["FastAPI", "Docker"],
+      "seniority": "intern",
+      "location": "Remote",
+      "contact_ids": ["c-fixture-engineer"]
+    },
+    {
+      "id": "c-fixture-data-intern",
+      "title": "Data Analyst Intern",
+      "company": "Lantern Analytics",
+      "description": "Analyze product metrics with SQL and build Tableau dashboards.",
+      "required_skills": ["SQL", "Python", "Tableau"],
+      "preferred_skills": ["Statistics"],
+      "seniority": "intern",
+      "contact_ids": ["c-fixture-recruiter"]
+    },
+    {
+      "id": "c-fixture-senior-platform",
+      "title": "Senior Platform Engineer",
+      "company": "Northstar Fictional Cloud",
+      "description": "Operate distributed infrastructure using Go and Kubernetes.",
+      "required_skills": ["Go", "Kubernetes", "Terraform"],
+      "seniority": "senior",
+      "contact_ids": []
+    }
+  ],
+  "contacts": [
+    {
+      "id": "c-fixture-engineer",
+      "name": "Morgan Ellis",
+      "role": "Software Engineer",
+      "company": "Fable Systems",
+      "priorities": ["API quality", "testing", "clear technical evidence"],
+      "communication_preferences": {"tone": "direct", "max_words": 100, "prefers_metrics": true}
+    },
+    {
+      "id": "c-fixture-recruiter",
+      "name": "Jordan Park",
+      "role": "Recruiter",
+      "company": "Lantern Analytics",
+      "priorities": ["role fit", "clear qualifications"],
+      "communication_preferences": {"tone": "professional", "max_words": 90}
+    }
+  ]
+}

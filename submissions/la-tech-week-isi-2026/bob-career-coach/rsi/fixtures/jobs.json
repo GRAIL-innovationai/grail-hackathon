@@ -1,0 +1,13 @@
+{
+  "_fixture": "TEMPORARY FIXTURE - synthetic jobs standing in for the shared synthetic dataset. All companies are fictional.",
+  "jobs": [
+    {"id": "job-01", "title": "Backend Software Engineer", "company": "Brightforge Systems", "required_skills": ["Python", "SQL", "REST APIs", "Docker", "testing"], "description": "Build reliable data services for logistics customers."},
+    {"id": "job-02", "title": "Data Analyst", "company": "Lumen Harbor Analytics", "required_skills": ["SQL", "Python", "Tableau", "statistics", "communication"], "description": "Turn operational data into dashboards that non-technical teams use."},
+    {"id": "job-03", "title": "Machine Learning Engineer Intern", "company": "Kestrel Health Tech", "required_skills": ["Python", "machine learning", "PyTorch", "data pipelines"], "description": "Prototype models on de-identified clinical data."},
+    {"id": "job-04", "title": "UX Designer", "company": "Orchid Ridge Studio", "required_skills": ["Figma", "user research", "prototyping", "accessibility"], "description": "Design accessible mobile experiences for community services."},
+    {"id": "job-05", "title": "Robotics Software Engineer", "company": "Tidewater Robotics", "required_skills": ["C++", "ROS", "Python", "control systems"], "description": "Write motion-control software for warehouse robots."},
+    {"id": "job-06", "title": "Financial Analyst", "company": "Fernhill Capital", "required_skills": ["Excel", "financial modeling", "SQL", "valuation"], "description": "Support valuation work on small-cap investments."},
+    {"id": "job-07", "title": "Marketing Analyst", "company": "Copperleaf Commerce", "required_skills": ["SQL", "Google Analytics", "A/B testing", "Excel", "storytelling"], "description": "Measure campaign performance and recommend budget shifts."},
+    {"id": "job-08", "title": "Product Marketing Associate", "company": "Quillpoint Media", "required_skills": ["market research", "copywriting", "A/B testing", "presentations"], "description": "Shape launch messaging for creator tools."}
+  ]
+}
