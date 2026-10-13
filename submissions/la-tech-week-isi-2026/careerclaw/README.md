@@ -29,6 +29,20 @@ Run these commands from the repository root. On Windows, activate the environmen
 
 Click **Load demo dataset**, then **Analyze jobs & generate plan**. Inspect `JD:line` and `RESUME:line` references by expanding requirements. Update resume/target, enter a JD, and rerun.
 
+## Proof Project Designer
+
+Choose a saved job in the Proof Project Designer section, set hours per week and weeks, and generate a project. The deterministic adapter implements the bundled skill's gap classification, bullet-first plan, rubric and locked-bullet workflow. It reads the skill and template to record a revision fingerprint; it is not a general Markdown skill interpreter or an LLM-generated project designer. Plans, notes, evidence snapshots, and status history are persisted in SQLite per browser session.
+
+Enter a public GitHub repository URL and 1-5 text-file paths, then check the evidence. Files are pinned to a commit. Retrieval alone never unlocks a claim. For each rubric row, a human reviewer selects a decision, gives a reason, and quotes a checked file for every met claim. Status becomes LOCKED (none met), PARTIAL (some met), or UNLOCKED (all met). This verifies the quote exists, not the semantic truth of the review, authorship, runtime behavior, or metrics. Rechecking evidence resets all claim reviews. Only the human-reviewed smaller bullet is available for a partial result; unverified metrics are never generated.
+
+API routes: `proof_generate`, `proof_list`, `proof_save`, `proof_check`, and `proof_review` (all POST under `/api/`, with `sid`). Save/check/review require the project's `id` and `updated` value to reject stale changes. No GitHub token or OpenRouter key is needed. GitHub anonymous rate limits apply.
+
+## Remote position search
+
+The Find remote positions section searches Remotive listings by keywords, candidate location, and job type. Add results to your shortlist for the existing evidence-based assessment. Listings link to Remotive, are delayed by 24 hours by the provider, and are cached for six hours in the running server. This source covers remote positions only; location matching is text-based and does not verify work eligibility. Other positions can still be added manually. Search needs internet access but no API key.
+
+On macOS, if Python cannot verify the provider's HTTPS certificate, start with `SSL_CERT_FILE=/etc/ssl/cert.pem python app.py` to use the system certificate bundle.
+
 ## OpenRouter
 
 Optional API-generated drafting uses the organizers' key (subject to model availability). Export on your own computer:
@@ -73,6 +87,8 @@ Restart Dr. Claw, copy `AGENTS.md` into the chosen career project, and verify th
 5. No real multi-user authentication. App binds to localhost, and sample students/jobs are synthetic. Never deploy it publicly or enter real private student data without authentication, isolation, privacy review, and consent.
 
 ## APIs
+
+The two-week plan currently cycles through gap-based suggestions, or repeats a fallback task when no actions are available. It is not yet a sequenced personalized schedule.
 
 `POST /api/profile`, `/api/job`, `/api/jobs`, `/api/demo`, `/api/analyze`, `/api/chat`, `/api/track`, `/api/tracker_list` and `GET /health`. JSON requires an `sid` string. To create a tracker item POST `/api/track` with `sid`, `job_id`, `status` (saved, preparing, applied, interviewing etc.), `next_action`.
 

@@ -3,6 +3,8 @@ Run: python app.py. No pip install needed for text-based demos.
 """
 import os, json, re, sqlite3, uuid, datetime, urllib.request, urllib.parse, ipaddress, socket, html, mimetypes, io, base64, binascii
 from document_ingestion import extract_document
+from job_search import search_jobs
+import proof_projects
 from pathlib import Path
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 from email.parser import BytesParser
@@ -25,6 +27,7 @@ def init():
   c.executescript('''CREATE TABLE IF NOT EXISTS profiles (sid TEXT PRIMARY KEY, resume TEXT NOT NULL DEFAULT '', linkedin TEXT DEFAULT '', projects TEXT DEFAULT '', transcript TEXT DEFAULT '', target TEXT DEFAULT '', interests TEXT DEFAULT '', constraints_text TEXT DEFAULT '', answers TEXT DEFAULT '{}', created TEXT);
 CREATE TABLE IF NOT EXISTS jobs (id TEXT PRIMARY KEY, sid TEXT NOT NULL, title TEXT NOT NULL, employer TEXT DEFAULT '', text TEXT NOT NULL, url TEXT DEFAULT '', created TEXT);
 CREATE TABLE IF NOT EXISTS applications (id TEXT PRIMARY KEY, sid TEXT NOT NULL, job_id TEXT NOT NULL, status TEXT NOT NULL, next_action TEXT, updated TEXT);''')
+  c.execute('CREATE TABLE IF NOT EXISTS proof_projects (id TEXT PRIMARY KEY, sid TEXT NOT NULL, data TEXT NOT NULL, updated TEXT)')
 
 def lines(text,prefix):
  return [{'id':f'{prefix}:{i}', 'line':i,'text':s.strip()} for i,s in enumerate(text.splitlines(),1) if s.strip()]
@@ -135,8 +138,12 @@ def fetch_url(url):
  clean=re.sub(r'(?i)</(?:p|div|li|h[1-6]|br)>','\n',clean)
  return html.unescape(re.sub('<[^>]+>',' ',clean))[:20000]
 
-HTML='''<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CareerClaw · Career Coach</title><style>
-:root{font-family:Inter,ui-sans-serif,system-ui;background:#0b1220;color:#e9eff9}*{box-sizing:border-box}body{margin:0}header{background:#111c2c;border-bottom:1px solid #344153;padding:22px 5vw}h1{margin:0}p{color:#a9bad0}main{max-width:1200px;margin:auto;padding:24px;display:grid;grid-template-columns:380px 1fr;gap:22px}.panel{border:1px solid #344153;border-radius:14px;background:#152235;padding:20px;margin-bottom:18px}textarea,input,select{width:100%;background:#0c1626;color:#e8eef8;border:1px solid #465970;border-radius:8px;padding:11px;margin:6px 0 12px;min-height:38px}textarea{min-height:95px;resize:vertical}label{font-size:12px;font-weight:700;color:#bcd0e5}button{background:#73aeff;color:#061426;font-weight:750;border:0;border-radius:8px;padding:11px 16px;cursor:pointer;margin:4px 3px 6px 0}button.secondary{background:#283951;color:white}.small{font-size:12px;color:#9ab0c9}.msg{border-left:3px solid #73aeff;padding:10px 14px;background:#1e2e43;margin:8px 0;border-radius:5px}.card{padding:13px;margin:10px 0;border:1px solid #364b62;border-radius:10px}details{margin:8px 0}summary{cursor:pointer;font-weight:600}.tag{font-size:11px;border-radius:10px;background:#2c4565;padding:3px 8px}.good{color:#88dfbd}.bad{color:#ffcb90}#output{white-space:normal;overflow-wrap:anywhere}pre{white-space:pre-wrap}a{color:#9dc7ff}@media(max-width:850px){main{grid-template-columns:1fr}}</style></head><body><header><h1>🎯 CareerClaw</h1><p>Evidence-first agentic career coach · Dr. Claw-compatible skills · OpenRouter optional</p></header><main><section><div class="panel"><h2>1. Student profile</h2><label>Upload student documents (PDF / DOCX / TXT / MD)</label><input id="studentfile" type="file" accept=".pdf,.docx,.txt,.md" multiple><label>Apply uploaded files to</label><select id="filekind"><option value="resume">Resume</option><option value="linkedin">LinkedIn profile</option><option value="projects">Project list</option><option value="transcript">Transcript</option></select><button type="button" onclick="uploadStudentFiles()">Extract & add to profile</button><div id="uploadnotice" class="small" aria-live="polite"></div><p class="small">For multiple document types, upload each type separately. Extracted text remains editable below. Scanned/image-only PDFs are not supported.</p><label>Resume (paste or edit extracted text)</label><textarea id="resume" placeholder="Experience and projects; use one bullet per line"></textarea><label>LinkedIn profile URL or exported text</label><textarea id="linkedin" placeholder="LinkedIn content or URL; public URL alone is not automatically scraped"></textarea><label>Project list</label><textarea id="projects"></textarea><label>Transcript (paste relevant coursework)</label><textarea id="transcript"></textarea><label>Target role</label><input id="target" placeholder="ML Engineering Intern"><label>Interests</label><input id="interests" placeholder="Robotics, AI..."><label>Constraints</label><input id="constraints_text" placeholder="Location, timeframe, availability..."><button onclick="saveProfile()">Save / update profile</button></div><div class="panel"><h2>2. Add job descriptions</h2><label>Job title</label><input id="jobtitle" placeholder="AI Research Intern"><label>Employer</label><input id="employer"><label>Job URL (optional; requires publicly accessible HTTPS page)</label><input id="joburl" placeholder="https://..."><label>Upload job description (PDF / DOCX / TXT / MD)</label><input id="jobfile" type="file" accept=".pdf,.docx,.txt,.md"><button type="button" onclick="uploadJobFile()">Extract JD</button><label>JD text (recommended)</label><textarea id="jd" placeholder="Requirements, preferred qualifications..."></textarea><button onclick="addJob()">Add job</button><button class="secondary" onclick="loadDemo()">Load demo dataset</button><div id="jobs"></div></div></section><section><div class="panel"><h2>3. Career Agent</h2><p class="small">Runs deterministic evidence matching first, then optional OpenRouter drafting. You can inspect every requirement and source line.</p><button onclick="runAgent()">Analyze jobs & generate plan</button><button class="secondary" onclick="showTracker()">Application tracker</button><div id="notice"></div><div id="output"></div></div><div class="panel"><h2>Chat / clarifications</h2><p class="small">Ask the coach for guidance. In offline mode, follow-up questions are generated from missing profile fields. OpenRouter enables conversational answers.</p><textarea id="chat" placeholder="What should I improve for the top internship?"></textarea><button onclick="ask()">Send</button><div id="chatlog"></div></div></section></main><script>
+HTML=r'''<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CareerClaw · Career Coach</title><style>
+:root{font-family:Inter,ui-sans-serif,system-ui;background:#0b1220;color:#e9eff9}*{box-sizing:border-box}body{margin:0}header{background:#111c2c;border-bottom:1px solid #344153;padding:22px 5vw}h1{margin:0}p{color:#a9bad0}main{max-width:1200px;margin:auto;padding:24px;display:grid;grid-template-columns:380px 1fr;gap:22px}.panel{border:1px solid #344153;border-radius:14px;background:#152235;padding:20px;margin-bottom:18px}textarea,input,select{width:100%;background:#0c1626;color:#e8eef8;border:1px solid #465970;border-radius:8px;padding:11px;margin:6px 0 12px;min-height:38px}textarea{min-height:95px;resize:vertical}label{font-size:12px;font-weight:700;color:#bcd0e5}button{background:#73aeff;color:#061426;font-weight:750;border:0;border-radius:8px;padding:11px 16px;cursor:pointer;margin:4px 3px 6px 0}button.secondary{background:#283951;color:white}.small{font-size:12px;color:#9ab0c9}.msg{border-left:3px solid #73aeff;padding:10px 14px;background:#1e2e43;margin:8px 0;border-radius:5px}.card{padding:13px;margin:10px 0;border:1px solid #364b62;border-radius:10px}details{margin:8px 0}summary{cursor:pointer;font-weight:600}.tag{font-size:11px;border-radius:10px;background:#2c4565;padding:3px 8px}.good{color:#88dfbd}.bad{color:#ffcb90}#output{white-space:normal;overflow-wrap:anywhere}pre{white-space:pre-wrap}a{color:#9dc7ff}@media(max-width:850px){main{grid-template-columns:1fr}}
+:root{background:#f6f7f8;color:#232a2d}header{background:#fff;border-color:#d8dedb;padding:20px 24px}header p{margin:6px 0 0}h1{font-size:28px}h2{font-size:20px;margin-top:0}h3{font-size:17px}p,.small{color:#57615f}main{max-width:1380px;grid-template-columns:minmax(280px,360px) minmax(0,1fr);gap:24px}section{min-width:0}.panel{background:transparent;border:0;border-bottom:1px solid #d8dedb;border-radius:0;padding:0 0 24px;margin-bottom:24px}#search-panel{grid-column:1/-1;margin-bottom:0}.search-fields{display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:12px;align-items:end}.search-fields button{margin-bottom:12px;min-height:42px}input,textarea,select{background:white;color:#232a2d;border-color:#bfc9c4;border-radius:5px}label{color:#46544d}button{background:#216747;color:white;border-radius:5px}button.secondary{background:#e2e8e4;color:#234333}button:disabled{opacity:.6;cursor:wait}a{color:#17684c}.card{border-color:#d8dedb;border-radius:6px;background:#fff}.card .card{background:transparent;border:0;border-top:1px solid #d8dedb;border-radius:0;padding:12px 0}.tag{background:#e6ece8;color:#355141}.msg{background:#e9f3ec;border-color:#216747;color:#234333}.good{color:#14623a}.bad{color:#975014}#notice{grid-column:1/-1}#searchresults{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-height:600px;overflow:auto}#searchresults .card{margin:0;overflow-wrap:anywhere}button,a,input,select,textarea{outline-offset:3px}#jobs:empty::after{content:"No saved jobs yet.";color:#57615f}*{letter-spacing:0}
+@media(max-width:850px){main{grid-template-columns:1fr;padding:16px}.search-fields{grid-template-columns:1fr 1fr}#searchresults{grid-template-columns:1fr}#search-panel{grid-column:auto}}
+@media(max-width:480px){.search-fields{grid-template-columns:1fr}header{padding:16px}button{max-width:100%;white-space:normal}}
+</style></head><body><header><h1>CareerClaw</h1><p>Your career workspace</p></header><main><section id="search-panel" class="panel"><h2>Find remote positions</h2><form id="searchform" onsubmit="searchPositions(event)"><div class="search-fields"><div><label for="searchquery">Role or keywords</label><input id="searchquery" placeholder="Python, research, software engineer" required maxlength="120"></div><div><label for="searchlocation">Candidate location</label><input id="searchlocation" placeholder="Any location" maxlength="120"></div><div><label for="searchtype">Job type</label><select id="searchtype"><option value="">All types</option><option value="full_time">Full time</option><option value="part_time">Part time</option><option value="contract">Contract</option><option value="internship">Internship</option><option value="freelance">Freelance</option></select></div><button id="searchbutton" type="submit">Search positions</button></div></form><p class="small">Source: <a href="https://remotive.com" target="_blank" rel="noopener noreferrer">Remotive</a> · Remote roles · Listings delayed by 24 hours</p><div id="searchstatus" role="status"></div><div id="searchresults"></div></section><section id="profile-column"><div class="panel"><h2>1. Student profile</h2><label>Upload student documents (PDF / DOCX / TXT / MD)</label><input id="studentfile" type="file" accept=".pdf,.docx,.txt,.md" multiple><label>Apply uploaded files to</label><select id="filekind"><option value="resume">Resume</option><option value="linkedin">LinkedIn profile</option><option value="projects">Project list</option><option value="transcript">Transcript</option></select><button type="button" onclick="uploadStudentFiles()">Extract & add to profile</button><div id="uploadnotice" class="small" aria-live="polite"></div><p class="small">For multiple document types, upload each type separately. Extracted text remains editable below. Scanned/image-only PDFs are not supported.</p><label>Resume (paste or edit extracted text)</label><textarea id="resume" placeholder="Experience and projects; use one bullet per line"></textarea><label>LinkedIn profile URL or exported text</label><textarea id="linkedin" placeholder="LinkedIn content or URL; public URL alone is not automatically scraped"></textarea><label>Project list</label><textarea id="projects"></textarea><label>Transcript (paste relevant coursework)</label><textarea id="transcript"></textarea><label>Target role</label><input id="target" placeholder="ML Engineering Intern"><label>Interests</label><input id="interests" placeholder="Robotics, AI..."><label>Constraints</label><input id="constraints_text" placeholder="Location, timeframe, availability..."><button onclick="saveProfile()">Save / update profile</button></div><div class="panel"><h2>Add a job manually</h2><label>Job title</label><input id="jobtitle" placeholder="AI Research Intern"><label>Employer</label><input id="employer"><label>Job URL (optional; requires publicly accessible HTTPS page)</label><input id="joburl" placeholder="https://..."><label>Upload job description (PDF / DOCX / TXT / MD)</label><input id="jobfile" type="file" accept=".pdf,.docx,.txt,.md"><button type="button" onclick="uploadJobFile()">Extract JD</button><label>JD text (recommended)</label><textarea id="jd" placeholder="Requirements, preferred qualifications..."></textarea><button onclick="addJob()">Add job</button><button class="secondary" onclick="loadDemo()">Load demo dataset</button><div id="jobs"></div></div></section><section><div class="panel"><h2>Career assessment</h2><p class="small">Runs deterministic evidence matching first, then optional OpenRouter drafting. You can inspect every requirement and source line.</p><button onclick="runAgent()">Analyze jobs & generate plan</button><button class="secondary" onclick="showTracker()">Application tracker</button><div id="notice"></div><div id="output"></div></div><div class="panel"><h2>Chat / clarifications</h2><p class="small">Ask the coach for guidance. In offline mode, follow-up questions are generated from missing profile fields. OpenRouter enables conversational answers.</p><textarea id="chat" placeholder="What should I improve for the top internship?"></textarea><button onclick="ask()">Send</button><div id="chatlog"></div></div></section></main><script>
 let sid=localStorage.getItem('career_sid')||crypto.randomUUID();localStorage.setItem('career_sid',sid);const $=id=>document.getElementById(id);const escapeHTML=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const api=async(path,obj={})=>{let r=await fetch('/api/'+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...obj,sid})});let j=await r.json();if(!r.ok)throw Error(j.error||r.status);return j};function note(t){$('notice').innerHTML='<div class="msg">'+escapeHTML(t)+'</div>'};
 const fields=['resume','linkedin','projects','transcript','target','interests','constraints_text'];async function saveProfile(){try{await api('profile',Object.fromEntries(fields.map(x=>[x,$(x).value])));note('Profile saved.');}catch(e){note(e.message)}}
 async function extractSelected(file){
@@ -162,16 +169,54 @@ function render(r){let out='<h2>Career assessment</h2>';if(r.questions.length)ou
 async function runAgent(){try{await saveProfile();let r=await api('analyze');render(r);note('Assessment finished. View citations in requirement details.')}catch(e){note(e.message)}}
 async function showTracker(){try{let r=await api('tracker_list');$('output').innerHTML='<h2>Application tracker</h2>'+r.applications.map(x=>'<div class="card">'+escapeHTML(x.title)+' — '+escapeHTML(x.status)+' <span class="small">'+escapeHTML(x.next_action)+'</span></div>').join('')+'<p>To track a job, run assessment then use the chat instruction or POST /api/track.</p>'}catch(e){note(e.message)}}
 async function ask(){let msg=$('chat').value; if(!msg.trim())return;try{let r=await api('chat',{message:msg});$('chatlog').innerHTML+='<div class="msg"><b>You:</b> '+escapeHTML(msg)+'</div><div class="msg"><b>Coach:</b> '+escapeHTML(r.answer)+'</div>';$('chat').value=''}catch(e){note(e.message)}}
-listJobs();
-</script></body></html>'''
+
+let foundPositions=[];
+async function searchPositions(event){
+ event.preventDefault();
+ const button=$('searchbutton');button.disabled=true;button.textContent='Searching...';
+ $('searchstatus').textContent='Searching remote positions...';$('searchresults').replaceChildren();
+ try{
+  const data=await api('search_jobs',{query:$('searchquery').value,location:$('searchlocation').value,job_type:$('searchtype').value});
+  foundPositions=data.jobs;
+  $('searchstatus').textContent=data.total?data.total+' matches'+(data.total>30?' (showing first 30)':''):'No matching positions. Try fewer keywords or a wider location.';
+  $('searchresults').innerHTML=data.jobs.map((job,i)=>'<article class="card"><h3>'+escapeHTML(job.title)+'</h3><p>'+escapeHTML(job.employer)+' · '+escapeHTML(job.location)+'</p><p class="small">'+escapeHTML(job.job_type.replaceAll('_',' '))+' '+escapeHTML(job.salary)+'</p><details><summary>Job description</summary><p style="white-space:pre-line">'+escapeHTML(job.text)+'</p></details><a target="_blank" rel="noopener noreferrer" href="'+escapeHTML(job.url)+'">View on Remotive</a> <button onclick="savePosition('+i+',this)">Add to shortlist</button></article>').join('');
+ }catch(error){$('searchstatus').textContent=error.message;}
+ finally{button.disabled=false;button.textContent='Search positions';}
+}
+async function savePosition(index,button){
+ button.disabled=true;
+ try{await api('job',foundPositions[index]);button.textContent='Added';await listJobs();}
+ catch(error){button.disabled=false;$('searchstatus').textContent=error.message;}
+}
+const main=document.querySelector('main');
+const profile=$('resume').closest('.panel');
+const manual=$('jd').closest('.panel');
+const assessment=$('output').closest('.panel');
+const chat=$('chat').closest('.panel');
+const right=assessment.parentElement;
+const shortlist=document.createElement('div');shortlist.className='panel';
+shortlist.innerHTML='<h2>Saved positions</h2>';shortlist.append($('jobs'));right.prepend(shortlist);
+const manualDetails=document.createElement('details');manualDetails.className='panel';
+manualDetails.innerHTML='<summary>Add a job manually</summary>';manualDetails.append(manual);right.insertBefore(manualDetails,assessment);
+const extra=document.createElement('details');extra.innerHTML='<summary>Additional profile materials</summary>';
+for(const id of ['linkedin','projects','transcript']){const field=$(id);extra.append(field.previousElementSibling);extra.append(field);}
+profile.insertBefore(extra,$('target').previousElementSibling);
+main.insertBefore($('notice'),$('profile-column'));
+for(const paragraph of document.querySelectorAll('.panel > p.small')){if(!paragraph.closest('#search-panel'))paragraph.remove();}
+for(const label of document.querySelectorAll('label')){const field=label.nextElementSibling;if(field?.id)label.htmlFor=field.id;}
+$('target').addEventListener('change',()=>{if(!$('searchquery').value)$('searchquery').value=$('target').value;});
+listJobs().catch(error=>note(error.message));
+</script><script src="/proof.js"></script></body></html>'''
 
 class Handler(BaseHTTPRequestHandler):
  def send(self,status,obj):
   data=json.dumps(obj,ensure_ascii=False).encode();self.send_response(status);self.send_header('Content-Type','application/json; charset=utf-8');self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data)
  def do_GET(self):
   if self.path=='/' or self.path=='/index.html':
-   b=HTML.encode();self.send_response(200);self.send_header('Content-Type','text/html; charset=utf-8');self.send_header('Content-Length',str(len(b)));self.end_headers();self.wfile.write(b)
+   b=HTML.encode();self.send_response(200);self.send_header('Cache-Control','no-store');self.send_header('Content-Type','text/html; charset=utf-8');self.send_header('Content-Length',str(len(b)));self.end_headers();self.wfile.write(b)
   elif self.path=='/health':self.send(200,{'ok':True,'skills':SKILLS})
+  elif self.path=='/proof.js':
+   b=(ROOT/'proof.js').read_bytes();self.send_response(200);self.send_header('Content-Type','application/javascript');self.send_header('Cache-Control','no-store');self.send_header('Content-Length',str(len(b)));self.end_headers();self.wfile.write(b)
   else:self.send(404,{'error':'Not found'})
  def do_POST(self):
   try:
@@ -185,7 +230,31 @@ class Handler(BaseHTTPRequestHandler):
     try:data=base64.b64decode(encoded,validate=True)
     except (binascii.Error,ValueError) as e:raise ValueError('Invalid base64 file') from e
     return self.send(200,extract_document(filename,data))
+   if route=='search_jobs':
+    return self.send(200,search_jobs(p.get('query',''),p.get('location',''),p.get('job_type','')))
    with conn() as c:
+    if route=='proof_list':
+     return self.send(200,{'plans':[json.loads(x['data']) for x in c.execute('SELECT data FROM proof_projects WHERE sid=? ORDER BY updated DESC',(sid,))]})
+    if route=='proof_generate':
+     profile=c.execute('SELECT * FROM profiles WHERE sid=?',(sid,)).fetchone()
+     job=c.execute('SELECT * FROM jobs WHERE sid=? AND id=?',(sid,str(p.get('job_id','')))).fetchone()
+     if not profile or not job:raise ValueError('Save your profile and choose a saved position first.')
+     plan=proof_projects.generate(dict(profile),assess(dict(profile),[dict(job)])[0],p.get('hours',6),p.get('weeks',3))
+     plan.update(id=str(uuid.uuid4()),notes='',updated=now)
+     c.execute('INSERT INTO proof_projects VALUES(?,?,?,?)',(plan['id'],sid,json.dumps(plan),now))
+     return self.send(200,plan)
+    if route in ('proof_save','proof_check','proof_review'):
+     row=c.execute('SELECT data FROM proof_projects WHERE id=? AND sid=?',(str(p.get('id','')),sid)).fetchone()
+     if not row:raise ValueError('Project not found.')
+     plan=json.loads(row['data'])
+     if p.get('updated')!=plan['updated']:raise ValueError('Project changed. Reload saved projects before editing.')
+     if route=='proof_save':plan['notes']=str(p.get('notes',''))[:10000]
+     elif route=='proof_check':plan=proof_projects.inspect_evidence(plan,str(p.get('url','')),str(p.get('paths','README.md')),p.get('ref',''))
+     else:plan=proof_projects.review(plan,p.get('reviews'))
+     previous=plan['updated'];plan['updated']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+     changed=c.execute('UPDATE proof_projects SET data=?,updated=? WHERE id=? AND sid=? AND updated=?',(json.dumps(plan),plan['updated'],plan['id'],sid,previous))
+     if changed.rowcount!=1:raise ValueError('Project changed. Reload saved projects before editing.')
+     return self.send(200,plan)
     if route=='profile':
      keys=['resume','linkedin','projects','transcript','target','interests','constraints_text'];v=[str(p.get(k,''))[:50000] for k in keys]
      c.execute('INSERT INTO profiles(sid,'+','.join(keys)+',created) VALUES ('+','.join('?' for _ in range(9))+') ON CONFLICT(sid) DO UPDATE SET '+','.join(k+'=excluded.'+k for k in keys),[sid,*v,now]);return self.send(200,{'ok':True})
@@ -194,6 +263,8 @@ class Handler(BaseHTTPRequestHandler):
      if not title:raise ValueError('Job title required')
      if not jobtext and url:jobtext=fetch_url(url)
      if not jobtext:raise ValueError('Paste job-description text or supply a public HTTPS URL')
+     existing=c.execute('SELECT id,title FROM jobs WHERE sid=? AND url=?',(sid,url)).fetchone() if url else None
+     if existing:return self.send(200,dict(existing))
      jid=str(uuid.uuid4());c.execute('INSERT INTO jobs VALUES(?,?,?,?,?,?,?)',(jid,sid,title,str(p.get('employer',''))[:200],jobtext,url,now));return self.send(200,{'id':jid,'title':title})
     if route=='jobs':return self.send(200,{'jobs':[dict(x) for x in c.execute('SELECT * FROM jobs WHERE sid=?',(sid,))]})
     if route=='demo':
