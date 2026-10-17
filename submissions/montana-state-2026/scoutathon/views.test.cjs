@@ -9,6 +9,52 @@ const window = { Core };
 vm.runInNewContext(source, { window });
 const Views = window.Views;
 
+test('homepage offers Save job after removing a catalog listing from Applications', () => {
+  const state = Core.seed();
+  state.jobs.forEach(job => { job.status = 'Saved'; });
+  assert.match(Views.dashboard(state), /disabled>✓ Saved<\/button>/);
+  const removed = state.jobs[1];
+  Core.removeJob(state, removed.id);
+  const html = Views.dashboard(state);
+  assert.match(html, new RegExp(`data-action="save-job" data-id="${removed.id}">Save job<`));
+  assert.doesNotMatch(html, /disabled>✓ Saved<\/button>/);
+  assert.doesNotMatch(Views.applications(state), new RegExp(`data-status-id="${removed.id}"`));
+});
+
+test('each application stage menu offers a separate removal action', () => {
+  const state = Core.seed();
+  const html = Views.applicationCards(state);
+  assert.equal((html.match(/value="remove-listing">Remove listing…/g) || []).length, state.jobs.filter(job => job.status !== 'Available').length);
+  assert.doesNotMatch(html, /value="remove-listing" selected/);
+});
+
+test('Development leads with projects and keeps coding history collapsed', () => {
+  const html = Views.development(Core.seed());
+  assert.ok(html.indexOf('Add project') < html.indexOf('Coding practice ·'));
+  assert.match(html, /<details class="card practice-history"><summary>Coding practice ·/);
+  assert.doesNotMatch(html, /<details[^>]*\bopen\b/);
+  assert.match(html, /data-action="project-coach"/);
+  assert.match(html, /describe your contribution/);
+});
+
+test('dashboard offers quick task entry and renders all pending steps safely', () => {
+  const state = Core.seed();
+  state.tasks.forEach(task => { task.done = false; });
+  Core.addTask(state, '<img src=x onerror=alert(1)>');
+  Core.addTask(state, 'Review interview notes');
+  state.tasks.find(task => task.id === 'task-1').done = true;
+  const html = Views.dashboard(state);
+  assert.match(html, /id="add-task-form"/);
+  assert.match(html, /for="task-title">New next step/);
+  assert.match(html, /name="title"[^>]*maxlength="300" required/);
+  assert.match(html, /type="submit">Add/);
+  for (const task of state.tasks.filter(task => !task.done)) assert.ok(html.includes(Core.escape(task.title)));
+  assert.doesNotMatch(html, /<img src=x/);
+  assert.equal((html.match(/data-action="toggle-task"/g) || []).length, 4);
+  state.tasks.forEach(task => { task.done = true; });
+  assert.match(Views.dashboard(state), /id="add-task-form"/);
+});
+
 test('Profile offers editable and importable background notes with safely rendered saved context', () => {
   const state = Core.seed(); state.profile.background = '<script>private notes</script>';
   const html = Views.profile(state);

@@ -6,6 +6,27 @@ const path = require('node:path');
 const Core = require('./core.js');
 const { createStore } = require('./storage.cjs');
 
+test('new dashboard steps and their completion persist across SQLite restarts', t => {
+  const db = database(t);
+  let store = db.open();
+  const initial = store.getState();
+  assert.equal(Core.addTask(initial.state, '  Prepare three interview stories  '), true);
+  const task = initial.state.tasks[0];
+  assert.equal(task.title, 'Prepare three interview stories');
+  assert.equal(task.done, false);
+  assert.equal(new Set(initial.state.tasks.map(item => item.id)).size, initial.state.tasks.length);
+  store.saveState(initial.state, initial.revision);
+  store.close();
+  store = db.open();
+  const saved = store.getState();
+  assert.deepEqual(saved.state.tasks[0], task);
+  saved.state.tasks[0].done = true;
+  store.saveState(saved.state, saved.revision);
+  store.close();
+  store = db.open();
+  assert.equal(store.getState().state.tasks[0].done, true);
+});
+
 function database(t) {
   const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'career-store-'));
   const filename = path.join(directory, 'nested', 'career.sqlite');

@@ -199,6 +199,19 @@
     }
   }
 
+  function removeJob(state, id) {
+    if (!validateState(state)) return false;
+    const index = state.jobs.findIndex(job => job.id === id);
+    if (index < 0) return false;
+    const job = state.jobs[index];
+    if (seed().jobs.some(reference => reference.id === job.id && reference.url === job.url)) {
+      Object.assign(job, { status: 'Available', resume: '', cover: '', outreach: '', demoActivity: false });
+      return true;
+    }
+    state.jobs.splice(index, 1);
+    return true;
+  }
+
   function transition(state, id, status) {
     if (!validateState(state) || !STATUSES.includes(status)) return false;
     const job = state.jobs.find(item => item.id === id);
@@ -234,6 +247,15 @@
     }
   }
 
+  function addTask(state, title) {
+    if (!validateState(state) || !boundedString(title, LIMITS.task.title, true) || state.tasks.length >= 1000) return false;
+    const ids = new Set(state.tasks.map(item => item.id));
+    let id;
+    do { id = `task-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 9)}`; } while (ids.has(id));
+    state.tasks.unshift({ id, title: title.trim(), done: false });
+    return true;
+  }
+
   function addPractice(state, input) {
     const hasAttempt = isRecord(input) && (Object.hasOwn(input, 'attempt') || ['language', 'solution', 'notes', 'outcome'].some(key => Object.hasOwn(input, key)));
     const suppliedAttempt = isRecord(input) && Object.hasOwn(input, 'attempt') ? input.attempt : input;
@@ -267,5 +289,5 @@
     return true;
   }
 
-  return { STORAGE_KEY, STATUSES, seed, escape, validateState, load, save, transition, match, safeRepoUrl, addPractice, savePracticeAttempt, attachSampleAttempts, refreshReferenceContent, practiceUrl };
+  return { STORAGE_KEY, STATUSES, seed, escape, validateState, load, save, removeJob, transition, match, safeRepoUrl, addTask, addPractice, savePracticeAttempt, attachSampleAttempts, refreshReferenceContent, practiceUrl };
 });

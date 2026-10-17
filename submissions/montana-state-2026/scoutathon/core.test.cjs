@@ -2,6 +2,49 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const Core = require('./core.js');
 
+test('removing a catalog listing resets it for saving again without losing practice', () => {
+  const state = Core.seed(), job = state.jobs[0], practice = structuredClone(state.practice);
+  job.status = 'Saved'; job.cover = 'Draft to remove';
+  assert.equal(Core.removeJob(state, job.id), true);
+  assert.equal(job.status, 'Available');
+  assert.equal(job.cover, '');
+  assert.equal(job.demoActivity, false);
+  assert.equal(state.jobs.length, 6);
+  assert.deepEqual(state.practice, practice);
+  const store = memoryStorage();
+  assert.equal(Core.save(store, state), true);
+  const reloaded = Core.load(store);
+  assert.equal(reloaded.jobs[0].status, 'Available');
+  assert.equal(Core.transition(reloaded, job.id, 'Saved'), true);
+});
+
+test('removing a listing removes only that role and its materials, preserving practice and other records', () => {
+  const state = Core.seed();
+  state.jobs.find(job => job.status === 'Interview').url = 'https://example.com/custom-listing';
+  const before = structuredClone(state), removed = state.jobs.find(job => job.status === 'Interview');
+  assert.equal(Core.removeJob(state, 'unknown'), false);
+  assert.deepEqual(state, before);
+  assert.equal(Core.removeJob(state, removed.id), true);
+  assert.deepEqual(state.jobs, before.jobs.filter(job => job.id !== removed.id));
+  assert.deepEqual(state.practice, before.practice);
+  assert.deepEqual(state.projects, before.projects);
+  assert.deepEqual(state.tasks, before.tasks);
+  assert.equal(Core.validateState(state), true);
+  const store = memoryStorage();
+  assert.equal(Core.save(store, state), true);
+  assert.equal(Core.load(store).jobs.some(job => job.id === removed.id), false);
+  assert.equal(Core.STATUSES.includes('remove-listing'), false);
+});
+
+test('dashboard next steps reject empty, oversized, and excess tasks without mutation', () => {
+  const state = Core.seed(), original = structuredClone(state);
+  for (const title of ['', '   ', 'x'.repeat(301), null]) assert.equal(Core.addTask(state, title), false);
+  assert.deepEqual(state, original);
+  state.tasks = Array.from({ length: 1000 }, (_, i) => ({ id: `limit-${i}`, title: 'Task', done: false }));
+  assert.equal(Core.addTask(state, 'One more'), false);
+  assert.equal(state.tasks.length, 1000);
+});
+
 test('optional personal background is bounded and survives persistence without changing legacy profiles', () => {
   const state = Core.seed();
   assert.equal(Core.validateState(state), true);

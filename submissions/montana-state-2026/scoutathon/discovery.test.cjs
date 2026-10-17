@@ -36,6 +36,20 @@ function llmMock(responses, inspect) {
   } } };
 }
 
+test('Google mode plans public queries without resume text and ranks snippets without pretending location is verified', async () => {
+  const snippet = { ...job, location: 'Verify location on source', type: 'Unverified', searchSnippet: true, source: 'Google Search via Serper' };
+  const mock = llmMock([plan, ranking]);
+  const discovery = createDiscovery({ llm: mock.llm, opportunities: { mode: 'google', async search() {
+    return { jobs: [snippet], source: 'Google Search via Serper', cachedAt: 1, limitations: [] };
+  } } });
+  const result = await discovery.run(profile, 'Internships near Montana');
+  assert.equal(Object.hasOwn(mock.calls[0].input.context, 'resumeExcerpt'), false);
+  assert.match(mock.calls[0].system, /Google web search is enabled/);
+  assert.equal(result.recommendations[0].job.searchSnippet, true);
+  assert.equal(result.recommendations[0].job.location, 'Verify location on source');
+  assert.ok(result.limitations.some(item => item.includes('not independently verified')));
+});
+
 test('builds privacy-bounded context without contact or resume filename', () => {
   const context = buildDiscoveryContext(profile, [project]);
   assert.deepEqual(context, { target: profile.target, skills: profile.skills, location: profile.location,

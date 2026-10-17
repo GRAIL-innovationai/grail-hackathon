@@ -5,6 +5,36 @@ const vm = require('node:vm');
 const Core = require('./core.js');
 const seed = Core.seed();
 
+test('presentation demo loads and saves fictional roles without live AI, source calls, or consent', async () => {
+  const elements = new Map();
+  const make = () => ({ value: '', checked: false, dataset: {}, listeners: {}, addEventListener(type, fn) { this.listeners[type] = fn; }, setAttribute() {} });
+  const save = make(); save.dataset.saveRecommendation = 'demo-bozeman-intern';
+  const container = { innerHTML: '', querySelector(selector) { if (!elements.has(selector)) elements.set(selector, make()); return elements.get(selector); }, querySelectorAll(selector) { return selector === '[data-save-recommendation]' ? [save] : []; } };
+  const ui = loadDiscover({ querySelector: () => container });
+  let state = Core.seed(), calls = 0, commits = 0;
+  ui.configure({ ai: { configured: false }, getState: () => state, getRevision: () => 1,
+    api: async path => { calls++; return path.endsWith('/runs') ? { runs: [] } : { context: {}, revision: 1 }; },
+    commitState: async next => { assert.equal(Core.validateState(next), true); state = next; commits++; return true; }
+  });
+  ui.mount(); await new Promise(resolve => setImmediate(resolve));
+  assert.match(container.innerHTML, /Research demo roles/);
+  container.querySelector('#discovery-brief').value = 'Software internships near Bozeman';
+  const before = calls;
+  await container.querySelector('[data-discovery-form]').listeners.submit({ preventDefault() {} });
+  assert.equal(calls, before);
+  assert.match(container.innerHTML, /SIMULATED SEARCH/);
+  assert.match(container.innerHTML, /Bridger Software Studio/);
+  assert.match(container.innerHTML, /fictional/);
+  await save.listeners.click();
+  assert.equal(commits, 1);
+  const job = state.jobs.find(item => item.id === 'demo-bozeman-intern');
+  assert.equal(job.status, 'Saved');
+  assert.equal(job.demo, true);
+  assert.equal(job.url, '');
+  await save.listeners.click();
+  assert.equal(commits, 1);
+});
+
 function loadDiscover(document = null) {
   const window = { Core, JourneysUI: { safeUrl(value) { try { const url = new URL(value); return url.protocol === 'https:' && !url.username && !url.password ? url.href : ''; } catch { return ''; } } } };
   vm.runInNewContext(fs.readFileSync(require.resolve('./discover-ui.js'), 'utf8'), { window, document, URL, Date, Promise, structuredClone, crypto: { randomUUID: () => 'new-role' } });
@@ -95,10 +125,20 @@ test('research refuses to send without explicit consent and sends bounded brief 
   });
   ui.mount();
   await new Promise(resolve => setImmediate(resolve));
+  container.querySelector('[data-demo-mode]').checked = false;
+  container.querySelector('[data-demo-mode]').listeners.change();
   container.querySelector('#discovery-brief').value = 'a'.repeat(1205);
+  assert.match(container.innerHTML, /Search Google ↗/);
+  assert.match(container.innerHTML, /Results are not automatically imported/);
+  const textarea = container.querySelector('#discovery-brief');
+  textarea.value = 'internships Bozeman & Montana';
+  textarea.listeners.input();
+  assert.equal(container.querySelector('[data-google-search]').href, 'https://www.google.com/search?q=internships%20Bozeman%20%26%20Montana');
+  textarea.value = 'a'.repeat(1205);
   let submit = container.querySelector('[data-discovery-form]').listeners.submit;
   await submit({ preventDefault() {} });
   assert.equal(calls.some(call => call.path.endsWith('/research')), false);
+  assert.match(container.innerHTML, /Select the sharing consent checkbox below/);
   currentRevision = 4;
   container.querySelector('[data-consent]').checked = true;
   submit = container.querySelector('[data-discovery-form]').listeners.submit;

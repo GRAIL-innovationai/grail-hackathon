@@ -84,6 +84,7 @@ function validJobUrl(board, url, id) {
 }
 
 function createDiscoverySources({ fetchImpl = global.fetch, now = Date.now } = {}) {
+  if (process.env.SERPER_API_KEY?.trim()) return require('./google-search.cjs').createGoogleSearch({ apiKey: process.env.SERPER_API_KEY, fetchImpl, now });
   const cache = new Map();
   let day = -1, requests = 0;
   async function fetchBoard(board) {

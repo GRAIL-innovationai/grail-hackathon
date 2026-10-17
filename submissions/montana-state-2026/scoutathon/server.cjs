@@ -171,7 +171,7 @@ function createApp({ store, llm, coaches: injectedCoaches, opportunities: inject
       if (req.method !== 'GET') { send(res, 405, { error: 'Method not allowed.' }, { Allow: 'GET' }); return; }
       const snapshot = await store.getState();
       const { buildDiscoveryContext } = require('./discovery.cjs');
-      send(res, 200, { revision: snapshot.revision, context: buildDiscoveryContext(snapshot.state.profile, snapshot.state.projects),
+      send(res, 200, { revision: snapshot.revision, searchMode: process.env.SERPER_API_KEY?.trim() ? 'google' : 'boards', context: buildDiscoveryContext(snapshot.state.profile, snapshot.state.projects),
         notice: 'Only this selected profile excerpt, project summaries, and your search brief are shared with Groq. Public job sources receive only search parameters, never your resume.' });
       return;
     }

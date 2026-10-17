@@ -420,6 +420,11 @@ dialog.modal::backdrop { background: rgba(11, 24, 29, .46); backdrop-filter: blu
 .dashboard-grid > section { min-width: 0; }
 .dashboard-grid > section > .section-heading { margin-top: 0; }
 .dashboard-grid .task-list { padding: 5px 15px; margin: 0; list-style: none; }
+.task-composer { display: flex; align-items: center; gap: 8px; padding: 15px; border-bottom: 1px solid var(--line); }
+.task-composer .field { flex: 1; min-width: 0; margin: 0; }
+.research-feedback:empty { display: none; }
+.research-feedback { color: var(--ink); font-weight: 600; }
+.task-list span { overflow-wrap: anywhere; }
 .task-list li { border-bottom: 1px solid var(--line); }
 .task-list li:last-child { border-bottom: 0; }
 .task-list label { display: flex; align-items: center; gap: 9px; min-height: 43px; color: var(--ink); font-size: 10px; cursor: pointer; }
@@ -497,6 +502,13 @@ body.dark .button { color: #142830; }
 .dialog-body form { display: grid; gap: 13px; }
 .dialog-body form .field { gap: 6px; }
 .dialog-body form .form-actions { margin-top: 2px; }
+.dialog-body .card { padding: 16px; overflow-wrap: anywhere; }
+.dialog-body .card > :first-child { margin-top: 0; }
+.dialog-body .card > :last-child { margin-bottom: 0; }
+.dialog-body .card > strong { display: block; margin-bottom: 8px; color: var(--ink); }
+.dialog-body .card + form { margin-top: 18px; }
+.dialog-body .field textarea { padding: 12px 14px; line-height: 1.6; }
+.dialog-body .field input[type="file"] { padding: 12px; }
 
 @media (max-width: 1080px) {
   :root { --sidebar-width: 202px; }

@@ -45,7 +45,7 @@ npm run check:public
 npm audit --omit=dev
 ```
 
-October 17, 2026: all 137 tests pass. Coverage includes domain/state, exact quotes, SQLite persistence and conflicts, discovery, coaching, interviews, reviewed updates, auth/quota protections, document extraction, and job-linked coding attempts. A live Groq structured-output connection check succeeded using 168 tokens of synthetic input/output; no personal profile was shared. Full workflows are tested with mocked model responses and isolated browser fixtures rather than spending additional live quota.
+October 17, 2026: all 153 tests pass. Coverage includes domain/state, exact quotes, SQLite persistence and conflicts, discovery, coaching, interviews, reviewed updates, auth/quota protections, document extraction, and job-linked coding attempts. A live Groq structured-output connection check succeeded using 168 tokens of synthetic input/output; no personal profile was shared. Full workflows are tested with mocked model responses and isolated browser fixtures rather than spending additional live quota.
 
 ## Working in another session
 
@@ -130,3 +130,9 @@ The initial profile, application stages, practice dates, example solutions, task
 On page startup, only exact untouched legacy job/project fixtures are upgraded through the normal revision-checked save. Modified records, profile fields, deleted records, and practice attempts are preserved; a conflict uses the existing recovery flow. No database reset is required. Restart the Node server and refresh to load the updated backend catalog.
 
 Coding practice links to [Two Sum](https://leetcode.com/problems/two-sum/), [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/), and [Merge Intervals](https://leetcode.com/problems/merge-intervals/). Full statements and execution stay on LeetCode. Local attempts retain the user’s solution, comments, outcome, and coach feedback. There is no submission sync or local code execution.
+
+## Google search option
+
+Discover includes Search Google, which opens the typed brief in Google without using AI quota. Results are not automatically imported; add an individual posting through the manual form. Without a Serper key, Research roles remains limited to the configured employer boards.
+
+For automatic Google result retrieval, add SERPER_API_KEY to the ignored local .env and restart npm start. Use only free Serper credits with no payment method or auto top-up. Each run sends one bounded public query to the fixed Serper endpoint, with up to ten results and six-hour caching. Groq ranks retrieved snippets against the selected profile after consent. Snippets are labeled as unverified leads: employer, location, eligibility, and availability require checking the source page. No result URLs are fetched by the backend. Provider errors do not silently fall back or retry. This optional integration has mocked tests; no live Serper request has been made.

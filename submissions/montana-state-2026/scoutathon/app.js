@@ -14,7 +14,7 @@
     discover: ['Discover roles', 'Find your next opportunity.', 'Explore opportunities through the experience you already have.'],
     applications: ['Applications', 'Every opportunity. One place.', 'Your materials, conversations, and next steps, kept together.'],
     prep: ['Interview prep', 'Walk in with a little more confidence.', 'Turn your experience into clear stories and thoughtful answers.'],
-    development: ['Development', 'Build something worth talking about.', 'Make steady progress on the skills your next role needs.'],
+    development: ['Development', 'Build something worth talking about.', 'Develop your projects and turn your work into evidence for your next role.'],
     profile: ['Profile', 'Start with your story.', 'Your experience and preferences shape your career workspace.']
   };
   let toastTimer, activeJobId, aiJobId, proposal = null, generating = false;
@@ -130,7 +130,7 @@
     $('#page-description').textContent = description;
     $('#view').innerHTML = Views[current](state, current === 'applications' ? applicationFilters : undefined);
     if (current === 'discover') DiscoverUI.mount();
-    if (current === 'prep' || current === 'development') {
+    if (current === 'prep') {
       const panel = document.createElement('section'); panel.id = 'interview-problems'; $('#view').prepend(panel);
       InterviewProblemsUI.mount();
       if (!practiceFeedbackLoaded && !practiceFeedbackLoading) {
@@ -328,6 +328,14 @@
       } catch { toast('Could not read the background file. Try pasting the text.'); }
       finally { target.value = ''; }
     }
+    if (target.dataset.statusId && target.value === 'remove-listing') {
+      const job = jobById(target.dataset.statusId); if (!job) return;
+      target.value = job.status;
+      if (!backendReady || saveBlocked) { toast('Reconnect the local workspace before removing a listing.'); return; }
+      if (!window.confirm(`Remove ${job.role} at ${job.company} and its saved application materials? Your coding practice will be kept.`)) return;
+      if (Core.removeJob(state, job.id)) { await persist('Listing removed from Applications.'); render(); }
+      return;
+    }
     if (target.dataset.statusId && Core.transition(state, target.dataset.statusId, target.value)) { persist('Application stage updated.'); render(); }
     if (target.id === 'resume-file') {
       const file = target.files[0]; if (!file) return;
@@ -350,6 +358,12 @@
   });
   document.addEventListener('submit', event => {
     const form = event.target;
+    if (form.id === 'add-task-form') {
+      event.preventDefault();
+      if (!backendReady || saveBlocked) { toast('Reconnect the local workspace before adding a next step.'); return; }
+      if (!Core.addTask(state, form.elements.title.value)) { toast('Enter a next step of 1–300 characters. The workspace supports up to 1,000 steps.'); return; }
+      persist('Next step saved to local SQLite.'); render(); $('#task-title')?.focus(); return;
+    }
     if (form.id === 'ai-consent-form') { event.preventDefault(); generateReview(form); return; }
     if (!['profile-form', 'materials-form', 'add-job-form', 'add-project-form', 'practice-form', 'chat-form'].includes(form.id)) return;
     event.preventDefault(); const data = Object.fromEntries(new FormData(form));
