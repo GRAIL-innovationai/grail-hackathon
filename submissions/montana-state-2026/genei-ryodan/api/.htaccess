@@ -1,0 +1,16 @@
+# Mathub account server: only index.php is reachable from the web.
+# Every other file here (helpers, config, data) is denied by default, so a new helper file is never exposed by accident.
+Options -Indexes
+<FilesMatch ".">
+  Require all denied
+</FilesMatch>
+<Files "index.php">
+  Require all granted
+</Files>
+<IfModule mod_headers.c>
+  Header set Cache-Control "no-store"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Content-Security-Policy "default-src 'none'; frame-ancestors 'none'"
+  Header always set Referrer-Policy "no-referrer"
+</IfModule>

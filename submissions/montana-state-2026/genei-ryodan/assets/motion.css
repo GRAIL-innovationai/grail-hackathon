@@ -1,0 +1,276 @@
+/* ============================================================
+   Mathub — motion
+   Entrances, micro-interactions, the top loading bar, ring and bar
+   fills, scroll reveal, skins. Everything here is decorative: with
+   "Reduce motion" on (Settings → Appearance) or the OS setting, the
+   rules at the bottom switch it all off and the page is simply there.
+   Keyframes used from styles.css: riseIn, fadeUp, pop, popIn, shake,
+   pulse, bob, flicker, shimmer.
+   ============================================================ */
+
+/* ---------- keyframes ---------- */
+@keyframes mhSpin { to { transform: rotate(360deg); } }
+@keyframes mhDrift { 0% { transform: translate3d(0, 0, 0) scale(1); } 50% { transform: translate3d(28px, -18px, 0) scale(1.06); } 100% { transform: translate3d(-16px, 12px, 0) scale(0.98); } }
+@keyframes mhGlowGood { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--good) 55%, transparent); } 100% { box-shadow: 0 0 0 14px transparent; } }
+@keyframes mhToastIn { from { opacity: 0; transform: translate(-50%, 14px) scale(0.96); } to { opacity: 1; transform: translate(-50%, 0) scale(1); } }
+@keyframes mhShine { from { transform: translateX(-120%) skewX(-18deg); } to { transform: translateX(220%) skewX(-18deg); } }
+@keyframes mhTada { 0% { transform: scale(1); } 10%, 20% { transform: scale(0.94) rotate(-2deg); } 30%, 50%, 70% { transform: scale(1.08) rotate(2deg); } 40%, 60% { transform: scale(1.08) rotate(-2deg); } 100% { transform: scale(1) rotate(0); } }
+@keyframes mhFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+@keyframes mhBarTrickle { 0% { width: 0; } 30% { width: 38%; } 70% { width: 72%; } 100% { width: 88%; } }
+@keyframes mhTickIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+@keyframes mhHeart { 0%, 100% { transform: scale(1); } 30% { transform: scale(1.25); } 60% { transform: scale(0.95); } }
+@keyframes mhSlideIn { from { opacity: 0; transform: translateX(28px); } to { opacity: 1; transform: none; } }
+@keyframes mhSlideUp { from { opacity: 0; transform: translateY(100%); } to { opacity: 1; transform: none; } }
+@keyframes mhRing { from { stroke-dashoffset: var(--ring-c, 100); } }
+@keyframes mhGradient { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+@keyframes mhBlink { 0%, 92%, 100% { transform: scaleY(1); } 96% { transform: scaleY(0.1); } }
+@keyframes mhWiggle { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-8deg); } 75% { transform: rotate(8deg); } }
+
+/* ---------- page and card entrances ---------- */
+#view { animation: fadeUp 0.32s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.mh-enter { animation: riseIn 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both; animation-delay: calc(var(--i, 0) * 45ms); }
+.mh-reveal { opacity: 0; }
+.mh-reveal.mh-enter { opacity: 1; }
+.landing-top.hero .landing-title { animation: riseIn 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.landing-top.hero .hero-sub { animation: riseIn 0.6s 0.08s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.landing-top.hero .hero-actions { animation: riseIn 0.6s 0.16s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.landing-top.hero::before { animation: mhDrift 16s ease-in-out infinite alternate; }
+.landing-top.hero::after { animation: mhDrift 22s ease-in-out infinite alternate-reverse; }
+.landing-top.hero .logo-mark { animation: mhFloat 4s ease-in-out infinite; }
+.countdown-num { animation: popIn 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.page-title { animation: mhTickIn 0.4s ease-out both; }
+
+/* ---------- top loading bar ---------- */
+#loadbar { position: fixed; top: 0; left: 0; height: 3px; width: 0; z-index: 3000; pointer-events: none; opacity: 0; background: linear-gradient(90deg, var(--accent), var(--phys-accent), var(--gold)); background-size: 200% 100%; box-shadow: 0 0 12px color-mix(in srgb, var(--accent) 70%, transparent); transition: width 0.25s ease-out, opacity 0.35s ease-out; }
+#loadbar.on { opacity: 1; animation: mhBarTrickle 6s cubic-bezier(0.1, 0.6, 0.3, 1) forwards, mhGradient 2s linear infinite; }
+#loadbar.done { animation: none; width: 100% !important; opacity: 0; transition: width 0.2s ease-out, opacity 0.5s 0.15s; }
+
+/* ---------- buttons, chips, controls ---------- */
+.btn { transition: transform 0.14s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.18s, background 0.14s, border-color 0.14s, color 0.14s; }
+.btn:not(:disabled):hover { transform: translateY(-1px); }
+.btn:not(:disabled):active { transform: translateY(1px) scale(0.98); transition-duration: 0.06s; }
+.btn.primary:not(:disabled):hover { box-shadow: 0 10px 24px -12px color-mix(in srgb, var(--accent) 80%, transparent); }
+.btn svg { transition: transform 0.18s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.btn:not(:disabled):hover > svg:last-child:not(:first-child) { transform: translateX(3px); }
+.icon-btn { transition: background 0.14s, color 0.14s, transform 0.14s; }
+.icon-btn:hover svg { transform: scale(1.12); }
+.icon-btn svg { transition: transform 0.18s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.icon-btn:active { transform: scale(0.92); }
+.theme-btn.spin svg { animation: mhSpin 0.55s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.chip { transition: transform 0.14s, background 0.14s, color 0.14s; }
+.chip.toggle:hover { transform: translateY(-1px); }
+.chip.toggle.on { animation: pop 0.32s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.check input { transition: transform 0.12s; }
+.check input:active { transform: scale(0.9); }
+.select, .input { transition: border-color 0.16s, box-shadow 0.16s, transform 0.16s; }
+.input:focus, .select:focus { box-shadow: 0 0 0 4px var(--accent-soft); }
+
+/* ---------- navigation ---------- */
+.nav-item { position: relative; transition: background 0.14s, color 0.14s, padding-left 0.18s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.nav-item::before { content: ''; position: absolute; left: 0; top: 22%; bottom: 22%; width: 3px; border-radius: 3px; background: var(--accent); transform: scaleY(0); transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.nav-item.active::before { transform: scaleY(1); }
+.nav-item:hover:not(.active) { padding-left: 16px; }
+.switch-btn { transition: transform 0.14s, background 0.14s, box-shadow 0.14s; }
+.switch-btn:hover { transform: translateY(-2px); }
+.switch-btn.on { animation: pop 0.3s; }
+.tab { transition: color 0.14s, background 0.14s, transform 0.14s; }
+.tab:active { transform: scale(0.97); }
+#tabbar .tab-item.active svg { animation: pop 0.35s cubic-bezier(0.2, 0.8, 0.2, 1); }
+#tabbar .tab-item { transition: color 0.14s, transform 0.14s; }
+#tabbar .tab-item:active { transform: scale(0.94); }
+.acct-dd-item { transition: background 0.12s, padding-left 0.16s; }
+.acct-dd-item:hover { padding-left: 16px; }
+.crumb-cur { animation: mhTickIn 0.3s ease-out both; }
+
+/* ---------- cards and panels ---------- */
+.panel { transition: box-shadow 0.22s, border-color 0.22s, transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.course-card { position: relative; overflow: hidden; }
+.course-card::after { content: ''; position: absolute; top: 0; bottom: 0; width: 34%; left: 0; pointer-events: none; background: linear-gradient(100deg, transparent 0%, color-mix(in srgb, #fff 42%, transparent) 50%, transparent 100%); transform: translateX(-120%) skewX(-18deg); opacity: 0; }
+.course-card:hover::after { opacity: 1; animation: mhShine 0.9s cubic-bezier(0.2, 0.7, 0.3, 1); }
+.course-card .course-ring svg, .today-card .today-ic, .resume-card .resume-ic { transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.course-card:hover .course-ring svg { transform: scale(1.08) rotate(-6deg); }
+.today-card, .resume-card { transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.2s, border-color 0.2s; }
+.today-card:hover, .resume-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.today-card:hover .today-ic { transform: rotate(-10deg) scale(1.1); }
+.today-card:hover .btn { transform: translateX(3px); }
+.card-link { transition: transform 0.18s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.18s, border-color 0.18s; }
+.card-link:hover { transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+.tile { transition: transform 0.18s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.18s; }
+.tile:hover { transform: translateY(-2px); }
+.stat-strip span { transition: transform 0.18s; }
+.stat-strip span:hover { transform: translateY(-2px); }
+.stat-strip b { display: inline-block; }
+
+/* ---------- rings, bars, numbers ---------- */
+.ring-fg { transition: stroke-dashoffset 0.9s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.ring-fg.ring-anim { animation: mhRing 1.1s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.bar-fill { transition: width 0.9s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.goal-ring.done .ring-fg { filter: drop-shadow(0 0 4px var(--good)); }
+.streak-chip.lit svg { animation: flicker 1.8s ease-in-out infinite; transform-origin: 50% 90%; }
+.streak-chip.lit:hover svg { animation: mhTada 0.9s; }
+.hub-slot .goal-ring:hover svg { animation: mhSpin 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.xp-float { animation: floatUp 1.25s cubic-bezier(0.2, 0.8, 0.2, 1) both; font-weight: 800; }
+.count { font-variant-numeric: tabular-nums; }
+
+/* ---------- questions and cards ---------- */
+.q-opt { transition: transform 0.14s cubic-bezier(0.2, 0.8, 0.2, 1), background 0.14s, border-color 0.14s, box-shadow 0.14s; }
+.q-opt:not(:disabled):hover { transform: translateX(3px); }
+.q-opt.correct { animation: mhGlowGood 0.9s ease-out; }
+.q-opt.wrong { animation: shake 0.42s cubic-bezier(0.36, 0.07, 0.19, 0.97); }
+.q-feedback { animation: riseIn 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.fc-card { transition: transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s; }
+.fc-card:hover { box-shadow: var(--shadow); }
+.q-flag { transition: opacity 0.14s, transform 0.14s; }
+.q-flag:hover { transform: rotate(-12deg) scale(1.1); }
+.ladder-step { animation: riseIn 0.35s both; }
+
+/* ---------- overlays ---------- */
+.modal-backdrop { animation: fadeIn 0.18s ease-out; }
+.modal { animation: popIn 0.32s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.toast { animation: mhToastIn 0.32s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.popover { animation: popIn 0.22s cubic-bezier(0.2, 0.8, 0.2, 1) both; transform-origin: top right; }
+.celebrate-card { animation: popIn 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.celebrate-ic { animation: mhTada 1s 0.3s; }
+.install-banner { animation: mhSlideUp 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.menu-dot { animation: pulse 1.6s ease-in-out infinite; }
+.inbox-pill { animation: pop 0.4s; }
+.search-item { transition: background 0.1s, padding-left 0.14s; }
+.search-item.active { padding-left: 14px; }
+.preview-banner { animation: mhTickIn 0.4s both; }
+#totop { transition: opacity 0.25s, transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1); }
+#totop:hover { transform: translateY(-3px); }
+
+/* ---------- mascot ---------- */
+.mascot-slot svg, .celebrate-bo svg, .empty.bo svg { transform-origin: 50% 100%; }
+.mascot-slot:hover svg { animation: mhWiggle 0.7s ease-in-out; }
+.empty.bo:hover svg { animation: hop 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); }
+
+/* ---------- theme change ---------- */
+html.theme-fade, html.theme-fade *, html.theme-fade *::before, html.theme-fade *::after { transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, fill 0.35s ease !important; }
+
+/* ---------- skins (Settings → Appearance) ---------- */
+:root[data-skin="bobcat"] { --bg: #EEF3FB; --grid: rgba(0, 63, 127, 0.06); --surface-2: #EDF2FA; --surface-3: #DDE7F4; --border: #D3DDEC; --border-strong: #B9C7DD; --skin-a: #003F7F; --skin-b: #B99A4A; }
+:root[data-skin="bobcat"] .landing-top.hero { background: linear-gradient(135deg, #E4ECF9 0%, #F5F1E4 100%); }
+:root[data-skin="bobcat"] .streak-chip.lit { color: #8A6A16; }
+:root[data-skin="paper"] { --bg: #F6F1E7; --grid: rgba(120, 90, 30, 0.05); --surface: #FFFDF8; --surface-2: #F3EDE0; --surface-3: #EAE2D0; --border: #E2D9C6; --border-strong: #CFC3A8; --ink: #211A10; --ink-2: #3F3626; --muted: #6D6350; --shadow: 0 18px 40px -18px rgba(70, 50, 20, 0.25), 0 4px 14px -6px rgba(70, 50, 20, 0.1); }
+:root[data-skin="paper"] .landing-top.hero { background: linear-gradient(135deg, #F3EBDC 0%, #FBF6EA 100%); }
+:root[data-skin="forest"] { --bg: #EDF4EF; --grid: rgba(20, 90, 50, 0.06); --surface-2: #E9F1EB; --surface-3: #D9E8DD; --border: #D2E0D6; --border-strong: #B4CABB; }
+:root[data-skin="forest"] .landing-top.hero { background: linear-gradient(135deg, #E2EFE6 0%, #F0F5EA 100%); }
+:root[data-skin="midnight"][data-theme="dark"], :root[data-skin="midnight"][data-theme="dark"] body { --bg: #03050C; --grid: rgba(120, 130, 255, 0.05); --surface: #090D1A; --surface-2: #0F1526; --surface-3: #171F35; --border: #171E33; --border-strong: #2A3554; }
+@media (prefers-color-scheme: dark) { :root[data-skin="midnight"]:not([data-theme="light"]) { --bg: #03050C; --grid: rgba(120, 130, 255, 0.05); --surface: #090D1A; --surface-2: #0F1526; --surface-3: #171F35; --border: #171E33; --border-strong: #2A3554; } }
+:root[data-skin="midnight"] .landing-top.hero { background: linear-gradient(135deg, #0B1230 0%, #0A1A2A 100%); }
+.skin-pick { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 10px; }
+.skin-opt { display: flex; flex-direction: column; gap: 6px; padding: 8px; border-radius: 12px; border: 2px solid var(--border); background: var(--surface); cursor: pointer; transition: transform 0.14s, border-color 0.14s, box-shadow 0.14s; text-align: left; color: inherit; font: inherit; }
+.skin-opt:hover { transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+.skin-opt.on { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.skin-swatch { height: 46px; border-radius: 8px; border: 1px solid rgba(0, 0, 0, 0.08); position: relative; overflow: hidden; }
+.skin-swatch i { position: absolute; left: 8px; right: 8px; height: 10px; border-radius: 4px; background: rgba(255, 255, 255, 0.85); }
+.skin-swatch i:nth-child(1) { top: 8px; width: 60%; } .skin-swatch i:nth-child(2) { top: 24px; }
+.skin-opt b { font-size: 12.5px; }
+.skin-opt small { font-size: 11px; color: var(--muted); }
+
+/* ---------- reduced motion: everything above becomes static ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001s !important; animation-iteration-count: 1 !important; transition-duration: 0.001s !important; scroll-behavior: auto !important; }
+  .mh-reveal { opacity: 1; }
+}
+html[data-motion="off"] *, html[data-motion="off"] *::before, html[data-motion="off"] *::after { animation-duration: 0.001s !important; animation-iteration-count: 1 !important; transition-duration: 0.001s !important; scroll-behavior: auto !important; }
+html[data-motion="off"] .mh-reveal { opacity: 1; }
+html[data-motion="off"] #loadbar.on { width: 60%; }
+
+/* ============================================================
+   Geek mode (assets/geek.js): decoding headings, a typed status line,
+   a scanline on every route change, CRT dialogs, shell-style toasts,
+   stepped tab wipes, materialising cards, flying bits, the class boot
+   log and a glyph rain easter egg. Everything is gated on
+   html[data-geek="on"], which geek.js only sets when the setting is on
+   and motion is not reduced (by the setting or the system).
+   ============================================================ */
+@keyframes gkScan { 0% { transform: translateY(-6vh); opacity: 0; } 10% { opacity: 1; } 100% { transform: translateY(106vh); opacity: 0.15; } }
+@keyframes gkLines { 0% { opacity: 0.6; } 100% { opacity: 0; } }
+@keyframes gkCaret { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+@keyframes gkCrtOn { 0% { transform: scale(0.05, 0.008); opacity: 0.5; filter: brightness(3) saturate(0.3); } 38% { transform: scale(1, 0.008); opacity: 1; filter: brightness(2.4) saturate(0.5); } 74% { transform: scale(1, 1.015); filter: brightness(1.12); } 100% { transform: none; filter: none; opacity: 1; } }
+@keyframes gkBit { 0% { transform: translate(-50%, -50%) scale(0.6) rotate(0deg); opacity: 1; } 100% { transform: translate(calc(-50% + var(--dx, 0px)), calc(-50% + var(--dy, 0px))) scale(1.05) rotate(var(--rot, 0deg)); opacity: 0; } }
+@keyframes gkWipe { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+@keyframes gkMaterialize { 0% { opacity: 0; clip-path: inset(0 0 100% 0 round 14px); } 55% { opacity: 1; clip-path: inset(0 0 0 0 round 14px); } 100% { opacity: 1; clip-path: inset(-40px round 14px); } }
+@keyframes gkGlitch { 0% { transform: translate(0); filter: none; } 25% { transform: translate(-2px, 1px); filter: drop-shadow(2px 0 #FF2D6F) drop-shadow(-2px 0 #22D3EE); } 50% { transform: translate(2px, -1px); filter: drop-shadow(-2px 0 #FF2D6F) drop-shadow(2px 0 #22D3EE); } 75% { transform: translate(-1px, 0); } 100% { transform: translate(0); filter: none; } }
+@keyframes gkStatusIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* headings decoding: the scrambled tail is monospace in the accent colour */
+.gk-dec i { font-style: normal; font-family: var(--font-mono); font-weight: 500; color: var(--accent); letter-spacing: 0; }
+html[data-geek="on"] .gk-decoding:not(.landing-title) { text-shadow: -1px 0 rgba(255, 45, 111, 0.32), 1px 0 rgba(34, 211, 238, 0.32); }
+html[data-geek="on"] .gk-caret::after { content: ''; display: inline-block; width: 0.48em; height: 0.11em; margin-left: 0.14em; background: var(--accent); vertical-align: baseline; animation: gkCaret 0.85s steps(1) 2; }
+
+/* status line */
+#gk-status { position: fixed; z-index: 60; display: none; max-width: calc(100vw - 32px); padding: 7px 11px; border-radius: 9px; background: rgba(8, 16, 36, 0.93); color: #C9D8FF; border: 1px solid rgba(91, 140, 255, 0.35); box-shadow: 0 12px 30px -14px rgba(0, 0, 0, 0.55); font: 500 12px/1.35 var(--font-mono); white-space: pre; overflow: hidden; text-overflow: ellipsis; pointer-events: none; -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+html[data-geek="on"] #gk-status.show { display: block; animation: gkStatusIn 0.2s ease-out both; }
+#gk-status.out { opacity: 0; transform: translateY(6px); transition: opacity 0.35s, transform 0.35s; }
+#gk-status .gk-path { color: #7FA4FF; }
+#gk-status .gk-dollar { color: #94A3B8; }
+#gk-status .gk-cmd { color: #F1F5FF; }
+#gk-status .gk-ok { color: #4ADE80; }
+#gk-status .gk-cur { display: inline-block; width: 7px; height: 13px; margin-left: 3px; background: #7FA4FF; vertical-align: -2px; animation: gkCaret 0.9s steps(1) infinite; }
+
+/* scanline sweep */
+#gk-scan { position: fixed; inset: 0; z-index: 64; pointer-events: none; display: none; overflow: hidden; }
+html[data-geek="on"] #gk-scan.run { display: block; }
+#gk-scan::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 2px; opacity: 0; background: color-mix(in srgb, var(--accent) 75%, #fff); box-shadow: 0 0 12px 2px color-mix(in srgb, var(--accent) 50%, transparent), 0 0 44px 10px color-mix(in srgb, var(--accent) 18%, transparent); }
+#gk-scan::after { content: ''; position: absolute; inset: 0; opacity: 0; background: repeating-linear-gradient(0deg, color-mix(in srgb, var(--accent) 8%, transparent) 0 1px, transparent 1px 3px); }
+html[data-geek="on"] #gk-scan.run::before { animation: gkScan 0.46s cubic-bezier(0.3, 0.6, 0.2, 1) forwards; }
+html[data-geek="on"] #gk-scan.run::after { animation: gkLines 0.5s ease-out forwards; }
+
+/* cards materialise top-down instead of rising */
+html[data-geek="on"] .mh-enter { animation: gkMaterialize 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) backwards; animation-delay: calc(var(--i, 0) * 55ms); }
+
+/* dialogs power on like a monitor; toasts read like shell output */
+html[data-geek="on"] .modal, html[data-geek="on"] .celebrate-card { animation: gkCrtOn 0.38s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+html[data-geek="on"] .toast { font-family: var(--font-mono); font-size: 13px; letter-spacing: -0.01em; }
+html[data-geek="on"] .toast::before { content: '$ '; opacity: 0.6; }
+html[data-geek="on"] .toast::after { content: ''; display: inline-block; width: 7px; height: 13px; margin-left: 5px; vertical-align: -2px; background: currentColor; opacity: 0.8; animation: gkCaret 0.9s steps(1) infinite; }
+
+/* dashboard tabs: stepped wipe */
+html[data-geek="on"] .pane.gk-swap { animation: gkWipe 0.34s steps(7, end); }
+
+/* the logo glitches on hover */
+html[data-geek="on"] .brand-logo:hover .mh-logo, html[data-geek="on"] .logo-mark:hover .mh-logo { animation: gkGlitch 0.42s steps(3, end); }
+
+/* bits off primary buttons */
+.gk-bit { position: fixed; z-index: 90; pointer-events: none; font: 700 12px/1 var(--font-mono); color: var(--accent); text-shadow: 0 0 6px color-mix(in srgb, var(--accent) 45%, transparent); animation: gkBit 0.62s cubic-bezier(0.2, 0.7, 0.3, 1) forwards; }
+
+/* class download boot log */
+.gk-boot { margin: 12px 0 14px; padding: 12px 14px; max-width: 560px; border-radius: 12px; background: #081024; color: #C9D8FF; border: 1px solid rgba(91, 140, 255, 0.28); font: 12.5px/1.6 var(--font-mono); white-space: pre; overflow-x: auto; }
+.gk-boot b { color: #7FA4FF; }
+.gk-boot .gk-dim { color: #8C97B1; }
+.gk-boot .gk-line { color: #D6E4FF; animation: mhTickIn 0.2s ease-out both; }
+.gk-boot .gk-ready { color: #4ADE80; }
+
+/* ↑ ↑ ↓ ↓ ← → ← → B A */
+#gk-rain { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 5000; cursor: pointer; animation: fadeIn 0.3s ease-out both; }
+#gk-rain.out { opacity: 0; transition: opacity 0.55s; }
+
+@media print { #gk-status, #gk-scan, .gk-bit, #gk-rain, .gk-boot { display: none !important; } }
+
+/* ============================================================
+   Polish 2026.10.02 — exits, press feedback, gentler reduced motion.
+   Dialogs and toasts now leave (App.dismiss adds .is-closing): softer
+   and faster than they arrive, per transitions.dev. One press scale
+   (0.96) everywhere, per make-interfaces-feel-better.
+   ============================================================ */
+@keyframes mhFadeOut { to { opacity: 0; } }
+@keyframes mhModalOut { from { opacity: 1; transform: none; } to { opacity: 0; transform: scale(0.96); } }
+@keyframes mhToastOut { from { opacity: 1; transform: translate(-50%, 0); filter: blur(0); } to { opacity: 0; transform: translate(-50%, 8px) scale(0.98); filter: blur(2px); } }
+@keyframes gkCrtOff { 0% { transform: none; opacity: 1; filter: none; } 55% { transform: scale(1, 0.008); opacity: 1; filter: brightness(2.4) saturate(0.5); } 100% { transform: scale(0.05, 0.008); opacity: 0; filter: brightness(3) saturate(0.3); } }
+.modal-backdrop.is-closing { animation: mhFadeOut 0.19s ease-out forwards; pointer-events: none; }
+.modal-backdrop.is-closing .modal { animation: mhModalOut 0.15s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+html[data-geek="on"] .modal-backdrop.is-closing .modal { animation: gkCrtOff 0.19s cubic-bezier(0.4, 0, 1, 1) forwards; }
+.toast.is-closing { animation: mhToastOut 0.2s cubic-bezier(0.22, 1, 0.36, 1) forwards; pointer-events: none; }
+
+/* press feedback: one scale for every control, never below 0.95 (icon buttons were 0.92, tabs 0.94) */
+.btn:not(:disabled):active, .icon-btn:active, .chip.toggle:active, .switch-btn:active, #tabbar .tab-item:active, .tab:active, .search-btn:active { transform: scale(0.96); transition-duration: 0.06s; }
+
+/* reduced motion keeps the meaning, drops the movement: controls still fade their colour and state
+   instead of snapping, while everything spatial stays off (the blanket rule above handles that) */
+@media (prefers-reduced-motion: reduce) {
+  .btn, .icon-btn, .chip, .nav-item, .tab, .tab-item, .q-opt, .input, .select, .switch-btn, .amb-top { transition-property: color, background-color, border-color, box-shadow, opacity !important; transition-duration: 0.12s !important; }
+}
+html[data-motion="off"] .btn, html[data-motion="off"] .icon-btn, html[data-motion="off"] .chip, html[data-motion="off"] .nav-item, html[data-motion="off"] .tab, html[data-motion="off"] .tab-item, html[data-motion="off"] .q-opt, html[data-motion="off"] .input, html[data-motion="off"] .select, html[data-motion="off"] .switch-btn { transition-property: color, background-color, border-color, box-shadow, opacity !important; transition-duration: 0.12s !important; }

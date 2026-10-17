@@ -1,0 +1,14 @@
+node_modules
+package-lock.json
+pyodide/package
+pyodide/*.tgz
+*.png
+fixtures/rc-state.json
+fixtures/ai-last.json
+fixtures/tts-last.json
+fixtures/stt-last.json
+fixtures/live-last.json
+fixtures/live-hangups.json
+fixtures/live-tries.json
+fixtures/tts-all.json
+fixtures/rc-cancels.json

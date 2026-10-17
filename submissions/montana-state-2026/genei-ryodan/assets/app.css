@@ -1,0 +1,132 @@
+/* ============================================================
+   Mathub app (iOS and Android): fitting the phone, and the pages only the app has.
+   Loaded only in the app (see app/scripts/build-www.js); the student
+   site's look (world.css) still does the rest.
+   ============================================================ */
+
+/* ---------- the phone around the page: notch, home indicator, keyboard ---------- */
+html[data-app] { -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; }
+html[data-app] { --ab-h: 60px; --tab-h: 70px; }
+html[data-app] body { padding-top: calc(env(safe-area-inset-top) + var(--ab-h)); padding-bottom: calc(var(--tab-h) + env(safe-area-inset-bottom)); padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); overscroll-behavior-y: none; }
+/* the strip behind the clock and the Dynamic Island, so the page scrolls under it, not through it (its own element:
+   the site's looks use body::before for their backgrounds); above the top bar, tab bar and drawer, below dialogs */
+html[data-app] .app-statusbar { position: fixed; z-index: 55; top: 0; left: 0; right: 0; height: env(safe-area-inset-top); background: var(--bg); pointer-events: none; }
+html[data-app] .sidebar { padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); }
+html[data-app] .read-progress { top: env(safe-area-inset-top); }
+html[data-app] .modal-backdrop { padding-top: calc(env(safe-area-inset-top) + 16px); padding-bottom: calc(env(safe-area-inset-bottom) + 16px); }
+/* fields at 16px or more, so iOS does not zoom the page when one gets the focus */
+html[data-app] :is(.input, .select, textarea, input[type="text"], input[type="email"], input[type="password"], input[type="search"], input[type="number"], input[type="time"], input[type="date"]) { font-size: max(16px, 1em); }
+html[data-app] :is(button, .btn, .chip, .nav-item, .tab-item) { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+/* the website's "Preview, sign up to unlock" strip: in the app nothing is locked, so it has nothing to say */
+html[data-app] #preview-banner { display: none; }
+/* website-only: the instructors' workspace is on the web */
+html[data-app] :is(.hero-faculty, .site-foot a[href="#/teach"]) { display: none; }
+html[data-app] .site-foot a[href="#/teach"] + .sep { display: none; }
+
+/* ---------- #/create (shared styles in create.css) ---------- */
+html[data-app] .mk-text { font-size: 16px !important; }
+.app-panel .check + .check { margin-top: 8px; }
+
+/* ============================================================
+   The app's own shell (iOS and Android): an app bar on top, the class row and the path on the
+   start page, the class sheet, and a chunky tab bar. The website keeps its sidebar and top bar.
+   Big Sky rules hold: white bars with 2px borders, class colours on the path, gold for streak and
+   XP, pine for mastered, coral for exams, and everything pressable sinks onto its lip.
+   ============================================================ */
+html[data-app] :is(.topbar, .sidebar, #nav-backdrop, .site-foot) { display: none !important; }
+html[data-app] .app { display: block; }
+
+/* ---------- app bar ---------- */
+.appbar { position: fixed; z-index: 54; top: env(safe-area-inset-top); left: 0; right: 0; height: var(--ab-h); display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 max(10px, env(safe-area-inset-right)) 0 max(10px, env(safe-area-inset-left)); background: var(--surface); border-bottom: 2px solid var(--border); }
+.ab-l, .ab-r { display: flex; align-items: center; gap: 4px; min-width: 0; }
+.ab-back { display: grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 14px; background: transparent; color: var(--ink); }
+.ab-back:active { background: var(--surface-2); }
+.ab-class { display: inline-flex; align-items: center; gap: 6px; height: 42px; max-width: 44vw; padding: 0 12px 0 14px; border: 0; border-radius: 14px; background: var(--cc, var(--accent)); color: var(--cc-ink, #fff); font: 800 17px/1 var(--font-display); box-shadow: 0 4px 0 var(--cc-deep, var(--accent-deep)); transition: transform .08s ease-out, box-shadow .08s ease-out; }
+.ab-class svg { flex: none; opacity: .9; }
+.ab-class.none { background: var(--surface-2); color: var(--ink); box-shadow: 0 4px 0 var(--lip); font-size: 15px; }
+.ab-class-code { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ab-class:active { transform: translateY(4px); box-shadow: none; }
+.ab-stat { display: inline-flex; align-items: center; gap: 4px; height: 44px; min-width: 48px; padding: 0 8px; border: 0; border-radius: 14px; background: transparent; color: var(--muted); font: 800 18px/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.ab-stat svg { color: var(--border-strong); }
+.ab-stat:active { background: var(--surface-2); }
+.ab-streak.on, .ab-xp.on { color: var(--gold); }
+.ab-streak.on svg { color: var(--sun-deep, #E0A800); fill: var(--sun, #FFC629); }
+.ab-xp svg { color: var(--sun-deep, #E0A800); }
+.ab-xp b, .ab-streak b { min-width: 1ch; }
+.ab-xp small { margin-left: -2px; font: 700 13px/1 var(--font-body); color: var(--muted); }
+.ab-acct { display: grid; place-items: center; width: 48px; height: 48px; text-decoration: none; }
+.ab-avatar { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--accent-soft); border: 2px solid var(--accent-line); color: var(--accent-deep); font: 800 17px/1 var(--font-display); }
+.ab-signin { height: 42px; margin-left: 4px; padding: 0 16px; border: 0; border-radius: 14px; background: var(--accent); color: var(--accent-ink, #fff); font: 700 15px/1 var(--font-body); box-shadow: 0 4px 0 var(--accent-deep); transition: transform .08s ease-out, box-shadow .08s ease-out; }
+.ab-signin:active { transform: translateY(4px); box-shadow: none; }
+.ab-signin { white-space: nowrap; }
+@media (max-width: 389px) { .ab-xp small { display: none; } .ab-stat { min-width: 40px; padding: 0 6px; } .ab-signin { padding: 0 12px; } }
+.ab-pop { position: fixed; z-index: 58; width: min(280px, calc(100vw - 24px)); display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border-radius: 18px; background: var(--surface); border: 2px solid var(--border); box-shadow: 0 18px 40px -18px rgba(20, 33, 61, .35), 0 3px 8px -3px rgba(20, 33, 61, .12); font-size: 14.5px; line-height: 1.45; animation: ab-in .18s ease-out; }
+.ab-pop b { font: 800 18px/1.2 var(--font-display); color: var(--ink); }
+.ab-pop-meta { color: var(--muted); font-size: 13px; }
+.ab-bar { display: block; height: 12px; border-radius: 999px; background: var(--surface-3); overflow: hidden; }
+.ab-bar i { display: block; height: 100%; border-radius: inherit; background: var(--sun, #FFC629); }
+@keyframes ab-in { from { opacity: 0; transform: translateY(-6px); } }
+
+/* ---------- tab bar ---------- */
+html[data-app] #tabbar.app-tabs { display: grid; position: fixed; z-index: 45; left: 0; right: 0; bottom: 0; grid-template-columns: repeat(6, 1fr); gap: 4px; padding: 6px max(8px, env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left)); background: var(--surface); border-top: 2px solid var(--border); box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; }
+html[data-app] #tabbar.app-tabs .tab-item { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 56px; padding: 4px 2px; border: 2px solid transparent; border-radius: 16px; background: transparent; color: var(--muted); font: 700 11.5px/1.1 var(--font-body); text-decoration: none; }
+html[data-app] #tabbar.app-tabs .tab-bo .tab-ic { display: grid; place-items: center; width: 40px; height: 34px; margin-top: -4px; border-radius: 12px; background: var(--accent-soft); }
+html[data-app] #tabbar.app-tabs .tab-item.active { color: var(--accent-deep); background: var(--accent-soft); border-color: var(--accent-line); }
+html[data-app] #tabbar.app-tabs .tab-item:active .tab-ic { transform: scale(.9); }
+html[data-app] #tabbar.app-tabs .tab-ic { display: grid; place-items: center; transition: transform .1s ease-out; }
+html[data-app] body:has(.lesson-foot) #tabbar.app-tabs { display: none; }
+html[data-app] #ambient { bottom: calc(var(--tab-h) + env(safe-area-inset-bottom) + 12px); }
+html[data-app] #ambient .amb-bubble:not(.on):not(.open) { display: none; }   /* in the app the sounds live in the class sheet (Focus sounds); the bubble shows while something plays */
+html[data-app] .totop { bottom: calc(var(--tab-h) + env(safe-area-inset-bottom) + 12px); }
+
+/* ---------- bigger, chunkier controls for thumbs ---------- */
+html[data-app] .btn { min-height: 46px; border-radius: 16px; font-size: 16px; }
+html[data-app] .btn.sm { min-height: 40px; border-radius: 14px; font-size: 14.5px; }
+html[data-app] .btn.lg { min-height: 54px; font-size: 17px; }
+
+/* ---------- start page: the shared pieces are in home.css ---------- */
+html[data-app] body.ap-open #ambient { opacity: 0; pointer-events: none; }   /* the sound button would sit on the open card's buttons */
+
+/* ---------- class sheet ---------- */
+html[data-app] .sheet-backdrop { align-items: flex-end; justify-content: center; padding: 0 !important; background: rgba(13, 22, 38, .4); opacity: 0; transition: opacity .2s ease-out; }
+html[data-app] .sheet-backdrop.open { opacity: 1; }
+.sheet { width: 100%; max-width: 640px; max-height: 88vh; overflow-y: auto; overscroll-behavior: contain; padding: 8px 18px calc(20px + env(safe-area-inset-bottom)); border-radius: 26px 26px 0 0; background: var(--surface); transform: translateY(100%); transition: transform .26s cubic-bezier(.2, .8, .2, 1); }
+.sheet-backdrop.open .sheet { transform: none; }
+.sheet-grab { width: 44px; height: 5px; margin: 4px auto 10px; border-radius: 999px; background: var(--border-strong); }
+.sheet-h { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.sheet-h h2 { margin: 0; font: 800 22px/1.15 var(--font-display); }
+.sheet-h .icon-btn { width: 44px; height: 44px; }
+.sheet-sub { margin: 22px 0 10px; font: 800 17px/1.2 var(--font-display); }
+.sheet-classes { display: flex; flex-direction: column; gap: 10px; }
+.sc-row { display: flex; align-items: center; gap: 12px; min-height: 64px; padding: 10px 12px; border: 2px solid var(--border); border-radius: 18px; background: var(--surface); color: var(--ink); text-decoration: none; box-shadow: 0 4px 0 var(--lip); transition: transform .08s ease-out, box-shadow .08s ease-out; }
+.sc-row:active { transform: translateY(4px); box-shadow: none; }
+.sc-row.on { border-color: var(--cc-line, var(--accent-line)); background: var(--cc-soft, var(--accent-soft)); }
+.sc-row > svg { color: var(--cc, var(--accent)); flex: none; }
+.sc-badge { flex: none; min-width: 72px; padding: 9px 10px; border-radius: 12px; background: var(--cc, var(--accent)); color: var(--cc-ink, #fff); font: 800 15px/1 var(--font-display); text-align: center; }
+.sc-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.sc-main b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 15px; }
+.sc-main small { color: var(--muted); font-size: 13px; }
+.sheet-actions { display: grid; gap: 10px; margin-top: 14px; }
+.sheet-actions .btn { justify-content: center; }
+.sheet-pick { margin-top: 12px; }
+.pick-list { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+.pick-row { display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 6px 10px !important; border: 2px solid var(--border); border-radius: 14px; }
+.pick-row .sc-badge { min-width: 64px; padding: 7px 8px; font-size: 13.5px; }
+.sheet-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 10px; }
+.sg-item { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; min-height: 80px; padding: 10px 6px; border: 2px solid var(--border); border-radius: 18px; background: var(--surface); color: var(--ink); font: 600 13px/1.2 var(--font-body); text-align: center; text-decoration: none; box-shadow: 0 4px 0 var(--lip); transition: transform .08s ease-out, box-shadow .08s ease-out; }
+.sg-item svg { color: var(--cc, var(--accent)); }
+.sg-item:active { transform: translateY(4px); box-shadow: none; }
+
+/* ---------- Mathub Create in the start page (the paywall, lock and Settings row are in create.css) ---------- */
+.ah-locked .ah-hero-h p { display: flex; gap: 6px; align-items: flex-start; }
+.ah-locked .ah-hero-h p svg { flex: none; margin-top: 2px; }
+.ah-locked .lock-acts { margin-top: 14px; }
+.ah-card.locked { background: var(--surface-3); color: var(--muted); box-shadow: 0 5px 0 var(--border-strong); }
+.ah-card.locked.on { box-shadow: 0 5px 0 var(--border-strong), 0 0 0 3px var(--bg), 0 0 0 6px var(--border-strong); }
+.ah-card.locked .ah-art { color: var(--muted); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ap-start, .ah-loading i, .ab-pop, .ap-pop { animation: none; }
+  .sheet, html[data-app] .sheet-backdrop { transition: none; }
+}
+html[data-motion="off"] :is(.ap-start, .ah-loading i, .ab-pop, .ap-pop) { animation: none; }

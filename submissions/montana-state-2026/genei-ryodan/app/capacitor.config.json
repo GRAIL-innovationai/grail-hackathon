@@ -1,0 +1,48 @@
+{
+  "appId": "space.mathub.app",
+  "appName": "Mathub",
+  "webDir": "www",
+  "loggingBehavior": "debug",
+  "ios": {
+    "contentInset": "never",
+    "scrollEnabled": true,
+    "allowsLinkPreview": false,
+    "preferredContentMode": "mobile",
+    "limitsNavigationsToAppBoundDomains": false
+  },
+  "server": {
+    "iosScheme": "capacitor",
+    "hostname": "localhost"
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": true
+    },
+    "CapacitorCookies": {
+      "enabled": true
+    },
+    "SplashScreen": {
+      "launchShowDuration": 600,
+      "launchAutoHide": true,
+      "backgroundColor": "#14213D",
+      "showSpinner": false
+    },
+    "Keyboard": {
+      "resize": "native",
+      "resizeOnFullScreen": true
+    },
+    "SystemBars": {
+      "insetsHandling": "native",
+      "initialViewportFitValueHint": "cover"
+    },
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_mathub",
+      "iconColor": "#2563EB"
+    }
+  },
+  "android": {
+    "allowMixedContent": false,
+    "captureInput": false,
+    "webContentsDebuggingEnabled": false
+  }
+}

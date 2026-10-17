@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Files the app hands to the share sheet: only its cache folder (classes and exports it writes to share/) -->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <cache-path name="share" path="share/" />
+</paths>
