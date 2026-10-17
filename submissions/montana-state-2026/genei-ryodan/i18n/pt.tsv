@@ -1,0 +1,1851 @@
+# Mathub — the interface in pt. One line per catalog number (i18n/catalog.json): the number, a tab, the words. See scripts/build-i18n.js.
+2	Não é uma exportação válida
+3	dom
+4	seg
+5	ter
+6	qua
+7	qui
+8	sex
+9	sáb
+10	jan
+11	fev
+12	mar
+13	abr
+14	mai
+15	jun
+16	jul
+17	ago
+18	set
+19	out
+20	nov
+21	dez
+22	janeiro
+23	fevereiro
+24	março
+25	abril
+26	junho
+27	julho
+28	agosto
+29	setembro
+30	outubro
+31	novembro
+32	dezembro
+33	há {1} {1|dia|dias}{2|}
+34	em {1} {1|dia|dias}
+35	Digite uma expressão.
+36	Esperava "{1}" na posição {2}.
+37	A expressão termina cedo demais.
+38	Número inválido.
+39	Símbolo desconhecido "{1}".
+40	"{1}" inesperado na posição {2}.
+41	dia para a prova
+42	dias para a prova
+43	Esta semana
+44	semana de prova
+45	esta semana
+46	Hoje
+47	dia da prova
+48	Pronto
+49	prova encerrada
+50	Do Canvas
+51	Os prazos reais do calendário do Canvas do professor, atualizados a cada hora.
+52	usando a última cópia
+53	Amanhã
+54	Nada no calendário do Canvas desta disciplina nas próximas semanas.
+55	agora mesmo
+56	há {1} min
+57	há {1} h
+58	há {1} d
+59	Dispensar
+60	Aprender
+61	Prática
+62	Destacar-se
+63	Desafio do dia
+64	Sessões de estudo
+65	Simulados
+66	Contribuir
+67	Ligas
+68	Pessoas
+69	Trilha de aprendizado
+70	Comunidade
+71	Discussões
+72	Disciplina
+73	Calculadora de GPA
+74	Recursos e guias
+75	Blitz
+76	Erros
+77	Folha de resumo
+78	Minhas anotações
+79	Disciplina desconhecida.
+80	Não foi possível baixar {1}.js. Verifique sua conexão e tente de novo.
+81	Carregando…
+82	Abrindo a disciplina…
+83	Carregando
+84	Tentar de novo
+85	Todas as disciplinas
+86	Fim de jogo
+87	Não foi possível carregar esta disciplina.
+88	Continuar?
+89	{1} · Outono 2026
+90	Página não encontrada
+91	Página inicial
+92	Esta disciplina não está aberta para você
+93	Não há nenhuma disciplina
+94	no Mathub que você possa abrir. Se o seu professor a criou, entre com o código da turma que ele passou.
+95	O link pode ser antigo ou ter um erro de digitação. Nada foi perdido; escolha para onde ir.
+96	Entrar numa turma com um código
+97	Pedir esta disciplina
+98	Criar a partir do programa
+99	Buscar no Mathub
+100	Junte-se a um colega
+101	Você foi convidado
+102	Verificando o convite…
+103	Falta o código nesse link.
+104	Abrir o Mathub
+105	{1} usa o Mathub em
+106	e quer você junto.
+107	suas disciplinas
+108	Um colega quer que você estude no Mathub.
+109	Resumos gratuitos de cada tópico, prática sem fim, flashcards com revisão programada, calendários de prazos, uma sala de foco e um fórum da turma para as disciplinas da Montana State. Cadastre-se com seu e-mail montana.edu e vocês dois ganham os emblemas Convidado e Recrutador.
+110	Dar uma olhada primeiro
+111	Estude com {1}
+112	Estudar juntos
+113	Você já entrou · abrir o Mathub
+114	Cadastre-se grátis
+115	Entrar
+116	Não foi possível verificar o convite, mas você ainda pode se cadastrar.
+117	min atrás
+118	hora atrás
+119	horas atrás
+120	dia atrás
+121	dias atrás
+122	O que tem aqui
+123	guias de tópicos
+124	questões de prática
+125	Continue de onde parou · {1}
+126	Início
+127	Foco
+128	Fórum
+129	Eu
+130	Navegação rápida
+131	Código
+132	Calendário
+134	Buscar resumos, fórmulas e páginas
+135	Esta lista
+136	Esc
+137	Fechar a busca, os menus e as janelas
+138	Parágrafo anterior ou seguinte numa leitura, questão anterior ou seguinte numa lição
+139	Espaço
+140	Tocar ou pausar uma leitura
+141	Enter
+142	Conferir uma resposta e continuar
+144	Executar o código no editor
+145	Tab / Shift + Tab
+146	Aumentar ou diminuir o recuo no editor
+147	Atalhos de teclado
+148	Fechar
+149	Esc
+150	Voltar ao topo
+151	Imprimir ou salvar como PDF
+152	Imprimir
+153	visão:
+154	Vendo como {1}
+155	Você está vendo o site como se fosse outra data. Clique para voltar a hoje.
+156	Semestre concluído
+157	Não restam provas
+158	Sem provas
+159	Estudar
+160	Planejar
+161	Mais ferramentas
+162	Informações da disciplina
+163	Todas as disciplinas
+164	Mande para nós o programa de uma disciplina que ainda não está no Mathub
+165	Pedir uma disciplina
+166	Crie a partir do programa uma disciplina que ainda não está no Mathub
+167	Criar uma disciplina
+168	Admin
+169	Moderação
+170	Painel de administração
+171	Voltar a hoje
+172	Pausa
+173	Bloco de foco concluído. Faça uma pausa de 5 minutos.
+174	Fim da pausa. De volta ao trabalho.
+176	Ficha de personagem
+178	Sala de foco
+180	Recursos
+182	Guias de estudo
+184	Ferramentas
+186	Sua semana
+192	Seus emblemas
+194	Configurações
+196	Novidades
+198	Contato
+200	Recurso · {1}
+201	todas as disciplinas
+202	Montana State
+203	Guia · {1} min
+205	{1} · Unidade {2}
+206	Unidade
+207	Prática: {1}
+208	quiz de prática
+209	Buscar
+210	Buscar resumos, fórmulas, flashcards, calendários, páginas…
+211	Pedir {1}
+212	Ainda não está no Mathub. Mande o programa e nós a criamos.
+213	Criar {1} a partir do programa
+214	Ainda não está no Mathub. Envie o programa e o Bo escreve a disciplina.
+215	Nenhum resultado. Tente outra palavra ou outra disciplina.
+216	Começa {1}
+217	Provas encerradas
+218	Continuar
+219	Ouvir
+220	Todas as leituras concluídas
+221	Continuar:
+222	Começar uma lição
+223	Último tópico
+224	Primeiro tópico
+225	Vendo agora
+226	Próximo prazo
+227	Próxima prova
+228	Tudo pronto
+229	leituras concluídas
+230	tópicos dominados
+231	hoje de manhã
+232	hoje à tarde
+233	As aulas começam {1}. Adiante-se nos primeiros tópicos.
+234	O semestre acabou. Tudo fica aqui para revisar.
+235	Qual disciplina está te dando trabalho {1}?
+236	Escolha uma disciplina
+237	Suas disciplinas estão logo acima. Toque numa para abrir.
+238	Faça uma lição de 5 minutos
+239	Algumas questões com respostas resolvidas. Sem configuração.
+240	Cadastre-se para guardar
+241	Volte amanhã
+242	Uma conta montana.edu gratuita salva seu progresso em todo lugar.
+243	Sua sequência e seu plano do dia continuam de onde pararam.
+244	Guias
+245	Role um d20 e deixe ele escolher o que estudar
+246	Timer de foco
+247	Sortear uma missão
+248	Escolher disciplinas
+249	Mathub Faculty: escreva seu programa e conduza sua turma
+250	Buscar (Ctrl K)
+251	Sons e música para focar
+252	Alternar tema
+253	Para professores
+254	Explorar
+255	Próximos sete dias, todas as disciplinas
+256	regras do programa, provas e datas de trancamento
+257	Discussões recentes
+258	Abrir discussões
+259	· Semana {1}
+260	Feito por um estudante da MSU a partir do programa real de cada disciplina, das datas de prova e do calendário do Canvas: o que cai na próxima prova, prática até você estar pronto, e resumos e flashcards para cada tópico. Grátis com um e-mail montana.edu.
+261	{1?dias:dia} para {2}
+262	· {1}% pronto
+263	Comece aqui
+264	Seu próximo passo
+265	Suas disciplinas
+266	Mostrar só as minhas
+267	Mostrar todas as disciplinas
+268	Mais {1} esta semana · abrir Hoje
+269	Nada para entregar na próxima semana.
+270	Quizzes sem fim
+271	Problemas gerados automaticamente com explicações resolvidas, por tópico e por prova.
+272	Resumos de cada tópico
+273	Ideias principais, fórmulas, um exemplo resolvido, armadilhas e uma dica de prova, com links para o livro gratuito.
+274	Ferramentas interativas
+275	Gráficos, simuladores, resolvedores, um círculo trigonométrico, calculadoras de notas e um rascunho.
+276	Discussões, desafios diários, sessões de estudo, simulados e emblemas com seus colegas.
+277	Explore à vontade. Cadastre-se com um e-mail montana.edu para liberar todas as ferramentas e manter seu progresso em todos os dispositivos.
+278	Progresso, flashcards e notas ficam salvos para cada disciplina e sincronizados com sua conta.
+279	Semestre encerrado
+280	Semana de provas finais
+281	Semana {1} de {2}
+282	{1} / {2} XP hoje
+283	Nível {1} · {2}
+284	Meta do dia cumprida. Ouvir continua contando para o seu nível.
+285	Faltam {1} XP · um parágrafo vale 1 XP, uma leitura concluída 20
+286	Primeiros passos · {1} de {2}
+287	Ocultar
+288	Próximo prazo{1}
+289	Entregue {1}.
+290	Checklist de preparação
+291	Detalhes da tarefa
+292	Leituras
+293	· {1}% da nota
+294	todos os prazos
+295	Todos os prazos já passaram. As leituras e a calculadora de notas continuam aqui.
+296	Boa {1}. Veja como está {2}.
+297	Calendário completo
+298	Vence em breve
+299	Seu progresso
+300	Calculadora de notas
+301	dias de sequência
+302	Continue assim
+303	Laboratório de fonética
+304	Sons, AFI e acento
+305	Missões diárias
+306	Sua liga
+307	Todas as ligas
+308	Quer um e-mail na noite anterior a cada prazo e um aviso quando sua sequência estiver para acabar?
+309	Ativar
+310	Não, obrigado
+311	Sem aula hoje.{1}
+312	Próximo: {1}, {2}.
+313	9h
+314	Nada agendado.
+315	próxima leitura
+316	Ver as leituras
+317	{1} respondidas · {2}% certas · {3} de {4} símbolos explorados.
+318	Pratique transcrição, pares mínimos, sílabas e acento. XP a cada resposta.
+319	Checklist
+320	Liga
+321	Nenhum item do Canvas por vir para esta disciplina.
+322	{1} de {2} feitos
+323	Nada para marcar agora.
+324	Lembretes à noite ativados
+325	Painel
+326	{1}% pronto
+327	Como melhorar
+328	· mais fraco: {1}
+329	círculo verde, firme
+330	quadrado azul, chegando lá
+331	losango preto, difícil para você agora
+332	ainda não tentado
+333	só resumo, ainda sem questões de prática
+334	só resumo
+335	chegando lá
+336	difícil para você
+337	As pistas até {1}, do começo da trilha para cima
+338	Abrange {1}. {2}{3}
+339	Fazer a próxima pista
+340	Treinar todas as pistas
+341	Flashcards
+342	· o cume
+343	Começo da trilha
+344	{1} chegando lá
+345	{1} difíceis para você
+346	{1} não tentados
+347	Sua turma{1}{2}
+348	Sem livros nem aparelhos.
+349	{1}% da nota.
+350	lista de prática
+351	Você está aqui
+352	Próxima prova{1}
+353	Abrange {1}. {2}
+354	Treinar {1} tópicos
+355	Lista de prática de {1}
+356	{1} · sem provas
+357	Avaliada por tarefas e quizzes
+358	Quizzes
+359	Resumos por tópico
+360	não há mais aulas
+361	tem aula
+362	{1?dias:dia} para a próxima aula
+363	Esta disciplina não tem provas.
+364	Próxima aula: {1}.
+365	todas as provas
+366	Todas as provas do calendário já passaram. Tudo fica aqui para revisar, e a calculadora de notas pode definir sua nota final.
+367	Continue praticando
+368	As aulas começam {1}
+369	({1}). Tudo abaixo já segue o calendário do outono de 2026; o primeiro tópico está pronto quando você estiver.
+370	Meta do dia cumprida. XP extra continua contando para o seu nível.
+371	Faltam {1} XP{2}
+372	· {1} XP para o nível {2}
+373	Role um d20 e deixe ele escolher o que praticar
+374	Tópico atual
+375	Resumo, exemplo resolvido e prática deste tópico.
+376	Revisão inteligente
+377	dias de sequência{1}
+378	foco nesta semana
+379	acertos · {1} respondidas
+380	flashcards dominados
+381	{1} dias para {2}. Este é o caminho para cima.
+382	{1} é amanhã. Mais uma pista.
+383	{1} chegou. Você já fez a subida.
+384	Sua sequência de {1} dias termina à meia-noite.
+385	Uma lição rápida
+386	a mantém.
+387	Sua sequência quebrou ontem.
+388	Use o congelamento desta semana
+389	para mantê-la viva.
+390	Você já usou o congelamento desta semana.
+391	Próximo: {1} em {2}.
+392	· laboratório {1}
+393	Revise para mim
+394	Responda algumas questões e uma revisão personalizada aparece aqui.
+395	Preparo
+396	Progresso
+397	Planejador
+398	· congelamento usado
+399	Unidade {1} · {2}
+400	Plano de hoje
+401	Próximo dia de estudo · {1}
+402	Planejador de estudos
+403	{1}/{2} feitos ·
+404	Abrir
+405	Dia de descanso. Nada planejado.
+406	Ainda sem plano. Escolha uma prova e seus dias de estudo, e o Mathub distribui o trabalho entre eles.
+407	Montar um plano
+408	Não restam congelamentos de sequência. Cumpra a meta do dia três dias numa semana para ganhar um.
+409	foco nesta semana · mediana da turma {1} h
+410	Sujeito a mudanças; vale o calendário do Canvas do professor.
+411	Ir para hoje
+412	Aula
+413	Laboratório
+414	Prova
+415	Entrega / prazo
+416	Sem aula
+417	Revisão
+418	Horários fixos de entrega
+419	Semana
+420	Segunda-feira
+421	Terça-feira
+422	Quarta-feira
+423	Quinta-feira
+424	Sexta-feira
+425	Em breve
+426	Sem {1}
+427	Do Canvas{1}
+428	Resumos
+429	Unidade {1}
+430	Ideias principais
+431	… e mais {1}, além de fórmulas, um exemplo resolvido, erros comuns e uma dica de prova.
+432	Os resumos depois dos primeiros {1} tópicos são para membros
+433	Cadastre-se grátis para ler todos os tópicos de {1} ({2} no total) com exemplos resolvidos e dicas de prova.
+434	Cartões
+435	Site da disciplina
+436	Ler no livro
+437	Fórmulas principais
+438	Código que você deve conhecer
+439	Experimente
+441	Saída
+442	Exemplo resolvido
+443	Ver solução
+444	Erros comuns
+445	Dica de prova
+446	Praticar {1}
+447	Ocultar solução
+448	Folha de fórmulas
+449	Nenhuma fórmula corresponde.
+450	Mais {1} {1|grupo|grupos} de fórmulas para membros{2|}
+451	A folha completa de {1} abrange
+452	. Cadastre-se grátis para ver e imprimir tudo.
+453	Tudo numa página. As provas são sem consulta: use isto para testar o que você consegue reescrever de memória.
+454	Filtrar (ex.: {1})…
+455	cadeia, torque
+456	Mais {1} cartões para membros
+457	A prévia mostra {1} cartões por baralho. Cadastre-se grátis para ter todos os {2} flashcards de {3} e salvar suas caixas de domínio.
+458	Nenhum cartão corresponde a este filtro.
+459	Virar o cartão:
+460	Cartão {1} / {2} · caixa {3}
+461	Toque ou aperte espaço para virar
+462	Resposta
+463	comunidade · {1}
+464	Anterior
+465	De novo
+466	Já sei
+467	Próximo
+468	Definições, leis e fórmulas. "Já sei" sobe o cartão de caixa; três caixas significa dominado. "De novo" manda ele de volta ao começo.
+469	Incluir flashcards escritos por colegas
+470	Embaralhar de novo
+471	Cartões da comunidade
+472	Zerar progresso
+473	Todas as unidades
+474	Ordem: os mais fracos primeiro
+475	Ordem: embaralhada
+476	Ainda não há cartões da comunidade para esta disciplina. Adicione um em Contribuir.
+477	Zerar o progresso dos flashcards desta disciplina?
+478	Progresso dos flashcards zerado
+480	Livro e links
+481	{1} é gratuito on-line. Cada tópico abaixo leva direto ao seu capítulo.
+482	Tópicos deste semestre
+483	Resumos neste site
+484	PDF do livro
+485	PDF hospedado
+486	Abrir em nova aba
+487	Quadro em branco? Envie
+488	ao lado do deste site
+489	, ou use os links acima.
+490	Digite uma porcentagem em pelo menos uma categoria.
+491	nota atual
+492	média ponderada do que você digitou ({1}% da nota)
+493	pontos já garantidos de 100
+494	Usando
+495	, o peso das provas que te dá a melhor nota até agora.
+496	O que você precisa em {1}
+497	Supõe que as categorias que você deixou em branco terminam na sua média atual{1}.
+498	Meta
+499	Nota necessária
+500	Veredito
+501	, e aplica a regra de descartar a menor nota
+502	qualquer nota
+503	garantido
+504	fora de alcance
+505	Os pesos vêm direto do programa de {1}. Deixe uma categoria em branco se ela ainda não aconteceu.{2}
+506	GPA do semestre
+507	Suas notas
+508	Limpar
+509	Categoria
+510	Peso
+511	Sua %
+512	Escala de notas
+513	Nota
+514	Porcentagem
+515	Como cada laboratório é avaliado (20 pontos)
+516	Como os trabalhos escritos são avaliados (rubrica de 4 pontos)
+517	Programa e regras
+518	{1} {2} · {3} · {4}. O essencial do programa, num só lugar.
+519	Nikoloz Nonikashvili
+520	Criado por
+521	Estudante da Montana State University. Criou o {1} para facilitar os estudos de matemática e física.
+522	Telefone
+523	SMS
+524	Copiar
+525	E-mail
+526	Relatar um problema
+527	Quanto mais específico, mais rápido o conserto. Inclua:
+528	a disciplina e a página (por exemplo, “Precalc · Quizzes”)
+529	o tópico ou o número do problema
+530	o que você esperava e o que viu
+531	Sobre o conteúdo
+532	Datas e regras vêm do programa do outono de 2026 de cada disciplina; os temas semanais de física e pré-cálculo são estimativas. O Canvas e seu professor sempre têm a palavra final. O {1} é um projeto estudantil e não tem vínculo com a Montana State University.
+533	Dúvidas, uma data errada, um problema quebrado ou uma ideia para o site? Fale comigo.
+534	Copiado
+535	Sua conta, notificações, disciplinas e preferências. Valem em todo o Mathub.
+536	As preferências valem para todas as disciplinas. O progresso é salvo por disciplina e, quando você está conectado, sincronizado com sua conta.
+537	Escolher disciplinas e turmas
+538	Só estas disciplinas aparecem na página inicial, no seletor de disciplinas, nos lembretes e no resumo semanal.
+539	· turma
+540	Preferências
+541	Tema
+542	Igual ao sistema
+543	Claro
+544	Escuro
+545	Visual
+546	Reduzir movimento
+547	(sem animações nem transições)
+548	Modo geek
+549	(títulos que se decifram, uma linha de status de terminal, linhas de varredura e janelas estilo CRT entre as páginas)
+550	Ver o tour de novo
+551	Meta diária de XP
+552	Uma resposta certa vale 10 XP. O anel no topo vai enchendo; bata a meta todo dia para manter sua sequência firme.
+553	Efeitos sonoros
+554	(sons curtos para acerto, erro e lição concluída)
+555	Fundo animado
+556	(símbolos flutuando; desliga sozinho quando o sistema prefere menos movimento)
+557	Ver o site como numa data
+558	Avance para ver o que o painel, as contagens regressivas e as listas de prazos vão mostrar mais adiante no semestre.
+559	Ctrl
+560	buscar nesta disciplina
+561	virar um flashcard ·
+562	de novo ·
+563	já sei ·
+564	escolher uma resposta no quiz ·
+565	conferir uma resposta digitada
+566	Bo em todas as páginas
+567	(ele flutua num canto; toque nele para perguntar sobre o que você está vendo)
+568	Dicas do Bo
+569	(de vez em quando ele se oferece para ajudar com as questões de uma página)
+570	Padrão
+571	{1} XP · {2}
+572	Sua turma
+573	Define os dias de aula e as datas de prova no seu calendário.
+574	Seu dia de laboratório de {1}
+575	Define quando as folhas de laboratório aparecem como pendentes no painel (20h do dia seguinte ao laboratório).
+576	Exportar grava seu backup aqui; cole um backup aqui e clique em Importar do texto.
+577	Seus dados de {1}
+578	Histórico de quizzes, caixas de flashcards, checklists, notas e traços do rascunho desta disciplina.
+579	Exportar backup
+580	Importar backup
+581	Zerar o progresso de {1}
+582	Importar do texto
+583	Backups e dados das disciplinas
+584	Histórico de quizzes, caixas de flashcards, checklists, notas e rascunhos são salvos por disciplina. Abra uma disciplina para exportar, importar ou zerar os dados dela.
+585	Backup, importação ou zerar o progresso de {1}
+586	Visual {1} ativado.
+587	O Bo voltou a todas as páginas.
+588	O Bo fica no Pergunte ao Bo. Reative aqui quando quiser.
+589	Modo geek ativado.
+590	Modo geek ativado. Ele fica parado enquanto Reduzir movimento estiver ativo.
+591	Modo geek desativado.
+592	Meta diária: {1} XP
+593	Vendo o site em {1}
+594	Dia de laboratório salvo
+595	Turma salva. Seu calendário e suas datas de prova agora seguem ela.
+596	Backup importado
+597	Não foi possível importar:
+599	Backup pronto
+600	Apagar todo o progresso de {1} salvo neste dispositivo?
+601	Progresso zerado
+602	Fórmulas
+603	Preparação para a prova
+604	Notas
+605	Python
+606	Programa
+607	Em {1} dias
+608	{1} {1|flashcard|flashcards} para revisar{2|}
+609	Refazer {1} {1|questão errada|questões erradas}{2|}
+610	De volta com as explicações
+611	Mais {1} vencem esta semana
+612	Hoje, todas as disciplinas
+613	Plano completo
+614	de {1} XP
+615	Meta diária
+616	Nada vence esta semana. Uma lição abaixo mantém sua sequência.
+617	Bloqueada
+618	Sua disciplina
+619	Nenhuma prova pela frente
+620	{1} de {2} tópicos dominados
+621	Adicionar uma disciplina
+622	Continuar ouvindo
+623	Próxima leitura
+624	Continuar · lição de 5 minutos
+625	Comece aqui · lição de 5 minutos
+626	Esta semana na aula
+627	Abrir a disciplina
+628	Semana {1}{2}
+629	primeiro
+630	vendo agora
+632	Entregar
+633	Abrange
+634	{1}% da nota
+635	{1}% pronto · {2}
+636	Pronto para
+637	Não restam provas neste semestre.
+638	Esta disciplina não tem provas.
+639	Página da disciplina
+640	Tópicos dominados
+641	Bloqueada porque seu plano está desativado. A disciplina e seu progresso nela continuam salvos {1}.
+642	Assine para abrir
+643	na sua conta
+644	Restaurar compras
+645	Ferramentas de estudo
+646	Todas as ferramentas
+647	Dominado · {1} de 5 coroas
+648	A seguir · {1} respondidas
+649	A seguir
+650	Em breve na aula · {1} respondidas
+651	Em breve na aula
+652	{1} respondidas · {2} de 5 coroas
+653	Não começado
+654	Ler
+655	Começar
+656	· {1} respondidas
+657	Começar a lição
+658	Ler o resumo
+659	Unidade {1} · {2} de {3} {4}{5}
+660	Sua trilha
+661	{1} {2} um para {3}.
+662	{1} de {2} dominados
+663	A unidade em que você está, tópico por tópico.
+664	Todos os tópicos na ordem em que a disciplina os vê.
+665	Escolha
+666	Toque em
+667	ler o resumo
+668	começar uma lição, praticar ou ler o resumo
+669	A trilha inteira: {1} unidades
+670	Dia de prova: uma olhada leve nas fórmulas e nos flashcards, e vá. Dormir e tomar café contam.
+671	Simulado cronometrado, depois refaça o que errou
+672	Faça o simulado: {1}
+673	Flashcards para a prova
+674	Ponto fraco
+675	Simulado: {1}
+676	Flashcards pendentes
+677	{1} é hoje
+678	Uma olhada leve nas fórmulas e nos flashcards, e vá
+679	Tópico mais fraco: {1}
+680	Lição de 5 minutos, depois pratique
+681	Leia o resumo e depois tente os flashcards
+682	{1} {1|flashcard pendente|flashcards pendentes}{2|}
+683	A revisão espaçada guarda eles para a prova
+684	Simulado cronometrado
+685	Questões da prova inteira, sem correção até você entregar
+686	Peça para o Bo te testar
+687	Seu tutor de IA começa pelo seu tópico mais fraco
+688	Checklist de preparação: {1} de {2}
+689	O que levar, o que é permitido, o que revisar
+690	Semana de prova: {1}
+691	Pronto para {1}
+692	Você está com tudo em dia. Uma rodada de prática mantém fresco.
+693	O plano para cada dia até a prova
+694	Mostrar uma disciplina
+695	Não foi possível abrir esta disciplina.
+696	Tente a página da disciplina
+697	Todas as disciplinas que já vêm no Mathub
+698	Prática, flashcards, Hoje e a sala de foco
+699	O Bo escreve suas disciplinas a partir de qualquer programa
+700	Crie e compartilhe suas próprias disciplinas
+701	Tudo do Pro
+702	Pergunte qualquer coisa ao Bo, a qualquer hora
+703	Ligue para o Bo e converse
+704	Grátis
+705	Oi{1}!
+706	Boas-vindas ao Mathub{1}!
+707	Suas disciplinas, suas provas e um tutor que conhece as duas coisas, tudo num só lugar. Veja como funciona. Leva um minuto.
+708	Me mostre
+709	1.4 Limites
+710	2.2 Regra da cadeia
+711	Prova 2 · em 9 dias
+712	Cada disciplina é uma escalada
+713	O Mathub conhece o programa de cada disciplina: cada tópico, prazo e data de prova. Os tópicos são sua trilha e a próxima prova é o cume, com uma nota de preparo que diz o quão perto você está.
+714	A derivada de sen x é…
+715	−cos x
+716	cos x
+717	tan x
+718	+10 XP
+719	Sequência de 5 dias
+720	Prática que fica
+721	Questões sem fim com respostas resolvidas, flashcards que voltam bem antes de você esquecer e um plano de Hoje que diz o que fazer em dez minutos. Sequências e XP fazem você voltar.
+722	Vamos resolver isso no meu quadro.
+723	Resolvendo 2x + 3 = 11
+724	Tire 3 dos dois lados: 2x = 8
+725	Divida por 2
+726	Conheça o Bo, seu tutor
+727	Pergunte qualquer coisa sobre suas disciplinas, tire uma foto de um problema ou ligue e simplesmente converse. Ele resolve a matemática no quadro, passo a passo, e conhece suas provas. O Bo vem com o Mathub Max.
+728	Programa de CHMY 121
+729	CHMY 121
+730	Química geral
+731	12 tópicos · 140 questões · 3 provas
+732	Qualquer disciplina, a partir do programa
+733	Está cursando algo que o Mathub ainda não tem? Envie o programa e o Bo escreve a disciplina inteira: resumos, prática, flashcards e o calendário. Isso vem com o Mathub Pro ou Max.
+734	Quais disciplinas você está cursando?
+735	Escolha pelo menos uma. O Mathub mostra só as suas, e você pode mudá-las quando quiser em Configurações.
+736	Cursando outra coisa? Depois disso, você pode criar qualquer disciplina a partir do programa.
+737	Continuar
+738	Escolha seu plano
+739	Comece grátis ou traga o Bo junto. Você pode mudar ou cancelar quando quiser em Seu plano.
+740	Plano
+741	O seu
+742	por mês
+743	Sem problema: por enquanto você está no Grátis. Assine o {1} quando quiser em Seu plano.
+744	Os planos pagos renovam todo mês até você cancelar. O pagamento é feito pela Stripe, numa nova aba.
+745	Tudo pronto{1}!
+746	Sua página inicial sempre mostra seu próximo passo no topo, e o Bo está a um clique.
+747	Abrir minha página inicial
+748	Pular o tour
+749	Não é você?
+750	Sair
+751	Voltar
+752	Continuar com {1} {1|disciplina|disciplinas}{2|}
+753	Escolha pelo menos uma disciplina
+754	Escolha um plano
+755	Começar no Grátis
+756	Continuar com {1}
+757	Assinar {1} · {2} por mês
+758	Um momento…
+759	Passo {1} de {2}
+760	Escolha pelo menos uma disciplina para continuar.
+761	Escolha Grátis, Pro ou Max para continuar.
+762	Aceitar
+763	Não foi salvo. Verifique sua conexão e tente de novo.
+764	Tab
+765	Parece que você está off-line. O Mathub continua funcionando; seu progresso sincroniza quando você voltar.
+766	O servidor de contas enviou uma resposta inesperada (
+767	Você está off-line. Seu progresso sincroniza quando você voltar.
+768	A solicitação falhou.
+769	Caixa de entrada, {1} não lidas
+770	Caixa de entrada
+771	O Mathub esconde o resto e usa os horários da sua turma.
+772	Uma resposta certa vale 10 XP. Você pode mudar isso quando quiser em Configurações.
+773	Salvar
+774	ex.: SQS 9h
+775	Turma
+776	Seu horário de aula / prova
+777	Dia de laboratório
+778	Cancelar
+779	Pular por agora
+780	Escolha pelo menos uma disciplina.
+781	Salvo. Agora o Mathub mostra
+782	Notificação
+783	As notificações estão bloqueadas para este site. Permita nas configurações do navegador e tente de novo.
+784	· conectado {1}
+785	este dispositivo
+786	Sair em todos os outros
+787	Só este dispositivo está conectado.
+788	· bloqueado {1}
+789	Desbloquear
+790	Um membro
+791	(as publicações anônimas dele)
+792	Você não bloqueou ninguém.
+793	Desbloqueado. As publicações voltam a aparecer.
+794	Precisa do servidor de contas.
+796	Link de assinatura do calendário
+797	Copiar link
+798	Abrir no app de calendário
+799	Novo link
+800	Como assinar ({1} eventos)
+801	Google Agenda
+802	(no computador): Outras agendas → + → Do URL → cole o link → Adicionar agenda. Atualiza a cada poucas horas.
+803	Calendário da Apple
+804	: Arquivo → Nova Assinatura de Calendário → cole o link. No iPhone: Ajustes → Calendário → Contas → Adicionar Calendário Assinado.
+805	Outlook
+806	: Adicionar calendário → Assinar da Web → cole o link.
+807	Link do calendário copiado. Cole no seu app de calendário.
+808	Criar um novo link? Os calendários que usam o antigo param de atualizar.
+809	Novo link do calendário criado.
+810	Estude comigo no Mathub: resumos grátis, prática sem fim e um fórum para as nossas disciplinas da Montana State. {1}
+811	Link de convite
+812	Compartilhar
+813	{1} {1|colega entrou|colegas entraram} pelo seu link.{2|}
+814	Ninguém usou ainda. Mande para o seu grupo de estudo.
+815	Convite copiado. Cole no chat do grupo.
+816	Cadastre-se com seu e-mail montana.edu e vocês dois ganham um emblema.
+817	Cadastrar-se
+818	convidou você.
+819	Um colega convidou você.
+820	Não compatível com este navegador.
+821	Ativadas neste dispositivo.
+822	Bloqueadas nas configurações do navegador.
+823	Desativadas.
+824	Ativadas neste dispositivo{1}.
+825	({1} dispositivos)
+826	Os lembretes vão chegar na noite anterior a cada prazo.
+827	Não foi possível ativar as notificações.
+828	Enviado.
+830	só local
+831	off-line · vai sincronizar
+832	salvando…
+833	não sincronizado
+834	Verificando a conta…
+835	Configurações da conta
+836	Modo prévia
+837	Cadastre-se para liberar tudo
+838	Menu da conta
+839	Seu plano
+840	Instalar o app
+841	Ocultar esta mensagem
+842	Prévia.
+843	com seu e-mail montana.edu para liberar todas as ferramentas e manter seu progresso.
+844	Grátis para qualquer pessoa com e-mail montana.edu.
+845	Esta ferramenta faz parte da experiência completa do Mathub.
+846	{1} é para membros
+847	Crie uma conta grátis para usar {1} em {2} e todas as outras ferramentas de {3}, e para manter seu progresso em todos os dispositivos.
+848	E-mail da Montana State
+849	Seu nome
+850	Servidor de contas inacessível.
+851	Isso acontece quando o site é aberto como arquivo ou a pasta
+852	não está no servidor. Você ainda pode entrar localmente: seu progresso fica só neste navegador.
+853	Nome (opcional)
+854	Continuar localmente
+855	Como devemos te chamar?
+856	Pelo menos 8 caracteres
+857	Senha
+858	Criar conta
+859	Enviamos um código de 6 dígitos para confirmar o endereço. Só endereços montana.edu podem entrar. Ao criar uma conta você concorda com os
+860	Termos de Uso e a Política de Privacidade
+861	Enviamos um código de 6 dígitos para
+862	. Veja o spam se não chegar em um minuto.
+863	Verificar e entrar
+864	Reenviar código
+865	Usar outro e-mail
+866	Digite seu e-mail e enviaremos um código para redefinir.
+867	Me enviar um código
+868	Voltar para entrar
+869	Digite o código que enviamos para
+870	e escolha uma nova senha.
+871	Nova senha
+872	Definir senha e entrar
+873	Esqueceu a senha?
+874	Novo por aqui?
+875	Conta
+876	Central de estudos grátis para as disciplinas da Montana State
+877	O Mathub é para estudantes da Montana State: use seu endereço @montana.edu.
+878	Boas-vindas, {1}. O progresso fica salvo neste navegador.
+879	Um novo código está a caminho.
+880	Um novo código de redefinição está a caminho.
+881	Código enviado. Ele expira em 15 minutos.
+882	Se esse endereço tem uma conta, um código está a caminho.
+883	Verifique seu e-mail para continuar.
+884	Boas-vindas ao Mathub, {1}!
+885	Que bom te ver de novo, {1}.
+886	Você saiu
+887	{1} de {2} conquistados
+888	Veja o que você conquistou
+889	Precisa do servidor de contas
+890	Colegas e seus emblemas
+891	Semestre, acumulado e metas
+892	Perfil
+893	Nome de exibição
+894	Aparece nas suas publicações, nos rankings e na página Pessoas.
+895	Excluir conta
+896	sincronizado entre dispositivos
+897	só neste navegador
+898	membro desde {1}
+899	Respostas às suas publicações
+900	Membros, denúncias e configurações do site
+901	Me envie um e-mail
+902	Quando alguém responder às minhas publicações ou comentários
+903	(no máximo um e-mail por publicação a cada poucas horas)
+904	Na noite anterior a cada prazo
+905	(18h: os prazos do Canvas de amanhã, as sessões em que você entrou e um aviso se sua sequência estiver para acabar)
+906	O resumo semanal
+907	(domingo à noite: o que vence, as melhores publicações, suas estatísticas comparadas à turma)
+908	Notificações neste dispositivo
+909	Notificações push
+910	(na noite anterior a cada prazo e quando uma sequência está em risco; no iPhone é preciso adicionar o app à tela de início)
+911	Enviar um teste
+912	Verificando…
+913	Privacidade
+914	Mostrar meu nome nos rankings, nas listas de ajudantes e na página Pessoas
+915	(caso contrário, você aparece como “Estudante anônimo”)
+916	Planejar a semana
+917	E-mail de planejamento de domingo
+918	(16h: tudo o que vence na próxima semana, sua semana em números e um bloco de foco sugerido)
+919	Me mostrar no Foco juntos
+920	(os outros na sala de foco veem seu nome e sua tarefa enquanto seu timer corre)
+921	Assinatura do calendário
+922	Todas as provas e prazos das suas disciplinas no Google Agenda, no Calendário da Apple ou no Outlook, atualizados sozinhos. Mantenha o link em sigilo; quem tiver o link vê seu horário.
+923	Convide um colega
+924	Compartilhe seu link. Quando um colega se cadastrar por ele, vocês dois ganham um emblema.
+925	Baixar meus dados
+926	Tudo o que está guardado sobre sua conta, num único arquivo.
+927	Dispositivos conectados
+928	Membros bloqueados
+929	Você não vê publicações, comentários, sessões de estudo nem notificações dos membros que bloqueia. Para bloquear alguém, use Bloquear embaixo de uma publicação ou comentário da pessoa.
+930	Sincronizar agora
+931	Alterar senha
+932	Histórico de quizzes, caixas de flashcards, checklists e notas são salvos na sua conta logo após cada mudança e carregam em qualquer dispositivo onde você entrar.
+933	O servidor de contas está inacessível, então nada sai deste navegador.
+934	A conta é opcional
+935	Tudo no app funciona sem ela. Estudantes da Montana State podem entrar com o e-mail montana.edu para sincronizar o progresso entre dispositivos, participar das discussões das disciplinas e colecionar emblemas.
+936	Você está vendo uma prévia do Mathub
+937	Cadastre-se com seu e-mail montana.edu para liberar todas as ferramentas, colecionar emblemas, aparecer na página Pessoas e sincronizar seu progresso entre dispositivos.
+938	E-mail de planejamento de domingo ativado
+939	E-mail de planejamento de domingo desativado
+940	Você aparece no Foco juntos
+941	Oculto no Foco juntos
+942	E-mails de respostas ativados
+943	E-mails de respostas desativados
+944	Lembretes à noite desativados
+945	Resumo semanal ativado
+946	Resumo semanal desativado
+947	Seu nome aparece nos rankings e na página Pessoas
+948	Você aparece como “Estudante anônimo”
+949	Nome salvo
+950	Tudo sincronizado
+951	Enviamos um código por e-mail. Digite junto com sua nova senha.
+952	Não foi possível exportar seus dados.
+954	Seus dados estão sendo baixados.
+955	Sair do Mathub em todos os outros dispositivos? Este continua conectado.
+956	Você saiu de {1} {1|outro dispositivo|outros dispositivos}.{2|}
+957	Nenhum outro dispositivo estava conectado.
+958	Excluir sua conta do Mathub e tudo o que está salvo nela? Isso não pode ser desfeito.
+959	Confirme com sua senha:
+960	Conta excluída
+961	Não dá para falar com o Bo agora. Verifique sua conexão e tente de novo.
+962	Algo deu errado. Tente de novo.
+963	O Bo não conseguiu responder agora. Tente de novo.
+964	O Bo não conseguiu responder agora.
+965	A resposta do Bo foi cortada. Tente de novo.
+966	sem tópicos de prática
+967	Certo!
+968	Quase. A resposta é {1}.
+969	Quase.
+970	O Bo vai olhar sua resposta com você.
+971	Outra
+972	Por que funciona?
+973	Explique
+974	Esta questão não saiu direito. Peça de novo ao Bo.
+975	Sua resposta
+976	Conferir
+977	Sua vez
+978	Passo {1}:
+979	Dica:
+980	Este desenho não saiu direito. Peça ao Bo para desenhar de novo.
+981	O Bo está escrevendo…
+982	[Um desenho]
+983	Pergunta: {1}
+984	Resposta:
+985	Nada no quadro ainda
+986	Quando o Bo resolve algo, os passos, as fórmulas e a resposta aparecem aqui, organizados, uma página por vez.
+987	Página anterior
+988	Próxima página
+989	Copiar esta página
+990	O quadro do Bo
+991	Recolher o quadro
+992	Página {1} de {2}
+993	Me dê outra questão como esta: "{1}"
+994	No quadro você me perguntou: "{1}" Eu respondi "{2}"{3}
+995	e acertei. Por que funciona?
+996	, mas a resposta é "{1}". Me explique.
+997	. Está certo? Me explique.
+998	Página copiada.
+999	Não é possível copiar aqui.
+1000	um desenho
+1001	uma pergunta para você
+1002	um pouco de código
+1003	uma página
+1004	No quadro:
+1005	Foto
+1006	Dito em voz alta
+1007	Copiar esta resposta
+1008	Denunciar esta resposta
+1009	Denunciar
+1010	Ler esta resposta em voz alta
+1011	Ler em voz alta
+1012	Escolha uma foto (JPEG, PNG ou WebP).
+1013	Não foi possível ler essa foto.
+1014	Pergunte ao Bo
+1015	Sair do Pergunte ao Bo
+1016	O que o Bo sabe sobre você
+1017	O que o Bo sabe
+1018	Seu tutor
+1019	. Ele conhece seu programa e sabe como vão seus estudos.
+1020	Abrir {1}
+1021	Ligar para o Bo
+1022	Qual disciplina
+1023	Entre para falar com o Bo
+1024	O Bo faz parte do Mathub Max e funciona com a sua conta, então ele acompanha suas disciplinas e seu progresso em todos os dispositivos.
+1025	Criar uma conta
+1026	Não dá para falar com o Bo
+1027	O Bo está se preparando
+1028	O Bo ainda não foi ativado. Ele chega em breve.
+1029	Escolha uma disciplina primeiro
+1030	O Bo ajuda numa disciplina que você cursa. Escolha suas disciplinas ou crie uma a partir de um programa.
+1031	Criar uma disciplina
+1032	O Bo conhece suas disciplinas pelos programas e acompanha como você está indo, então a ajuda dele é sob medida.
+1033	Pergunte qualquer coisa
+1034	sobre suas disciplinas, a qualquer hora: “Por que a derivada de $\sin x$ é $\cos x$?”
+1035	Ele sabe onde você trava
+1036	: seus tópicos mais fracos, as questões que você errou e sua próxima prova.
+1037	Fotografe um problema
+1038	e ele te guia passo a passo.
+1039	Planos e quizzes
+1040	montados com suas datas de prova reais.
+1041	O Mathub Max inclui tudo do Pro: o Bo também escreve suas disciplinas a partir dos programas.
+1042	Comparar os planos
+1043	Ligue para ele
+1044	e simplesmente converse, como com um amigo: ele responde na hora, você pode interromper e ele escreve a matemática no quadro.
+1045	Mudar para o Max
+1046	Assinar o Mathub Max
+1047	Antes de começar
+1048	Para te responder, o Bo envia o que você pergunta (e qualquer foto ou PDF que você adicionar e, quando você pergunta a partir de uma página, o que há nela), um resumo do programa da disciplina e um breve resumo do seu progresso (notas por tópico, questões que você errou, flashcards pendentes e datas de prova) para a
+1049	Anthropic
+1050	, a empresa que cria a IA Claude em que o Bo funciona. A Anthropic usa isso só para escrever a resposta do Bo e não treina sua IA com isso.
+1051	Seu chat com o Bo e as anotações que ele guarda sobre como você gosta de aprender ficam salvos na sua conta do Mathub, então estão em todos os seus dispositivos. Você pode ver e apagar tudo quando quiser em “O que o Bo sabe”.
+1052	Política de Privacidade
+1053	Concordo, vamos começar
+1054	Agora não
+1055	Me explique {1}
+1056	Me teste para {1}
+1057	Monte um plano de estudo para hoje à noite
+1058	Por que eu errei minha última questão?
+1059	Sobre o que é {1}?
+1060	esta disciplina
+1061	Explique de um jeito mais simples
+1062	Mostre outro exemplo
+1063	Me dê outra questão
+1064	Me teste sobre isso
+1065	Me explique o desenho
+1066	Desenhe no quadro
+1067	Errei esta questão: "{1}"{2}{3}{4} Onde eu errei e como se faz?
+1068	As opções eram {1}.
+1069	Eu respondi {1}.
+1070	A resposta é {1}.
+1071	Pergunte ao Bo sobre isto
+1072	Mostrar o quadro
+1073	Oi, {1}!
+1074	Oi!
+1075	{1} é {2}{3}.
+1076	e você está {1}% pronto
+1077	Seu tópico mais fraco agora é {1}. Quer começar por ele?
+1078	{1}Eu sou o Bo. Conheço {2} pelo programa e sei como vão seus estudos. {3}{4}Me pergunte qualquer coisa ou tire uma foto de um problema.
+1079	Converse com o Bo
+1080	Adicionar uma foto de um problema
+1081	Pergunte ao Bo sobre {1}…
+1082	Enviar
+1083	O Bo é uma IA e pode errar. Confira respostas importantes com suas anotações ou com o professor.
+1084	Ligue para o Bo e fale em voz alta
+1085	O Bo é uma IA e pode errar. Confira respostas importantes com suas anotações ou com o professor. Restam {1} de {2} perguntas este mês.
+1087	Me teste para {1}: uma questão por vez, começando pelo meu tópico mais fraco.
+1088	Me teste: uma questão por vez, começando pelo meu tópico mais fraco.
+1090	Sua foto
+1091	Remover a foto
+1092	Copiado.
+1093	Denunciar esta resposta do Bo
+1094	Bo ·
+1095	O que está errado? Por exemplo: um fato errado, uma resposta errada ou algo inadequado.
+1096	O Bo esqueceu.
+1097	O Bo está pensando
+1098	O Bo vai lembrar: {1}
+1099	Esquecer
+1100	As anotações do Bo sobre você
+1101	Esquecer tudo
+1102	Sobre {1}
+1103	Enviado com cada pergunta, para a ajuda do Bo ser sob medida.
+1104	A disciplina
+1105	O programa: datas, provas, avaliação e tópicos
+1106	Tópicos mais fracos
+1107	Erros recentes
+1108	A fazer
+1109	{1} flashcards pendentes, {2} questões erradas para refazer
+1110	Apagar esta anotação
+1111	Nada ainda. Quando você contar ao Bo como gosta de aprender, ele anota aqui.
+1112	Este mês
+1113	Restam {1} de {2} perguntas ·
+1114	Limpar este chat
+1115	Limpar seu chat com o Bo sobre {1}?
+1116	Esquecer tudo o que o Bo sabe sobre você: cada chat e cada anotação? Suas disciplinas e seu progresso ficam.
+1117	Chat limpo.
+1118	O Bo esqueceu tudo.
+1119	Seu chat e estas anotações ficam salvos na sua conta do Mathub. As perguntas vão para a IA da Anthropic para serem respondidas; veja a
+1120	a página inicial
+1125	Este cartão
+1126	Cartão
+1130	Esta questão
+1131	Questão {1}
+1145	Pergunte ao Bo sobre esta página (Alt+B)
+1146	Ocultar esta dica
+1147	Agora estou em todas as páginas.
+1148	Toque em mim para perguntar sobre o que você está vendo, ou selecione qualquer texto e toque em Explicar.
+1149	Travou neste cartão? Posso explicar.
+1150	O código não funciona? Posso dar uma olhada.
+1154	Abrir o chat completo
+1155	Fechar (Esc)
+1156	Adicionar uma foto ou PDF de uma lista de exercícios
+1157	Apontar algo na página
+1158	Pergunte sobre esta página ou qualquer assunto…
+1159	O Bo é uma IA e pode errar.
+1160	Pode me ajudar com esta lista de exercícios?
+1161	Pergunte qualquer coisa ao Bo…
+1162	este flashcard
+1163	seu código
+1164	O Bo vê o que tem nesta página quando você pergunta. Toque para desligar.
+1165	O Bo não vê esta página. Toque para deixar ele ver.
+1166	O Bo vê
+1167	O Bo não está olhando esta página
+1168	Seu tutor de {1}
+1169	Entre para perguntar ao Bo
+1170	O Bo é seu tutor de IA no Mathub Max. Ele explica qualquer assunto e vê a página de onde você pergunta: as questões dela, suas respostas, o resumo que você está lendo.
+1171	Não dá para falar com o Bo
+1172	O Bo ainda não foi ativado. Ele chega em breve.
+1173	O Bo faz parte do Mathub Max
+1174	Ele vê sua página
+1175	: toque numa questão e ele te guia, ou confere suas respostas.
+1176	Explica qualquer coisa
+1177	, passo a passo, com desenhos no quadro.
+1178	Lê suas listas de exercícios
+1179	: uma foto ou um PDF.
+1180	O Bo é uma IA e pode errar.{1}
+1181	Restam {1} de {2} perguntas este mês.
+1182	Dica: selecione qualquer texto na página e aparece um botão
+1183	Explicar
+1184	.
+1185	Aponte
+1186	: toque em qualquer coisa na página e eu olho
+1187	Agora em
+1188	Explique um assunto, como "a regra da cadeia"…
+1191	Estou vendo seu flashcard. Quer que eu explique ou que te ajude a lembrar?
+1196	Estou vendo seu código. Me diga o que ele deveria fazer ou o que está dando errado.
+1199	estes resumos
+1202	Explicar este cartão
+1203	Me explique este flashcard.
+1204	Me ajude a lembrar
+1205	Me ajude a lembrar deste cartão: um truque, uma imagem ou uma história.
+1206	Me teste sobre ele
+1207	Me teste sobre este cartão e a ideia por trás dele, uma questão por vez.
+1208	Revisar o que errei
+1210	Conferir minhas respostas
+1211	Confira minhas respostas nesta página: quais estão certas e o que deu errado nas outras?
+1212	Explicar o tópico
+1216	Por que não funciona?
+1217	Olhe meu código: o que está errado e como conserto? Me dê uma dica antes da resposta.
+1218	Explicar meu código
+1219	Explique o que meu código faz, linha por linha.
+1220	Explicar mais simples
+1223	Desenhar
+1226	Explicar esta página
+1227	Me explique de um jeito simples o que tem nesta página.
+1228	Me teste sobre o que tem nesta página, uma questão por vez.
+1229	Explicar um assunto…
+1232	Me ajude com {1}.
+1233	Não enviar isto
+1234	Isto
+1235	Remover o arquivo
+1236	Me explique isto
+1237	Me dê uma dica
+1238	Mostre os passos
+1239	Por que essa é a resposta?
+1240	Esse PDF é grande demais. Mantenha abaixo de 6,5 MB.
+1241	Lista de exercícios.pdf
+1242	O Bo lê fotos e PDFs.
+1245	Pode me ajudar com isso?
+1246	O Bo respondeu. Toque para ler.
+1247	Toque na parte da página que você quer que o Bo olhe
+1248	Não há nada para o Bo ler aí.
+1249	O que você apontou
+1250	Pergunte ao Bo sobre o texto selecionado
+1251	Pergunte ao Bo…
+1254	Me explique isto.
+1280	A voz do Bo não está disponível.
+1281	A voz natural do Bo não está disponível agora, então a voz do seu dispositivo é usada.
+1282	Não foi possível tocar o áudio.
+1283	Não dá para falar com o Bo agora. Verifique sua conexão.
+1284	Algo deu errado.
+1285	Legendas
+1286	Configurações da chamada
+1287	Escreva para o Bo…
+1288	Mostrar ao Bo uma foto de um problema
+1289	Chamada com o Bo sobre {1}
+1290	Bo
+1291	Escrever para o Bo
+1292	Silenciar
+1293	Escrever
+1294	Encerrar
+1295	(No quadro eu respondi "{1}" à sua pergunta "{2}". {3})
+1296	Está certo.
+1297	Não está certo; a resposta é {1}.
+1298	Está certo?
+1299	· faltam {1} min
+1300	Ligando…
+1301	Chamada encerrada
+1302	ouvindo · toque no Bo para enviar
+1303	ouvindo…
+1304	pensando…
+1305	falando · toque no Bo para interromper
+1306	você está no mudo
+1307	sem ouvir · toque no Bo para falar
+1308	ligando…
+1309	toque no Bo para começar a chamada
+1310	Começar a chamada
+1311	Fazer o Bo parar de falar
+1312	Interromper
+1313	Tirar do mudo
+1314	Enviar o que você disse
+1315	O Bo vê isto junto com o que você disser em seguida
+1316	não foi possível conectar
+1317	Ligar de novo
+1318	Usar voz básica
+1319	O Mathub não pode usar seu microfone. Permita pelo ícone na barra de endereço e ligue de novo. Você também pode escrever para o Bo.
+1320	Nenhum microfone encontrado. Conecte um ou escreva para o Bo.
+1321	O reconhecimento de voz precisa de internet. Verifique sua conexão e tente de novo.
+1322	O Bo não ouviu. Toque nele para tentar de novo, ou escreva.
+1323	Sua voz vai direto para a OpenAI, cujo modelo de voz em tempo real faz o Bo falar, junto com o que o Bo sabe da sua disciplina e de como você está indo. Nada é gravado.
+1324	Seu navegador transforma o que você diz em texto (o Chrome usa o serviço de voz do Google, o Edge o da Microsoft, o Safari o da Apple).
+1325	O que você diz só é gravado enquanto o Bo ouve, transcrito pela OpenAI pelo servidor do Mathub, e não fica guardado.
+1326	Este navegador não consegue ouvir, então você escreve e o Bo fala.
+1327	A voz do Bo é criada pela OpenAI a partir da resposta escrita dele.
+1328	É uma chamada de verdade
+1329	Fale com o Bo em voz alta
+1330	É só falar. O Bo responde na hora, espera você terminar e você pode interromper quando quiser, como com um amigo. O mudo pausa seu microfone.
+1331	Pergunte qualquer coisa e o Bo responde em voz alta, escrevendo a matemática no quadro. Toque no Bo para enviar o que você disse ou para interromper.
+1332	O que vocês dois dizem fica salvo no seu chat com o Bo.
+1333	Como no chat, suas palavras vão para a IA da Anthropic para a resposta do Bo, e o que vocês dois dizem fica salvo no seu chat com o Bo.
+1334	Começar a falar
+1335	A chamada caiu. Verifique sua conexão e ligue de novo para o Bo.
+1336	O Bo não conseguiu atender agora.
+1345	A chamada terminou.
+1346	Olhe isto.
+1347	Enviou uma foto
+1348	{1} é {2}.
+1349	Quer revisar {1} ou me perguntar qualquer coisa?
+1350	No que vamos trabalhar?
+1351	Oi{1}! É o Bo.{2}{3}
+1352	escreva para o Bo abaixo · ele responde em voz alta
+1353	não entendi · toque no Bo quando estiver pronto
+1354	Com sua foto:
+1355	O Bo não conseguiu responder · toque nele para tentar de novo
+1356	Comece a chamada primeiro.
+1359	Voz do Bo
+1360	Velocidade
+1361	Quando o Bo entra
+1362	A voz do Bo
+1363	A nova voz começa na sua próxima chamada.
+1364	Quão rápido ele fala
+1365	Normal
+1366	Me deixa terminar
+1367	Rápido
+1368	A voz deste dispositivo
+1369	Voz do dispositivo
+1370	As chamadas ao vivo, com a voz natural do Bo em tempo real, ainda não estão ativadas aqui, então esta é a voz básica.
+1371	Mostrar o que você e o Bo dizem
+1372	Voz básica
+1373	Para conexões lentas: o Bo responde em turnos em vez de ao vivo (a partir da próxima chamada)
+1374	Ouvir o Bo
+1375	Oi, eu sou o Bo. Esta é a minha voz.
+1376	Google Play
+1377	a App Store
+1378	Não é possível copiar neste navegador. Selecione o texto e copie.
+1379	Clique na caixa e aperte Ctrl+V (⌘V no Mac) para colar.
+1380	Link copiado.
+1381	O Mathub não consegue falar com o servidor agora. Verifique sua conexão e tente de novo.
+1384	Esta disciplina não está mais salva neste {1}.
+1385	Esta disciplina está salva na sua conta. Conecte-se à internet para abrir aqui.
+1386	Não foi possível abrir esta disciplina. Entre com a conta em que você a criou.
+1398	sem disciplina
+1399	Outono {1}
+1400	Primavera {1}
+1401	Verão {1}
+1403	A resposta não tinha período, então ficou {1}.
+1404	Tópico {1}
+1405	Prova {1}
+1406	Unidade{1} {2}
+1407	o conteúdo anterior
+1408	{1} {1|prova sem data na resposta ficou|provas sem data na resposta ficaram} de fora.{2|}{3|}
+1410	Disciplina
+1411	{1} {1|linha do calendário sem data real ficou|linhas do calendário sem data real ficaram} de fora.{2|}{3|}
+1412	A resposta não tinha datas, então o período vai de {1} a {2}.
+1413	Categoria {1}
+1414	Nota da disciplina
+1415	A resposta não tinha categorias de avaliação, então a calculadora usa uma nota geral.
+1416	A resposta não tinha escala de notas, então usa-se A 90, B 80, C 70, D 60.
+1417	{1} {1|questão incompleta ficou|questões incompletas ficaram} de fora.{2|}
+1419	A resposta não tinha questões utilizáveis, então a disciplina não tem quizzes.
+1420	Mathub Pro
+1421	Pro
+1422	Envie qualquer programa e o Bo escreve a disciplina inteira: resumos, flashcards, questões de prática, o calendário e as notas
+1423	Disciplinas que seus colegas compartilham, arquivos de disciplinas e disciplinas feitas com a IA que você já usa
+1424	Mathub Max
+1425	Max
+1426	Pergunte qualquer coisa ao Bo, seu tutor de IA, a qualquer hora. Ele conhece seu programa, suas provas e onde você trava
+1427	Mande para ele uma foto de um problema e ele te guia passo a passo
+1428	Fale com ele em voz alta, ou mande uma foto de um problema, e ele te guia passo a passo
+1429	Planos do Mathub: a conexão com a loja não iniciou
+1430	A assinatura não está disponível nesta versão do app.
+1431	O Mathub Pro e o Max ainda não estão à venda na {1}.
+1432	O {1} ainda não está à venda na {2}.
+1433	Nenhuma assinatura do Mathub Pro ou Max foi encontrada para esta conta {1}.
+1434	Google
+1435	Apple
+1436	Entre para assinar. Seu plano pertence à sua conta.
+1437	Assinar pelo site ainda não está disponível. Em breve.
+1438	Entre primeiro.
+1439	Ainda não foi encontrada nenhuma assinatura do Mathub Pro ou Max para esta conta. Se você acabou de pagar, espere um minuto e confira de novo.
+1440	{1} está bloqueada porque seu plano está desativado. Tudo nela continua salvo {2}.
+1441	Adicionar {1} às suas disciplinas exige o Mathub Pro ou Max.
+1442	O Bo faz parte do Mathub Max. Mude do Pro para o Max para falar com ele.
+1443	Conversar com o Bo, seu tutor de IA, faz parte do Mathub Max.
+1444	O Bo escrever sua disciplina a partir do programa faz parte do Mathub Pro e Max.
+1445	Adicionar {1} exige o Mathub Pro ou Max.
+1446	O Bo escreve suas disciplinas com o Mathub Pro. O Max adiciona o Pergunte ao Bo, seu tutor de IA.
+1447	suas assinaturas da {1}
+1448	ID Apple
+1449	Seu plano (no menu da conta), ou pelo link do e-mail do recibo
+1450	Renova todo mês{1} até você cancelar. Cancele quando quiser em {2}{3}.{4} A disciplina de exemplo continua grátis.
+1451	, pelo menos 24 horas antes de renovar
+1452	O pagamento é feito pela Stripe.
+1453	Planos
+1454	Assinar
+1455	Termos de Uso
+1456	Escolha seu plano
+1457	Buscando os preços na {1}…
+1458	Verificando sua conta…
+1459	Já assinei
+1460	Se você assinar no app do Mathub com esta conta, funciona aqui também.
+1461	Para mudar para o Max no site: cancele o Pro em Seu plano para não ser cobrado duas vezes.
+1462	O {1} está ativo. Obrigado!
+1463	Assinar o {1}
+1464	por {1} por mês
+1465	{1} por mês
+1466	Pro {1} · Max {2} por mês
+1467	Entre para assinar
+1468	Entre para assinar
+1469	Ainda não disponível
+1470	Preços indisponíveis
+1471	O Mathub não conseguiu falar com a {1}. Verifique sua conexão e tente de novo.
+1472	Termine o pagamento na nova aba. O {1} ativa aqui assim que o pagamento for aprovado.
+1473	Paguei: conferir agora
+1474	Aguardando a {1}…
+1475	A compra foi aprovada, mas seu plano ainda não está ativo. Toque em Restaurar compras daqui a um minuto.
+1476	Seu pagamento está pendente na {1}. Seu plano ativa assim que for aprovado.
+1477	A compra não foi aprovada. Nada foi cobrado.
+1478	O {1} está ativo.
+1479	Você tem o {1}. O Bo precisa do Mathub Max.
+1481	{1} está bloqueada
+1482	{1} é uma disciplina que você criou a partir de um programa. Disciplinas que você cria precisam do Mathub Pro ou Max, e seu plano está desativado agora. Tudo nela, incluindo seu progresso, continua salvo {2} e abre de novo quando você assinar.
+1483	Voltar para suas disciplinas
+1484	{1} está bloqueada · Mathub
+1485	O Mathub Max está ativo: o Bo escreve suas disciplinas, e você pode
+1486	perguntar qualquer coisa a ele
+1487	O Mathub Pro está ativo: o Bo escreve suas disciplinas.
+1488	adiciona o Pergunte ao Bo, seu tutor de IA.
+1489	O Bo escrever sua disciplina faz parte do
+1490	adiciona o Pergunte ao Bo, seu tutor de IA. A disciplina de exemplo é grátis.
+1491	De que tamanho deve ser a resposta?
+1492	Cole aqui a resposta da IA
+1493	Qualquer disciplina com programa vira uma disciplina do Mathub: resumos, flashcards, questões de prática, o calendário e sua calculadora de notas. {1}
+1494	Outras formas de adicionar uma disciplina
+1495	Experimente a disciplina de exemplo
+1496	Veja como fica uma disciplina pronta. É grátis.
+1497	Abrir o exemplo
+1498	Abrir uma disciplina compartilhada
+1499	O código de 8 caracteres do link de um colega.
+1500	Código de compartilhamento
+1501	Importar um arquivo de disciplina
+1502	Escolher um arquivo
+1503	Use a IA que você já usa
+1504	Copie as instruções do Mathub em qualquer chat de IA e cole a resposta aqui.
+1505	Copie as instruções
+1506	O Mathub escreve instruções que dizem a uma IA exatamente como transformar um programa numa disciplina.
+1507	Disciplina completa
+1508	Resposta mais curta
+1509	Escolha “Resposta mais curta” se sua IA para no meio das respostas longas.
+1510	Copiar instruções
+1511	Ler as instruções
+1512	Pergunte à sua IA
+1513	Abra o chat de IA que você usa{1}. Cole as instruções, anexe seu programa (um PDF, uma foto ou o texto) e envie.
+1514	Assim o Mathub nunca vê nem envia seu programa. Você escolhe para qual IA entregar, e os termos de privacidade dessa IA valem para o que você envia.
+1515	Cole a resposta
+1516	Copie a resposta inteira da IA e cole aqui. O Mathub confere, corrige pequenos deslizes e mostra a disciplina antes de adicionar.
+1517	A resposta da IA
+1518	Colar
+1519	Conferir a resposta
+1520	Disciplinas que você criou
+1521	Está salva neste {1}{2} e funciona off-line.
+1522	e na sua conta
+1523	Está salva na sua conta, então também aparece nos apps do Mathub quando você entrar neles.
+1524	Entre para adicionar uma disciplina.
+1525	As disciplinas que você cria ficam salvas na sua conta do Mathub, então estão em todos os dispositivos em que você entrar, inclusive nos apps.
+1526	, no app ou na web
+1527	em outra aba
+1528	Instruções copiadas. Cole na sua IA junto com o programa.
+1529	A área de transferência está vazia. Copie a resposta da IA primeiro.
+1530	Não foi possível abrir o exemplo.
+1531	Esse arquivo é grande demais para ser uma disciplina.
+1532	Um código de compartilhamento tem 8 letras e números, como K7P2QX9M.
+1533	Escrito por uma IA a partir de um programa: confira datas e avaliação no próprio programa.
+1534	datas do calendário
+1535	Não há datas de prova no programa.
+1536	{1} {1|observação|observações} sobre esta disciplina{2|}
+1537	Copiar uma mensagem para sua IA
+1538	Cole a resposta da IA primeiro.
+1539	Não há disciplina nesse texto.
+1540	Cole a resposta inteira da IA, incluindo a parte que começa com
+1541	. Se ela só escreveu um resumo, mande as instruções de novo.
+1542	A resposta para antes do fim.
+1543	A IA ficou sem espaço no meio do caminho. Mande esta mensagem para ela, ou escolha “Resposta mais curta” no passo 1 e comece de novo.
+1545	(perto de: {1})
+1546	A resposta tem um erro de digitação
+1547	, então não dá para ler{1}. Mande esta mensagem para a IA e cole a nova resposta.
+1548	, perto de “{1}”
+1549	Esta disciplina é grande demais
+1550	({1}; o limite é 3 MB). Escolha “Resposta mais curta” no passo 1 e peça de novo.
+1551	Quase lá: {1} {1|coisa|coisas} para corrigir.{2|}
+1552	…e mais {1}.
+1553	Adicionar {1}
+1554	Entre primeiro: as disciplinas que você cria ficam salvas na sua conta.
+1555	{1} está pronta. Está salva neste {2}{3}.
+1556	{1} está pronta. Está salva na sua conta.
+1557	O cronograma, os tópicos, as provas e a avaliação
+1558	De que tamanho a disciplina?
+1559	O Bo escreve a partir do seu programa
+1560	Dê o programa para ele. Em um ou dois minutos você tem a disciplina inteira:
+1561	Resumos e ideias principais de cada tópico
+1562	Flashcards e questões de prática
+1563	O calendário, as provas e sua calculadora de notas
+1564	Solte seu programa aqui
+1565	PDF, foto ou arquivo de texto ·
+1566	escolha um arquivo
+1567	ou cole o texto
+1568	O texto do programa
+1569	Disciplina mais curta
+1570	Escrever minha disciplina
+1571	O Bo envia seu programa para a IA da Anthropic para escrever a disciplina; ele não é usado para treinar a IA.
+1572	O Bo lê PDFs, fotos e arquivos de texto simples.
+1573	Esse arquivo é grande demais. Mantenha abaixo de 7 MB.
+1574	O Bo ainda não foi ativado: por enquanto, use abaixo a IA que você já usa.
+1575	Restam {1} de {2} disciplinas este mês.
+1576	{1} · {2} · pronto para o Bo
+1577	Arquivo de texto
+1578	Arquivos
+1579	O Bo parou enquanto {1}
+1580	Sua disciplina está pronta
+1581	{1} passos concluídos
+1582	Passo {1} de {2}{3}
+1583	· isso leva um ou dois minutos
+1584	Entre primeiro: o Bo escreve disciplinas para a sua conta do Mathub.
+1585	Solte seu programa ou cole o texto primeiro.
+1586	Lendo seu programa
+1587	Escrevendo a unidade {1}: {2}
+1588	Conferindo a disciplina
+1591	O Bo guardou o que já escreveu: Escrever minha disciplina continua de onde ele parou.
+1592	Copiado. Cole no mesmo chat de IA.
+1594	Neste {1}
+1595	Só neste {1} (criada com outra conta)
+1596	Neste {1} e na sua conta
+1597	Salva na sua conta
+1598	Salvando na sua conta…
+1599	Excluir {1}
+1600	Excluir
+1601	Compartilhada
+1602	Enviar arquivo
+1603	Baixar
+1604	Nenhuma ainda. As disciplinas que você criar aparecem aqui e junto com as outras.
+1605	{1} para o Mathub
+1607	Excluir {1}? Ela é excluída da sua conta e de todos os dispositivos em que você entrou, junto com seu progresso.{2}
+1608	O link de compartilhamento para de funcionar.
+1609	Excluir {1} deste {2}? Seu progresso nela também é excluído.
+1610	{1} excluída.
+1611	Não foi possível desenhar o QR code.
+1612	QR code do link
+1613	Compartilhar {1}
+1614	Buscando o link…
+1615	Quem tiver este link ou código pode ver {1} e adicionar uma cópia às próprias disciplinas. Ninguém vê seu nome nem seu progresso.
+1616	Link
+1617	Adicionar uma disciplina compartilhada exige o Mathub Pro ou Max.
+1618	Parar de compartilhar
+1619	Enviar…
+1620	{1} no Mathub
+1621	{1}: {2}. Estude no Mathub:
+1622	Parar de compartilhar {1}? O link e o código param de funcionar. As cópias que outras pessoas já adicionaram continuam delas.
+1623	O link não funciona mais.
+1624	Uma disciplina compartilhada fica guardada na sua conta do Mathub, então você precisa entrar para compartilhar.
+1625	Entre para compartilhar esta disciplina.
+1626	Esta disciplina foi criada com outra conta neste {1}, então não pode ser compartilhada a partir desta.
+1627	Disciplina compartilhada
+1628	Uma disciplina compartilhada
+1629	Um colega criou esta disciplina no Mathub a partir de um programa e compartilhou com você.
+1630	Esse código de compartilhamento não está certo.
+1631	Um código tem 8 letras e números, como K7P2QX9M.
+1632	Abrindo {1}…
+1634	Esta disciplina não está mais compartilhada.
+1635	Não foi possível abrir a disciplina.
+1636	O dono parou de compartilhar, ou o código está com erro de digitação.
+1637	Esta disciplina compartilhada não pode ser usada.
+1638	Ela tem problemas que o Mathub não consegue corrigir: {1}
+1639	{1} · Disciplina compartilhada · Mathub
+1640	Abrir sua cópia
+1641	Adicionar {1} às minhas disciplinas
+1642	{1} Você recebe sua própria cópia: seu progresso continua só seu.
+1643	Você tem o {1}, então adicionar está incluído.
+1644	Denunciar esta disciplina compartilhada
+1645	compartilhamento {1} · {2}
+1646	O que está errado? Por exemplo: material copiado, algo ofensivo ou fatos errados.
+1648	Crie sua própria disciplina a partir de um programa
+1649	Entre para ver seu plano.
+1650	(dado à sua conta)
+1651	Renova em {1}.
+1652	Ativo até {1}; não vai renovar.
+1653	Sem plano. Com o Mathub Pro ({1} por mês) o Bo escreve suas disciplinas a partir de qualquer programa; o Mathub Max ({2} por mês) adiciona o Pergunte ao Bo, seu tutor de IA. A disciplina de exemplo é grátis.
+1654	Mathub Pro e Max
+1655	Gerenciar seu plano
+1656	Ver os planos
+1657	Conferir de novo
+1658	{1} {1|disciplina que você criou está salva|disciplinas que você criou estão salvas} na sua conta.{2|}{3|}
+1659	As disciplinas que você cria a partir de um programa ficam salvas na sua conta.
+1660	o site (cartão, pela Stripe)
+1661	um presente do Mathub
+1662	Todas as disciplinas que já vêm no Mathub: lições, prática, flashcards e preparação para provas
+1663	Hoje, seu calendário, a sala de foco e a calculadora de GPA
+1664	A disciplina de exemplo que você pode criar a partir de um programa
+1665	Entre para ver seu plano
+1666	Seu plano pertence à sua conta do Mathub, então funciona no site e nos apps.
+1667	Você está no plano grátis
+1668	Tudo o que vem no Mathub é grátis. Com o
+1669	o Bo escreve suas disciplinas a partir de qualquer programa, e o
+1670	adiciona o Bo, seu tutor de IA, no chat e em chamadas.
+1671	Assinar o Max
+1672	Assinar o Pro
+1673	o site
+1674	Dado à sua conta{1}
+1675	Termina em {1}
+1676	Ativo
+1677	Preço
+1678	Grátis para você
+1679	Termina
+1680	{1}. Nunca cobra nada
+1681	Dura
+1682	Sem data de término. Nunca cobra nada
+1683	Renova
+1684	, e não vai renovar
+1685	Todo mês
+1686	Origem
+1687	Dado pelo Mathub
+1688	Pago pela
+1689	Tudo do {1} continua funcionando até lá. Mudou de ideia? {2}
+1690	Reative em Gerenciar cobrança.
+1691	Tudo do {1} funciona até lá. Depois você volta para o {2}, a menos que assine um plano.
+1692	Você também paga pelo
+1693	pela {1}. Isso não mudou: cancele abaixo se não precisar mais.
+1694	Gerenciar cobrança
+1695	Cancelar o {1}
+1696	Cancelar plano
+1697	{1} de {2} usados{3}
+1698	Recomeçam em {1}.
+1699	Perguntas ao Bo
+1700	Parte do Mathub Max
+1701	Disciplinas que o Bo escreve
+1702	Chamadas com o Bo
+1703	, seu plano
+1704	Planos mensais que renovam até você cancelar. {1} Um plano pertence à sua conta do Mathub, então funciona no site e nos apps.
+1705	Termos
+1706	Comprado na {1}, que cuida da cobrança.
+1707	No site, o pagamento é feito pela Stripe, via RevenueCat.
+1708	{1} perguntas ao Bo e {2} disciplinas escritas pelo Bo por mês{3}
+1709	, e {1} minutos de chamadas
+1710	limites mensais generosos
+1711	Como eu cancelo?
+1712	Nas suas assinaturas da {1} (Gerenciar cobrança, acima), pelo menos 24 horas antes de renovar. Seu plano continua ativo até o fim do mês pago.
+1713	Toque em
+1714	acima. Seu plano continua ativo até o fim do mês pago, e você não é cobrado de novo. Se você comprou no app do Mathub, o cancelamento é na App Store ou no Google Play; a página diz onde.
+1715	O que acontece quando meu plano termina?
+1716	As disciplinas que você criou ficam guardadas, bloqueadas, e abrem de novo se você assinar outra vez. Seu progresso, seus chats com o Bo e as anotações dele ficam na sua conta. Tudo o que vem no Mathub, e a disciplina de exemplo, continuam grátis.
+1717	Onde estão meus recibos? Como troco meu cartão?
+1718	A {1} guarda seus recibos e dados de pagamento.
+1719	abre a página de cobrança do seu plano, onde você vê todos os recibos, troca o cartão ou cancela. Um recibo também chega por e-mail todo mês.
+1720	Posso trocar entre Pro e Max?
+1721	Sim. Mude para o Max quando quiser; a {1} cuida da troca.
+1722	Mude para o Max quando quiser. No site, cancele o Pro depois de assinar o Max para não pagar os dois. Para voltar ao Pro, cancele o Max e assine o Pro quando ele terminar.
+1723	Assinei no app. Funciona aqui?
+1724	Sim. Um plano pertence à sua conta do Mathub, então funciona em qualquer lugar em que você entrar com ela. Se não aparecer, toque em Conferir de novo.
+1725	Existem limites?
+1726	Limites de uso justo que a maioria dos estudantes nunca atinge: {1}. Eles recomeçam no dia 1º.
+1727	Uma dúvida sobre uma cobrança?
+1728	Escreva para nós pela
+1729	página de contato
+1730	{1} e uma pessoa vai responder.
+1731	, ou pergunte à {1}
+1732	Seu plano agora
+1733	O que você tem, o que usou este mês e tudo sobre a cobrança.
+1734	Os planos
+1735	Perguntas
+1736	Não foi possível carregar os números deste mês. Tente de novo daqui a pouco.
+1737	o fim do mês pago
+1738	Custa caro demais
+1739	Não estou usando o suficiente
+1740	Meu semestre ou minhas provas acabaram
+1741	Algo não funcionou
+1742	Outro motivo
+1743	Cancelar o {1}?
+1744	Seu plano continua ativo até
+1745	. Depois disso ele não renova e você não é cobrado de novo.
+1746	As disciplinas que você criou ficam guardadas, bloqueadas, e abrem de novo se você voltar.
+1747	Seu progresso, seus chats e tudo o que vem no Mathub continuam seus, de graça.
+1748	Por que você está cancelando?
+1749	(opcional, nos ajuda)
+1750	Algo que poderíamos fazer melhor?
+1751	(opcional)
+1752	Manter meu plano
+1753	Aí o Pergunte ao Bo e as chamadas com ele param.
+1754	Cancelar na {1}
+1755	Cancelar meu plano
+1756	Cancelando…
+1757	Não foi possível falar com o Mathub. Verifique sua conexão e tente de novo.
+1758	O {1} foi cancelado. Ele continua ativo até {2}.
+1759	Mais um passo
+1760	Os planos do site são cancelados na página de cobrança, que a RevenueCat cuida para o Mathub (pagamentos pela Stripe). Ela abre numa nova aba: escolha
+1761	Cancelar assinatura
+1762	lá. O {1} continua ativo até {2}.
+1763	Abrir a página de cobrança
+1764	Você comprou o {1} no app do Mathub, então quem cuida disso é a {2}: abra suas assinaturas, escolha o Mathub e cancele. Ele continua ativo até {3}.
+1765	Abrir as assinaturas da {1}
+1766	App Store
+1767	Já está cancelado
+1768	O {1} termina em {2} e não vai renovar.
+1769	Nada para cancelar
+1770	O {1} foi dado à sua conta pelo Mathub, então nunca cobra nada.
+1771	Escreva para nós para cancelar
+1772	Não foi possível encontrar a página de cobrança do seu plano. Escreva para nós pela página de contato que cancelamos para você e garantimos que você não seja cobrado de novo.
+1773	Nenhum plano para cancelar
+1774	Sua conta não tem nenhum plano agora.
+1775	Seu plano termina em {1}.
+1776	Restam {1} perguntas{2} este mês.
+1777	e {1} minutos de chamada
+1778	O Mathub Max está ativo.
+1779	O Bo pode escrever mais {1} disciplinas este mês.
+1780	O Bo escreve suas disciplinas a partir de qualquer programa.
+1781	O Max adiciona o Pergunte ao Bo e as chamadas.
+1782	Ele conhece seu programa, suas provas e onde você trava. Ligue para ele, pergunte qualquer coisa ou peça que ele escreva uma disciplina inteira a partir de um programa.
+1783	Converse sobre {1} em voz alta
+1784	Chat, fotos e o quadro dele
+1785	Escrever uma disciplina
+1786	A partir de qualquer programa
+1787	O Bo no chat e em chamadas · {1} por mês
+1788	Assinar o Mathub Pro
+1789	O Bo escreve suas disciplinas · {1} por mês
+1790	O que cada um inclui
+1791	Bo, seu tutor
+1792	Uma disciplina que você criou a partir de um programa, salva {1}.
+1793	Gerenciar ou compartilhar
+1794	Geral
+1795	Geral / campus
+1796	Pergunta
+1797	Discussão
+1798	Recurso
+1799	Grupo de estudo
+1800	Outro
+1801	Não dá para falar com o servidor de discussões agora.
+1803	há {1} min
+1804	há {1} h
+1805	há {1} d
+1806	Anônimo
+1807	Só os moderadores veem isto
+1808	Votar a favor
+1809	Votar contra
+1822	Regras da comunidade
+1823	Antes de publicar
+1824	Aceite único
+1825	As discussões são escritas por estudantes, para estudantes. Para continuarem úteis e seguras, todo membro aceita as regras da comunidade:
+1826	Seja educado.
+1827	Nada de assédio, ódio, ameaças ou ataques a pessoas.
+1828	Nada ilegal.
+1829	Nada de vender ou procurar drogas, álcool, armas, objetos roubados ou qualquer coisa contra a lei. Publicações assim são removidas e podem ser denunciadas.
+1830	Honestidade acadêmica.
+1831	Ajudem-se a aprender; não compartilhem questões ou respostas durante uma prova, e sigam as regras de cada disciplina.
+1832	Suas palavras são suas.
+1833	Você é responsável pelo que publica. O Mathub pode remover conteúdos e contas a qualquer momento.
+1834	Filtro de linguagem.
+1835	Palavrões são censurados automaticamente.
+1836	Concordo com os
+1837	Termos de Uso, Regras da Comunidade e Política de Privacidade
+1838	Concordar e continuar
+1839	Faça perguntas, compartilhe recursos e organize grupos de estudo com os colegas.
+1840	Buscar publicações…
+1841	Nova publicação
+1842	Em alta
+1843	Novas
+1844	Melhores
+1845	Todas
+1846	Sem resposta
+1847	Resolvidas
+1848	Enquetes
+1849	Leia as discussões e participe
+1850	Os membros podem ler todas as publicações, fazer perguntas, responder aos colegas, votar e organizar grupos de estudo. Visitantes veem só os títulos.
+1851	Conteúdo de exemplo: o servidor de discussões não está acessível nesta prévia, então estas publicações são exemplos e não dá para publicar.
+1852	fila de denúncias
+1853	Administrador
+1854	Moderador
+1855	painel de administração
+1856	Ajudantes {1}
+1857	respostas aceitas e votos a favor
+1858	de todos os tempos
+1859	· {1} aceitas
+1861	Ainda não há publicações aqui.{1}
+1862	Seja o primeiro: faça uma pergunta ou compartilhe algo útil.
+1863	Carregar mais
+1864	Enquete
+1865	Fixada
+1866	Bloquear
+1867	Todas as discussões
+1868	Entre para ler esta discussão
+1869	Publicações e comentários são visíveis só para membros. Cadastre-se grátis com seu e-mail montana.edu.
+1870	Publicação de exemplo não encontrada.
+1872	Banir o autor
+1873	Desafixar
+1874	Fixar
+1875	Reabrir
+1876	Trancar
+1877	Restaurar
+1878	Remover
+1879	Excluir de vez
+1880	· editado
+1881	Original (só moderadores)
+1882	Editar
+1883	Seja específico. $…$ funciona para matemática, **negrito**, *itálico*, > citação.
+1884	Adicionar um comentário
+1885	Publicar anonimamente
+1886	Publicar comentário
+1887	Os comentários estão desativados nesta prévia.
+1888	Esta publicação está trancada. Sem novos comentários.
+1889	Esta publicação foi removida.
+1890	Sua permissão para publicar está suspensa até {1}.
+1891	{1} {1|voto|votos}{2|} · anônimo{3}
+1892	· escolha várias
+1893	mudar o voto
+1894	Votar
+1895	Responder
+1896	Banir
+1897	Recolher
+1898	Membro bloqueado
+1899	Resposta aceita
+1900	Marcar como a resposta que resolveu
+1901	Oculto porque você bloqueou este membro.
+1902	Ainda não há comentários. Comece a discussão.
+1903	Entre para publicar
+1904	Crie uma conta grátis com seu e-mail montana.edu para fazer perguntas e começar discussões.
+1905	Para publicar é preciso o servidor de discussões, que não está acessível nesta prévia.
+1906	ex.: Travado no WebWork 2.3 nº 7: por que a derivada é negativa aqui?
+1907	Explique o problema. Cole a questão exata, se puder.
+1908	ex.: Em qual tópico a sessão de revisão deveria focar?
+1909	Título
+1910	Texto
+1911	Texto simples.
+1912	**negrito**
+1913	*itálico*
+1914	`código`
+1915	, e
+1916	para matemática (LaTeX). Palavrões são censurados automaticamente.
+1917	(os colegas veem “Anônimo”; os moderadores ainda podem ver quem publicou)
+1918	Adicionar uma enquete
+1919	(os votos são anônimos)
+1920	Pergunta da enquete (opcional)
+1921	Permitir escolher várias opções
+1922	Publicar
+1923	Prévia
+1924	Ao publicar, você concorda com as
+1925	regras da comunidade
+1926	Dicas
+1927	Uma pergunta por publicação.
+1928	Inclua a seção ou o número do problema.
+1929	Mostre sua tentativa: as pessoas ajudam mais rápido quando veem onde você travou.
+1930	A matemática aparece assim:
+1931	vira $x^2$.
+1932	Regras em resumo
+1933	Seja educado. Nada de assédio ou ódio.
+1934	Nada ilegal, nunca.
+1935	Nada de respostas de prova durante as provas.
+1936	Os moderadores podem remover qualquer coisa.
+1937	Termos completos e política de privacidade
+1938	Boas publicações recebem boas respostas: diga o que você tentou, cite o problema exato e escolha a disciplina certa.
+1939	Opção {1}{2}
+1940	Fila de denúncias
+1941	Denúncias abertas dos membros, as mais novas primeiro. Remover um item ou banir o autor encerra as denúncias dele.
+1942	Só moderadores.
+1943	Denúncias abertas
+1944	Banimentos ativos
+1945	Item
+1946	Motivo
+1947	Autor
+1948	por {1} · {2}
+1949	Nada denunciado. Que comunidade boa.
+1950	Desbanir
+1951	Nenhum banimento ativo.
+1952	Respostas às suas publicações e comentários.
+1953	Marcar tudo como lido
+1954	Entre para ver sua caixa de entrada
+1955	Os membros recebem uma notificação sempre que alguém responde à publicação ou ao comentário deles.
+1956	A caixa de entrada precisa do servidor de discussões, que não está acessível agora.
+1957	resolveu sua denúncia
+1958	publicou na sua disciplina:
+1959	passou uma prática:
+1960	atualizou seu acesso de professor:
+1961	pediu acesso de professor:
+1962	atualizou seu pedido de disciplina para
+1963	pediu uma disciplina:
+1964	concedeu a você
+1965	deu a você
+1966	Nada ainda. Quando alguém responder a uma das suas publicações, aparece aqui.
+1967	Visão geral do site e gestão de membros. Você pode banir, desbanir ou excluir qualquer conta, e excluir de vez qualquer publicação ou comentário a partir da discussão.
+1968	Só administradores.
+1970	Buscar e-mail ou nome…
+1971	Configurações do site
+1972	URL do feed do calendário do Canvas
+1973	Salvar e sincronizar
+1974	Faixa de aviso (aparece na página inicial e nos painéis; deixe vazio para ocultar)
+1975	Equipe
+1976	Membros
+1977	Membro
+1978	Entrou em
+1979	Publicações
+1980	Comentários
+1981	Status
+1982	ativos esta semana
+1983	banimentos ativos
+1984	itens removidos
+1985	No Canvas: Calendário → “Feed do calendário” → copie o link. Os prazos das disciplinas mapeadas aparecem então em todos os painéis, atualizados a cada hora.
+1986	Última sincronização: {1} · {2} eventos
+1987	· admin
+1988	último acesso {1}
+1989	banido até {1}
+1990	ainda sem regras
+1991	Verificar
+1992	Nenhum membro corresponde.
+1993	Voto computado
+1994	Escolha pelo menos uma opção.
+1995	Marcada como resposta aceita
+1996	Resposta aceita removida
+1997	Link copiado
+1998	Copie este link:
+1999	O que há de errado com este
+2000	Denunciado

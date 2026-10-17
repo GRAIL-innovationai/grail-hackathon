@@ -1,0 +1,178 @@
+{
+  "format": "mathub-class-pack",
+  "version": 1,
+  "id": "skil101",
+  "code": "SKIL 101",
+  "name": "How to Study (example class)",
+  "term": "Fall 2026",
+  "color": { "light": "#0F766E" },
+  "COURSE": {
+    "code": "SKIL 101",
+    "name": "How to Study (example class)",
+    "term": "Fall 2026",
+    "school": "Example syllabus",
+    "instructor": "Example instructor",
+    "officeHours": "This is an example class: there are no office hours.",
+    "lectures": "An example of what your AI writes from a real syllabus",
+    "textbook": { "title": "Make It Stick: The Science of Successful Learning (Brown, Roediger and McDaniel)", "url": "" },
+    "deadlines": [{ "name": "Delete this example", "rule": "any time, from Create a class" }]
+  },
+  "GRADING": {
+    "categories": [
+      { "id": "practice", "name": "Weekly practice", "weight": 30 },
+      { "id": "midterm", "name": "Midterm", "weight": 30 },
+      { "id": "final", "name": "Final exam", "weight": 40 }
+    ],
+    "scale": [
+      { "letter": "A", "min": 90 }, { "letter": "B", "min": 80 }, { "letter": "C", "min": 70 }, { "letter": "D", "min": 60 }, { "letter": "F", "min": 0 }
+    ]
+  },
+  "SEMESTER": { "start": "2026-08-24", "end": "2026-12-18" },
+  "EXAMS": [
+    { "id": "midterm", "name": "Midterm", "date": "2026-10-21", "covers": "Unit 1: learning that lasts", "units": [1] },
+    { "id": "final", "name": "Final exam", "date": "2026-12-14", "covers": "Everything, with a focus on Unit 2", "units": [1, 2] }
+  ],
+  "CALENDAR": [
+    ["2026-08-24", "lecture", "Retrieval practice", "retrieval"],
+    ["2026-09-07", "holiday", "Labor Day, no class"],
+    ["2026-09-09", "lecture", "Spacing and scheduling", "spacing"],
+    ["2026-09-28", "lecture", "Interleaving and variety", "interleave"],
+    ["2026-10-19", "review", "Midterm review"],
+    ["2026-10-21", "exam", "Midterm"],
+    ["2026-10-26", "lecture", "Notes that work", "notes"],
+    ["2026-10-30", "admin", "Last day to drop"],
+    ["2026-11-09", "lecture", "Planning the week", "planning"],
+    ["2026-11-25", "holiday", "Thanksgiving break"],
+    ["2026-11-30", "lecture", "Taking the exam", "exams"],
+    ["2026-12-14", "exam", "Final exam"]
+  ],
+  "UNITS": [
+    { "n": 1, "title": "Learning that lasts", "sections": ["retrieval", "spacing", "interleave"], "exam": "midterm" },
+    { "n": 2, "title": "Ready for the exam", "sections": ["notes", "planning", "exams"], "exam": "final" }
+  ],
+  "SECTIONS": [
+    {
+      "id": "retrieval", "label": "1.1", "title": "Retrieval practice", "unit": 1,
+      "ideas": [
+        "Pulling an idea out of memory strengthens it more than reading it again. Every time you answer a question without looking, the memory gets easier to find next time.",
+        "Rereading feels productive because the page looks familiar, but familiarity is not the same as being able to recall it on an exam.",
+        "Good retrieval is effortful: close the book, write or say what you remember, then check. Getting it wrong first and then checking still helps you learn.",
+        "Flashcards, practice questions and explaining a topic to a friend are all retrieval practice."
+      ],
+      "pitfalls": ["Flipping a flashcard before you have actually tried to answer it turns retrieval back into rereading."],
+      "example": { "p": "You have 30 minutes before a quiz on cell biology. What is the better plan: reread the chapter, or answer the end-of-chapter questions?", "s": "Answer the questions without looking, then check the ones you missed. Testing yourself builds recall; rereading mostly builds familiarity." }
+    },
+    {
+      "id": "spacing", "label": "1.2", "title": "Spacing and scheduling", "unit": 1,
+      "ideas": [
+        "The same amount of study spread over several days is remembered far longer than one long session the night before.",
+        "Short gaps let you forget a little, so the next review takes effort, and that effort is what makes the memory last.",
+        "A simple schedule: review new material the next day, again a few days later, then a week later."
+      ],
+      "pitfalls": ["Cramming can work for tomorrow's quiz, but most of it is gone a week later, right when the final needs it."],
+      "example": { "p": "You can study 3 hours for an exam in 6 days. How should you split it?", "s": "Three or more shorter sessions on different days, for example 1 hour on day 1, day 3 and day 5, beats 3 hours on day 6." }
+    },
+    {
+      "id": "interleave", "label": "1.3", "title": "Interleaving and variety", "unit": 1,
+      "ideas": [
+        "Mixing different kinds of problems in one session (interleaving) is harder than doing twenty of the same kind in a row, but it teaches you to recognise which method a problem needs.",
+        "Exams mix topics, so practice that mixes topics looks more like the exam.",
+        "Varying where and how you study (writing, speaking, drawing a diagram) gives a memory more ways back in."
+      ],
+      "pitfalls": ["Blocked practice feels smooth, which can fool you into thinking you have mastered a topic you can only do when you know which chapter it is from."]
+    },
+    {
+      "id": "notes", "label": "2.1", "title": "Notes that work", "unit": 2,
+      "ideas": [
+        "Notes in your own words beat copying slides word for word: putting an idea into your own words forces you to understand it.",
+        "The Cornell layout splits the page into notes, a column of questions and a short summary. The questions column becomes ready-made retrieval practice.",
+        "Within a day, reread your notes, fill gaps, and write two or three questions you could be asked."
+      ],
+      "pitfalls": ["Highlighting most of a page is not studying: it marks what to learn without learning it."]
+    },
+    {
+      "id": "planning", "label": "2.2", "title": "Planning the week", "unit": 2,
+      "ideas": [
+        "Put every exam and deadline from every syllabus in one calendar at the start of the term, then plan backwards from each one.",
+        "Time blocking means giving each task a specific time slot, not just a place on a to-do list.",
+        "To beat procrastination, make the first step tiny and specific: open the problem set and do question 1."
+      ],
+      "pitfalls": ["Planning only for due dates leaves no time to review, so every week turns into catching up."],
+      "example": { "p": "An essay is due in 10 days and you have an exam in 6. How do you plan?", "s": "Work backwards: block exam review on days 1, 3 and 5; outline the essay on day 2, draft on days 7 and 8, revise on day 9." }
+    },
+    {
+      "id": "exams", "label": "2.3", "title": "Taking the exam", "unit": 2,
+      "ideas": [
+        "Skim the whole exam first and spend time in proportion to the points each question is worth.",
+        "Read each question twice and underline what it actually asks before answering.",
+        "If you get stuck, move on and come back: a later question often reminds you of what you need.",
+        "Some nerves are normal. Slow breathing and a quick first pass through questions you know both help settle them."
+      ],
+      "pitfalls": ["Changing answers on a hunch at the end. Change an answer only when you find a concrete reason."]
+    }
+  ],
+  "FLASHCARDS": [
+    { "id": "c1", "unit": 1, "sec": "retrieval", "f": "Retrieval practice", "b": "Learning by pulling information out of memory, for example answering questions without looking." },
+    { "id": "c2", "unit": 1, "sec": "retrieval", "f": "Why does rereading feel effective?", "b": "The material looks familiar, but familiarity is not the same as being able to recall it." },
+    { "id": "c3", "unit": 1, "sec": "retrieval", "f": "Does getting a practice question wrong still help?", "b": "Yes, as long as you check the right answer afterwards." },
+    { "id": "c4", "unit": 1, "sec": "spacing", "f": "Spacing effect", "b": "Study spread over several sessions is remembered longer than the same time in one session." },
+    { "id": "c5", "unit": 1, "sec": "spacing", "f": "A simple review schedule", "b": "Next day, a few days later, then a week later." },
+    { "id": "c6", "unit": 1, "sec": "spacing", "f": "What is wrong with cramming?", "b": "It can work for the next day, but most of it is forgotten within a week." },
+    { "id": "c7", "unit": 1, "sec": "interleave", "f": "Interleaving", "b": "Mixing different kinds of problems or topics in one practice session." },
+    { "id": "c8", "unit": 1, "sec": "interleave", "f": "Blocked practice", "b": "Doing many problems of the same kind in a row; it feels easier but transfers less to mixed exams." },
+    { "id": "c9", "unit": 1, "sec": "interleave", "f": "Why does interleaving help on exams?", "b": "It trains you to recognise which method a problem needs, as exams mix topics." },
+    { "id": "c10", "unit": 2, "sec": "notes", "f": "Cornell notes", "b": "A page split into notes, a column of questions and a summary at the bottom." },
+    { "id": "c11", "unit": 2, "sec": "notes", "f": "Why write notes in your own words?", "b": "Rephrasing forces you to understand the idea instead of copying it." },
+    { "id": "c12", "unit": 2, "sec": "notes", "f": "What should you do with notes within a day?", "b": "Reread, fill gaps and write a few questions you could be asked." },
+    { "id": "c13", "unit": 2, "sec": "planning", "f": "Time blocking", "b": "Giving each task a specific time slot in your calendar." },
+    { "id": "c14", "unit": 2, "sec": "planning", "f": "Planning backwards", "b": "Starting from each exam or deadline and scheduling the steps before it." },
+    { "id": "c15", "unit": 2, "sec": "planning", "f": "A trick against procrastination", "b": "Make the first step tiny and specific, such as doing question 1." },
+    { "id": "c16", "unit": 2, "sec": "exams", "f": "First thing to do in an exam", "b": "Skim the whole exam and note how many points each question is worth." },
+    { "id": "c17", "unit": 2, "sec": "exams", "f": "Stuck on a question?", "b": "Move on and come back; later questions often jog your memory." },
+    { "id": "c18", "unit": 2, "sec": "exams", "f": "When should you change an answer?", "b": "Only when you find a concrete reason, not on a hunch." }
+  ],
+  "QUIZ": {
+    "topics": {
+      "retrieval": { "unit": 1, "sec": "retrieval", "label": "Retrieval practice" },
+      "spacing": { "unit": 1, "sec": "spacing", "label": "Spacing" },
+      "interleave": { "unit": 1, "sec": "interleave", "label": "Interleaving" },
+      "notes": { "unit": 2, "sec": "notes", "label": "Notes" },
+      "planning": { "unit": 2, "sec": "planning", "label": "Planning" },
+      "exams": { "unit": 2, "sec": "exams", "label": "Taking exams" }
+    },
+    "questions": [
+      { "type": "bank", "topic": "retrieval", "items": [
+        ["Which study method builds the longest-lasting memory?", "Answering practice questions without notes", ["Rereading the chapter", "Highlighting key sentences", "Copying the slides"], "Retrieving information from memory strengthens it; the others mostly build familiarity."],
+        ["Rereading a chapter often feels effective mainly because", "the material starts to look familiar", ["it is the most effortful method", "it tests your memory", "it spaces your study"], "Familiarity is easy to mistake for being able to recall."],
+        ["You answer a flashcard wrong and then check it. This", "still helps you learn", ["wastes the attempt", "only works if you were close", "makes the memory weaker"], "Trying first and then checking strengthens learning even after a wrong answer."],
+        ["Which of these is retrieval practice?", "Explaining a topic to a friend from memory", ["Watching the lecture again", "Reading a summary", "Rewriting notes neatly"], "Explaining from memory means pulling the idea out yourself."]
+      ] },
+      { "type": "bank", "topic": "spacing", "items": [
+        ["You have 3 hours to study for an exam in 6 days. The best plan is", "three 1-hour sessions on different days", ["3 hours the night before", "3 hours today and none later", "30 minutes on the morning of the exam"], "Spreading study over days (spacing) improves long-term memory."],
+        ["Why does a short gap between reviews help?", "Recalling after a little forgetting takes effort, which strengthens memory", ["You remember more by not reviewing", "Gaps make the material easier", "It shortens total study time"], "Effortful recall after a gap is what makes spacing work."],
+        ["Cramming the night before mostly helps you", "on the next day only", ["on the final exam", "for the rest of the term", "understand concepts deeply"], "Crammed material fades quickly."],
+        ["A good simple review schedule is", "next day, a few days later, then a week later", ["every hour on one day", "only the night before", "once at the end of term"], "Reviews at growing intervals keep memories alive."]
+      ] },
+      { "type": "bank", "topic": "interleave", "items": [
+        ["Interleaving means", "mixing different kinds of problems in one session", ["studying one topic until it is perfect", "taking breaks every 10 minutes", "studying with a partner"], "Interleaving mixes topics or problem types."],
+        ["Why does blocked practice feel easier?", "You already know which method every problem needs", ["The problems are simpler", "It uses less time", "It is a form of spacing"], "In a block, the method is given away by the chapter, so you never practise choosing it."],
+        ["Interleaved practice mainly trains you to", "recognise which method a problem needs", ["work faster on one kind of problem", "memorise definitions", "avoid hard problems"], "Mixed practice makes you choose the method, as exams do."]
+      ] },
+      { "type": "bank", "topic": "notes", "items": [
+        ["In Cornell notes, the narrow left column is used for", "questions about the notes", ["the date", "doodles", "the instructor's name"], "The questions column becomes ready-made self-testing."],
+        ["Why write notes in your own words?", "Rephrasing forces you to understand the idea", ["It is faster than copying", "Instructors require it", "It makes notes longer"], "Putting ideas into your own words requires processing them."],
+        ["Highlighting most of a page is", "marking what to learn without learning it", ["a strong retrieval method", "the same as spacing", "the best way to review"], "Highlighting alone does not test or strengthen memory."]
+      ] },
+      { "type": "bank", "topic": "planning", "items": [
+        ["Time blocking means", "giving each task a specific time slot", ["keeping a long to-do list", "studying in big blocks of one subject", "taking a break every hour"], "A task with a scheduled time is far more likely to get done."],
+        ["The best first step against procrastination is", "a tiny, specific action such as doing question 1", ["waiting until you feel motivated", "planning the whole term first", "cleaning your desk"], "Small concrete starts lower the barrier to begin."],
+        ["Planning backwards means", "starting from each deadline and scheduling the steps before it", ["doing the last task first", "planning only for the next day", "reviewing old exams first"], "Working back from deadlines leaves room for every step."]
+      ] },
+      { "type": "bank", "topic": "exams", "items": [
+        ["What should you do first when you get an exam?", "Skim it and note how many points each question is worth", ["Start with the hardest question", "Answer in strict order without looking ahead", "Check the time remaining every minute"], "A quick skim lets you spend time where the points are."],
+        ["You are stuck on question 3. The best move is", "move on and come back later", ["stay until you solve it", "leave it blank for good", "guess and never return"], "Later questions often jog your memory, and you protect your time."],
+        ["When should you change an answer at the end?", "When you find a concrete reason it is wrong", ["Whenever you feel unsure", "Never", "Always, to the second-best option"], "Change answers for reasons, not hunches."]
+      ] }
+    ]
+  }
+}

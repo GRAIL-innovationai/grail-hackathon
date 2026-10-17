@@ -1,0 +1,4 @@
+# Words the code puts together in ways scripts/i18n-extract.js cannot follow (a count and a word, text joined at
+# run time). One English key per line, with {1}, {2} for the values; they go into i18n/catalog.json like the rest.
+{1} questions
+{1} problems

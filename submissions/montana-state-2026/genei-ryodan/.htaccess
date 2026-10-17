@@ -1,0 +1,54 @@
+# Mathub — caching rules
+# The page itself is never cached, so every visit picks up the newest build.
+# Scripts, styles and icons carry ?v=<build> in their URLs, so they can be cached for a long time.
+Options -Indexes
+<IfModule mod_headers.c>
+  <FilesMatch "\.html?$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+  <FilesMatch "\.(js|css)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+  <FilesMatch "\.(svg|png|ico|webmanifest|woff2?)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  <FilesMatch "\.(pdf)$">
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+</IfModule>
+<IfModule mod_mime.c>
+  AddType application/manifest+json .webmanifest
+  AddType font/woff2 .woff2
+  AddType image/svg+xml .svg
+  AddType application/wasm .wasm
+  AddType text/plain .txt
+  AddType application/xml .xml
+</IfModule>
+# Security headers on every response. The page's own Content-Security-Policy is a <meta> tag in index.html
+# (so it also applies on hosts that ignore .htaccess); framing rules can only be sent as headers, so they are here.
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  # the microphone is allowed for Mathub's own pages only: talking with Bo (assets/talk.js) listens while a call is on
+  Header always set Permissions-Policy "camera=(), microphone=(self), geolocation=(), payment=(), usb=()"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  <FilesMatch "\.html?$">
+    Header always set Content-Security-Policy "frame-ancestors 'self'; base-uri 'self'; object-src 'none'"
+  </FilesMatch>
+</IfModule>
+
+# HTTPS only: plain http:// visits are sent to https:// (Hostinger's recommended rule)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:\d+)?$
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain application/xml application/javascript application/json image/svg+xml
+</IfModule>

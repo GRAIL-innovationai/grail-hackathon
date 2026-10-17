@@ -1,0 +1,7 @@
+{
+  "name": "mathub-tests",
+  "private": true,
+  "description": "Headless browser checks for Mathub (calc1/). Run with: node tests/run.js",
+  "scripts": { "test": "node run.js", "postinstall": "playwright install chromium" },
+  "devDependencies": { "playwright": "^1.50.0", "axe-core": "^4.10.0" }
+}

@@ -1,0 +1,5 @@
+# Runtime files created by the account server. Never commit them.
+*
+!.gitignore
+!.htaccess
+!index.html
