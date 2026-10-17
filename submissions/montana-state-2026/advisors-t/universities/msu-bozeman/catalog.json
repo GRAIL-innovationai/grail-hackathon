@@ -1,0 +1,556 @@
+{
+  "id": "msu-bozeman",
+  "university": "Montana State University",
+  "short_name": "MSU",
+  "campus": "Bozeman, MT",
+  "catalog_edition": "2026-2027",
+  "theme": {
+    "primary": "#162960",
+    "accent": "#f4b425",
+    "names": "MSU Blue and MSU Gold",
+    "source": "https://www.montana.edu/marketing/logo-use-guide.html"
+  },
+  "credit_system": {
+    "full_time_credits": 12,
+    "credit_hour": "1 credit equals about 45 hours of work per semester; a 3-credit course is about 135 hours, or roughly nine hours per week for about 15 weeks.",
+    "grading": "Letter grades A to F; GPA on a 4.0 scale (Montana University System scale).",
+    "math_placement": "Students take the MSU Math Placement; Business majors with Math Placement level 400+ are exempt from M 121Q College Algebra.",
+    "sources": [
+      {
+        "url": "https://www.montana.edu/online/guide/classes.html",
+        "checked": "2026-10-17"
+      },
+      {
+        "url": "https://catalog.montana.edu/undergraduate/business/management/",
+        "checked": "2026-10-17"
+      }
+    ]
+  },
+  "dataset_note": "Facts copied from official MSU pages, checked on 2026-10-17. A null field means the data was not found in the source.",
+  "majors": [
+    {
+      "id": "cs-bs-professional",
+      "name": "Computer Science, B.S. (Professional Option)",
+      "department": "Gianforte School of Computing",
+      "college": "Norm Asbjornson College of Engineering",
+      "total_credits": 120,
+      "accreditation": "Computing Accreditation Commission of ABET (bachelor's program)",
+      "description": "Four-year degree with depth in computer science and related technical areas. Other paths in the same school: Interdisciplinary Option (pairs CS with a minor such as Entrepreneurship or Japanese Studies), a B.A. in Computer Science with fewer math and science courses, and an accelerated B.S./M.S. in five years.",
+      "interest_tags": [
+        "programming",
+        "software",
+        "algorithms",
+        "math",
+        "logic",
+        "security",
+        "artificial intelligence",
+        "games",
+        "building apps"
+      ],
+      "math_intensity": "high",
+      "key_courses": [
+        {
+          "code": "CSCI 127",
+          "title": "Joy and Beauty of Data",
+          "year": "Freshman"
+        },
+        {
+          "code": "M 171Q",
+          "title": "Calculus I",
+          "year": "Freshman"
+        },
+        {
+          "code": "CSCI 132",
+          "title": "Basic Data Structures and Algorithms",
+          "year": "Freshman"
+        },
+        {
+          "code": "CSCI 246",
+          "title": "Discrete Structures",
+          "year": "Sophomore"
+        },
+        {
+          "code": "CSCI 232",
+          "title": "Data Structures and Algorithms",
+          "year": "Sophomore"
+        },
+        {
+          "code": "ESOF 322",
+          "title": "Software Engineering",
+          "year": "Junior"
+        },
+        {
+          "code": "CSCI 366",
+          "title": "Computer Systems",
+          "year": "Junior"
+        },
+        {
+          "code": "CSCI 468",
+          "title": "Compilers (capstone for this option)",
+          "year": "Senior"
+        },
+        {
+          "code": "CSCI 476",
+          "title": "Computer Security",
+          "year": "Senior"
+        }
+      ],
+      "electives_mentioned": [
+        "artificial intelligence",
+        "cybersecurity",
+        "databases",
+        "data visualization",
+        "machine learning",
+        "robotics",
+        "software engineering",
+        "web design"
+      ],
+      "career_outcomes": "The catalog cites U.S. Bureau of Labor Statistics projections that computing occupations will grow much faster than average, with about 356,700 openings per year. Specific job titles are not listed in the catalog.",
+      "first_thing_to_check": "Try CSCI 127 (Joy and Beauty of Data) in the first semester to see if programming fits you.",
+      "labs_and_faculty": [],
+      "labs_note": "No labs or faculty research areas in the beta dataset. School director listed on the department site: John Paxton.",
+      "sources": [
+        {
+          "url": "https://catalog.montana.edu/undergraduate/engineering/computer-science/professional-option/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://catalog.montana.edu/undergraduate/engineering/computer-science",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.cs.montana.edu/bachelors-degree.html",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "data-science-bs",
+      "name": "Data Science, B.S.",
+      "department": "Gianforte School of Computing",
+      "college": "Norm Asbjornson College of Engineering",
+      "total_credits": 120,
+      "accreditation": null,
+      "description": "Integrates computing, statistics, mathematics, business and English.",
+      "interest_tags": [
+        "data",
+        "statistics",
+        "math",
+        "programming",
+        "business",
+        "analytics",
+        "patterns"
+      ],
+      "math_intensity": "high",
+      "key_courses": null,
+      "electives_mentioned": null,
+      "career_outcomes": null,
+      "first_thing_to_check": "Read the Data Science B.S. page in the MSU catalog and compare it with the Computer Science B.S.",
+      "labs_and_faculty": [],
+      "labs_note": "Thin data in the beta: course list and career outcomes not collected yet.",
+      "sources": [
+        {
+          "url": "https://catalog.montana.edu/undergraduate/engineering/computer-science",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "me-bs",
+      "name": "Mechanical Engineering, B.S.",
+      "department": "Department of Mechanical & Industrial Engineering",
+      "college": "Norm Asbjornson College of Engineering",
+      "total_credits": 128,
+      "accreditation": "Engineering Accreditation Commission of ABET",
+      "description": "Builds strength in fundamentals, applications, design, communication and professional responsibility. Covers math, physics, chemistry, thermodynamics, heat transfer, fluid mechanics and materials science. Ends with a team capstone that builds a working prototype. At least 42 credits must be 300-level or above.",
+      "interest_tags": [
+        "building things",
+        "machines",
+        "cars",
+        "physics",
+        "design",
+        "hands-on",
+        "energy",
+        "manufacturing",
+        "robotics"
+      ],
+      "math_intensity": "high",
+      "key_courses": [
+        {
+          "code": "EMEC 100",
+          "title": "Introduction to Mechanical Engineering",
+          "year": "Freshman"
+        },
+        {
+          "code": "EMEC 103",
+          "title": "CAE I-Engineering Graphics Communications",
+          "year": "Freshman"
+        },
+        {
+          "code": "M 171Q",
+          "title": "Calculus I",
+          "year": "Freshman"
+        },
+        {
+          "code": "PHSX 220",
+          "title": "Physics I with Calculus",
+          "year": "Freshman"
+        },
+        {
+          "code": "EGEN 201",
+          "title": "Engineering Mechanics-Statics",
+          "year": "Sophomore"
+        },
+        {
+          "code": "EMEC 320",
+          "title": "Thermodynamics I",
+          "year": "Junior"
+        },
+        {
+          "code": "EMEC 342",
+          "title": "Mechanical Component Design",
+          "year": "Junior"
+        },
+        {
+          "code": "EGEN 310R",
+          "title": "Multidisciplinary Engineering Design",
+          "year": "Junior"
+        },
+        {
+          "code": "EMEC 489R",
+          "title": "Mechanical Engineering Design Capstone I",
+          "year": "Senior"
+        },
+        {
+          "code": "EMEC 499R",
+          "title": "Mechanical Engineering Design Capstone II",
+          "year": "Senior"
+        }
+      ],
+      "electives_mentioned": null,
+      "career_outcomes": "Process industries (pulp and paper, steel, aluminum, food, petroleum, chemicals); manufacturing (highway vehicles, instruments, airplanes, rockets and engines, toys, agricultural machinery); power plants (steam, nuclear, hydroelectric); federal laboratories; consulting (HVAC design, forensic engineering); manufacturing management.",
+      "first_thing_to_check": "Take EMEC 100 (Introduction to Mechanical Engineering) in the first year.",
+      "labs_and_faculty": [],
+      "labs_note": "No labs or faculty in the beta dataset. Department phone listed on its site: (406) 994-2203.",
+      "sources": [
+        {
+          "url": "https://catalog.montana.edu/undergraduate/engineering/mechanical-industrial-engineering/mechanical-engineering/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.montana.edu/mie/mie_program_assessment/accreditation_information_bsme.html",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "bus-management",
+      "name": "Business, B.S. (Management Option)",
+      "department": "Jake Jabs College of Business & Entrepreneurship",
+      "college": "Jake Jabs College of Business & Entrepreneurship",
+      "total_credits": 120,
+      "accreditation": "AACSB International",
+      "description": "Focuses on leadership, communication, team management, strategic thinking, problem solving and ethical decision making.",
+      "interest_tags": [
+        "leadership",
+        "people",
+        "teams",
+        "starting a business",
+        "entrepreneurship",
+        "organizing",
+        "sales",
+        "human resources"
+      ],
+      "math_intensity": "moderate",
+      "math_note": "Requires M 121Q College Algebra (students with MSU Math Placement level 400+ are exempt) and STAT 216Q.",
+      "key_courses": [
+        {
+          "code": "M 121Q",
+          "title": "College Algebra",
+          "year": null
+        },
+        {
+          "code": "STAT 216Q",
+          "title": "Introduction to Statistics",
+          "year": null
+        },
+        {
+          "code": "ACTG 201",
+          "title": "Principles of Financial Accounting",
+          "year": null
+        },
+        {
+          "code": "BMIS 211",
+          "title": "Data Analytics I",
+          "year": null
+        },
+        {
+          "code": "BMGT 240IS",
+          "title": "Business Analytics",
+          "year": null
+        },
+        {
+          "code": "BMGT 335",
+          "title": "Management and Organization",
+          "year": null
+        },
+        {
+          "code": "BMKT 325",
+          "title": "Principles of Marketing",
+          "year": null
+        },
+        {
+          "code": "BGEN 361",
+          "title": "Principles of Business Law",
+          "year": null
+        },
+        {
+          "code": "BMGT 475R",
+          "title": "Management Research Experience",
+          "year": null
+        }
+      ],
+      "electives_mentioned": null,
+      "career_outcomes": "Management and supervision; sales and entrepreneurship; consulting and operations; product development and analytics; international business and project management; human resources and supply chain; public administration. Industries include technology, aerospace, healthcare, retail, government, non-profit and hospitality.",
+      "first_thing_to_check": "Read the Management option page and look at BMGT 335 (Management and Organization).",
+      "labs_and_faculty": [],
+      "labs_note": "No faculty data in the beta dataset.",
+      "sources": [
+        {
+          "url": "https://catalog.montana.edu/undergraduate/business/management/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://catalog.montana.edu/undergraduate/business/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "bus-finance",
+      "name": "Business, B.S. (Finance Option)",
+      "department": "Jake Jabs College of Business & Entrepreneurship",
+      "college": "Jake Jabs College of Business & Entrepreneurship",
+      "total_credits": 120,
+      "accreditation": "AACSB International",
+      "description": "Covers how organizations raise and manage money, how investment portfolios balance return and risk, and how financial institutions and markets allocate capital.",
+      "interest_tags": [
+        "money",
+        "investing",
+        "stock market",
+        "banking",
+        "numbers",
+        "planning",
+        "economics"
+      ],
+      "math_intensity": "moderate",
+      "math_note": "Requires M 121Q College Algebra (students with MSU Math Placement level 400+ are exempt) and STAT 216Q.",
+      "key_courses": [
+        {
+          "code": "M 121Q",
+          "title": "College Algebra",
+          "year": null
+        },
+        {
+          "code": "STAT 216Q",
+          "title": "Introduction to Statistics",
+          "year": null
+        },
+        {
+          "code": "ACTG 201",
+          "title": "Principles of Financial Accounting",
+          "year": null
+        },
+        {
+          "code": "ECNS 204IS",
+          "title": "Microeconomics",
+          "year": null
+        },
+        {
+          "code": "BFIN 322",
+          "title": "Business Finance",
+          "year": null
+        },
+        {
+          "code": "BFIN 357",
+          "title": "Financial Markets & Institutions",
+          "year": null
+        },
+        {
+          "code": "BFIN 420R",
+          "title": "Investments",
+          "year": null
+        },
+        {
+          "code": "BFIN 435",
+          "title": "Corporate Finance",
+          "year": null
+        }
+      ],
+      "electives_mentioned": null,
+      "career_outcomes": "Credit, financial and securities analysis; bank examination; lending; treasury and comptroller functions; portfolio management; financial planning; insurance underwriting.",
+      "first_thing_to_check": "Look at ECNS 204IS (Microeconomics) and ACTG 201 as early tests of interest.",
+      "labs_and_faculty": [],
+      "labs_note": "No faculty data in the beta dataset.",
+      "sources": [
+        {
+          "url": "https://catalog.montana.edu/undergraduate/business/finance/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://catalog.montana.edu/undergraduate/business/",
+          "checked": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "not_in_beta": [
+    "Business: Accounting and Marketing options",
+    "Hospitality Management, B.S.",
+    "Computer Science B.A. and Interdisciplinary Option (mentioned only in descriptions)",
+    "All other MSU departments"
+  ],
+  "advisors": [
+    {
+      "id": "shaniah-blanchard",
+      "name": "Shaniah Lilliana Blanchard",
+      "first_name": "Shaniah",
+      "last_name": "Blanchard",
+      "role": "Academic Advisor",
+      "advises_majors": [
+        "cs-bs-professional",
+        "data-science-bs",
+        "me-bs"
+      ],
+      "advises_note": "Computer Science, Data Science and Mechanical Engineering",
+      "office": "361 Barnard Hall, Montana State University, Bozeman, MT",
+      "phone": "(406) 994-4794",
+      "email": "shaniah.blanchard@montana.edu",
+      "sources": [
+        {
+          "url": "https://www.montana.edu/advising/find-your-advisor.html",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.montana.edu/admissions/orientation/advising/advising-contacts.html",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://coe.montana.edu/advising/academic_advising/nacoeadvisors.html",
+          "checked": "2026-10-17"
+        }
+      ],
+      "source_note": "Provided by Sebas on 2026-10-17 with these sources."
+    }
+  ],
+  "events": [
+    {
+      "id": "ecs-networking-fall-2026",
+      "name": "Engineering & Computer Science Networking Reception",
+      "date": "2026-09-29",
+      "time": "4:00-6:00 p.m.",
+      "location": "SUB Ballrooms",
+      "majors": [
+        "cs-bs-professional",
+        "data-science-bs",
+        "me-bs"
+      ],
+      "audience": "Engineering and Computer Science students",
+      "sources": [
+        {
+          "url": "https://www.montana.edu/studentsuccess/careers/events/career-fair/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "jabs-networking-fall-2026",
+      "name": "Jabs Networking Night",
+      "date": "2026-09-29",
+      "time": "5:00-7:00 p.m.",
+      "location": "Jake Jabs Building, first floor",
+      "majors": [
+        "bus-management",
+        "bus-finance"
+      ],
+      "audience": "Not stated on the page; the event links to the Jake Jabs College of Business & Entrepreneurship",
+      "sources": [
+        {
+          "url": "https://www.montana.edu/studentsuccess/careers/events/career-fair/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "career-fair-fall-2026",
+      "name": "Fall 2026 Career Fair",
+      "date": "2026-09-30",
+      "time": "10:00 a.m.-3:00 p.m.",
+      "location": "Brick Breeden Fieldhouse",
+      "majors": [
+        "all"
+      ],
+      "audience": "All students, first year to senior",
+      "sources": [
+        {
+          "url": "https://www.montana.edu/studentsuccess/careers/events/career-fair/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.mthightech.org/events/montana-state-university-career-fair-fall-2026",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "interview-days-fall-2026",
+      "name": "On Campus Interview Days",
+      "date": "2026-10-01",
+      "time": "8:00 a.m.-5:00 p.m.",
+      "location": "Student Wellness Center",
+      "majors": [
+        "all"
+      ],
+      "audience": "Not stated on the page",
+      "sources": [
+        {
+          "url": "https://www.montana.edu/studentsuccess/careers/events/career-fair/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "career-fair-spring-2027",
+      "name": "MSU \"Almost\" Spring Career Fair 2027",
+      "date": null,
+      "time": null,
+      "location": null,
+      "majors": [
+        "all"
+      ],
+      "expected": "Date not announced yet. The spring 2026 fair was February 24-25, 2026 in the Strand Union Building (SUB), with an all-majors day, an engineering day and networking events in the evenings.",
+      "audience": "All students",
+      "sources": [
+        {
+          "url": "https://www.mthightech.org/events/msu-almost-spring-2026-career-fair",
+          "checked": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "career_resources": [
+    {
+      "name": "HireABobcat (powered by Handshake)",
+      "what": "See which employers attend each fair and search for jobs and internships."
+    },
+    {
+      "name": "MSU Career Fair page",
+      "what": "Event schedule, a guide to prepare for the career fair, and past employer lists.",
+      "url": "https://www.montana.edu/studentsuccess/careers/events/career-fair/"
+    },
+    {
+      "name": "Career Coaches",
+      "what": "Help with career paths, resumes, networking and job searches. They also hold Conversation Corners at the fair."
+    }
+  ]
+}
