@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f9fc">
+  <meta name="description" content="A little guidance, right where you need it. Margin is your math whiteboard with a tutor beside you.">
+  <title>Margin — a tutor in your margin</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%234c63ef'/%3E%3Cpath d='M11 12v16M18 12v10M25 12v16' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="m16 3 5 5M4 20l4-1L21 6a2.1 2.1 0 0 0-3-3L5 16l-1 4Z"/></symbol>
+    <symbol id="i-eraser" viewBox="0 0 24 24"><path d="m4 13 9-10a2 2 0 0 1 3 0l5 5a2 2 0 0 1 0 3L11 21H7l-4-5a2 2 0 0 1 1-3ZM8 9l8 8M11 21h10"/></symbol>
+    <symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 5 3 11l6 6M3 11h11a7 7 0 0 1 7 7"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7M14 10v7"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.8 6.2L21 12l-6.2 2.8L12 21l-2.8-6.2L3 12l6.2-2.8L12 3Z"/></symbol>
+    <symbol id="i-type" viewBox="0 0 24 24"><path d="M4 7V4h16v3M12 4v16M8 20h8"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7v.01"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="m10 13 4-4M8 16l-2 2a4.2 4.2 0 0 1-6-6l5-5a4.2 4.2 0 0 1 6 0M16 8l2-2a4.2 4.2 0 0 1 6 6l-5 5a4.2 4.2 0 0 1-6 0" transform="translate(1 -1) scale(.9)"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 8a9 9 0 0 0-15-3L2 8m0-5v5h5M4 16a9 9 0 0 0 15 3l3-3m0 5v-5h-5"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M9 21h6M8 14a7 7 0 1 1 8 0c-1 1-1 2-1 4H9c0-2 0-3-1-4Z"/></symbol>
+  </defs></svg>
+
+  <header class="app-header">
+    <a class="brand" href="/" aria-label="Margin home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Margin</span></a>
+    <span class="brand-tagline">a tutor in your margin</span>
+    <div class="header-right"><span class="local-badge">LOCAL WORKSPACE</span><button id="connection-button" class="connection-button" title="Manage AI connection"><span class="status-dot"></span><span id="connection-label">Checking connection</span><svg class="icon"><use href="#i-chevron"/></svg></button></div>
+  </header>
+
+  <main class="workspace">
+    <section class="board-section" aria-label="Math whiteboard">
+      <section class="problem-section" aria-label="Problem">
+        <div class="problem-section-head"><h1 id="problem-title">Problem</h1><div class="problem-modes" role="group" aria-label="Problem input method"><button id="problem-type-mode" class="selected" aria-pressed="true"><svg class="icon"><use href="#i-type"/></svg>Type</button><button id="problem-write-mode" aria-pressed="false"><svg class="icon"><use href="#i-pen"/></svg>Write</button></div><span id="problem-state" class="problem-state">Draft</span><button id="edit-problem" class="text-button" title="Edit problem">Edit</button><div class="problem-meta"><span id="subject-tag" class="subject-tag">Math</span><span class="autosave"><span></span>Saved locally</span></div></div>
+        <div id="problem-type-panel"><form id="problem-draft-form" class="problem-draft-form"><label class="sr-only" for="problem-draft">Type the original problem</label><textarea id="problem-draft" rows="2" maxlength="1500" placeholder="Type your problem here"></textarea><div class="problem-draft-actions"><button type="button" id="problem-example" class="text-button">Use example</button><button type="submit" id="review-problem" class="primary-button">Review problem <svg class="icon"><use href="#i-chevron"/></svg></button></div></form></div>
+        <div id="problem-write-panel" hidden><div class="problem-ink-surface"><canvas id="problem-canvas" width="1200" height="900" aria-label="Problem whiteboard"></canvas><span id="problem-ink-empty" class="problem-ink-empty">Write the original problem here.</span></div><div class="problem-ink-tools"><button id="problem-pen" class="selected"><svg class="icon"><use href="#i-pen"/></svg>Pen</button><button id="problem-eraser"><svg class="icon"><use href="#i-eraser"/></svg>Eraser</button><button id="problem-undo"><svg class="icon"><use href="#i-undo"/></svg>Undo</button><button id="problem-clear"><svg class="icon"><use href="#i-trash"/></svg>Clear</button><button id="read-problem" class="primary-button" disabled><svg class="icon"><use href="#i-spark"/></svg><span>Read problem</span></button></div></div>
+        <div id="problem-confirmed-text" class="problem-confirmed-text" hidden></div>
+      </section>
+      <div class="solution-section-head"><h2>Solution</h2><span id="solution-state">Confirm your problem before checking steps.</span></div>
+
+      <div class="board-surface" id="board-surface">
+        <div class="paper-margin" aria-hidden="true"></div>
+        <div id="solution-rows" class="solution-rows" aria-label="Numbered solution lines"></div>
+        <div class="annotation-layer" id="annotations" aria-hidden="true" hidden></div>
+        <div class="board-empty" id="board-empty">
+          <h2>Write your first step.</h2><p>Use Next line for each new step.</p>
+          <div class="empty-actions"><button id="try-example" class="text-button">Try an example <span aria-hidden="true">↗</span></button><span>or</span><button id="empty-type" class="text-button">type a step</button></div>
+        </div>
+        <div class="board-top-note"><span class="note-dot"></span><span id="board-note">Your space to work it out</span></div>
+        <form id="type-form" class="type-form" hidden><label for="typed-step">TYPE A STEP <span>Enter adds and checks your step</span></label><div><input id="typed-step" autocomplete="off" maxlength="180" placeholder="Type your next step" aria-label="Math step"><button class="primary-button" type="submit">Add step <svg class="icon"><use href="#i-arrow"/></svg></button><button id="close-type" type="button" class="icon-button" title="Close typing" aria-label="Close typing"><svg class="icon"><use href="#i-close"/></svg></button></div></form>
+        <div class="board-toolbar" role="toolbar" aria-label="Whiteboard tools">
+          <button id="pen-tool" class="tool-button active" aria-pressed="true" title="Pen (P)"><svg class="icon"><use href="#i-pen"/></svg><span>Pen</span><span class="pen-color"></span></button>
+          <button id="eraser-tool" class="tool-button" aria-pressed="false" title="Eraser (E)"><svg class="icon"><use href="#i-eraser"/></svg><span>Eraser</span></button>
+          <button id="type-tool" class="tool-button" title="Type a step (T)" aria-label="Type a step"><svg class="icon"><use href="#i-type"/></svg><span>Type a step</span></button>
+          <button id="next-line" class="tool-button next-line" title="Add the next solution line"><svg class="icon"><use href="#i-plus"/></svg><span>Next line</span></button>
+          <span class="tool-divider"></span>
+          <button id="undo-tool" class="tool-button" title="Undo (Ctrl+Z)" aria-label="Undo"><svg class="icon"><use href="#i-undo"/></svg><span>Undo</span></button>
+          <button id="clear-tool" class="tool-button icon-only" title="Clear board" aria-label="Clear board"><svg class="icon"><use href="#i-trash"/></svg></button>
+          <span class="tool-divider"></span>
+          <button id="new-problem" class="tool-button new-problem"><svg class="icon"><use href="#i-plus"/></svg><span>New problem</span></button>
+        </div>
+        <div class="board-bottom-note"><span>ONE STEP AT A TIME.</span><span>Space to think. Room to grow.</span></div>
+      </div>
+      <footer class="board-footer"><span><svg class="icon"><use href="#i-info"/></svg>Write one step per line. Pause to check.</span><button id="recheck-button" class="primary-button" disabled><svg class="icon"><use href="#i-refresh"/></svg><span>Check work</span></button></footer>
+    </section>
+
+    <aside class="tutor-panel" aria-label="Your AI tutor">
+      <div class="tutor-heading"><div class="tutor-avatar"><svg class="icon"><use href="#i-spark"/></svg></div><div><h2>Your tutor</h2><p>Feedback on your current work.</p></div><span class="tutor-live" id="tutor-live">READY</span></div>
+      <section id="problem-confirmation" class="problem-confirmation" aria-label="Confirm your problem"><div class="section-label"><h3>CONFIRM PROBLEM</h3></div><h3>Is this your problem?</h3><p id="problem-confirm-message">Type your problem and select Review problem, or write it and pause for two seconds for an automatic reading.</p><form id="problem-confirm-form"><label class="sr-only" for="problem-confirm-input">Confirm or correct the recognized problem</label><textarea id="problem-confirm-input" rows="3" maxlength="1500" placeholder="Your problem will appear here." hidden></textarea><button type="submit" id="confirm-problem" class="primary-button" disabled>Yes, start solving <svg class="icon"><use href="#i-check"/></svg></button></form></section>
+      <section class="feedback-section" aria-label="Live feedback"><div class="section-label"><h3>LIVE FEEDBACK</h3><span id="feedback-status" class="feedback-status">Waiting for your first step</span></div><div id="feedback" aria-live="polite"><div class="welcome-card"><h4>Start with one step.</h4><p>Type or write on the board. Your checked steps and hints appear here.</p></div></div></section>
+      <div class="connection-card" id="connection-card" hidden><div><span class="small-spark"><svg class="icon"><use href="#i-link"/></svg></span><strong>Bring your tutor online</strong></div><p>Connect ChatGPT to get feedback on your work.</p><button id="inline-connect" class="connect-inline">Connect ChatGPT <svg class="icon"><use href="#i-chevron"/></svg></button></div>
+      <section class="chat-section" aria-label="Ask your tutor"><div class="section-label chat-label"><h3>ASK YOUR TUTOR</h3><span class="context-badge"><span></span>Board in context</span></div><div id="messages" class="messages" role="log" aria-label="Conversation"><div class="chat-empty" id="chat-empty"><p>Stuck on a step?<br>Let’s think it through together.</p><div class="chat-suggestions"><button data-question="Can you give me a hint for my next step?">Give me a hint <span>↗</span></button><button data-question="Can you explain the last step on my board?">Explain my last step <span>↗</span></button></div></div></div><form id="chat-form" class="chat-form"><label class="sr-only" for="chat-input">Ask about your work</label><textarea id="chat-input" placeholder="Ask about your work…" rows="1" maxlength="2500"></textarea><button id="chat-send" type="submit" aria-label="Send message" title="Send message"><svg class="icon"><use href="#i-arrow"/></svg></button></form><div class="chat-footer"><span>Built for the way you think.</span><span id="verification-label">AI can make mistakes.</span></div></section>
+    </aside>
+  </main>
+
+  <dialog id="problem-dialog" class="modal"><form id="problem-form"><div class="modal-top"><span class="eyebrow">A FRESH PAGE</span><button type="button" class="icon-button" data-close="problem-dialog" aria-label="Close"><svg class="icon"><use href="#i-close"/></svg></button></div><h2>What are we working on?</h2><p>Tell your tutor the problem. Then make it your own.</p><label class="field-label" for="problem-input">Your problem</label><textarea id="problem-input" rows="3" maxlength="1500" required placeholder="e.g. Solve 2(x − 3) = 10"></textarea><span class="field-label preset-label">OR PICK A STARTING POINT</span><div class="problem-presets"><button type="button" data-problem="Solve 2(x − 3) = 10" data-subject="Algebra"><span>Algebra</span><strong>2(x − 3) = 10</strong><svg class="icon"><use href="#i-chevron"/></svg></button><button type="button" data-problem="Find the derivative of f(x) = x³ − 4x² + 2x" data-subject="Calculus"><span>Calculus</span><strong>f(x) = x³ − 4x² + 2x</strong><svg class="icon"><use href="#i-chevron"/></svg></button><button type="button" data-problem="Find the mean and population standard deviation of 4, 8, 6, 10." data-subject="Statistics"><span>Statistics</span><strong>4, 8, 6, 10</strong><svg class="icon"><use href="#i-chevron"/></svg></button></div><div class="modal-footer"><span>Starts a fresh board and conversation.</span><button class="primary-button" type="submit">Let’s work it out <svg class="icon"><use href="#i-chevron"/></svg></button></div></form></dialog>
+
+  <dialog id="connection-dialog" class="modal connection-modal"><div class="modal-top"><span class="eyebrow">YOUR TUTOR CONNECTION</span><button class="icon-button" data-close="connection-dialog" aria-label="Close"><svg class="icon"><use href="#i-close"/></svg></button></div><div class="connection-illustration"><svg class="icon"><use href="#i-spark"/></svg></div><h2 id="connection-modal-title">A tutor, right beside you.</h2><p id="connection-description">Connect your ChatGPT account to bring your whiteboard to life. Your board is ready whenever you are.</p><div class="connection-details" id="connection-details" hidden></div><button id="sign-in-button" class="primary-button sign-in-button">Continue with ChatGPT <svg class="icon"><use href="#i-chevron"/></svg></button><button id="refresh-connection" class="text-button refresh-connection"><svg class="icon"><use href="#i-refresh"/></svg>Check connection</button><p class="connection-footnote" id="connection-footnote">Sign-in opens in a separate window. Your writing stays here.</p><details class="api-help"><summary>Using Gemini as a fallback?</summary><p>Add your Gemini key as <code>LLM_API_KEY</code> in the local server’s <code>.env</code> file, then check the connection again. Provider billing is separate from ChatGPT. Never paste a key into the whiteboard or chat.</p></details></dialog>
+
+  <dialog id="clear-dialog" class="modal compact-modal"><div class="modal-top"><span class="eyebrow">START AGAIN</span><button class="icon-button" data-close="clear-dialog" aria-label="Close"><svg class="icon"><use href="#i-close"/></svg></button></div><h2>A clean slate?</h2><p>This clears your writing. Your problem and conversation stay here.</p><div class="modal-footer"><button class="secondary-button" data-close="clear-dialog">Keep working</button><button class="primary-button" id="confirm-clear">Clear board</button></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script type="module" src="/static/app.js"></script>
+</body>
+</html>
