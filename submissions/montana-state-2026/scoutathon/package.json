@@ -1,0 +1,20 @@
+{
+  "name": "scout-demo",
+  "private": true,
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=26.0.0"
+  },
+  "scripts": {
+    "start": "node server.cjs",
+    "test": "node --test",
+    "check:public": "node check-public.cjs"
+  },
+  "dependencies": {
+    "mammoth": "1.13.0",
+    "pdf-parse": "2.4.5"
+  },
+  "overrides": {
+    "argparse": "2.0.1"
+  }
+}
