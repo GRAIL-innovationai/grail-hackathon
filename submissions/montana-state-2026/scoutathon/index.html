@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Scout</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="core.js"></script><script defer src="interview-problems.js"></script><script defer src="views.js"></script><script defer src="coach-ui.js"></script><script defer src="journeys-ui.js"></script><script defer src="discover-ui.js"></script><script defer src="practice-ui.js"></script><script defer src="interview-problems-ui.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="app-shell">
+  <aside class="sidebar" aria-label="Workspace navigation">
+    <a class="brand" href="#dashboard"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-copy"><strong>Scout</strong><small>Find your next opportunity</small></span></a>
+    <p class="workspace-label">YOUR WORKSPACE</p>
+    <nav>
+      <a class="nav-link" href="#dashboard"><span aria-hidden="true">▦</span> Overview</a>
+      <a class="nav-link" href="#discover"><span aria-hidden="true">⌕</span> Discover roles</a>
+      <a class="nav-link" href="#applications"><span aria-hidden="true">▤</span> Applications</a>
+      <a class="nav-link" href="#prep"><span aria-hidden="true">◎</span> Interview prep</a>
+      <a class="nav-link" href="#development"><span aria-hidden="true">◇</span> Development</a>
+    </nav>
+    <div class="sidebar-bottom"><div class="sidebar-note"><strong>Your next move, made clearer.</strong><p>Explore roles, build evidence, and prepare with purpose.</p></div><a class="nav-link" href="#profile"><span aria-hidden="true">⚙</span> Profile & preferences</a><span class="demo-pill" id="storage-status">● Connecting to local workspace…</span></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="breadcrumbs">My workspace <span aria-hidden="true">/</span> <span id="breadcrumb">Overview</span></div><div class="topbar-actions"><button id="theme-toggle" class="btn ghost" aria-label="Switch color theme">◐ <span>Appearance</span></button><a href="#profile" class="avatar" id="avatar" aria-label="Your profile">AM</a></div></header>
+    <main id="main-content" tabindex="-1"><p class="notice" id="connection-notice" role="status" hidden></p><div class="page-heading"><div><p class="eyebrow" id="eyebrow">YOUR NEXT CHAPTER</p><h1 id="page-title">Your career, moving forward.</h1><p id="page-description" class="muted">One place to find your fit, prepare, and grow.</p></div><div class="heading-actions"><a class="btn secondary" href="#profile">Edit profile</a><button class="btn primary" data-action="assistant">✧ Ask Scout</button></div></div><div id="view"></div></main>
+    <footer class="footer">Scout · a clearer path to your next role.<span id="footer-status">Public employer boards · company updates mocked</span></footer>
+  </div>
+</div>
+<button class="assistant-launch" data-action="assistant">✧ <span>Scout assistant</span></button>
+<dialog class="modal" id="assistant-dialog" aria-labelledby="assistant-title"><div class="dialog-head"><div><p class="eyebrow">SCOUT ASSISTANT · SAMPLE GUIDANCE</p><h2 id="assistant-title">Let’s find your next step.</h2></div><button class="btn ghost" data-close aria-label="Close assistant">✕</button></div><div class="dialog-body"><p class="notice">General assistant replies are sample guidance. Use Discover research and focused role tools for connected AI workflows.</p><div id="chat-messages" class="chat-messages" aria-live="polite"></div><div class="suggestions"><button class="btn secondary" data-prompt="What should I focus on?">What should I focus on?</button><button class="btn secondary" data-prompt="Help me prepare for an interview">Prepare for an interview</button></div><form id="chat-form" class="chat-form"><label class="sr-only" for="chat-input">Your message</label><input id="chat-input" placeholder="Ask Scout about your next step…" required maxlength="2000"><button class="btn primary" type="submit">Send ↗</button></form></div></dialog>
+<dialog class="modal wide" id="editor-dialog" aria-labelledby="editor-title"><div class="dialog-head"><h2 id="editor-title">Application workspace</h2><button class="btn ghost" data-close aria-label="Close application workspace">✕</button></div><div id="editor-body" class="dialog-body"></div></dialog>
+<dialog class="modal wide" id="ai-dialog" aria-labelledby="ai-title"><div class="dialog-head"><h2 id="ai-title">Review this role with AI</h2><button class="btn ghost" data-close aria-label="Close AI review">✕</button></div><div id="ai-body" class="dialog-body"></div></dialog>
+<dialog class="modal wide" id="coach-dialog" aria-labelledby="coach-title"><div class="dialog-head"><h2 id="coach-title">Development coach</h2><button class="btn ghost" data-close aria-label="Close development coach">✕</button></div><div id="coach-body" class="dialog-body"></div></dialog>
+<dialog class="modal wide" id="practice-dialog" aria-labelledby="practice-title"><div class="dialog-head"><h2 id="practice-title">Coding attempt</h2><button class="btn ghost" data-close aria-label="Close coding attempt">✕</button></div><div id="practice-body" class="dialog-body"></div></dialog>
+<dialog class="modal wide" id="journey-dialog" aria-labelledby="journey-title"><div class="dialog-head"><h2 id="journey-title">Career workflow</h2><button class="btn ghost" data-close aria-label="Close career workflow">✕</button></div><div id="journey-body" class="dialog-body"></div></dialog>
+<dialog class="modal" id="form-dialog" aria-labelledby="form-title"><div class="dialog-head"><h2 id="form-title">Add to workspace</h2><button class="btn ghost" data-close aria-label="Close form">✕</button></div><div id="form-body" class="dialog-body"></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body></html>
