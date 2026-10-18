@@ -1,0 +1,673 @@
+{
+  "id": "montana-tech",
+  "university": "Montana Technological University",
+  "short_name": "Montana Tech",
+  "campus": "Butte, MT",
+  "catalog_edition": "2026-2027",
+  "dataset_note": "Facts copied from official Montana Tech pages, checked on 2026-10-17. A null field means the data was not found in the source.",
+  "theme": {
+    "primary": "#315338",
+    "accent": "#995339",
+    "names": "Copper and Green",
+    "source": "https://www.mtech.edu/montana-true/colors/index.html"
+  },
+  "credit_system": {
+    "full_time_credits": 12,
+    "credit_hour": "Credits for each course are given in semester-hours. Example from the catalog: a course shown as 4 Cr. (Hrs.: 3 Lec. 3 Lab) is a 4 semester-credit course which requires 3 weekly contact hours of lecture and 3 weekly contact hours of laboratory.",
+    "grading": "A - Excellent; B - Good; C - Average; D - Poor; F - Fail; I - Incomplete; W - Withdrawal; N - Continuing; P - Pass. GPA values (Montana University System): A = 4.0, A- = 3.7, B+ = 3.3, B = 3.0, B- = 2.7, C+ = 2.3, C = 2.0, C- = 1.7, D+ = 1.3, D = 1.0, D- = 0.7, F = 0.0.",
+    "math_placement": "All first-time students are placed in appropriate mathematics and writing courses based on their ACT/SAT scores or other placement exams.",
+    "sources": [
+      {
+        "url": "https://catalog.mtech.edu/content.php?catoid=18&navoid=1770",
+        "checked": "2026-10-17"
+      },
+      {
+        "url": "https://catalog.mtech.edu/content.php?catoid=18&navoid=1785",
+        "checked": "2026-10-17"
+      },
+      {
+        "url": "https://catalog.mtech.edu/content.php?catoid=18&navoid=1781",
+        "checked": "2026-10-17"
+      }
+    ]
+  },
+  "majors": [
+    {
+      "id": "cs-bs",
+      "name": "Computer Science, B.S.",
+      "department": "Computer Science",
+      "college": "Lance College of Mines and Engineering",
+      "total_credits": 120,
+      "accreditation": "Computing Accreditation Commission of ABET",
+      "description": "Prepare for cutting-edge computing careers by gaining practical experience designing, building, testing, and maintaining software systems through the ABET-accredited bachelor's degree in computer science at Montana Tech. The program maintains a balance of theory and practical experience, made possible by low class sizes and a low student to faculty ratio. Required math: M 171 Calculus I, M 172 Calculus II, CSCI 246 Discrete Structures, M 333 Matrices & Linear Algebra and STAT 332 Statistics for Scientists and Engineers, plus a Data Science/Computational Math elective.",
+      "interest_tags": [
+        "programming",
+        "software",
+        "computers",
+        "algorithms",
+        "data",
+        "artificial intelligence",
+        "web",
+        "networks"
+      ],
+      "math_intensity": "high",
+      "key_courses": [
+        {
+          "code": "CSCI 135",
+          "title": "Fundamentals Of Computer Science I",
+          "year": "Freshman"
+        },
+        {
+          "code": "CSCI 136",
+          "title": "Fundamentals Of Computer Science II",
+          "year": "Freshman"
+        },
+        {
+          "code": "M 171",
+          "title": "Calculus I",
+          "year": "Freshman"
+        },
+        {
+          "code": "CSCI 232",
+          "title": "Data Structures and Algorithms",
+          "year": "Sophomore"
+        },
+        {
+          "code": "CSCI 246",
+          "title": "Discrete Structures",
+          "year": "Sophomore"
+        },
+        {
+          "code": "ESOF 322",
+          "title": "Software Engineering",
+          "year": "Junior"
+        },
+        {
+          "code": "CSCI 440",
+          "title": "Database Systems",
+          "year": "Junior"
+        },
+        {
+          "code": "CSCI 446",
+          "title": "Artificial Intelligence",
+          "year": "Senior"
+        },
+        {
+          "code": "CSCI 447",
+          "title": "Machine Learning",
+          "year": "Senior"
+        },
+        {
+          "code": "CSCI 486",
+          "title": "Senior Project",
+          "year": "Senior"
+        }
+      ],
+      "career_outcomes": "Graduates of the Montana Tech computer science degree program hold a variety of positions, including computer programmer, database administrator, and computer systems analyst; they also hold advanced degrees in computer science and related fields. Students have interned at companies and organizations including Google, Dish Networks, Micron Technologies, and the City of Butte.",
+      "first_thing_to_check": "Take CSCI 135 - Fundamentals Of Computer Science I in your first fall semester to see if programming fits you.",
+      "sources": [
+        {
+          "url": "https://catalog.mtech.edu/preview_program.php?catoid=18&poid=3677",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://catalog.mtech.edu/preview_entity.php?catoid=18&ent_oid=2181",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.mtech.edu/academics/programs/computer-science/index.html",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "bit-management-of-information-bs",
+      "name": "Business and Information Technology, Management of Information Option, B.S.",
+      "department": "Business",
+      "college": "College of Letters, Sciences and Professional Studies",
+      "total_credits": 120,
+      "accreditation": null,
+      "description": "As a BIT major with the IT option, you will learn how to analyze a variety of data in support of decision making to create value for a company using the latest technologies. The department's mission integrates a traditional business curriculum with state-of-the-art information technology. Required math: M 141 Math for Business and Social Sciences I or M 151 Precalculus, plus one statistics course (STAT 216, STAT 131 or STAT 332).",
+      "interest_tags": [
+        "business",
+        "information technology",
+        "data analytics",
+        "management",
+        "accounting",
+        "finance",
+        "databases",
+        "SAP"
+      ],
+      "math_intensity": "low",
+      "key_courses": [
+        {
+          "code": "BGEN 105",
+          "title": "Introduction To Business",
+          "year": "Freshman"
+        },
+        {
+          "code": "BMIS 211",
+          "title": "Data Analytics I",
+          "year": "Sophomore"
+        },
+        {
+          "code": "ACTG 201",
+          "title": "Principles of Financial Accounting",
+          "year": "Sophomore"
+        },
+        {
+          "code": "BMIS 312",
+          "title": "Data Analytics II",
+          "year": "Sophomore"
+        },
+        {
+          "code": "BMIS 320",
+          "title": "Business Modeling",
+          "year": "Sophomore"
+        },
+        {
+          "code": "BMIS 311",
+          "title": "Management Information Systems",
+          "year": "Junior"
+        },
+        {
+          "code": "BFIN 322",
+          "title": "Business Finance",
+          "year": "Junior"
+        },
+        {
+          "code": "BMIS 453",
+          "title": "Business Intelligence and Advanced Analytics",
+          "year": "Senior"
+        },
+        {
+          "code": "BMGT 426W",
+          "title": "Strategic Management",
+          "year": "Senior"
+        },
+        {
+          "code": "BMIS 416",
+          "title": "Enterprise Systems Configuration",
+          "year": null
+        }
+      ],
+      "career_outcomes": "Many graduates work directly for IT companies, but graduates can work in nearly any company, with job opportunities in industries including entertainment, national defense, petroleum, transportation, education, health care and finance. The degree also meets the prerequisite courses for admission into an MBA program.",
+      "first_thing_to_check": "Take BGEN 105 - Introduction To Business in your first fall semester, then BMIS 211 - Data Analytics I in sophomore fall to test your interest in the IT side.",
+      "sources": [
+        {
+          "url": "https://catalog.mtech.edu/preview_program.php?catoid=18&poid=3721",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://catalog.mtech.edu/preview_entity.php?catoid=18&ent_oid=2179",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.mtech.edu/academics/programs/business-management-information/index.html",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "petroleum-engineering-bs",
+      "name": "Petroleum Engineering, B.S.",
+      "department": "Petroleum Engineering",
+      "college": "Lance College of Mines and Engineering",
+      "total_credits": 136,
+      "accreditation": "Engineering Accreditation Commission of ABET",
+      "description": "Petroleum engineers are concerned with the design and construction of wells and well systems for producing oil, gas, and other natural resources from the earth, and for conveying fluids into, out of, or through the earth's subsurface. The curriculum gives each student a working knowledge of the three sub-disciplines: Drilling, Production, and Reservoir Engineering. Required math: M 171 Calculus I, M 172 Calculus II, M 273 Multivariable Calculus, M 274 Introduction to Differential Equation, and STAT 332 or M 333.",
+      "interest_tags": [
+        "oil and gas",
+        "energy",
+        "drilling",
+        "geology",
+        "reservoirs",
+        "physics",
+        "fluids",
+        "field work"
+      ],
+      "math_intensity": "high",
+      "key_courses": [
+        {
+          "code": "EGEN 101",
+          "title": "Introduction Engineering Calculations & Problem Solving",
+          "year": "Freshman"
+        },
+        {
+          "code": "PET 201",
+          "title": "Elements of Petroleum Engineering",
+          "year": "Freshman"
+        },
+        {
+          "code": "GEO 101",
+          "title": "Introduction to Physical Geology",
+          "year": "Freshman"
+        },
+        {
+          "code": "PET 304",
+          "title": "Rock Properties",
+          "year": "Sophomore"
+        },
+        {
+          "code": "PET 372",
+          "title": "Petroleum Fluids & Thermodynamics",
+          "year": "Sophomore"
+        },
+        {
+          "code": "PET 301",
+          "title": "Introduction to Well Drilling",
+          "year": "Junior"
+        },
+        {
+          "code": "PET 404",
+          "title": "Reservoir Engineering",
+          "year": "Junior"
+        },
+        {
+          "code": "PET 302",
+          "title": "Petroleum Production Engineering",
+          "year": "Junior"
+        },
+        {
+          "code": "PET 410",
+          "title": "Reservoir Simulation",
+          "year": "Junior"
+        },
+        {
+          "code": "PET 499W",
+          "title": "Capstone: Petroleum Engineering Design",
+          "year": "Senior"
+        }
+      ],
+      "career_outcomes": "The program page says graduates work in the petroleum industry (reservoir, production and drilling engineering) and also in geothermal, groundwater, environmental and government roles.",
+      "first_thing_to_check": "Take PET 201 - Elements of Petroleum Engineering in your first spring semester to see if the field fits you.",
+      "sources": [
+        {
+          "url": "https://catalog.mtech.edu/preview_program.php?catoid=18&poid=3574",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://catalog.mtech.edu/preview_entity.php?catoid=18&ent_oid=2205",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.mtech.edu/academics/programs/petroleum-engineering/index.html",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "mining-engineering-bs",
+      "name": "Mining Engineering, B.S.",
+      "department": "Mining Engineering",
+      "college": "Lance College of Mines and Engineering",
+      "total_credits": 126,
+      "accreditation": "Engineering Accreditation Commission of ABET",
+      "description": "Design, construct, and manage surface and underground mines around the world with a degree in Mining Engineering from Montana Tech. A degree in mining engineering begins with learning the mechanics of geological materials, blasting, materials handling, mine valuation, ventilation, and designing/operating of surface and underground mines; students have access to the only on-campus underground mine in the country. Required math: M 171 Calculus I, M 172 Calculus II, M 273 Multivariable Calculus and M 274 Introduction to Differential Equation.",
+      "interest_tags": [
+        "mining",
+        "geology",
+        "explosives",
+        "surveying",
+        "heavy equipment",
+        "underground",
+        "safety",
+        "outdoors"
+      ],
+      "math_intensity": "high",
+      "key_courses": [
+        {
+          "code": "EGEN 101",
+          "title": "Introduction Engineering Calculations & Problem Solving",
+          "year": "Freshman"
+        },
+        {
+          "code": "MIN 105",
+          "title": "Introduction To Mining",
+          "year": "Freshman"
+        },
+        {
+          "code": "MIN 210",
+          "title": "Plane Surveying",
+          "year": "Sophomore"
+        },
+        {
+          "code": "MIN 205",
+          "title": "Mining and Construction Equipment",
+          "year": "Sophomore"
+        },
+        {
+          "code": "MIN 320",
+          "title": "Mining Data Analytics",
+          "year": "Junior"
+        },
+        {
+          "code": "MIN 230",
+          "title": "Mine Safety Management",
+          "year": "Junior"
+        },
+        {
+          "code": "MIN 456",
+          "title": "Mine Ventilation",
+          "year": "Junior"
+        },
+        {
+          "code": "MIN 408",
+          "title": "Valuation of Mineral Properties",
+          "year": "Senior"
+        },
+        {
+          "code": "MIN 467",
+          "title": "Geomechanics I",
+          "year": "Senior"
+        },
+        {
+          "code": "MIN 499W",
+          "title": "Mine Design Project",
+          "year": "Senior"
+        }
+      ],
+      "career_outcomes": "Mining engineering graduates pursue careers in coal mining, hard rock mining, open pit and underground construction management, and industrial materials and aggregate. The department reports a 96% placement rate for student interns.",
+      "first_thing_to_check": "Take MIN 105 - Introduction To Mining in your first spring semester and visit the Underground Mine Education Center.",
+      "sources": [
+        {
+          "url": "https://catalog.mtech.edu/preview_program.php?catoid=18&poid=3576",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://catalog.mtech.edu/content.php?catoid=18&navoid=1773",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.mtech.edu/academics/programs/mining-engineering/index.html",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "metallurgical-materials-engineering-bs",
+      "name": "Metallurgical & Materials Engineering, B.S.",
+      "department": "Metallurgical and Materials Engineering",
+      "college": "Lance College of Mines and Engineering",
+      "total_credits": 128,
+      "accreditation": "Engineering Accreditation Commission of ABET",
+      "description": "Learn how to process ores, separate valuable minerals into concentrates, produce and purify metals, manufacture metals into products, create materials, and join materials together. At Montana Tech, Metallurgical and Materials Engineering is a hybrid Bachelor of Science program that encompasses and integrates all essential aspects of materials science and process engineering. Required math: M 171 Calculus I, M 172 Calculus II, M 273 Multivariable Calculus, M 274 Introduction to Differential Equation and STAT 332 Statistics for Scientists and Engineers.",
+      "interest_tags": [
+        "metals",
+        "materials",
+        "chemistry",
+        "minerals",
+        "labs",
+        "manufacturing",
+        "steel",
+        "recycling"
+      ],
+      "math_intensity": "high",
+      "key_courses": [
+        {
+          "code": "EMAT 230",
+          "title": "Materials & The Human Experience",
+          "year": "Freshman"
+        },
+        {
+          "code": "EMET 280",
+          "title": "M&ME Safety & Health",
+          "year": "Freshman"
+        },
+        {
+          "code": "EMET 232",
+          "title": "Process Engineering Fundamentals",
+          "year": "Sophomore"
+        },
+        {
+          "code": "EMAT 251",
+          "title": "Materials Structures & Properties",
+          "year": "Sophomore"
+        },
+        {
+          "code": "EMET 307",
+          "title": "M&ME Thermodynamics",
+          "year": "Sophomore"
+        },
+        {
+          "code": "EMET 333",
+          "title": "Mineral Processing and Design",
+          "year": "Sophomore"
+        },
+        {
+          "code": "EMAT 362",
+          "title": "Ceramic Materials",
+          "year": "Junior"
+        },
+        {
+          "code": "EMET 401",
+          "title": "Hydrometallurgy & Aqueous Processing",
+          "year": "Junior"
+        },
+        {
+          "code": "EMAT 475",
+          "title": "Corrosion",
+          "year": "Senior"
+        },
+        {
+          "code": "EMET 499W",
+          "title": "M&ME Design Capstone II",
+          "year": "Senior"
+        }
+      ],
+      "career_outcomes": "Job opportunities are available in industries where minerals, metals and materials are produced and consumed, including mining, manufacturing, petroleum, iron/steel making, automotive, recycling, chemicals, paper/pulp, aerospace, maintenance, corrosion and forensics. Most undergraduate students obtain summer internships or six-month co-ops.",
+      "first_thing_to_check": "Take EMAT 230 - Materials & The Human Experience in your first spring semester to see if materials engineering fits you.",
+      "sources": [
+        {
+          "url": "https://catalog.mtech.edu/preview_program.php?catoid=18&poid=3579",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://catalog.mtech.edu/content.php?catoid=18&navoid=1773",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.mtech.edu/academics/programs/metallurgical-engineering/index.html",
+          "checked": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "advisors": [
+    {
+      "id": "ace-first-year-advising",
+      "name": "Academic Center for Excellence (professional advisors)",
+      "role": "Advising center",
+      "advises_majors": [
+        "all"
+      ],
+      "advises_note": "First-year students pursuing a bachelor's degree are advised by professional advisors in the Academic Center for Excellence. Continuing students and transfer students are primarily advised by faculty; contact Enrollment Services to find out who your advisor is.",
+      "office": "Student Success Center",
+      "phone": null,
+      "email": null,
+      "url": "https://www.mtech.edu/academics/services/advising/bachelors/index.html",
+      "sources": [
+        {
+          "url": "https://www.mtech.edu/academics/services/advising/bachelors/index.html",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "cullen-gilbreath",
+      "name": "Cullen Gilbreath",
+      "role": "LCME Academic Advisor (first-year)",
+      "advises_majors": [
+        "cs-bs",
+        "petroleum-engineering-bs",
+        "mining-engineering-bs",
+        "metallurgical-materials-engineering-bs"
+      ],
+      "advises_note": "Supports first-year Lance College of Mines and Engineering students from admission through their transition to faculty advising.",
+      "office": "Student Success Center, 3.134",
+      "phone": "406-496-4612",
+      "email": "cgilbreath@mtech.edu",
+      "url": "https://mtech.campus.eab.com/pal/tkNcb3kcYO",
+      "sources": [
+        {
+          "url": "https://www.mtech.edu/academics/services/advising/bachelors/index.html",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "heather-lingle",
+      "name": "Heather Lingle",
+      "role": "CLSPS Academic Advisor (first-year)",
+      "advises_majors": [
+        "bit-management-of-information-bs"
+      ],
+      "advises_note": "Supports all first-year College of Letters, Sciences and Professional Studies students (including Business and Information Technology) from admission through their transition to faculty advising.",
+      "office": "Student Success Center, 3.133",
+      "phone": "406-496-4420",
+      "email": "hlingle1@mtech.edu",
+      "url": "https://mtech.campus.eab.com/pal/SdmSorjqVN",
+      "sources": [
+        {
+          "url": "https://www.mtech.edu/academics/services/advising/bachelors/index.html",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "enrollment-services",
+      "name": "Enrollment Services",
+      "role": "Advisor assignment and records",
+      "advises_majors": [
+        "all"
+      ],
+      "advises_note": "Not sure who your advisor is? Contact Enrollment Services; you can also find your advisor in OrediggerWeb. Advisor changes are made at the Enrollment Services Office.",
+      "office": "Student Success Center",
+      "phone": "1-800-445-TECH",
+      "email": "enrollment@mtech.edu",
+      "url": "https://www.mtech.edu/academics/services/advising/index.html",
+      "sources": [
+        {
+          "url": "https://www.mtech.edu/academics/services/advising/index.html",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://catalog.mtech.edu/content.php?catoid=18&navoid=1770",
+          "checked": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "fall-2026-career-fair",
+      "name": "Fall Career Fair 2026",
+      "date": "2026-09-17",
+      "time": "8:00 a.m. - 2:30 p.m.",
+      "location": "HPER",
+      "majors": [
+        "all"
+      ],
+      "audience": "Montana Tech students of all academic levels and majors, from freshman to graduate students, and alumni; employers recruit for full-time jobs and summer internships. An employer welcome social is held Wednesday, September 16, 2026.",
+      "expected": null,
+      "sources": [
+        {
+          "url": "https://www.mtech.edu/career-services/fair/employers/index.html",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.mtech.edu/career-services/fair/students/index.html",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "fall-2026-2nd-day-interviews",
+      "name": "Fall 2026 Career Fair 2nd Day Interviews",
+      "date": "2026-09-18",
+      "time": null,
+      "location": "Assigned campus location listed in the Career Fair+ app interview schedule",
+      "majors": [
+        "all"
+      ],
+      "audience": "Students invited by employers met at the career fair; schedules are managed through the Career Fair+ app.",
+      "expected": null,
+      "sources": [
+        {
+          "url": "https://www.mtech.edu/career-services/fair/employers/index.html",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.mtech.edu/career-services/fair/interviews/index.html",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "spring-2027-career-fair",
+      "name": "Spring Career Fair 2027",
+      "date": null,
+      "time": null,
+      "location": null,
+      "majors": [
+        "all"
+      ],
+      "audience": "Montana Tech students of all academic levels and majors, and alumni.",
+      "expected": "Career Services says career fairs are held every semester, one in September and another in January; exact dates are posted in Career Forge under the events tab. For reference, the Spring 2026 fair was held Thursday, February 19, 2026, 8:00 a.m. - 2:30 p.m. in the HPER, with 2nd Day Interviews on Friday, February 20. No Spring 2027 date was found on official pages as of 2026-10-17.",
+      "sources": [
+        {
+          "url": "https://www.mtech.edu/career-services/fair/students/index.html",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.mtech.edu/career-services/fair/schedule/index.html",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://mtech.edu/news/2026/01/montana-tech-to-hold-spring-2026-career-fair.html",
+          "checked": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "career_resources": [
+    {
+      "name": "Career Services",
+      "what": "Career advising and assessments, job and internship searches, campus recruiting and interviews, events and information sessions. University Relations Center (URC) Room 109, 8:00 AM - 4:30 PM Monday-Friday, careerservices@mtech.edu, (406) 496-4140.",
+      "url": "https://www.mtech.edu/career-services/index.html"
+    },
+    {
+      "name": "Career Forge",
+      "what": "Montana Tech's online career management system (used instead of Handshake): job and internship postings, resume uploads, on-campus recruiting, Career Services appointments and career fair event details. Students log in with their university email.",
+      "url": "https://www.mtech.edu/career-services/career-forge/index.html"
+    },
+    {
+      "name": "Career Fair+ App",
+      "what": "App to navigate the career fair: find companies, booths and major preferences; also used for 2nd Day Interview scheduling.",
+      "url": "https://app.careerfairplus.com/mtech_mt"
+    },
+    {
+      "name": "Internship & Experiential Learning",
+      "what": "Help finding internships, co-ops, job shadows, fellowships and volunteer positions, and information on earning academic credit for internships.",
+      "url": "https://www.mtech.edu/career-services/experiential/index.html"
+    },
+    {
+      "name": "Indeed - Job Search Academy",
+      "what": "Career Services partner program with Indeed to find internships and jobs if Career Forge does not have what you need.",
+      "url": "https://www.mtech.edu/career-services/students/index.html"
+    },
+    {
+      "name": "Career Outcomes Surveys",
+      "what": "Official career outcomes data for Montana Tech graduates.",
+      "url": "https://www.mtech.edu/career-services/surveys/outcomes/index.html"
+    },
+    {
+      "name": "Academic Center for Excellence (ACE) Tutoring",
+      "what": "Connects students with tutors at Montana Tech.",
+      "url": "https://www.mtech.edu/academics/services/ace/index.html"
+    }
+  ],
+  "not_in_dataset": [
+    "All other Montana Tech programs"
+  ]
+}

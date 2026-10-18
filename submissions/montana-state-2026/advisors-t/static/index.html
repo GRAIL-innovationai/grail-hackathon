@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en" data-university="default">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Campus Advisor Beta</title>
+  <meta name="description" content="Find majors that fit you, plan your first classes from your transcript, email your advisor and get ready for career fairs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <a class="skip" href="#message-input">Skip to message box</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="brand">
+        <button type="button" class="icon-btn" id="history-toggle" aria-controls="history" aria-expanded="true" title="Show or hide your conversations" hidden>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          <span class="visually-hidden">Your conversations</span>
+        </button>
+        <div>
+          <p class="eyebrow">
+            <span id="university-name">Your university advisor</span>
+            <button type="button" class="link-light" id="change-university" hidden>Change university</button>
+          </p>
+          <h1>Campus Advisor <span class="badge">Beta</span></h1>
+        </div>
+      </div>
+      <div class="header-tools">
+        <label class="lang">
+          <span>Reply language</span>
+          <select id="language">
+            <option value="">Match my messages</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="pt">Português</option>
+            <option value="fr">Français</option>
+            <option value="zh">中文</option>
+          </select>
+        </label>
+        <div class="account" id="account-signed-out">
+          <button type="button" class="btn btn--accent" id="open-sign-in">Sign in</button>
+        </div>
+        <div class="account" id="account-signed-in" hidden>
+          <span class="account__email" id="account-email"></span>
+          <button type="button" class="btn btn--ghost-light" id="sign-out">Sign out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="app">
+    <!-- Saved conversations -->
+    <aside class="history" id="history" aria-label="Your conversations" hidden>
+      <div class="history__head">
+        <h2>Your conversations</h2>
+        <button type="button" class="btn btn--primary btn--small" id="new-chat">New chat</button>
+      </div>
+      <p class="history__empty" id="history-empty">No saved conversations yet. They appear here after your first message.</p>
+      <ul class="history__list" id="session-list"></ul>
+    </aside>
+    <div class="history__scrim" id="history-scrim" hidden></div>
+
+    <main class="chat" aria-label="Chat with Campus Advisor">
+      <!-- Step 1: choose the university. Its catalog, advisors and events drive the advisor. -->
+      <section class="picker" id="picker" aria-labelledby="picker-title" hidden>
+        <form class="picker__form" id="university-form" novalidate>
+          <fieldset class="picker__fieldset">
+            <legend class="picker__legend">
+              <span class="picker__step">Step 1 of 2</span>
+              <span class="picker__title" id="picker-title">Choose your university</span>
+            </legend>
+            <p class="picker__intro">Campus Advisor answers with that university's catalog, advisors and career events. You can change it later.</p>
+            <div class="picker__grid" id="university-options" role="presentation">
+              <p class="picker__loading" id="picker-loading">Loading universities…</p>
+            </div>
+          </fieldset>
+          <p class="picker__error" id="picker-error" role="alert" hidden></p>
+          <div class="picker__actions">
+            <button type="submit" class="btn btn--primary" id="picker-submit">Continue</button>
+            <button type="button" class="btn btn--outline" id="picker-cancel" hidden>Keep current university</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="chat__log" id="chat-log" role="log" aria-live="polite" aria-relevant="additions" aria-label="Conversation"></section>
+
+      <div class="chat__status" id="status" role="status" aria-live="polite"></div>
+
+      <div class="chat__suggestions" id="suggestions" aria-label="Example questions" hidden>
+        <button type="button" class="chip">I love video games and I'm good at math. What should I study?</button>
+        <button type="button" class="chip" data-action="upload">Upload my transcript to plan my first classes</button>
+        <button type="button" class="chip">Help me email my advisor to ask for a meeting.</button>
+        <button type="button" class="chip">Help me get ready for the next career fair.</button>
+      </div>
+
+      <div class="attachment" id="attachment" hidden>
+        <div class="attachment__row">
+          <span class="attachment__name" id="attachment-name"></span>
+          <span class="attachment__status" id="attachment-status"></span>
+          <button type="button" class="link" id="attachment-view" hidden>Check courses</button>
+          <button type="button" class="link" id="attachment-remove">Remove</button>
+        </div>
+        <div class="attachment__table" id="attachment-table" hidden></div>
+      </div>
+
+      <form class="composer" id="chat-form" novalidate>
+        <input type="file" id="transcript-input" accept=".pdf,.txt,.csv,image/png,image/jpeg,image/webp" hidden>
+        <button type="button" class="btn btn--outline" id="upload-btn" aria-label="Upload transcript">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21.4 11.1l-9.2 9.2a6 6 0 0 1-8.5-8.5l9.2-9.2a4 4 0 0 1 5.7 5.7l-9.2 9.2a2 2 0 0 1-2.8-2.8l8.5-8.5"/></svg>
+          <span class="upload-label">Transcript</span>
+        </button>
+        <label for="message-input" class="visually-hidden">Message</label>
+        <textarea id="message-input" name="message" rows="1" maxlength="4000"
+          placeholder="Ask about majors, first classes, your advisor or career fairs…" autocomplete="off"></textarea>
+        <button type="submit" class="btn btn--primary" id="send-btn">Send</button>
+      </form>
+      <p class="composer__hint">Enter to send · Shift + Enter for a new line · Conversations are saved to your account. Transcript files are not stored.</p>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    Student-built beta. Not an official university service. Guidance only: confirm your plan with your academic advisor.
+  </footer>
+
+  <!-- Sign in / Create account. One form, so password managers see one email + one password field. -->
+  <dialog class="auth" id="auth-dialog" aria-labelledby="auth-title">
+    <div class="auth__tabs" role="tablist" aria-label="Account">
+      <button type="button" role="tab" id="tab-sign-in" aria-selected="true" aria-controls="auth-form">Sign in</button>
+      <button type="button" role="tab" id="tab-register" aria-selected="false" aria-controls="auth-form">Create account</button>
+    </div>
+
+    <form class="auth__form" id="auth-form" method="post" action="/api/auth/token" novalidate>
+      <h2 class="auth__title" id="auth-title">Sign in to Campus Advisor</h2>
+      <p class="auth__intro" id="auth-intro">Your conversations are saved to your account so you can come back to them.</p>
+
+      <div class="field">
+        <label for="username">Email</label>
+        <input type="email" id="username" name="username" autocomplete="username" inputmode="email"
+          autocapitalize="none" spellcheck="false" required maxlength="254">
+      </div>
+
+      <div class="field" id="field-password">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required maxlength="128">
+      </div>
+
+      <div class="field" id="field-new-password" hidden>
+        <label for="new-password">Create a password</label>
+        <input type="password" id="new-password" name="new-password" autocomplete="new-password"
+          minlength="8" maxlength="128" aria-describedby="new-password-hint" disabled>
+        <p class="field__hint" id="new-password-hint">At least 8 characters, with a letter and a number.</p>
+      </div>
+
+      <label class="checkbox" for="show-password">
+        <input type="checkbox" id="show-password"> Show password
+      </label>
+
+      <p class="auth__error" id="auth-error" role="alert" hidden></p>
+
+      <div class="auth__actions">
+        <button type="submit" class="btn btn--primary" id="auth-submit">Sign in</button>
+        <button type="button" class="btn btn--outline" id="auth-cancel">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="main.js"></script>
+</body>
+</html>

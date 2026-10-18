@@ -1,0 +1,738 @@
+{
+  "id": "um-missoula",
+  "university": "University of Montana",
+  "short_name": "UM",
+  "campus": "Missoula, MT",
+  "catalog_edition": "2026-2027",
+  "dataset_note": "Facts copied from official UM pages, checked on 2026-10-17. A null field means the data was not found in the source.",
+  "theme": {
+    "primary": "#70002E",
+    "accent": "#BBDDE6",
+    "names": "Griz Maroon and Snowbowl Silver (Snowbowl Silver is a gradient from Glacier Sky #BBDDE6 to white; other heritage colors: Sunset Red #F9423A, Copper Climb #ED8B00)",
+    "source": "https://www.umt.edu/brand/colors.php"
+  },
+  "credit_system": {
+    "full_time_credits": 12,
+    "credit_hour": "One semester credit hour for each 15 hours of classroom contact plus 30 hours of outside preparation (or 30 hours of lab/practica/studio work plus about 15 hours of preparation; or at least 45 hours of internship or shop instruction). The catalog notes that in most baccalaureate programs a student must earn at least 15 credits per semester to graduate in four years; a bachelor's degree requires a minimum of 120 credits.",
+    "grading": "Letter grades with quality points: A 4.0, A- 3.7, B+ 3.3, B 3.0, B- 2.7, C+ 2.3, C 2.0, C- 1.7, D+ 1.3, D 1.0, D- 0.7. Use of + or - is limited to A-, B+, B-, C+, C-, D+, and D-.",
+    "math_placement": "First math course is chosen from a math placement exam score (ALEKS placement test; M01/M02/M03 scores from the Maplesoft Math Placement Exams in Moodle) and the math track tied to the student's major; the student and advisor use the placement chart to select the course, and students are strongly encouraged to register at or below their placement level.",
+    "sources": [
+      {
+        "url": "https://catalog.umt.edu/academics/policies-procedures/",
+        "checked": "2026-10-17"
+      },
+      {
+        "url": "https://catalog.umt.edu/academics/graduation-requirements/",
+        "checked": "2026-10-17"
+      },
+      {
+        "url": "https://www.umt.edu/office-student-success/for-students/mathplacement/regularmath.php",
+        "checked": "2026-10-17"
+      }
+    ]
+  },
+  "majors": [
+    {
+      "id": "cs-bs-software-engineering",
+      "name": "Computer Science B.S. - Software Engineering",
+      "department": "Computer Science",
+      "college": "College of Science",
+      "total_credits": 120,
+      "accreditation": null,
+      "description": "Computer Science at UM is offered with concentrations in algorithm design, data science, mathematical sciences or software engineering; the program page notes that UM's computer science majors routinely receive paid internships at local and international tech firms. Required math: M 171 Calculus I or M 162 Applied Calculus, M 225 Introduction to Discrete Mathematics, plus one upper-division math elective (M 361, M 362, M 414, M 440, M 485 or STAT 421).",
+      "interest_tags": [
+        "programming",
+        "coding",
+        "software",
+        "apps",
+        "web development",
+        "computers",
+        "algorithms",
+        "databases"
+      ],
+      "math_intensity": "high",
+      "key_courses": [
+        {
+          "code": "CSCI 150",
+          "title": "Introduction to Computer Science",
+          "year": "Freshman"
+        },
+        {
+          "code": "CSCI 151",
+          "title": "Interdisciplinary Computer Science I",
+          "year": "Freshman"
+        },
+        {
+          "code": "CSCI 181",
+          "title": "Web Design and Programming",
+          "year": "Freshman"
+        },
+        {
+          "code": "CSCI 152",
+          "title": "Interdisciplinary Computer Science II",
+          "year": "Sophomore"
+        },
+        {
+          "code": "CSCI 232",
+          "title": "Intermediate Data Structures and Algorithms",
+          "year": "Sophomore"
+        },
+        {
+          "code": "M 225",
+          "title": "Introduction to Discrete Mathematics",
+          "year": "Sophomore"
+        },
+        {
+          "code": "CSCI 332",
+          "title": "Advanced Data Structures and Algorithms",
+          "year": "Junior"
+        },
+        {
+          "code": "CSCI 340",
+          "title": "Database Design",
+          "year": "Junior"
+        },
+        {
+          "code": "CSCI 426",
+          "title": "Software Design & Development I",
+          "year": "Senior"
+        },
+        {
+          "code": "CSCI 427",
+          "title": "Software Design and Development II",
+          "year": "Senior"
+        }
+      ],
+      "career_outcomes": "The program page lists jobs such as Computer Programmer, Software Engineer, Software Developer, Network Administrator, Computer Games Developer, Sensor Analyst, Web Developer, Researcher and Data Scientist.",
+      "first_thing_to_check": "Take CSCI 150 Introduction to Computer Science in your first autumn semester to see if programming fits you, and check your math placement for M 171/M 162.",
+      "sources": [
+        {
+          "url": "https://catalog.umt.edu/colleges-schools-programs/science/computer-science/bs-computer-science-software-engineering/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.umt.edu/academics/programs/computer-science/default.php",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "accounting-bsba",
+      "name": "Accounting B.S. in Business Administration",
+      "department": "Department of Accounting and Finance",
+      "college": "College of Business",
+      "total_credits": 120,
+      "accreditation": "AACSB International (accounting programs hold separate AACSB accounting accreditation in addition to the College of Business AACSB accreditation)",
+      "description": "The undergraduate accounting program is committed to preparing students to apply accounting and business knowledge in organizations. Students develop competence in a broad range of accounting practices. Required math: one of M 115, M 121, M 151 or M 162, plus one statistics course (STAT 216 preferred).",
+      "interest_tags": [
+        "business",
+        "money",
+        "accounting",
+        "finance",
+        "taxes",
+        "numbers",
+        "auditing",
+        "CPA"
+      ],
+      "math_intensity": "moderate",
+      "key_courses": [
+        {
+          "code": "BGEN 105S",
+          "title": "Introduction to Business",
+          "year": "Freshman"
+        },
+        {
+          "code": "ACTG 201",
+          "title": "Principles of Financial Accounting",
+          "year": "Sophomore"
+        },
+        {
+          "code": "ACTG 202",
+          "title": "Principles of Managerial Accounting",
+          "year": "Sophomore"
+        },
+        {
+          "code": "BMIS 270",
+          "title": "MIS Foundations for Business",
+          "year": "Sophomore"
+        },
+        {
+          "code": "ACTG 305",
+          "title": "Corporate Reporting I",
+          "year": "Junior"
+        },
+        {
+          "code": "ACTG 321",
+          "title": "Accounting Information Systems I",
+          "year": "Junior"
+        },
+        {
+          "code": "ACTG 401",
+          "title": "Federal Income Taxation",
+          "year": "Senior"
+        },
+        {
+          "code": "ACTG 411",
+          "title": "Auditing I",
+          "year": "Senior"
+        },
+        {
+          "code": "BGEN 499",
+          "title": "Strategic Management",
+          "year": "Senior"
+        }
+      ],
+      "career_outcomes": "The program page lists Certified Public Accountant, personal financial advisor, auditor, financial analyst, forensic accountant, environmental accountant and actuary; it states over 90% of graduates are employed in their field or accepted to graduate school within three months of graduation and 80% of students complete at least one internship.",
+      "first_thing_to_check": "Take BGEN 105S Introduction to Business in your first autumn semester, then ACTG 201 Principles of Financial Accounting in sophomore autumn.",
+      "sources": [
+        {
+          "url": "https://catalog.umt.edu/colleges-schools-programs/business/accounting-finance/bs-accounting/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.umt.edu/academics/programs/accounting/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "wildlife-bio-bs-terrestrial",
+      "name": "Wildlife Biology B.S. - Terrestrial",
+      "department": "Wildlife Biology Department",
+      "college": "W.A. Franke College of Forestry and Conservation",
+      "total_credits": 120,
+      "accreditation": null,
+      "description": "Wildlife Biology at the University of Montana has been training wildlife professionals since 1936; the terrestrial concentration focuses on birds and mammals and their habitats. The major requires a minimum GPA of 2.5. Required math: M 162 Applied Calculus or M 171 Calculus I, plus WILD 245 Wildlife Data, Inference, and Statistics.",
+      "interest_tags": [
+        "animals",
+        "wildlife",
+        "nature",
+        "outdoors",
+        "ecology",
+        "conservation",
+        "biology",
+        "hunting and fishing"
+      ],
+      "math_intensity": "moderate",
+      "key_courses": [
+        {
+          "code": "WILD 180",
+          "title": "Careers in Wildlife Biology",
+          "year": "Freshman"
+        },
+        {
+          "code": "BIOB 160",
+          "title": "Principles of Living Systems",
+          "year": "Freshman"
+        },
+        {
+          "code": "BIOB 170N",
+          "title": "Principles of Biological Diversity",
+          "year": "Freshman"
+        },
+        {
+          "code": "WILD 245",
+          "title": "Wildlife Data, Inference, and Statistics",
+          "year": "Sophomore"
+        },
+        {
+          "code": "WILD 270",
+          "title": "Wildlife Techniques",
+          "year": "Sophomore"
+        },
+        {
+          "code": "BIOB 272",
+          "title": "Genetics and Evolution",
+          "year": "Sophomore"
+        },
+        {
+          "code": "BIOE 370",
+          "title": "General Ecology",
+          "year": "Junior"
+        },
+        {
+          "code": "WILD 370",
+          "title": "Wildlife Habitat Conservation & Management",
+          "year": "Senior"
+        },
+        {
+          "code": "WILD 470",
+          "title": "Conservation of Wildlife Populations",
+          "year": "Senior"
+        }
+      ],
+      "career_outcomes": "The program page lists wildlife and/or fisheries biologist, wildlife conservation officer/game warden, wildlife/terrestrial program manager, wildlife researcher, and wildlife and/or fisheries technician.",
+      "first_thing_to_check": "Take WILD 180 Careers in Wildlife Biology in your first autumn semester, alongside BIOB 160 and CHMY 121N.",
+      "sources": [
+        {
+          "url": "https://catalog.umt.edu/colleges-schools-programs/forestry-conservation/bs-wildlife-biology-terrestrial/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.umt.edu/academics/programs/wildlife-biology-terrestrial/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "psychology-ba",
+      "name": "Psychology B.A.",
+      "department": "Department of Psychology",
+      "college": "College of Humanities and Social Sciences",
+      "total_credits": 120,
+      "accreditation": null,
+      "description": "Psychology at the University of Montana is one of the largest programs on campus. Students must complete a minimum of 60 credits in non-psychology courses. Required math: one of M 115, M 121, M 151, M 162 or M 171, plus PSYX 222 Psychological Statistics (or STAT 216).",
+      "interest_tags": [
+        "people",
+        "mind",
+        "behavior",
+        "mental health",
+        "counseling",
+        "helping others",
+        "research",
+        "brain"
+      ],
+      "math_intensity": "low",
+      "key_courses": [
+        {
+          "code": "PSYX 100S",
+          "title": "Intro to Psychology",
+          "year": "Freshman"
+        },
+        {
+          "code": "PSYX 120",
+          "title": "Introduction to Psychological Research Methods",
+          "year": "Freshman"
+        },
+        {
+          "code": "PSYX 222",
+          "title": "Psychological Statistics",
+          "year": "Sophomore"
+        },
+        {
+          "code": "PSYX 250N",
+          "title": "Fundamentals of Biological Psychology",
+          "year": null
+        },
+        {
+          "code": "PSYX 280",
+          "title": "Fundamentals of Memory and Cognition",
+          "year": null
+        },
+        {
+          "code": "PSYX 330",
+          "title": "Child Development",
+          "year": null
+        },
+        {
+          "code": "PSYX 340",
+          "title": "Psychological Disorders",
+          "year": null
+        },
+        {
+          "code": "PSYX 360",
+          "title": "Social Psychology",
+          "year": null
+        }
+      ],
+      "career_outcomes": "The program page lists social worker, career counselor, human resources specialist, corrections officer, business/marketing/sales, real estate agent, preschool teacher, politics, business owner, statistician and advocacy; school psychologist, psychologist, mental health counselor and attorney require additional graduate training.",
+      "first_thing_to_check": "Take PSYX 100S Intro to Psychology in your first autumn semester.",
+      "sources": [
+        {
+          "url": "https://catalog.umt.edu/colleges-schools-programs/humanities-sciences/psychology/ba-psychology/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.umt.edu/academics/programs/psychology/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://catalog.umt.edu/colleges-schools-programs/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "journalism-ba",
+      "name": "Journalism B.A.",
+      "department": "School of Journalism",
+      "college": "College of the Arts and Media",
+      "total_credits": 120,
+      "accreditation": "Accrediting Council on Education in Journalism and Mass Communications (ACEJMC)",
+      "description": "The School of Journalism at the University of Montana is a nationally top-10 ranked, ACEJMC-accredited program. In the first three or four semesters of study, students take courses in the major and in the liberal arts and sciences. No math course is listed in the major requirements (only general education math applies).",
+      "interest_tags": [
+        "writing",
+        "news",
+        "reporting",
+        "media",
+        "video",
+        "photography",
+        "storytelling",
+        "podcasts"
+      ],
+      "math_intensity": "low",
+      "key_courses": [
+        {
+          "code": "JRNL 100H",
+          "title": "Journalism and American Society",
+          "year": "Freshman"
+        },
+        {
+          "code": "JRNL 170",
+          "title": "Writing the News",
+          "year": "Freshman"
+        },
+        {
+          "code": "JRNL 257A",
+          "title": "Beginning Video and Photojournalism",
+          "year": "Freshman"
+        },
+        {
+          "code": "JRNL 270",
+          "title": "Reporting the News",
+          "year": "Sophomore"
+        },
+        {
+          "code": "JRNL 300",
+          "title": "First Amendment and Media Law",
+          "year": "Junior"
+        },
+        {
+          "code": "JRNL 498",
+          "title": "Supervised Internship",
+          "year": "Junior"
+        },
+        {
+          "code": "JRNL 400",
+          "title": "Ethics & Trends in News Media",
+          "year": "Senior"
+        }
+      ],
+      "career_outcomes": "The program page lists reporter, editor, freelance or magazine writer, news producer, broadcaster, podcaster, audio producer, TV anchor, video creator, social media strategist, PR specialist, film and video photographer/editor, and photographer.",
+      "first_thing_to_check": "Take JRNL 100H Journalism and American Society in your first autumn semester, then JRNL 170 Writing the News in spring.",
+      "sources": [
+        {
+          "url": "https://catalog.umt.edu/colleges-schools-programs/arts-media/journalism/ba-journalism/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.umt.edu/academics/programs/journalism/",
+          "checked": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "advisors": [
+    {
+      "id": "uac",
+      "name": "Undergraduate Advising Center",
+      "role": "Advising center",
+      "advises_majors": [
+        "all"
+      ],
+      "advises_note": "Assigns professional advisors to undeclared/exploratory students, pre-health tracks (Pre-Medical Sciences, Pre-Nursing, Pre-Physical Therapy) and undergraduate non-degree-seeking students; maintains the advising directory that lists the advisor for every major.",
+      "office": "Aber Hall, 4th Floor, 32 Campus Dr., Missoula, MT 59812",
+      "phone": "(406) 243-2835",
+      "email": "OfficeForStudentSuccess@umontana.edu",
+      "url": "https://www.umt.edu/undergrad-advising-center/",
+      "sources": [
+        {
+          "url": "https://catalog.umt.edu/academics/advising/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.umt.edu/undergrad-advising-center/new-student-advising-directory.php",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "advisor-cs-grove",
+      "name": "Cooper Grove",
+      "role": "New student advisor",
+      "advises_majors": [
+        "cs-bs-software-engineering"
+      ],
+      "advises_note": "Listed as the new-student advisor for Computer Science.",
+      "office": null,
+      "phone": null,
+      "email": "cooper.grove@mso.umt.edu",
+      "url": "https://www.umt.edu/undergrad-advising-center/new-student-advising-directory.php",
+      "sources": [
+        {
+          "url": "https://www.umt.edu/undergrad-advising-center/new-student-advising-directory.php",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "advisor-business",
+      "name": "Chloe Brown (last names A-L) and Sarina Hamer (last names M-Z)",
+      "role": "New student advisors, Business Administration",
+      "advises_majors": [
+        "accounting-bsba"
+      ],
+      "advises_note": "Listed for Business Administration (all College of Business programs); Accounting is not listed separately. The accounting degree map tells students to confirm course terms with the College of Business GSSC.",
+      "office": null,
+      "phone": null,
+      "email": "business@mso.umt.edu",
+      "url": "https://www.umt.edu/undergrad-advising-center/new-student-advising-directory.php",
+      "sources": [
+        {
+          "url": "https://www.umt.edu/undergrad-advising-center/new-student-advising-directory.php",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.umt.edu/undergrad-advising-center/advisingdirectory.php",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "advisor-wildlife",
+      "name": "Chenoa Harrington (last names A-O) and Kylie Mathews (last names P-Z)",
+      "role": "New student advisors, Wildlife Biology",
+      "advises_majors": [
+        "wildlife-bio-bs-terrestrial"
+      ],
+      "advises_note": "Split by student last name.",
+      "office": null,
+      "phone": null,
+      "email": "chenoa.harrington@mso.umt.edu (A-O); kylie.mathews@umontana.edu (P-Z)",
+      "url": "https://www.umt.edu/undergrad-advising-center/new-student-advising-directory.php",
+      "sources": [
+        {
+          "url": "https://www.umt.edu/undergrad-advising-center/new-student-advising-directory.php",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "advisor-psychology",
+      "name": "Steve Edwards (last names A-F) and Rachel Towery (last names G-Z)",
+      "role": "New student advisors, Psychology",
+      "advises_majors": [
+        "psychology-ba"
+      ],
+      "advises_note": "Split by student last name. The general advising directory also lists Allen Szalda-Petree for Psychology.",
+      "office": null,
+      "phone": null,
+      "email": "stephan.edwards@mso.umt.edu (A-F); rachel.towery@mso.umt.edu (G-Z)",
+      "url": "https://www.umt.edu/undergrad-advising-center/new-student-advising-directory.php",
+      "sources": [
+        {
+          "url": "https://www.umt.edu/undergrad-advising-center/new-student-advising-directory.php",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.umt.edu/undergrad-advising-center/advisingdirectory.php",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "advisor-journalism",
+      "name": "Jessica Anderson",
+      "role": "New student advisor, Journalism",
+      "advises_majors": [
+        "journalism-ba"
+      ],
+      "advises_note": "Listed as new-student advisor for Journalism; the general (continuing student) advising directory lists Lee Banville and Ray Fanning for Journalism.",
+      "office": null,
+      "phone": null,
+      "email": "jessica.anderson@mso.umt.edu",
+      "url": "https://www.umt.edu/undergrad-advising-center/new-student-advising-directory.php",
+      "sources": [
+        {
+          "url": "https://www.umt.edu/undergrad-advising-center/new-student-advising-directory.php",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.umt.edu/undergrad-advising-center/advisingdirectory.php",
+          "checked": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "fall-jobs-fest-2026",
+      "name": "Fall Jobs Fest",
+      "date": "2026-09-08",
+      "time": "11:00 am - 2:00 pm",
+      "location": "The Oval",
+      "majors": [
+        "all"
+      ],
+      "audience": "Students seeking part-time jobs, work-study and non-work-study roles, volunteer opportunities and internships (part of Fall 2026 Career Days)",
+      "expected": null,
+      "sources": [
+        {
+          "url": "https://careerhub.umt.edu/resources/career-days/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://careerhub.umt.edu/resources/attend-a-career-fair/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "coffee-chats-degree-2026",
+      "name": "Coffee Chats: What Can I Do with my Degree?",
+      "date": "2026-09-10",
+      "time": "2:00 - 4:00 pm",
+      "location": "Eck Hall, 2nd Floor Student Lounge",
+      "majors": [
+        "all"
+      ],
+      "audience": "All students and majors, especially those undecided about career options (non-STEM focus); part of Fall 2026 Career Days",
+      "expected": null,
+      "sources": [
+        {
+          "url": "https://careerhub.umt.edu/resources/career-days/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "meet-the-firms-2026",
+      "name": "Meet the Firms",
+      "date": "2026-09-22",
+      "time": "12:30 - 3:00 pm",
+      "location": "Gallagher Business Building Outdoor Courtyard",
+      "majors": [
+        "accounting-bsba"
+      ],
+      "audience": "Accounting and MIS students",
+      "expected": null,
+      "sources": [
+        {
+          "url": "https://www.umt.edu/business-student-success/for-employers/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "business-career-expo-2026",
+      "name": "Business Career Expo",
+      "date": "2026-10-14",
+      "time": "12:30 - 2:30 pm",
+      "location": "Gallagher Business Building Courtyard",
+      "majors": [
+        "accounting-bsba"
+      ],
+      "audience": "All business majors",
+      "expected": null,
+      "sources": [
+        {
+          "url": "https://www.umt.edu/business-student-success/for-employers/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "healthcare-professions-fair-2026",
+      "name": "Healthcare Professions Career Fair",
+      "date": "2026-10-19",
+      "time": "12:00 - 3:00 pm",
+      "location": "UC 300 Rooms (University Center, third floor)",
+      "majors": [
+        "all"
+      ],
+      "audience": "All UM students invited; students interested in health careers especially encouraged",
+      "expected": null,
+      "sources": [
+        {
+          "url": "https://careerhub.umt.edu/events/2026/10/19/healthcare-professions-career-fair/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "border-patrol-virtual-expo-2026",
+      "name": "U.S. Border Patrol Virtual Career Expo",
+      "date": "2026-10-20",
+      "time": "9:00 am - 12:00 pm",
+      "location": "Virtual",
+      "majors": [
+        "all"
+      ],
+      "audience": "Single-employer virtual career expo listed on the UM Career Center events calendar",
+      "expected": null,
+      "sources": [
+        {
+          "url": "https://careerhub.umt.edu/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "spring-career-days-2027",
+      "name": "Spring 2027 Career Days / career fair",
+      "date": null,
+      "time": null,
+      "location": null,
+      "majors": [
+        "all"
+      ],
+      "audience": "All students",
+      "expected": "No Spring 2027 career fair or Career Days dates are published yet on the UM Career Center (ELCS) site; the Career Days page lists only Fall 2026 (Sept. 8-10). ELCS news URLs show a 'Career Days 2025' article dated March 2025, suggesting spring Career Days are typically held around March. Check Handshake or contact ELCS at (406) 243-2022 / elcs@umontana.edu.",
+      "sources": [
+        {
+          "url": "https://careerhub.umt.edu/resources/career-days/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.umt.edu/experiential-learning-career-success/about-us/elcs-news/25.3.5.career.days.php",
+          "checked": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "career_resources": [
+    {
+      "name": "Experiential Learning and Career Success (ELCS) Career Center",
+      "what": "UM's central career center: career coaching and career peer appointments, Career Days, resume/interview guides. Aber Hall, 2nd Floor, 32 Campus Drive; (406) 243-2022; elcs@umontana.edu; Mon-Fri 8am-5pm.",
+      "url": "https://careerhub.umt.edu/"
+    },
+    {
+      "name": "Handshake",
+      "what": "UM's job and internship platform (about 6,000 job opportunities posted each month); used for career fair registration and employer connections.",
+      "url": "https://careerhub.umt.edu/"
+    },
+    {
+      "name": "Career Days",
+      "what": "ELCS recruiting and career event series (Fall 2026: Sept. 8-10).",
+      "url": "https://careerhub.umt.edu/resources/career-days/"
+    },
+    {
+      "name": "Griz Career Closet",
+      "what": "Free or low-cost professional clothing for interviews and work.",
+      "url": "https://careerhub.umt.edu/"
+    },
+    {
+      "name": "Big Interview",
+      "what": "Interview practice platform offered through the Career Center.",
+      "url": "https://careerhub.umt.edu/"
+    },
+    {
+      "name": "Strong Interest Inventory",
+      "what": "Career interest assessment offered through the Career Center.",
+      "url": "https://careerhub.umt.edu/"
+    },
+    {
+      "name": "Micro-Internships (Parker Dewey)",
+      "what": "Short, paid project-based work with employers.",
+      "url": "https://careerhub.umt.edu/"
+    },
+    {
+      "name": "College of Business Student Success Center / Career Development Program",
+      "what": "Business career support and employer recruiting events (Meet the Firms, Business Career Expo); contact business@umontana.edu, (406) 243-5971.",
+      "url": "https://www.umt.edu/business-career-development/default.php"
+    }
+  ],
+  "not_in_dataset": [
+    "All other UM programs"
+  ]
+}

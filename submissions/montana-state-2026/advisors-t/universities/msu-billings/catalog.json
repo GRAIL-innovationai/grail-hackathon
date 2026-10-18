@@ -1,0 +1,760 @@
+{
+  "id": "msu-billings",
+  "university": "Montana State University Billings",
+  "short_name": "MSU Billings",
+  "campus": "Billings, MT",
+  "catalog_edition": "2026-2027",
+  "dataset_note": "Facts copied from official MSU Billings pages, checked on 2026-10-17. A null field means the data was not found in the source.",
+  "theme": {
+    "primary": "#15356D",
+    "accent": "#F0B310",
+    "names": "MSUB Blue and MSUB Gold",
+    "source": "https://www.msubillings.edu/ucam/guidelines.htm"
+  },
+  "credit_system": {
+    "full_time_credits": 12,
+    "credit_hour": "The credit hour is used as a unit of instruction to quantify student learning; one credit of instruction should be approximated by 45 hours of combined direct instruction (counting a 60-minute class as 1 hour of instruction) and student work. The catalog's Course Terms page adds that MSU Billings requires 37.5 contact hours for a traditional 3-credit class.",
+    "grading": "Letter grades on a 4-point scale (A=4, B=3, C=2, D=1, F=0). General Education courses require a C- or better and an overall 2.0 GPA in the General Education core.",
+    "math_placement": "Placement is based on the EdReady initial math placement assessment: the initial score maps to a placement level (e.g., 70+ = Level 45, 55-65 = Level 30, 45 and below = Level 10), and students can raise it by completing the EdReady Study Path. Advisors recommend which math course to register for based on the score (University Campus Advising 406-657-2240).",
+    "sources": [
+      {
+        "url": "https://catalog.msubillings.edu/undergraduate/glossary-terms-definitions/",
+        "checked": "2026-10-17"
+      },
+      {
+        "url": "https://catalog.msubillings.edu/undergraduate/course-terms-definitions/",
+        "checked": "2026-10-17"
+      },
+      {
+        "url": "https://catalog.msubillings.edu/undergraduate/general-education-requirements/",
+        "checked": "2026-10-17"
+      },
+      {
+        "url": "https://www.msubillings.edu/edready/edready-initial-math-placement-score.htm",
+        "checked": "2026-10-17"
+      }
+    ]
+  },
+  "majors": [
+    {
+      "id": "bsba-management",
+      "name": "Business Administration Management Option, B.S.",
+      "department": "Department of Business Administration",
+      "college": "College of Business",
+      "total_credits": 120,
+      "accreditation": "Association to Advance Collegiate Schools of Business (AACSB) - College of Business",
+      "description": "Offered online. Per the College of Business, business programs at MSU Billings prepare graduates for numerous career paths and leadership roles in business; the Management option focuses on the functions of management, decision making and leading workers. Required math: M 143 Finite Mathematics and STAT 216 Introduction to Statistics, plus quantitative business courses such as BGEN 240.",
+      "interest_tags": [
+        "business",
+        "management",
+        "leadership",
+        "entrepreneurship",
+        "people",
+        "organizations",
+        "online"
+      ],
+      "math_intensity": "moderate",
+      "key_courses": [
+        {
+          "code": "BGEN 105A",
+          "title": "Introduction to Business",
+          "year": "Freshman"
+        },
+        {
+          "code": "M 143",
+          "title": "Finite Mathematics",
+          "year": "Freshman"
+        },
+        {
+          "code": "STAT 216",
+          "title": "Introduction to Statistics",
+          "year": "Freshman"
+        },
+        {
+          "code": "ACTG 201",
+          "title": "Principles of Fin Acct",
+          "year": "Sophomore"
+        },
+        {
+          "code": "BGEN 240",
+          "title": "Intro Business Data Analysis",
+          "year": "Sophomore"
+        },
+        {
+          "code": "BMGT 335",
+          "title": "Management & Organization",
+          "year": "Junior"
+        },
+        {
+          "code": "BMGT 329",
+          "title": "Human Resource Management",
+          "year": "Junior"
+        },
+        {
+          "code": "BMGT 353",
+          "title": "Organizational Behavior",
+          "year": "Senior"
+        },
+        {
+          "code": "BMGT 448",
+          "title": "Entrepreneurship",
+          "year": "Senior"
+        },
+        {
+          "code": "BGEN 499",
+          "title": "Capstone",
+          "year": "Senior"
+        }
+      ],
+      "career_outcomes": "Business programs at MSU Billings prepare graduates for numerous career paths and leadership roles in business, enabling graduates to immediately engage as productive members of local, regional, and global economic and social systems.",
+      "first_thing_to_check": "Take BGEN 105A Introduction to Business in the first fall semester to see if business fits you.",
+      "sources": [
+        {
+          "url": "https://catalog.msubillings.edu/undergraduate/college-business/department-business-administration/bs-business-administration-management-option/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://catalog.msubillings.edu/undergraduate/college-business/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "psychology-bs",
+      "name": "Psychology, B.S.",
+      "department": "Department of Psychology",
+      "college": "College of Liberal Arts and Social Sciences",
+      "total_credits": 120,
+      "accreditation": null,
+      "description": "Per the department, a bachelor's degree in Psychology can serve as a general liberal arts degree, as preparation for a career in psychology, or as preparation for graduate school; students design and execute research and complete supervised work in a professional setting. Required math: a General Education math course (STAT 141 or STAT 216) plus PSYX 222 Psychological Statistics, and a 6-8 credit Mathematics/Computer Science or Language option.",
+      "interest_tags": [
+        "psychology",
+        "people",
+        "mind",
+        "behavior",
+        "research",
+        "counseling",
+        "helping",
+        "science"
+      ],
+      "math_intensity": "moderate",
+      "key_courses": [
+        {
+          "code": "PSYX 100",
+          "title": "Intro to Psychology",
+          "year": "Freshman"
+        },
+        {
+          "code": "COLS 108",
+          "title": "The College Experience",
+          "year": "Freshman"
+        },
+        {
+          "code": "PSYX 225",
+          "title": "Research Design and Analysis",
+          "year": "Freshman"
+        },
+        {
+          "code": "PSYX 226",
+          "title": "Research Design and Analysis L",
+          "year": "Freshman"
+        },
+        {
+          "code": "PSYX 222",
+          "title": "Psychological Statistics",
+          "year": "Sophomore"
+        },
+        {
+          "code": "PSYX 400",
+          "title": "History & System in Psychology",
+          "year": "Junior"
+        },
+        {
+          "code": "PSYX 499",
+          "title": "Senior Thesis",
+          "year": "Senior"
+        }
+      ],
+      "career_outcomes": "Psychology majors develop excellent interpersonal, research, writing, and analytical skills and are attractive to a wide variety of employers; to prepare for a psychology career with a bachelor's degree, students are encouraged to consult faculty and complete internships in the Billings community, and those planning graduate study should get a broad background in psychology and a high GPA.",
+      "first_thing_to_check": "Take PSYX 100 Intro to Psychology in the first fall semester (a grade of C or higher is required in major psychology courses).",
+      "sources": [
+        {
+          "url": "https://catalog.msubillings.edu/undergraduate/college-liberal-arts-social-sciences/department-psychology/bs-psychology/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://catalog.msubillings.edu/undergraduate/college-liberal-arts-social-sciences/department-psychology/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "elementary-education-bsed",
+      "name": "Broadfield Major in Elementary Education, B.S.Ed.",
+      "department": "Department of Educational Theory and Practice",
+      "college": "College of Education",
+      "total_credits": 120,
+      "accreditation": "Educator preparation programs accredited by CAEP (Council for the Accreditation of Educator Preparation); all programs that include educator licensure are accredited by the Montana Board of Public Education.",
+      "description": "The College of Education provides an array of undergraduate programs for educator preparation; this major prepares students to create inclusive, culturally responsive K-8 classrooms and design student-centered instruction, ending with a full semester of student teaching. Required math: M 130 Math for Elementary Teachers I and M 131 Math for Elementary Teacher II, plus EDU 397C Methods: K-8 Mathematics.",
+      "interest_tags": [
+        "teaching",
+        "kids",
+        "education",
+        "school",
+        "people",
+        "literacy",
+        "classroom"
+      ],
+      "math_intensity": "moderate",
+      "key_courses": [
+        {
+          "code": "EDU 105",
+          "title": "Education and Democracy",
+          "year": "Freshman"
+        },
+        {
+          "code": "M 130",
+          "title": "Math for Elementary Teachers I",
+          "year": "Freshman"
+        },
+        {
+          "code": "M 131",
+          "title": "Math for Elementary Teacher II",
+          "year": "Freshman"
+        },
+        {
+          "code": "EDSP 204",
+          "title": "Intro to Tchng Exceptnl Lrnrs",
+          "year": "Freshman"
+        },
+        {
+          "code": "EDU 220",
+          "title": "Human Growth & Development",
+          "year": "Sophomore"
+        },
+        {
+          "code": "EDU 270",
+          "title": "Instructional Technology",
+          "year": "Sophomore"
+        },
+        {
+          "code": "EDU 331",
+          "title": "Lit & Literacy for Children",
+          "year": "Junior"
+        },
+        {
+          "code": "EDU 397C",
+          "title": "Methods: K-8 Mathematics",
+          "year": "Junior"
+        },
+        {
+          "code": "EDU 353",
+          "title": "Junior Field Experience",
+          "year": "Senior"
+        },
+        {
+          "code": "EDU 495B",
+          "title": "Student Teaching: K-8",
+          "year": "Senior"
+        }
+      ],
+      "career_outcomes": "The catalog has no career-outcomes section for this major. The College of Education describes it as educator preparation; licensure requires student teaching and a qualifying Praxis Subject Assessment score, with applications approved by the college's Licensure Specialist before going to the state licensure office.",
+      "first_thing_to_check": "Take EDU 105 Education and Democracy in the first fall semester to see if teaching fits you.",
+      "sources": [
+        {
+          "url": "https://catalog.msubillings.edu/undergraduate/college-education/department-educational-theory-practice/bsed-broadfield-major-elementary-education/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://catalog.msubillings.edu/undergraduate/college-education/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "health-administration-bs",
+      "name": "Health Administration, B.S.",
+      "department": "Department of Health Sciences and Human Performance",
+      "college": "College of Health Professions and Science",
+      "total_credits": 120,
+      "accreditation": null,
+      "description": "Offered online. Per the catalog, Health Administration is one of the fastest growing professions in the United States, and the program is designed to meet the rapidly evolving demands of a dynamic industry; it requires an internship. Required math: STAT 216 Introduction to Statistics, plus accounting (ACTG 201, ACTG 202) and economics (ECNS 201) in the business core.",
+      "interest_tags": [
+        "healthcare",
+        "hospitals",
+        "management",
+        "business",
+        "health",
+        "leadership",
+        "online"
+      ],
+      "math_intensity": "moderate",
+      "key_courses": [
+        {
+          "code": "HTH 270",
+          "title": "Global Health Issues",
+          "year": "Freshman"
+        },
+        {
+          "code": "ACTG 201",
+          "title": "Principles of Fin Acct",
+          "year": "Freshman"
+        },
+        {
+          "code": "HADM 305",
+          "title": "Survey of US Healthcare System",
+          "year": "Sophomore"
+        },
+        {
+          "code": "STAT 216",
+          "title": "Introduction to Statistics",
+          "year": "Sophomore"
+        },
+        {
+          "code": "HADM 307",
+          "title": "Health Informatics",
+          "year": "Sophomore"
+        },
+        {
+          "code": "HADM 335",
+          "title": "Health Law and Ethics",
+          "year": "Junior"
+        },
+        {
+          "code": "HADM 425",
+          "title": "Fin Mgmt & Budgeting in Hlthcr",
+          "year": "Junior"
+        },
+        {
+          "code": "HADM 445",
+          "title": "Managing Hlthcare Orgnztns",
+          "year": "Junior"
+        },
+        {
+          "code": "HADM 498",
+          "title": "Internship/Cooperative Educ",
+          "year": "Senior"
+        },
+        {
+          "code": "HADM 499",
+          "title": "Capstone",
+          "year": "Senior"
+        }
+      ],
+      "career_outcomes": "Careers in health administration include a wide range of management and administrative positions in hospitals, ambulatory care, physician group practices, laboratories, pharmacies, social service agencies, long-term care facilities, rehabilitation centers, home health organizations, managed care plans, regulatory agencies, and health insurance companies.",
+      "first_thing_to_check": "Take HTH 270 Global Health Issues in the first spring semester, then HADM 305 Survey of US Healthcare System in year two.",
+      "sources": [
+        {
+          "url": "https://catalog.msubillings.edu/undergraduate/college-health-professions-science/department-health-sciences-and-human-performance/bs-health-administration/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://catalog.msubillings.edu/undergraduate/college-health-professions-science/department-health-sciences-and-human-performance/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "communication-ba",
+      "name": "Communication, B.A.",
+      "department": "Department of Communication",
+      "college": "College of Liberal Arts and Social Sciences",
+      "total_credits": 120,
+      "accreditation": null,
+      "description": "Offered online. The B.A. in Communication examines mediated, organizational, and public relations communication processes through theoretical grounding and applied knowledge, teaching writing, speaking, and critical thinking skills with internship opportunities. Required math: no math beyond the 3-credit General Education mathematics requirement; the major requires an 8-credit modern language requirement.",
+      "interest_tags": [
+        "communication",
+        "media",
+        "public relations",
+        "writing",
+        "speaking",
+        "marketing",
+        "people",
+        "online"
+      ],
+      "math_intensity": "low",
+      "key_courses": [
+        {
+          "code": "COMX 111",
+          "title": "Intro to Public Speaking",
+          "year": "Freshman"
+        },
+        {
+          "code": "COMX 300",
+          "title": "Exploring Comm Studies",
+          "year": "Sophomore"
+        },
+        {
+          "code": "COMX 330",
+          "title": "Principles of Media Studies",
+          "year": "Junior"
+        },
+        {
+          "code": "COMX 341",
+          "title": "Public Advocacy",
+          "year": "Junior"
+        },
+        {
+          "code": "COMX 351",
+          "title": "Principles of Public Relations",
+          "year": "Junior"
+        },
+        {
+          "code": "COMX 431",
+          "title": "New Media Skills",
+          "year": "Junior"
+        },
+        {
+          "code": "COMX 400",
+          "title": "Communication Theory",
+          "year": "Senior"
+        },
+        {
+          "code": "COMX 460",
+          "title": "Research Methods",
+          "year": "Senior"
+        },
+        {
+          "code": "COMX 481",
+          "title": "Campaign Planning",
+          "year": "Senior"
+        },
+        {
+          "code": "COMX 499",
+          "title": "Capstone",
+          "year": "Senior"
+        }
+      ],
+      "career_outcomes": "The degree is designed to prepare students to serve as public communication professionals within corporate, non-profit, government, healthcare, and education settings, and provides excellent preparation for graduate study in communication as well as law.",
+      "first_thing_to_check": "Take COMX 111 Intro to Public Speaking (recommended General Education communication course) in the first fall, then COMX 300 Exploring Comm Studies in year two.",
+      "sources": [
+        {
+          "url": "https://catalog.msubillings.edu/undergraduate/college-liberal-arts-social-sciences/department-communication-theatre/ba-communication/",
+          "checked": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "advisors": [
+    {
+      "id": "msub-advising-center",
+      "name": "Advising Center",
+      "role": "Advising center",
+      "advises_majors": [
+        "all"
+      ],
+      "advises_note": "All new, transfer, and returning students visit the Advising Center to begin their college experience; all first-time entering students must see an academic advisor before registering. Students are later assigned a faculty major advisor for upper-division planning, keeping their Advising Center advisor as a secondary advisor. City College advising: Room A017, 406-247-3019.",
+      "office": "Advising Commons, McMullen Hall #100 (First Floor West), 1500 University Drive, Billings, MT 59101",
+      "phone": "406-657-2240",
+      "email": "advising@msubillings.edu",
+      "url": "https://www.msubillings.edu/advise/",
+      "sources": [
+        {
+          "url": "https://www.msubillings.edu/advise/",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://catalog.msubillings.edu/undergraduate/advising-center/",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "justinann-lockhart",
+      "name": "Justinann Lockhart",
+      "role": "Academic Advisor, Advising Center",
+      "advises_majors": [
+        "bsba-management"
+      ],
+      "advises_note": "Primary advisor for new students in Business Admin (Accounting, Finance, Management, or Marketing).",
+      "office": "Advising Center, McMullen Hall #100",
+      "phone": "406-896-5926",
+      "email": "justinann.lockhart@msubillings.edu",
+      "url": "https://www.msubillings.edu/advise/AdvisorsByMajor.htm",
+      "sources": [
+        {
+          "url": "https://www.msubillings.edu/advise/AdvisorsByMajor.htm",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.msubillings.edu/advise/staff.asp",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "cade-nelson",
+      "name": "Cade Nelson",
+      "role": "Academic Advisor, Advising Center",
+      "advises_majors": [
+        "bsba-management"
+      ],
+      "advises_note": "Advisor for transfer/readmit students in Business Admin (Accounting, Finance, Management, or Marketing). A student is a transfer student after attempting 12 or more college-level credits after high school graduation.",
+      "office": "Advising Center, McMullen Hall #100",
+      "phone": "406-657-1618",
+      "email": "cade.nelson@msubillings.edu",
+      "url": "https://www.msubillings.edu/advise/AdvisorsByMajor.htm",
+      "sources": [
+        {
+          "url": "https://www.msubillings.edu/advise/AdvisorsByMajor.htm",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.msubillings.edu/advise/staff.asp",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "brynne-dotson",
+      "name": "Brynne Dotson",
+      "role": "Academic Advisor, Advising Center",
+      "advises_majors": [
+        "psychology-bs",
+        "health-administration-bs",
+        "communication-ba"
+      ],
+      "advises_note": "Primary advisor for new students in Psychology, Health Administration, and Communication.",
+      "office": "Advising Center, McMullen Hall #100",
+      "phone": "406-657-1615",
+      "email": "brynne.dotson@msubillings.edu",
+      "url": "https://www.msubillings.edu/advise/AdvisorsByMajor.htm",
+      "sources": [
+        {
+          "url": "https://www.msubillings.edu/advise/AdvisorsByMajor.htm",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.msubillings.edu/advise/staff.asp",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "skylar-rockwell",
+      "name": "Skylar Rockwell",
+      "role": "Academic Advisor & Transcript Evaluator, Advising Center",
+      "advises_majors": [
+        "psychology-bs",
+        "health-administration-bs",
+        "communication-ba"
+      ],
+      "advises_note": "Advisor for transfer/readmit students in Psychology, Health Administration, and Communication.",
+      "office": "Advising Center, McMullen Hall #100",
+      "phone": "406-657-2216",
+      "email": "skylar.rockwell@msubillings.edu",
+      "url": "https://www.msubillings.edu/advise/AdvisorsByMajor.htm",
+      "sources": [
+        {
+          "url": "https://www.msubillings.edu/advise/AdvisorsByMajor.htm",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.msubillings.edu/advise/staff.asp",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "nikki-aiken",
+      "name": "Nikki Aiken",
+      "role": "Academic Advisor, Advising Center",
+      "advises_majors": [
+        "elementary-education-bsed"
+      ],
+      "advises_note": "Listed for all Education students (Elementary Education).",
+      "office": "Advising Center, McMullen Hall #100",
+      "phone": "406-657-2233",
+      "email": "nichollette.aiken@msubillings.edu",
+      "url": "https://www.msubillings.edu/advise/AdvisorsByMajor.htm",
+      "sources": [
+        {
+          "url": "https://www.msubillings.edu/advise/AdvisorsByMajor.htm",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.msubillings.edu/advise/staff.asp",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "msub-international-advising",
+      "name": "Office of International Studies - Advising",
+      "role": "International student advising",
+      "advises_majors": [
+        "all"
+      ],
+      "advises_note": "Helps international students design a personal academic plan, complete writing and math placement tests (may be required without SAT/ACT scores; can be done online before arrival), submit foreign transcripts for evaluation (e.g., ECE or Spantran), and register for classes. The Advising Center staff list includes an International Admissions & Advising Specialist (Brittany Lind, 406-657-1786).",
+      "office": "Liberal Arts Building 700, 1500 University Dr., Billings, MT 59101",
+      "phone": "406-657-1705",
+      "email": "ois@msubillings.edu",
+      "url": "https://www.msubillings.edu/internationalstudies/isss/admitted/advising.htm",
+      "sources": [
+        {
+          "url": "https://www.msubillings.edu/internationalstudies/isss/admitted/advising.htm",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.msubillings.edu/advise/staff.asp",
+          "checked": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "float-your-way-to-success-2026",
+      "name": "Float Your Way to Success",
+      "date": "2026-10-08",
+      "time": "11:00 AM - 1:00 PM",
+      "location": "Career & Employment Services, Library 100",
+      "majors": [
+        "all"
+      ],
+      "audience": null,
+      "expected": null,
+      "sources": [
+        {
+          "url": "https://www.msubillings.edu/careers/upcoming.htm",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "jobs-and-java-fall-2026",
+      "name": "Jobs & Java",
+      "date": "2026-10-21",
+      "time": "10:00 AM - 12:00 PM",
+      "location": "City College Tech Commons and Health Science Building lobby",
+      "majors": [
+        "all"
+      ],
+      "audience": "City College and university students",
+      "expected": null,
+      "sources": [
+        {
+          "url": "https://www.msubillings.edu/careers/upcoming.htm",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "networking-mix-and-mingle-fall-2026",
+      "name": "Networking Mix & Mingle",
+      "date": "2026-11-04",
+      "time": "4:30 PM - 6:00 PM",
+      "location": "Glacier Room, Student Union Building",
+      "majors": [
+        "all"
+      ],
+      "audience": "Students, employers, faculty and staff from MSU Billings and City College programs; RSVP required",
+      "expected": null,
+      "sources": [
+        {
+          "url": "https://www.msubillings.edu/careers/upcoming.htm",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "employers-on-campus-2026-2027",
+      "name": "Employers on Campus",
+      "date": null,
+      "time": null,
+      "location": "MSU Billings campus",
+      "majors": [
+        "all"
+      ],
+      "audience": "Students from various programs (informal employer tabling)",
+      "expected": "Informal employer tabling sessions planned for September, October, November, February and April of the 2026-2027 year; specific dates not yet posted.",
+      "sources": [
+        {
+          "url": "https://www.msubillings.edu/careers/upcoming.htm",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "jobs-and-java-spring-2027",
+      "name": "Jobs & Java",
+      "date": "2027-02-17",
+      "time": "10:00 AM - 12:00 PM",
+      "location": "City College Tech Commons and Health Science Building lobby",
+      "majors": [
+        "all"
+      ],
+      "audience": "City College and university students",
+      "expected": null,
+      "sources": [
+        {
+          "url": "https://www.msubillings.edu/careers/upcoming.htm",
+          "checked": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "virtual-internship-job-fair-2027",
+      "name": "Virtual Internship & Job Fair",
+      "date": "2027-03-31",
+      "time": "10:00 AM - 4:00 PM",
+      "location": "Virtual, via CareerLink",
+      "majors": [
+        "all"
+      ],
+      "audience": "Students seeking full-time, part-time, and internship positions; students book time slots with employers in CareerLink starting in November",
+      "expected": null,
+      "sources": [
+        {
+          "url": "https://www.msubillings.edu/careers/upcoming.htm",
+          "checked": "2026-10-17"
+        },
+        {
+          "url": "https://www.msubillings.edu/careers/career-fair.htm",
+          "checked": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "career_resources": [
+    {
+      "name": "Career & Employment Services",
+      "what": "Career office (Library First Floor; 406-657-2168; careers@msubillings.edu) that helps students and alumni apply for jobs and internships and prepare for interviews, and runs career events.",
+      "url": "https://www.msubillings.edu/careers/"
+    },
+    {
+      "name": "CareerLink (GradLeaders)",
+      "what": "MSU Billings' online job and internship portal; also hosts the Virtual Internship & Job Fair. MSU Billings does not use Handshake per its career pages.",
+      "url": "https://www.msubillings.edu/careers/clmenu.htm"
+    },
+    {
+      "name": "Internship Information",
+      "what": "Information for students on internships / cooperative education.",
+      "url": "https://www.msubillings.edu/careers/cooped/students.htm"
+    },
+    {
+      "name": "Career Events",
+      "what": "Calendar of career fairs, networking events and employers-on-campus tabling.",
+      "url": "https://www.msubillings.edu/careers/upcoming.htm"
+    },
+    {
+      "name": "Major & Career Information Sheets",
+      "what": "Sheets connecting majors to career information.",
+      "url": "https://www.msubillings.edu/careers/joboutlook.htm"
+    },
+    {
+      "name": "Graduate Survey Data",
+      "what": "Survey data on MSU Billings graduates.",
+      "url": "https://www.msubillings.edu/careers/graddata.htm"
+    },
+    {
+      "name": "Job Search Resources",
+      "what": "Job search guidance and resources.",
+      "url": "https://www.msubillings.edu/careers/job_search_resources.htm"
+    }
+  ],
+  "not_in_dataset": [
+    "All other MSU Billings programs",
+    "MSU Billings offers no bachelor's degree in computer science or information technology in the 2026-2027 catalog; computing options are the Information Systems Minor and City College associate programs in computer programming/application development and cybersecurity (not included)"
+  ]
+}
